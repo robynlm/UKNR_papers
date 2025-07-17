@@ -13,14 +13,14 @@ This repository automatically scrapes arXiv for recent papers containing "numeri
 
 ## Live Demo
 
-The generated page is automatically deployed to GitHub Pages: `https://yourusername.github.io/UKNR_papers/`
+The generated page is automatically deployed to GitHub Pages: `https://robynlm.github.io/UKNR_papers/`
 
 ## Setup Instructions
 
 ### 1. Fork or Clone this Repository
 
 ```bash
-git clone https://github.com/yourusername/UKNR_papers.git
+git clone https://github.com/robynlm/UKNR_papers.git
 cd UKNR_papers
 ```
 

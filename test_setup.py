@@ -103,7 +103,7 @@ def main():
         print("1. Push this repository to GitHub")
         print("2. Enable GitHub Pages in repository settings")
         print("3. Enable GitHub Actions")
-        print("4. The page will be available at: https://yourusername.github.io/UKNR_papers/")
+        print("4. The page will be available at: https://robynlm.github.io/UKNR_papers/")
     else:
         print("\n" + "="*50)
         print("✗ SOME TESTS FAILED")
