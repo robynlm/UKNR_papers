@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Numerical Relativity Papers - arXiv</title>
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']],
+            processEscapes: true,
+            processEnvironments: true
+        },
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        }
+    };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,64 +39,65 @@
         }
         
         .header {
-            text-align: center;
             margin-bottom: 30px;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 20px;
+            border-bottom: 2px solid #45818e;
+            padding-bottom: 15px;
         }
         
         .header h1 {
-            color: #007bff;
-            margin: 0;
-            font-size: 2.5em;
-        }
-        
-        .subtitle {
-            color: #6c757d;
-            font-size: 1.1em;
-            margin: 10px 0;
+            color: #45818e;
+            margin: 0 0 5px 0;
+            font-size: 2.2em;
         }
         
         .last-updated {
             color: #6c757d;
             font-size: 0.9em;
-            margin: 5px 0;
-        }
-        
-        .paper-count {
-            background: #e3f2fd;
-            color: #1976d2;
-            padding: 10px 20px;
-            border-radius: 25px;
-            display: inline-block;
-            font-weight: bold;
-            margin: 10px 0;
         }
         
         .paper {
-            background: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            margin: 20px 0;
-            padding: 25px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 1px solid #e9ecef;
+            transition: transform 0.2s ease;
         }
         
         .paper:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transform: translateY(-1px);
+        }
+        
+        .paper:last-child {
+            border-bottom: none;
+        }
+        
+        .paper-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 1px;
+        }
+        
+        .paper-date {
+            font-size: 0.85em;
+            color: #6c757d;
+            font-weight: bold;
+            min-width: 90px;
+            flex-shrink: 0;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
         
         .paper-title {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: bold;
-            margin-bottom: 10px;
             color: #2c3e50;
+            flex: 1;
+            line-height: 1.3;
+            margin-bottom: 6px;
         }
         
         .paper-title a {
-            color: #007bff;
+            color: #45818e;
             text-decoration: none;
         }
         
@@ -88,65 +105,86 @@
             text-decoration: underline;
         }
         
-        .paper-authors {
-            color: #6c757d;
+        .paper-meta {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
             margin-bottom: 10px;
-            font-style: italic;
         }
         
-        .paper-meta {
-            font-size: 0.9em;
+        .paper-authors {
             color: #6c757d;
-            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.9em;
+            line-height: 1.4;
+            flex: 1;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        
+        .abstract-section {
+            min-width: 90px;
+            flex-shrink: 0;
+        }
+        
+        .abstract-toggle {
+            background: transparent;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 4px;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.8em;
+            color: #495057;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            flex-shrink: 0;
+            font-style: normal;
+            line-height: 1.4;
+        }
+        
+        .abstract-toggle:hover {
+            background: #f8f9fa;
+        }
+        
+        .abstract-toggle .arrow {
+            transition: transform 0.2s ease;
+            font-weight: bold;
+        }
+        
+        .abstract-toggle.expanded .arrow {
+            transform: rotate(90deg);
         }
         
         .paper-abstract {
+            display: none;
             text-align: justify;
-            margin-bottom: 15px;
-            line-height: 1.7;
-        }
-        
-        .paper-links {
-            text-align: right;
-        }
-        
-        .paper-links a {
-            display: inline-block;
-            padding: 8px 16px;
-            margin-left: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 0.9em;
-            transition: background-color 0.2s ease;
-        }
-        
-        .paper-links a:hover {
-            background: #0056b3;
-        }
-        
-        .paper-links a.pdf {
-            background: #dc3545;
-        }
-        
-        .paper-links a.pdf:hover {
-            background: #c82333;
-        }
-        
-        .categories {
-            margin-top: 10px;
-        }
-        
-        .category {
-            display: inline-block;
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+            padding: 12px;
             background: #f8f9fa;
-            color: #495057;
-            padding: 3px 8px;
-            margin: 2px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            border-left: 3px solid #45818e;
+            font-size: 0.9em;
+        }
+        
+        .paper-abstract.show {
+            display: block;
+        }
+        
+        .paper-abstract code {
+            background-color: #f1f3f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }
+        
+        .paper-abstract [style*="small-caps"], .paper-title [style*="small-caps"] {
+            font-variant: small-caps;
+            letter-spacing: 0.05em;
         }
         
         .no-papers {
@@ -167,7 +205,7 @@
         }
         
         .github-link {
-            color: #007bff;
+            color: #76AFB5;
             text-decoration: none;
         }
         
@@ -181,24 +219,47 @@
             }
             
             .container {
-                padding: 20px;
+                padding: 15px;
+            }
+            
+            .header {
+                align-items: flex-start;
+                gap: 10px;
             }
             
             .header h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
             
             .paper {
-                padding: 20px;
+                padding: 15px 0;
             }
             
-            .paper-links {
-                text-align: center;
+            .paper-header {
+                flex-direction: column;
+                gap: 5px;
             }
             
-            .paper-links a {
-                display: block;
-                margin: 5px 0;
+            .paper-date {
+                min-width: auto;
+                font-size: 0.8em;
+            }
+            
+            .paper-meta {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .paper-authors {
+                margin-left: 0;
+            }
+            
+            .abstract-section {
+                margin-left: 0;
+            }
+            
+            .abstract-toggle {
+                align-self: flex-start;
             }
         }
     </style>
@@ -206,428 +267,276 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>📡 Numerical Relativity Papers</h1>
-            <div class="subtitle">Recent papers from arXiv</div>
-            <div class="last-updated">Last updated: 2025-07-17 11:39:13 UTC</div>
-            <div class="paper-count">26 papers found</div>
+            <h1>Numerical Relativity Papers</h1>
+            <div class="last-updated">Last updated: 2025-07-17 14:49:31 UTC</div>
         </div>
         
         <main>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.11589v1" target="_blank" rel="noopener">Einstein Fields: A Neural Perspective To Computational General Relativity</a>
+                <div class="paper-header">
+                    <div class="paper-date">15 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.11589v1" target="_blank" rel="noopener">Einstein Fields: A Neural Perspective To Computational General Relativity</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Sandeep Suresh Cranganore, Andrei Bodnar, Arturs Berzins, Johannes Brandstetter</div>
                 <div class="paper-meta">
-                    arXiv:2507.11589v1 • Published: July 15, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Sandeep Suresh Cranganore, Andrei Bodnar, Arturs Berzins, Johannes Brandstetter</div>
                 </div>
-                <div class="paper-abstract">We introduce Einstein Fields, a neural representation that is designed to compress computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights. By modeling the \emph{metric}, which is the core tensor field of general relativity, Einstein Fields enable the derivation of physical quantities via automatic differentiation. However, unlike conventional neural fields (e.g., signed distance, occupancy, or radiance fields), Einstein Fields are...</div>
-                <div class="categories"><span class="category">cs.LG</span><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.11589v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.11589v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">We introduce Einstein Fields, a neural representation that is designed to compress computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights. By modeling the <em>metric</em>, which is the core tensor field of general relativity, Einstein Fields enable the derivation of physical quantities via automatic differentiation. However, unlike conventional neural fields (e.g., signed distance, occupancy, or radiance fields), Einstein Fields are <em>Neural Tensor Fields</em> with the key difference that when encoding the spacetime geometry of general relativity into neural field representations, dynamics emerge naturally as a byproduct. Einstein Fields show remarkable potential, including continuum modeling of 4D spacetime, mesh-agnosticity, storage efficiency, derivative accuracy, and ease of use. We address these challenges across several canonical test beds of general relativity and release an open source JAX-based library, paving the way for more scalable and expressive approaches to numerical relativity. Code is made available at https://github.com/AndreiB137/EinFields</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">Defining eccentricity for spin-precessing binaries</a>
+                <div class="paper-header">
+                    <div class="paper-date">11 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">Defining eccentricity for spin-precessing binaries</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Md Arif Shaikh, Vijay Varma, Antoni Ramos-Buades, Harald P. Pfeiffer, Michael Boyle and 2 others</div>
                 <div class="paper-meta">
-                    arXiv:2507.08345v1 • Published: July 11, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Md Arif Shaikh, Vijay Varma, Antoni Ramos-Buades, Harald P. Pfeiffer, Michael Boyle and 2 others</div>
                 </div>
-                <div class="paper-abstract">Standardizing the definition of eccentricity is necessary for unambiguous inference of the orbital eccentricity of compact binaries from gravitational wave observations. In previous works, we proposed a definition of eccentricity for systems without spin-precession that relies solely on the gravitational waveform, is applicable to any waveform model, and has the correct Newtonian limit. In this work, we extend this definition to spin-precessing systems. This simple yet effective extension relies...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.08345v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Standardizing the definition of eccentricity is necessary for unambiguous inference of the orbital eccentricity of compact binaries from gravitational wave observations. In previous works, we proposed a definition of eccentricity for systems without spin-precession that relies solely on the gravitational waveform, is applicable to any waveform model, and has the correct Newtonian limit. In this work, we extend this definition to spin-precessing systems. This simple yet effective extension relies on first transforming the waveform from the inertial frame to the coprecessing frame, and then adopting an amplitude and a phase with reduced spin-induced effects. Our method includes a robust procedure for filtering out spin-induced modulations, which become non-negligible in the small eccentricity and large spin-precession regime. Finally, we apply our method to a set of Numerical Relativity and Effective One Body waveforms to showcase its robustness for generic eccentric spin-precessing binaries. We make our method public via Python implementation in <code>gw_eccentricity</code>.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.08071v1" target="_blank" rel="noopener">Highly accurate simulations of asymmetric black-hole scattering and cross validation of effective-one-body models</a>
+                <div class="paper-header">
+                    <div class="paper-date">10 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.08071v1" target="_blank" rel="noopener">Highly accurate simulations of asymmetric black-hole scattering and cross validation of effective-one-body models</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Oliver Long, Harald P. Pfeiffer, Alessandra Buonanno, Gustav Uhre Jakobsen, Gustav Mogull and 4 others</div>
                 <div class="paper-meta">
-                    arXiv:2507.08071v1 • Published: July 10, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Oliver Long, Harald P. Pfeiffer, Alessandra Buonanno, Gustav Uhre Jakobsen, Gustav Mogull and 4 others</div>
                 </div>
-                <div class="paper-abstract">The study of unbound binary-black-hole encounters provides a gauge-invariant approach to exploring strong-field gravitational interactions in two-body systems, which can subsequently inform waveform models for bound orbits. In this work, we present 60 new highly accurate numerical relativity (NR) simulations of black-hole scattering, generated using the Spectral Einstein Code (SpEC). Our simulations include 14 spin-aligned configurations, as well as 16 configurations with unequal masses, up to a...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">hep-th</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.08071v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.08071v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">The study of unbound binary-black-hole encounters provides a gauge-invariant approach to exploring strong-field gravitational interactions in two-body systems, which can subsequently inform waveform models for bound orbits. In this work, we present 60 new highly accurate numerical relativity (NR) simulations of black-hole scattering, generated using the Spectral Einstein Code (SpEC). Our simulations include 14 spin-aligned configurations, as well as 16 configurations with unequal masses, up to a mass ratio of 10. We perform the first direct comparison of scattering angles computed using different NR codes, finding good agreement. We compare our NR scattering angle results to the post-Minkowskian (PM)-based effective-one-body (EOB) closed-form models SEOB-PM and $w_{\rm EOB}$, finding less than 5% deviation except near the scatter-capture separatrix. Comparisons with the post-Newtonian-based EOB evolution models SEOBNRv5 and TEOBResumS-Dalí reveal that the former agrees within 8% accuracy with non-spinning NR results across most parameter ranges, whereas the latter matches similarly at lower energies but diverges significantly at higher energies. Both evolution EOB models exhibit increased deviations for spinning systems, predicting a notably different location of the capture separatrix compared to NR. Our key finding is the first measurement of disparate scattering angles from NR simulations due to asymmetric gravitational-wave emission. We compare these results to SEOB-PM models constructed to calculate the scattering angle of a single black hole in asymmetric systems.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.06145v2" target="_blank" rel="noopener">Non-linear stability analysis of $\ell$-Proca stars</a>
+                <div class="paper-header">
+                    <div class="paper-date">08 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.06145v2" target="_blank" rel="noopener">Non-linear stability analysis of $\ell$-Proca stars</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Claudio Lazarte, Nicolas Sanchis-Gual, José A. Font, Miguel Alcubierre</div>
                 <div class="paper-meta">
-                    arXiv:2507.06145v2 • Published: July 08, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Claudio Lazarte, Nicolas Sanchis-Gual, José A. Font, Miguel Alcubierre</div>
                 </div>
-                <div class="paper-abstract">Vector boson stars, also known as Proca stars, exhibit remarkable dynamical robustness, making them strong candidates for potential astrophysical exotic compact objects. In search of theoretically well-motivated Proca star models, we recently introduced the $\ell$-Proca star, a multi-field extension of the spherical Proca star, whose $(2\ell + 1)$ constitutive fields have the same time and radial dependence, and their angular structure is given by all the available spherical harmonics for a fixe...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.06145v2" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.06145v2.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Vector boson stars, also known as Proca stars, exhibit remarkable dynamical robustness, making them strong candidates for potential astrophysical exotic compact objects. In search of theoretically well-motivated Proca star models, we recently introduced the $\ell$-Proca star, a multi-field extension of the spherical Proca star, whose $(2\ell + 1)$ constitutive fields have the same time and radial dependence, and their angular structure is given by all the available spherical harmonics for a fixed angular momentum number $\ell$. In this work, we conduct a non-linear stability analysis of these stars by numerically solving the Einstein-(multi, complex) Proca system for the case of $\ell = 2$, which are formed by five constitutive independent, complex Proca fields with $m = 0, |1|$, and $|2|$. Our analysis is based on long-term, fully non-linear, 3-dimensional numerical-relativity simulations without imposing any symmetry. We find that ($\ell=2$)-Proca stars are unstable throughout their entire domain of existence. In particular, we highlight that less compact configurations dynamically lose their global spherical symmetry, developing a non-axisymmetric $\tilde{m}=4$ mode instability and a subsequent migration into a new kind of multi-field Proca star formed by fields with different angular momentum number, $\ell=1$ and $\ell=2$, that we identify as unstable multi-$\ell$ Proca stars.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.02604v1" target="_blank" rel="noopener">PhenomXPNR: An improved gravitational wave model linking precessing inspirals and NR-calibrated merger-ringdown</a>
+                <div class="paper-header">
+                    <div class="paper-date">03 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.02604v1" target="_blank" rel="noopener">PhenomXPNR: An improved gravitational wave model linking precessing inspirals and NR-calibrated merger-ringdown</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Eleanor Hamilton, Marta Colleoni, Jonathan E. Thompson, Charlie Hoy, Anna Heffernan and 8 others</div>
                 <div class="paper-meta">
-                    arXiv:2507.02604v1 • Published: July 03, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Eleanor Hamilton, Marta Colleoni, Jonathan E. Thompson, Charlie Hoy, Anna Heffernan and 8 others</div>
                 </div>
-                <div class="paper-abstract">We present the frequency-domain quasi-circular precessing binary-black-hole model PhenomXPNR. This model combines the most precise available post-Newtonian description of the evolution of the precession dynamics through inspiral with merger-ringdown model informed by numerical relativity. This, along with a phenomenological model of the dominant multipole asymmetries, results in the most accurate and complete representation of the physics of precessing binaries natively in the frequency-domain t...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.02604v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.02604v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">We present the frequency-domain quasi-circular precessing binary-black-hole model PhenomXPNR. This model combines the most precise available post-Newtonian description of the evolution of the precession dynamics through inspiral with merger-ringdown model informed by numerical relativity. This, along with a phenomenological model of the dominant multipole asymmetries, results in the most accurate and complete representation of the physics of precessing binaries natively in the frequency-domain to date. All state-of-the-art precessing models show bias when inferring binary parameters in certain regions of the parameter space. We demonstrate that the developments presented ensure that for some precessing systems PhenomXPNR shows the least degree of bias. Further, as a phenomenological, frequency-domain model, PhenomXPNR remains one of the most computationally efficient models available and is therefore well-suited to the era of gravitational-wave astronomy with its ever growing rate of detected signals.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.01095v1" target="_blank" rel="noopener">A theoretical prediction for the dipole in nearby distances using cosmography</a>
+                <div class="paper-header">
+                    <div class="paper-date">01 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.01095v1" target="_blank" rel="noopener">A theoretical prediction for the dipole in nearby distances using cosmography</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Hayley J. Macpherson, Asta Heinesen</div>
                 <div class="paper-meta">
-                    arXiv:2507.01095v1 • Published: July 01, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Hayley J. Macpherson, Asta Heinesen</div>
                 </div>
-                <div class="paper-abstract">Cosmography is a widely applied method to infer kinematics of the Universe at small cosmological scales while remaining agnostic about the theory of gravity at play. Usually cosmologists invoke the Friedmann-Lemaitre-Robertson-Walker (FLRW) metric in cosmographic analyses, however generalised approaches allow for analyses outside of any assumed geometrical model. These methods have great promise to be able to model-independently map the cosmic neighborhood where the Universe has not yet converge...</div>
-                <div class="categories"><span class="category">astro-ph.CO</span><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.01095v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.01095v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Cosmography is a widely applied method to infer kinematics of the Universe at small cosmological scales while remaining agnostic about the theory of gravity at play. Usually cosmologists invoke the Friedmann-Lemaitre-Robertson-Walker (FLRW) metric in cosmographic analyses, however generalised approaches allow for analyses outside of any assumed geometrical model. These methods have great promise to be able to model-independently map the cosmic neighborhood where the Universe has not yet converged to isotropy. In this regime, anisotropies can bias parameter inferences if they are not accounted for, and thus must be included for precision cosmology analyses, even when the principle aim is to infer the background cosmology. In this paper, we develop a method to predict the dipole in luminosity distances that arises due to nearby inhomogeneities. This is the leading-order correction to the standard isotropic distance-redshift law. Within a very broad class of general-relativistic universe models, we provide an interpretation of the dipole in terms of the gradients in expansion rate and density which is free from any underlying background cosmology. We use numerical relativity simulations, with improved initial data methods, alongside fully relativistic ray tracing to test the power of our prediction. We find our prediction accurately captures the dipole signature in our simulations to within ~10% for redshifts $z\lesssim 0.07$ in reasonably smooth simulations. In the presence of more non-linear density fields, we find this reduces to $z\lesssim 0.02$. This represents up to an order of magnitude improvement with respect to what is achieved by naive, local cosmography-based predictions. Our paper thus addresses important issues regarding convergence properties of anisotropic cosmographic series expansions that would otherwise limit their applicability to very narrow redshift ranges.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2507.00113v1" target="_blank" rel="noopener">Black-hole - neutron-star mergers: new numerical-relativity simulations and multipolar effective-one-body model with spin precession and eccentricity</a>
+                <div class="paper-header">
+                    <div class="paper-date">30 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.00113v1" target="_blank" rel="noopener">Black-hole - neutron-star mergers: new numerical-relativity simulations and multipolar effective-one-body model with spin precession and eccentricity</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Alejandra Gonzalez, Sebastiano Bernuzzi, Alireza Rashti, Francesco Brandoli, Rossella Gamba</div>
                 <div class="paper-meta">
-                    arXiv:2507.00113v1 • Published: June 30, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Alejandra Gonzalez, Sebastiano Bernuzzi, Alireza Rashti, Francesco Brandoli, Rossella Gamba</div>
                 </div>
-                <div class="paper-abstract">In this paper, we present 52 new numerical-relativity (NR) simulations of black-hole-neutron-star merger (BHNS) mergers and employ the data to inform TEOBResumS-Dal\'i: a multipolar effective-one-body model also including precession and eccentricity. Our simulations target quasicircular mergers and the parameter space region characterized by significant tidal disruption of the star. Convergent gravitational waveforms are produced with a detailed error budget after extensive numerical tests. We s...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2507.00113v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2507.00113v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">In this paper, we present 52 new numerical-relativity (NR) simulations of black-hole-neutron-star merger (BHNS) mergers and employ the data to inform TEOBResumS-Dalí: a multipolar effective-one-body model also including precession and eccentricity. Our simulations target quasicircular mergers and the parameter space region characterized by significant tidal disruption of the star. Convergent gravitational waveforms are produced with a detailed error budget after extensive numerical tests. We study in detail the multipolar amplitude hierarchy and identify a characteristic tidal signature in the $(\ell,m)=(2,0)$, and $(3,0)$ modes. We also develop new NR-informed models for the remnant black hole and for the recoil velocity. The numerical data is then used to inform next-to-quasicircular corrections and the ringdown of TEOBResumS-Dalí for BHNS. We show an overall order of magnitude improvement in the waveform's amplitude at merger and more consistent multipoles over our older TEOBResumS-GIOTTO for BHNS. TEOBResumS-Dalí is further validated with a new 12 orbit precessing simulation, showing phase and relative amplitude differences below $\sim 0.5$ (rad) throughout the inspiral. The computed mismatches including all the modes lie at the one percent level for low inclinations. Finally, we demonstrate for the first time that TEOBResumS-Dalí can produce robust waveforms with both eccentricity and precession, and use the model to identify the most urgent BHNS to simulate for waveform development. Our new numerical data are publicly released as part of the CoRe database.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.22363v1" target="_blank" rel="noopener">Binary black holes in the heat of merger</a>
+                <div class="paper-header">
+                    <div class="paper-date">27 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.22363v1" target="_blank" rel="noopener">Binary black holes in the heat of merger</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Samanwaya Mukherjee, Sayak Datta, Sukanta Bose, Khun Sang Phukon</div>
                 <div class="paper-meta">
-                    arXiv:2506.22363v1 • Published: June 27, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Samanwaya Mukherjee, Sayak Datta, Sukanta Bose, Khun Sang Phukon</div>
                 </div>
-                <div class="paper-abstract">A black hole binary approaching merger undergoes changes in its inspiral rate as energy and angular momentum are lost from the orbits into the horizons. This effect strengthens as the black holes come closer. We use numerical relativity data to model this so-called tidal heating in the strong gravity regime. We present a frequency-domain approximant for nonspinning black hole binaries that accounts for tidal heating effects up to the merger frequency. The approximant includes horizon parameters ...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.22363v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.22363v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">A black hole binary approaching merger undergoes changes in its inspiral rate as energy and angular momentum are lost from the orbits into the horizons. This effect strengthens as the black holes come closer. We use numerical relativity data to model this so-called tidal heating in the strong gravity regime. We present a frequency-domain approximant for nonspinning black hole binaries that accounts for tidal heating effects up to the merger frequency. The approximant includes horizon parameters that characterize the nature of the compact objects. By applying this model to a binary black hole baseline that incorporates tidal heating, one can construct a more accurate point-particle waveform, one that is devoid of finite-size effects of the component objects. We also discuss its ramifications in modeling binary neutron star systems.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.21696v1" target="_blank" rel="noopener">Impact of magnetic field-driven anisotropies on the equation of state probed in neutron star mergers</a>
+                <div class="paper-header">
+                    <div class="paper-date">26 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.21696v1" target="_blank" rel="noopener">Impact of magnetic field-driven anisotropies on the equation of state probed in neutron star mergers</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Elias R. Most, Jeffrey Peterson, Luigi Scurto, Helena Pais, Veronica Dexheimer</div>
                 <div class="paper-meta">
-                    arXiv:2506.21696v1 • Published: June 26, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Elias R. Most, Jeffrey Peterson, Luigi Scurto, Helena Pais, Veronica Dexheimer</div>
                 </div>
-                <div class="paper-abstract">Binary neutron star mergers can produce extreme magnetic fields, some of which can lead to strong magnetar-like remnants. While strong magnetic fields have been shown to affect the dynamics of outflows and angular momentum transport in the remnant, they can also crucially alter the properties of nuclear matter probed in the merger. In this work, we provide a first assessment of the latter, determining the strength of the pressure anisotropy caused by Landau level quantization and the anomalous m...</div>
-                <div class="categories"><span class="category">astro-ph.HE</span><span class="category">gr-qc</span><span class="category">nucl-th</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.21696v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.21696v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Binary neutron star mergers can produce extreme magnetic fields, some of which can lead to strong magnetar-like remnants. While strong magnetic fields have been shown to affect the dynamics of outflows and angular momentum transport in the remnant, they can also crucially alter the properties of nuclear matter probed in the merger. In this work, we provide a first assessment of the latter, determining the strength of the pressure anisotropy caused by Landau level quantization and the anomalous magnetic moment. To this end, we perform the first numerical relativity simulation with a magnetic polarization tensor and a magnetic-field-dependent equation of state using a new algorithm we present here, which also incorporates a mean-field dynamo model to control the magnetic field strength present in the merger remnant. Our results show that -- in the most optimistic case -- corrections to the anisotropy can be in excess of $10\%$, and are potentially largest in the outer layers of the remnant. This work paves the way for a systematic investigation of these effects.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.19990v1" target="_blank" rel="noopener">Waging a Campaign: Results from an Injection-Recovery Study involving 35 numerical Relativity Simulations and three Waveform Models</a>
+                <div class="paper-header">
+                    <div class="paper-date">24 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.19990v1" target="_blank" rel="noopener">Waging a Campaign: Results from an Injection-Recovery Study involving 35 numerical Relativity Simulations and three Waveform Models</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Sarp Akçay, Charlie Hoy, Jake Mac Uilliam</div>
                 <div class="paper-meta">
-                    arXiv:2506.19990v1 • Published: June 24, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Sarp Akçay, Charlie Hoy, Jake Mac Uilliam</div>
                 </div>
-                <div class="paper-abstract">We present Bayesian inference results from an extensive injection-recovery campaign to test the validity of three state of the art quasicircular gravitational waveform models: \textsc{SEOBNRv5PHM}, \textsc{IMRPhenomTPHM}, \textsc{IMRPhenomXPHM}, the latter with the \textsc{SpinTaylorT4} implementation for its precession dynamics. We analyze 35 strongly precessing binary black hole numerical relativity simulations with all available harmonic content. Ten simulations have a mass ratio of $4:1$ and...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.IM</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.19990v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.19990v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">We present Bayesian inference results from an extensive injection-recovery campaign to test the validity of three state of the art quasicircular gravitational waveform models: <span style="font-variant: small-caps;">SEOBNRv5PHM</span>, <span style="font-variant: small-caps;">IMRPhenomTPHM</span>, <span style="font-variant: small-caps;">IMRPhenomXPHM</span>, the latter with the <span style="font-variant: small-caps;">SpinTaylorT4</span> implementation for its precession dynamics. We analyze 35 strongly precessing binary black hole numerical relativity simulations with all available harmonic content. Ten simulations have a mass ratio of $4:1$ and five, mass ratio of $8:1$. Overall, we find that <span style="font-variant: small-caps;">SEOBNRv5PHM</span> is the most consistent model to numerical relativity, with the majority of true source properties lying within the inferred 90\% credible interval. However, we find that none of the models can reliably infer the true source properties for binaries with mass ratio $8:1$ systems. We additionally conduct inspiral-merger-ringdown (IMR) consistency tests to determine if our chosen state of the art waveform models infer consistent properties when analysing only the inspiral (low frequency) and ringdown (high frequency) portions of the signal. For the simulations considered in this work, we find that the IMR consistency test depends on the frequency that separates the inspiral and ringdown regimes. For two sensible choices of the cutoff frequency, we report that <span style="font-variant: small-caps;">IMRPhenomXPHM</span> can produce false GR deviations. Meanwhile, we find that <span style="font-variant: small-caps;">IMRPhenomTPHM</span> is the most reliable model under the IMR consistency test. Finally, we re-analyze the same 35 simulations, but this time we incorporate model accuracy into our Bayesian inference. Consistent with the work in Hoy et al. 2024 [arXiv: 2409.19404], we find this approach generally yields more accurate inferred properties for binary black holes with less biases compared to methods that combine model-dependent posterior distributions based on their evidence, or with equal weight.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.19911v1" target="_blank" rel="noopener">Adding equatorial-asymmetric effects for spin-precessing binaries into the SEOBNRv5PHM waveform model</a>
+                <div class="paper-header">
+                    <div class="paper-date">24 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.19911v1" target="_blank" rel="noopener">Adding equatorial-asymmetric effects for spin-precessing binaries into the SEOBNRv5PHM waveform model</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Héctor Estellés, Alessandra Buonanno, Raffi Enficiaud, Cheng Foo, Lorenzo Pompili</div>
                 <div class="paper-meta">
-                    arXiv:2506.19911v1 • Published: June 24, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Héctor Estellés, Alessandra Buonanno, Raffi Enficiaud, Cheng Foo, Lorenzo Pompili</div>
                 </div>
-                <div class="paper-abstract">Gravitational waves from spin-precessing binaries exhibit equatorial asymmetries absent in non-precessing systems, leading to net linear momentum emission and contributing to the remnant's recoil. This effect, recently incorporated into only a few waveform models, is crucial for accurate recoil predictions and improved parameter estimation. We present an upgrade to the SEOBNRv5PHM model -- SEOBNRv5PHM_w/asym -- which includes equatorial asymmetric contributions to the l=m<=4 waveform modes in th...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.19911v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.19911v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Gravitational waves from spin-precessing binaries exhibit equatorial asymmetries absent in non-precessing systems, leading to net linear momentum emission and contributing to the remnant's recoil. This effect, recently incorporated into only a few waveform models, is crucial for accurate recoil predictions and improved parameter estimation. We present an upgrade to the SEOBNRv5PHM model -- SEOBNRv5PHM_w/asym -- which includes equatorial asymmetric contributions to the l=m<=4 waveform modes in the co-precessing frame. The model combines post-Newtonian inputs with calibrated amplitude and phase corrections and a phenomenological merger-ringdown description, tuned against 1523 quasi-circular spin-precessing numerical relativity waveforms and single-spin precessing test-body plunging-geodesic waveforms. We find that SEOBNRv5PHM_w/asym improves the agreement with NR waveforms across inclinations, with median unfaithfulness reduced by up to 50% compared to SEOBNRv5PHM, and achieves 30-60% lower unfaithfulness than IMRPhenomXPNR and 76-80% lower than TEOBResumS_Dali. The model significantly improves the prediction of the recoil velocity, reducing the median relative error with numerical relativity from 70% to 1%. Bayesian inference on synthetic injections demonstrates improved recovery of spin orientations and mass parameters, and a reanalysis of GW200129 shows a threefold increase in the spin-precessing Bayes factor, highlighting the importance of these effects for interpreting spin-precessing events.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.18610v1" target="_blank" rel="noopener">A numerical approach to particle creation in accelerating toy models</a>
+                <div class="paper-header">
+                    <div class="paper-date">23 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.18610v1" target="_blank" rel="noopener">A numerical approach to particle creation in accelerating toy models</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Pedro Duarte Baptista, Alex Vañó-Viñuales, Adrían del Río Vega</div>
                 <div class="paper-meta">
-                    arXiv:2506.18610v1 • Published: June 23, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Pedro Duarte Baptista, Alex Vañó-Viñuales, Adrían del Río Vega</div>
                 </div>
-                <div class="paper-abstract">The formation of black holes by the gravitational collapse of stars is known to spontaneously excite particle pairs out of the quantum vacuum. For the canonical vacuum state at past null infinity, the expected number of particles received at future null infinity can be obtained in full closed form at sufficiently late times. However, for intermediate times, or for more complicated astrophysical processes (e.g. binary black hole mergers), the problem is technically challenging and has not yet bee...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.18610v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.18610v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">The formation of black holes by the gravitational collapse of stars is known to spontaneously excite particle pairs out of the quantum vacuum. For the canonical vacuum state at past null infinity, the expected number of particles received at future null infinity can be obtained in full closed form at sufficiently late times. However, for intermediate times, or for more complicated astrophysical processes (e.g. binary black hole mergers), the problem is technically challenging and has not yet been resolved. We develop here a numerical approach to study scattering problems of massless quantum fields in asymptotically flat spacetimes, based on the hyperboloidal slice method used in numerical relativity and perturbation theory. This promising approach can reach both past and future null infinities, and therefore it has the potential to address the Hawking scattering problem more rigorously than evolution on the usual Cauchy slices. We test this approach with some dynamical toy models in Minkowski using effective potentials that mimic the effects of gravity, and compute the spectrum of particles received at future null infinity. We finally discuss future prospects for applying this framework in more relevant gravitational scenarios.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.17492v1" target="_blank" rel="noopener">Modeling Relative Peak Times of Gravitational Wave Harmonics</a>
+                <div class="paper-header">
+                    <div class="paper-date">20 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.17492v1" target="_blank" rel="noopener">Modeling Relative Peak Times of Gravitational Wave Harmonics</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Anuj Kankani, Sean McWilliams</div>
                 <div class="paper-meta">
-                    arXiv:2506.17492v1 • Published: June 20, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Anuj Kankani, Sean McWilliams</div>
                 </div>
-                <div class="paper-abstract">Accurate modeling of gravitational waves from binary black hole mergers is essential for extracting their rich physics. A key detail for understanding the physics of mergers is predicting the precise time when the amplitude of the gravitational wave strain peaks, which can differ significantly among the different harmonic modes. We propose two semi-analytical methods to predict these differences using the same three inputs from Numerical Relativity (NR): the remnant mass and spin and the instant...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.17492v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.17492v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Accurate modeling of gravitational waves from binary black hole mergers is essential for extracting their rich physics. A key detail for understanding the physics of mergers is predicting the precise time when the amplitude of the gravitational wave strain peaks, which can differ significantly among the different harmonic modes. We propose two semi-analytical methods to predict these differences using the same three inputs from Numerical Relativity (NR): the remnant mass and spin and the instantaneous frequency of each mode at its peak amplitude. The first method uses the frequency evolution predicted by the Backwards-One-Body model, while the second models the motion of an equatorial timelike geodesic in the remnant black hole spacetime. We compare our models to the SXS waveform catalog for quasi-circular, non-precessing systems and find excellent agreement for $l = |m|$ modes up to $l=8$, with mean and median differences from NR below 1$M$ in nearly all cases across the parameter space. We compare our results to the differences predicted by leading Effective-One-Body and NR surrogate waveform models and find that in cases corresponding to the largest timing differences, our models can provide significant increases in accuracy.</div>
             </article>
 
             <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.15979v1" target="_blank" rel="noopener">Impact of Detector Calibration Accuracy on Black Hole Spectroscopy</a>
+                <div class="paper-header">
+                    <div class="paper-date">19 June 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2506.15979v1" target="_blank" rel="noopener">Impact of Detector Calibration Accuracy on Black Hole Spectroscopy</a>
+                    </div>
                 </div>
-                <div class="paper-authors">Mallika R. Sinha, Ling Sun, Sizheng Ma</div>
                 <div class="paper-meta">
-                    arXiv:2506.15979v1 • Published: June 19, 2025
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Mallika R. Sinha, Ling Sun, Sizheng Ma</div>
                 </div>
-                <div class="paper-abstract">Systematic errors in detector calibration can bias signal analyses and potentially lead to incorrect interpretations suggesting violations of general relativity. In this study, we investigate how calibration systematics affect black hole (BH) spectroscopy, a technique that uses the quasinormal modes (QNMs) emitted during the ringdown phase of gravitational waves (GWs) to study remnant BHs formed in compact binary coalescences. We simulate a series of physically motivated, tunable calibration err...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.IM</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.15979v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.15979v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.11204v1" target="_blank" rel="noopener">Gravitational Scattering of Two Neutron Stars</a>
-                </div>
-                <div class="paper-authors">Joan Fontbuté, Sebastiano Bernuzzi, Piero Rettegno, Simone Albanesi, Wolfgang Tichy</div>
-                <div class="paper-meta">
-                    arXiv:2506.11204v1 • Published: June 12, 2025
-                </div>
-                <div class="paper-abstract">We present the first numerical relativity simulations of the gravitational scattering of two neutron stars. Constraint-satisfying initial data for two equal-mass non-spinning sequences are constructed at fixed energy and various initial angular momenta (impact parameter) and evolved with Einstein equations through the scattering process. The strong-field scattering dynamics are explored up to scattering angles of $225^\circ$ and the threshold of dynamical captures. The transition to bound orbits...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.11204v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.11204v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.08888v1" target="_blank" rel="noopener">Waveform model for the $(\ell=2, m=0)$ spherical harmonic and the displacement memory contribution from precessing binary black holes</a>
-                </div>
-                <div class="paper-authors">Maria Rosselló-Sastre, Sascha Husa</div>
-                <div class="paper-meta">
-                    arXiv:2506.08888v1 • Published: June 10, 2025
-                </div>
-                <div class="paper-abstract">In this paper we construct the first phenomenological waveform model which contains the "complete" $\ell=2$ spherical harmonic mode content for gravitational wave signals emitted by the coalescence of binary black holes with spin precession: The model contains the dominant part of the gravitational wave displacement memory, which manifests in the $(\ell=2, m=0)$ spherical harmonic in a co-precessing frame, as well as the oscillatory component of this mode. The model is constructed by twisting up...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.08888v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.08888v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.03634v1" target="_blank" rel="noopener">External Attention Transformer: A Robust AI Model for Identifying Initial Eccentricity Signatures in Binary Black Hole Events in Simulated Advanced LIGO Data</a>
-                </div>
-                <div class="paper-authors">Elahe Khalouei, Cristiano G. Sabiu, Hyung Mok Lee, A. Gopakumar</div>
-                <div class="paper-meta">
-                    arXiv:2506.03634v1 • Published: June 04, 2025
-                </div>
-                <div class="paper-abstract">Initial orbital eccentricities of gravitational wave (GW) events associated with merging binary black holes (BBHs) should provide clues to their formation scenarios, mainly because various BBH formation channels predict distinct eccentricity distributions. However, searching for inspiral GWs from eccentric BBHs is computationally challenging due to sophisticated approaches to model such GW events. This ensures that Bayesian parameter estimation methods to characterize such events are computation...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.03634v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.03634v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.02189v1" target="_blank" rel="noopener">Self-force framework for merger-ringdown waveforms</a>
-                </div>
-                <div class="paper-authors">Lorenzo Küchler, Geoffrey Compère, Adam Pound</div>
-                <div class="paper-meta">
-                    arXiv:2506.02189v1 • Published: June 02, 2025
-                </div>
-                <div class="paper-abstract">The prospect of observing asymmetric compact binaries with next-generation gravitational-wave detectors has motivated the development of fast and accurate waveform models in gravitational self-force theory. These models are based on a two-stage process: in a (slow) offline stage, waveform ingredients are pre-computed as functions on the orbital phase space; in a (fast) online stage, the waveform is generated by evolving through the phase space. While this framework has traditionally been restric...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.02189v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.02189v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.02115v1" target="_blank" rel="noopener">The error budget of binary neutron star merger simulations for configurations with high spin</a>
-                </div>
-                <div class="paper-authors">Hao-Jui Kuan, Ivan Markin, Maximiliano Ujevic, Tim Dietrich, Kenta Kiuchi and 2 others</div>
-                <div class="paper-meta">
-                    arXiv:2506.02115v1 • Published: June 02, 2025
-                </div>
-                <div class="paper-abstract">Numerical-relativity simulations offer a unique approach to investigating the dynamics of binary neutron star mergers and provide the most accurate predictions of waveforms in the late inspiral phase. However, the numerical predictions are prone to systematic biases originating from the construction of initial quasi-circular binary configurations, the numerical methods used to evolve them, and to extract gravitational signals. To assess uncertainties arising from these aspects, we analyze merger...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.HE</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.02115v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.02115v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2506.01760v1" target="_blank" rel="noopener">First eccentric inspiral-merger-ringdown analysis of neutron star-black hole mergers</a>
-                </div>
-                <div class="paper-authors">Maria de Lluc Planas, Sascha Husa, Antoni Ramos-Buades, Jorge Valencia</div>
-                <div class="paper-meta">
-                    arXiv:2506.01760v1 • Published: June 02, 2025
-                </div>
-                <div class="paper-abstract">The gravitational wave event GW200105 was the first confident neutron star-black hole (NSBH) merger identified by the LIGO-Virgo-KAGRA collaboration. A recent analysis by Morras et al. with an eccentric precessing waveform model that describes the inspiral phase of the $l=2$ and $m=\{0,\pm 2\}$ modes has identified this event as the first NSBH merger with strong evidence of orbital eccentricity. In this paper we perform the first analysis of this event with an aligned-spin eccentric waveform mod...</div>
-                <div class="categories"><span class="category">astro-ph.HE</span><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2506.01760v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2506.01760v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.22763v2" target="_blank" rel="noopener">On the Probability of the Initial Conditions for Inflation and Slow Contraction</a>
-                </div>
-                <div class="paper-authors">Mark P. Hertzberg, Daniel Jiménez-Aguilar</div>
-                <div class="paper-meta">
-                    arXiv:2505.22763v2 • Published: May 28, 2025
-                </div>
-                <div class="paper-abstract">Some recent studies based on numerical relativity simulations claim that slow contraction/ekpyrosis is strongly preferred over inflation as the smoothing mechanism that brought the universe into the homogeneous, isotropic and flat state we observe today on large scales. In this paper, we evaluate the likelihood of the initial conditions employed in the aforementioned simulations by estimating the probability that a free scalar field dominating the universe at the beginning of inflation or ekpyro...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.CO</span><span class="category">hep-ph</span><span class="category">hep-th</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.22763v2" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.22763v2.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.18914v1" target="_blank" rel="noopener">A "Neural" Riemann solver for Relativistic Hydrodynamics</a>
-                </div>
-                <div class="paper-authors">Carlo Musolino</div>
-                <div class="paper-meta">
-                    arXiv:2505.18914v1 • Published: May 25, 2025
-                </div>
-                <div class="paper-abstract">In this paper, we present an approach to solving the Riemann problem in one-dimensional relativistic hydrodynamics, where the most computationally expensive steps of the exact solver are replaced by compact, highly specialized neural networks. The resulting "neural" Riemann solver is integrated into a high-resolution shock-capturing scheme and tested on a range of canonical problems, demonstrating both robustness and efficiency. By constraining the learned components to the root-finding of singl...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.18914v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.18914v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.18560v1" target="_blank" rel="noopener">Statistical identification of ringdown modes with rational filters</a>
-                </div>
-                <div class="paper-authors">Neil Lu, Sizheng Ma, Ornella J. Piccinni, Ling Sun, Eliot Finch</div>
-                <div class="paper-meta">
-                    arXiv:2505.18560v1 • Published: May 24, 2025
-                </div>
-                <div class="paper-abstract">Measuring quasinormal modes (QNMs) during the ringdown phase of binary black hole coalescences provides key insights into merger dynamics and enables tests of the no-hair theorem. The QNM rational filter has recently been introduced as a technique to identify specific QNMs in ringdown signals without sampling over mode amplitudes and phases. In this work, we extend the QNM rational filter framework to quantify the statistical confidence of subdominant mode detections in real gravitational wave (...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.18560v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.18560v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.17743v1" target="_blank" rel="noopener">Time-frequency structure in the post-merger binary black hole gravitational wave signal</a>
-                </div>
-                <div class="paper-authors">Chad Henshaw, Alice Heranval, Laura Cadonati</div>
-                <div class="paper-meta">
-                    arXiv:2505.17743v1 • Published: May 23, 2025
-                </div>
-                <div class="paper-abstract">Gravitational wave signals from asymmetric binary black hole systems have been shown to exhibit additional chirps beyond the primary merger chirp in the post-merger region of the time-frequency domain. These secondary post-merger chirps correlate to the evolving geometry of the common horizon that forms as the binary merges and were previously studied through numerical relativity simulation in a zero-spin regime. In this work, we investigate the post-merger time-frequency structure in systems wi...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.17743v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.17743v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.16380v2" target="_blank" rel="noopener">On the Identification of Exotic Compact Binaries with Gravitational Waves: a Phenomenological approach</a>
-                </div>
-                <div class="paper-authors">Shrobana Ghosh, Mark Hannam</div>
-                <div class="paper-meta">
-                    arXiv:2505.16380v2 • Published: May 22, 2025
-                </div>
-                <div class="paper-abstract">Gravitational wave (GW) astronomy has been hailed as a gateway to discovering unexpected phenomena in the universe. Over the last decade there have been close to one hundred GW observations of compact-binary mergers. While these signals are largely consistent with mergers of binary black holes, binary neutron stars, or black hole-neutron star systems, some events suggest the intriguing possibility of binaries involving exotic compact objects (ECOs). Identifying and characterising an ECO merger w...</div>
-                <div class="categories"><span class="category">gr-qc</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.16380v2" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.16380v2.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2505.15912v1" target="_blank" rel="noopener">BHaHAHA: A Fast, Robust Apparent Horizon Finder Library for Numerical Relativity</a>
-                </div>
-                <div class="paper-authors">Zachariah B. Etienne, Thiago Assumpção, Leonardo Rosa Werneck, Samuel D. Tootle</div>
-                <div class="paper-meta">
-                    arXiv:2505.15912v1 • Published: May 21, 2025
-                </div>
-                <div class="paper-abstract">Apparent horizon (AH) finders are essential for characterizing black holes and excising their interiors in numerical relativity (NR) simulations. However, open-source AH finders to date are tightly coupled to individual NR codes. We introduce BHaHAHA, the BlackHoles@Home Apparent Horizon Algorithm, the first open-source, infrastructure-agnostic library for AH finding in NR. BHaHAHA implements the first-ever hyperbolic flow-based approach, recasting the elliptic partial differential equation for ...</div>
-                <div class="categories"><span class="category">gr-qc</span><span class="category">astro-ph.IM</span></div>
-                <div class="paper-links">
-                    <a href="https://arxiv.org/abs/2505.15912v1" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="https://arxiv.org/pdf/2505.15912v1.pdf" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
+                <div class="paper-abstract">Systematic errors in detector calibration can bias signal analyses and potentially lead to incorrect interpretations suggesting violations of general relativity. In this study, we investigate how calibration systematics affect black hole (BH) spectroscopy, a technique that uses the quasinormal modes (QNMs) emitted during the ringdown phase of gravitational waves (GWs) to study remnant BHs formed in compact binary coalescences. We simulate a series of physically motivated, tunable calibration errors and use them to intentionally miscalibrate numerical relativity waveforms. We then apply a QNM extraction method -- the rational QNM filter -- to quantify the impact of these calibration errors. We find that current calibration standards (errors within $10\%$ in magnitude and $10^i̧rc$ in phase across the most sensitive frequency range of 20--2000 Hz) are adequate for BH ringdown analyses with existing observations, but insufficient for the accuracy goals of future upgraded and next-generation observatories. Specifically, we show that for events with a high ringdown signal-to-noise ratio of $\sim 120$, calibration errors must remain $\lesssim 6\%$ in magnitude and $\lesssim 4^i̧rc$ in phase to avoid introducing biases. While this analysis addresses a particular aspect of BH spectroscopy, the results offer broadly applicable quantitative benchmarks for calibration standards crucial to fully realizing the potential of precision GW astrophysics in the next-generation detector era.</div>
             </article>
 
         </main>
@@ -642,5 +551,34 @@
             <p>Data provided by <a href="https://arxiv.org/" target="_blank" rel="noopener" class="github-link">arXiv.org</a></p>
         </footer>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggles = document.querySelectorAll('.abstract-toggle');
+            toggles.forEach(function(toggle) {
+                toggle.addEventListener('click', function() {
+                    this.classList.toggle('expanded');
+                    // Find the abstract element - it's after the paper-meta div
+                    const paperMeta = this.closest('.paper-meta');
+                    const abstract = paperMeta.nextElementSibling;
+                    abstract.classList.toggle('show');
+                    
+                    // Re-render MathJax for the newly shown abstract
+                    if (abstract.classList.contains('show') && window.MathJax) {
+                        MathJax.typesetPromise([abstract]).catch(function (err) {
+                            console.log('MathJax typeset failed: ' + err.message);
+                        });
+                    }
+                });
+            });
+            
+            // Initial MathJax processing for titles that are already visible
+            if (window.MathJax) {
+                MathJax.typesetPromise().catch(function (err) {
+                    console.log('Initial MathJax typeset failed: ' + err.message);
+                });
+            }
+        });
+    </script>
 </body>
 </html>

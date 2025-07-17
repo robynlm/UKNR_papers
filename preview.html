@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Numerical Relativity Papers - arXiv</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #007bff;
+            margin: 0;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            color: #6c757d;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+        
+        .last-updated {
+            color: #6c757d;
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+        
+        .paper-count {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 10px 20px;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .paper {
+            background: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .paper:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .paper-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .paper-date {
+            font-size: 0.9em;
+            color: #6c757d;
+            font-weight: bold;
+            min-width: 100px;
+            flex-shrink: 0;
+            padding-top: 2px;
+        }
+        
+        .paper-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #2c3e50;
+            flex: 1;
+            line-height: 1.3;
+        }
+        
+        .paper-title a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .paper-title a:hover {
+            text-decoration: underline;
+        }
+        
+        .paper-authors {
+            color: #6c757d;
+            margin-bottom: 15px;
+            font-style: italic;
+            font-size: 0.95em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .abstract-toggle {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            user-select: none;
+            font-size: 0.85em;
+            color: #495057;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            flex-shrink: 0;
+            margin-left: 15px;
+        }
+        
+        .abstract-toggle:hover {
+            background: #e9ecef;
+        }
+        
+        .abstract-toggle .arrow {
+            transition: transform 0.2s ease;
+            font-weight: bold;
+        }
+        
+        .abstract-toggle.expanded .arrow {
+            transform: rotate(90deg);
+        }
+        
+        .paper-abstract {
+            display: none;
+            text-align: justify;
+            margin: 0 0 15px 0;
+            line-height: 1.7;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .paper-abstract.show {
+            display: block;
+        }
+        
+        .no-papers {
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            margin: 40px 0;
+            font-size: 1.1em;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        
+        .github-link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        .github-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .paper {
+                padding: 20px;
+            }
+            
+            .paper-header {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .paper-date {
+                min-width: auto;
+                font-size: 0.8em;
+            }
+            
+            .paper-authors {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            
+            .abstract-toggle {
+                margin-left: 0;
+                align-self: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📡 Numerical Relativity Papers</h1>
+            <div class="subtitle">Recent papers from arXiv</div>
+            <div class="last-updated">Last updated: 2025-07-17 12:58:37 UTC</div>
+            <div class="paper-count">5 papers found</div>
+        </div>
+        
+        <main>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">15 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.11589v1" target="_blank" rel="noopener">Einstein Fields: A Neural Perspective To Computational General Relativity</a>
+                    </div>
+                </div>
+                <div class="paper-authors">
+                    <span>Sandeep Suresh Cranganore, Andrei Bodnar, Arturs Berzins, Johannes Brandstetter</span>
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-abstract">We introduce Einstein Fields, a neural representation that is designed to compress computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights. By modeling the \emph{metric}, which is the core tensor field of general relativity, Einstein Fields enable the derivation of physical quantities via automatic differentiation. However, unlike conventional neural fields (e.g., signed distance, occupancy, or radiance fields), Einstein Fields are...</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">11 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">Defining eccentricity for spin-precessing binaries</a>
+                    </div>
+                </div>
+                <div class="paper-authors">
+                    <span>Md Arif Shaikh, Vijay Varma, Antoni Ramos-Buades, Harald P. Pfeiffer, Michael Boyle and 2 others</span>
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-abstract">Standardizing the definition of eccentricity is necessary for unambiguous inference of the orbital eccentricity of compact binaries from gravitational wave observations. In previous works, we proposed a definition of eccentricity for systems without spin-precession that relies solely on the gravitational waveform, is applicable to any waveform model, and has the correct Newtonian limit. In this work, we extend this definition to spin-precessing systems. This simple yet effective extension relies...</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">10 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.08071v1" target="_blank" rel="noopener">Highly accurate simulations of asymmetric black-hole scattering and cross validation of effective-one-body models</a>
+                    </div>
+                </div>
+                <div class="paper-authors">
+                    <span>Oliver Long, Harald P. Pfeiffer, Alessandra Buonanno, Gustav Uhre Jakobsen, Gustav Mogull and 4 others</span>
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-abstract">The study of unbound binary-black-hole encounters provides a gauge-invariant approach to exploring strong-field gravitational interactions in two-body systems, which can subsequently inform waveform models for bound orbits. In this work, we present 60 new highly accurate numerical relativity (NR) simulations of black-hole scattering, generated using the Spectral Einstein Code (SpEC). Our simulations include 14 spin-aligned configurations, as well as 16 configurations with unequal masses, up to a...</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">08 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.06145v2" target="_blank" rel="noopener">Non-linear stability analysis of $\ell$-Proca stars</a>
+                    </div>
+                </div>
+                <div class="paper-authors">
+                    <span>Claudio Lazarte, Nicolas Sanchis-Gual, José A. Font, Miguel Alcubierre</span>
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-abstract">Vector boson stars, also known as Proca stars, exhibit remarkable dynamical robustness, making them strong candidates for potential astrophysical exotic compact objects. In search of theoretically well-motivated Proca star models, we recently introduced the $\ell$-Proca star, a multi-field extension of the spherical Proca star, whose $(2\ell + 1)$ constitutive fields have the same time and radial dependence, and their angular structure is given by all the available spherical harmonics for a fixe...</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">03 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.02604v1" target="_blank" rel="noopener">PhenomXPNR: An improved gravitational wave model linking precessing inspirals and NR-calibrated merger-ringdown</a>
+                    </div>
+                </div>
+                <div class="paper-authors">
+                    <span>Eleanor Hamilton, Marta Colleoni, Jonathan E. Thompson, Charlie Hoy, Anna Heffernan and 8 others</span>
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-abstract">We present the frequency-domain quasi-circular precessing binary-black-hole model PhenomXPNR. This model combines the most precise available post-Newtonian description of the evolution of the precession dynamics through inspiral with merger-ringdown model informed by numerical relativity. This, along with a phenomenological model of the dominant multipole asymmetries, results in the most accurate and complete representation of the physics of precessing binaries natively in the frequency-domain t...</div>
+            </article>
+
+        </main>
+        
+        <footer class="footer">
+            <p>
+                Generated automatically from arXiv.org • 
+                <a href="https://github.com/yourusername/UKNR_papers" class="github-link" target="_blank" rel="noopener">
+                    View on GitHub
+                </a>
+            </p>
+            <p>Data provided by <a href="https://arxiv.org/" target="_blank" rel="noopener" class="github-link">arXiv.org</a></p>
+        </footer>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggles = document.querySelectorAll('.abstract-toggle');
+            toggles.forEach(function(toggle) {
+                toggle.addEventListener('click', function() {
+                    this.classList.toggle('expanded');
+                    const abstract = this.nextElementSibling;
+                    abstract.classList.toggle('show');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

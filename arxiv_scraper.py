@@ -125,6 +125,69 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List
     print(f"Found {len(papers)} papers from the last {days_back} days")
     return papers
 
+def process_latex_text(text: str) -> str:
+    """
+    Convert LaTeX text commands to HTML.
+    
+    Args:
+        text: Text possibly containing LaTeX commands
+        
+    Returns:
+        Text with LaTeX commands converted to HTML
+    """
+    # Replace common LaTeX text commands with HTML equivalents
+    import re
+    
+    # LaTeX accent commands - handle these first before other commands
+    accent_map = {
+        r"\\'\{([^}]+)\}": lambda m: m.group(1) + '\u0301',  # acute accent combining
+        r"\\'([a-zA-Z])": lambda m: m.group(1) + '\u0301',    # acute accent \'a
+        r"\\`\{([^}]+)\}": lambda m: m.group(1) + '\u0300',  # grave accent combining
+        r"\\`([a-zA-Z])": lambda m: m.group(1) + '\u0300',    # grave accent \`a
+        r'\\\^\{([^}]+)\}': lambda m: m.group(1) + '\u0302',  # circumflex combining
+        r'\\\^([a-zA-Z])': lambda m: m.group(1) + '\u0302',   # circumflex \^a
+        r'\\"\{([^}]+)\}': lambda m: m.group(1) + '\u0308',   # diaeresis combining
+        r'\\"([a-zA-Z])': lambda m: m.group(1) + '\u0308',    # diaeresis \"a
+        r'\\~\{([^}]+)\}': lambda m: m.group(1) + '\u0303',   # tilde combining
+        r'\\~([a-zA-Z])': lambda m: m.group(1) + '\u0303',    # tilde \~a
+        r'\\=\{([^}]+)\}': lambda m: m.group(1) + '\u0304',   # macron combining
+        r'\\=([a-zA-Z])': lambda m: m.group(1) + '\u0304',    # macron \=a
+        r'\\u\{([^}]+)\}': lambda m: m.group(1) + '\u0306',   # breve combining
+        r'\\u([a-zA-Z])': lambda m: m.group(1) + '\u0306',    # breve \u{a}
+        r'\\v\{([^}]+)\}': lambda m: m.group(1) + '\u030C',   # caron combining
+        r'\\v([a-zA-Z])': lambda m: m.group(1) + '\u030C',    # caron \v{a}
+        r'\\c\{([^}]+)\}': lambda m: m.group(1) + '\u0327',   # cedilla combining
+        r'\\c([a-zA-Z])': lambda m: m.group(1) + '\u0327',    # cedilla \c{c}
+    }
+    
+    # Apply accent transformations
+    for pattern, replacement in accent_map.items():
+        text = re.sub(pattern, replacement, text)
+    
+    # Handle escaped underscore
+    text = re.sub(r'\\_', '_', text)
+    
+    # Apply all LaTeX text formatting transformations first
+    # \emph{text} -> <em>text</em>
+    text = re.sub(r'\\emph\{([^}]+)\}', r'<em>\1</em>', text)
+    
+    # \textbf{text} -> <strong>text</strong>
+    text = re.sub(r'\\textbf\{([^}]+)\}', r'<strong>\1</strong>', text)
+    
+    # \textit{text} -> <em>text</em>
+    text = re.sub(r'\\textit\{([^}]+)\}', r'<em>\1</em>', text)
+    
+    # \textsc{text} -> <span style="font-variant: small-caps;">text</span>
+    text = re.sub(r'\\textsc\{([^}]+)\}', r'<span style="font-variant: small-caps;">\1</span>', text)
+    
+    # \texttt{text} -> <code>text</code>
+    text = re.sub(r'\\texttt\{([^}]+)\}', r'<code>\1</code>', text)
+    
+    # \textrm{text} -> <span style="font-style: normal;">text</span>
+    text = re.sub(r'\\textrm\{([^}]+)\}', r'<span style="font-style: normal;">\1</span>', text)
+    
+    return text
+
 def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
     """
     Generate HTML page with the papers.
@@ -142,6 +205,22 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recent Numerical Relativity Papers - arXiv</title>
+    <script>
+    MathJax = {{
+        tex: {{
+            inlineMath: [['$', '$']],
+            displayMath: [['$$', '$$']],
+            processEscapes: true,
+            processEnvironments: true
+        }},
+        options: {{
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process'
+        }}
+    }};
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -161,81 +240,65 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .header {{
-            text-align: center;
             margin-bottom: 30px;
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 20px;
+            border-bottom: 2px solid #45818e;
+            padding-bottom: 15px;
         }}
         
         .header h1 {{
-            color: #007bff;
-            margin: 0;
-            font-size: 2.5em;
-        }}
-        
-        .subtitle {{
-            color: #6c757d;
-            font-size: 1.1em;
-            margin: 10px 0;
+            color: #45818e;
+            margin: 0 0 5px 0;
+            font-size: 2.2em;
         }}
         
         .last-updated {{
             color: #6c757d;
             font-size: 0.9em;
-            margin: 5px 0;
-        }}
-        
-        .paper-count {{
-            background: #e3f2fd;
-            color: #1976d2;
-            padding: 10px 20px;
-            border-radius: 25px;
-            display: inline-block;
-            font-weight: bold;
-            margin: 10px 0;
         }}
         
         .paper {{
-            background: #fff;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            margin: 20px 0;
-            padding: 25px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin: 3px 0;
+            padding: 3px 0;
+            border-bottom: 1px solid #e9ecef;
+            transition: transform 0.2s ease;
         }}
         
         .paper:hover {{
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+            transform: translateY(-1px);
+        }}
+        
+        .paper:last-child {{
+            border-bottom: none;
         }}
         
         .paper-header {{
             display: flex;
             align-items: flex-start;
             gap: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 1px;
         }}
         
         .paper-date {{
-            font-size: 0.9em;
+            font-size: 0.85em;
             color: #6c757d;
             font-weight: bold;
-            min-width: 100px;
+            min-width: 90px;
             flex-shrink: 0;
-            padding-top: 2px;
+            padding-top: 4px;
+            padding-bottom: 4px;
         }}
         
         .paper-title {{
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: bold;
             color: #2c3e50;
             flex: 1;
             line-height: 1.3;
+            margin-bottom: 6px;
         }}
         
         .paper-title a {{
-            color: #007bff;
+            color: #45818e;
             text-decoration: none;
         }}
         
@@ -243,31 +306,48 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             text-decoration: underline;
         }}
         
+        .paper-meta {{
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 10px;
+        }}
+        
         .paper-authors {{
             color: #6c757d;
-            margin-bottom: 15px;
             font-style: italic;
-            font-size: 0.95em;
+            font-size: 0.9em;
+            line-height: 1.4;
+            flex: 1;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }}
+        
+        .abstract-section {{
+            min-width: 90px;
+            flex-shrink: 0;
         }}
         
         .abstract-toggle {{
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 5px;
-            padding: 10px 15px;
-            margin: 10px 0;
+            background: transparent;
+            border: none;
+            border-radius: 4px;
+            padding: 4px 4px;
             cursor: pointer;
             user-select: none;
-            font-size: 0.9em;
+            font-size: 0.8em;
             color: #495057;
             transition: background-color 0.2s ease;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 4px;
+            flex-shrink: 0;
+            font-style: normal;
+            line-height: 1.4;
         }}
         
         .abstract-toggle:hover {{
-            background: #e9ecef;
+            background: #f8f9fa;
         }}
         
         .abstract-toggle .arrow {{
@@ -282,16 +362,30 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         .paper-abstract {{
             display: none;
             text-align: justify;
-            margin: 0 0 15px 0;
-            line-height: 1.7;
-            padding: 15px;
+            margin: 0 0 10px 0;
+            line-height: 1.6;
+            padding: 12px;
             background: #f8f9fa;
-            border-radius: 5px;
-            border-left: 4px solid #007bff;
+            border-radius: 4px;
+            border-left: 3px solid #45818e;
+            font-size: 0.9em;
         }}
         
         .paper-abstract.show {{
             display: block;
+        }}
+        
+        .paper-abstract code {{
+            background-color: #f1f3f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.85em;
+        }}
+        
+        .paper-abstract [style*="small-caps"], .paper-title [style*="small-caps"] {{
+            font-variant: small-caps;
+            letter-spacing: 0.05em;
         }}
         
         .no-papers {{
@@ -312,7 +406,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .github-link {{
-            color: #007bff;
+            color: #76AFB5;
             text-decoration: none;
         }}
         
@@ -326,15 +420,20 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             }}
             
             .container {{
-                padding: 20px;
+                padding: 15px;
+            }}
+            
+            .header {{
+                align-items: flex-start;
+                gap: 10px;
             }}
             
             .header h1 {{
-                font-size: 2em;
+                font-size: 1.8em;
             }}
             
             .paper {{
-                padding: 20px;
+                padding: 15px 0;
             }}
             
             .paper-header {{
@@ -346,16 +445,31 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
                 min-width: auto;
                 font-size: 0.8em;
             }}
+            
+            .paper-meta {{
+                flex-direction: column;
+                gap: 5px;
+            }}
+            
+            .paper-authors {{
+                margin-left: 0;
+            }}
+            
+            .abstract-section {{
+                margin-left: 0;
+            }}
+            
+            .abstract-toggle {{
+                align-self: flex-start;
+            }}
         }}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>📡 Numerical Relativity Papers</h1>
-            <div class="subtitle">Recent papers from arXiv</div>
+            <h1>Numerical Relativity Papers</h1>
             <div class="last-updated">Last updated: {timestamp}</div>
-            <div class="paper-count">{len(papers)} papers found</div>
         </div>
         
         <main>
@@ -372,7 +486,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         for paper in papers:
             # Format publication date
             pub_date = datetime.fromisoformat(paper.published.replace('Z', '+00:00'))
-            formatted_date = pub_date.strftime("%B %d, %Y")
+            formatted_date = pub_date.strftime("%d %B %Y")
             
             # Format authors (limit to first 5 for display)
             if len(paper.authors) > 5:
@@ -380,23 +494,26 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             else:
                 authors_display = ", ".join(paper.authors)
             
-            # Truncate abstract if too long
-            abstract = paper.abstract
-            if len(abstract) > 500:
-                abstract = abstract[:500] + "..."
+            # Use full abstract without truncation
+            abstract = process_latex_text(paper.abstract)
+            title_processed = process_latex_text(paper.title)
             
             html_content += f"""
             <article class="paper">
                 <div class="paper-header">
                     <div class="paper-date">{formatted_date}</div>
                     <div class="paper-title">
-                        <a href="{paper.arxiv_url}" target="_blank" rel="noopener">{paper.title}</a>
+                        <a href="{paper.arxiv_url}" target="_blank" rel="noopener">{title_processed}</a>
                     </div>
                 </div>
-                <div class="paper-authors">{authors_display}</div>
-                <div class="abstract-toggle">
-                    <span class="arrow">▶</span>
-                    <span>Show Abstract</span>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">{authors_display}</div>
                 </div>
                 <div class="paper-abstract">{abstract}</div>
             </article>
@@ -422,10 +539,26 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             toggles.forEach(function(toggle) {{
                 toggle.addEventListener('click', function() {{
                     this.classList.toggle('expanded');
-                    const abstract = this.nextElementSibling;
+                    // Find the abstract element - it's after the paper-meta div
+                    const paperMeta = this.closest('.paper-meta');
+                    const abstract = paperMeta.nextElementSibling;
                     abstract.classList.toggle('show');
+                    
+                    // Re-render MathJax for the newly shown abstract
+                    if (abstract.classList.contains('show') && window.MathJax) {{
+                        MathJax.typesetPromise([abstract]).catch(function (err) {{
+                            console.log('MathJax typeset failed: ' + err.message);
+                        }});
+                    }}
                 }});
             }});
+            
+            // Initial MathJax processing for titles that are already visible
+            if (window.MathJax) {{
+                MathJax.typesetPromise().catch(function (err) {{
+                    console.log('Initial MathJax typeset failed: ' + err.message);
+                }});
+            }}
         }});
     </script>
 </body>
