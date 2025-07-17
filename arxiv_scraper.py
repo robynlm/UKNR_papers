@@ -210,11 +210,28 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }}
         
+        .paper-header {{
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 10px;
+        }}
+        
+        .paper-date {{
+            font-size: 0.9em;
+            color: #6c757d;
+            font-weight: bold;
+            min-width: 100px;
+            flex-shrink: 0;
+            padding-top: 2px;
+        }}
+        
         .paper-title {{
             font-size: 1.3em;
             font-weight: bold;
-            margin-bottom: 10px;
             color: #2c3e50;
+            flex: 1;
+            line-height: 1.3;
         }}
         
         .paper-title a {{
@@ -228,63 +245,53 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         
         .paper-authors {{
             color: #6c757d;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             font-style: italic;
+            font-size: 0.95em;
         }}
         
-        .paper-meta {{
+        .abstract-toggle {{
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 10px 15px;
+            margin: 10px 0;
+            cursor: pointer;
+            user-select: none;
             font-size: 0.9em;
-            color: #6c757d;
-            margin-bottom: 15px;
+            color: #495057;
+            transition: background-color 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }}
+        
+        .abstract-toggle:hover {{
+            background: #e9ecef;
+        }}
+        
+        .abstract-toggle .arrow {{
+            transition: transform 0.2s ease;
+            font-weight: bold;
+        }}
+        
+        .abstract-toggle.expanded .arrow {{
+            transform: rotate(90deg);
         }}
         
         .paper-abstract {{
+            display: none;
             text-align: justify;
-            margin-bottom: 15px;
+            margin: 0 0 15px 0;
             line-height: 1.7;
-        }}
-        
-        .paper-links {{
-            text-align: right;
-        }}
-        
-        .paper-links a {{
-            display: inline-block;
-            padding: 8px 16px;
-            margin-left: 10px;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 0.9em;
-            transition: background-color 0.2s ease;
-        }}
-        
-        .paper-links a:hover {{
-            background: #0056b3;
-        }}
-        
-        .paper-links a.pdf {{
-            background: #dc3545;
-        }}
-        
-        .paper-links a.pdf:hover {{
-            background: #c82333;
-        }}
-        
-        .categories {{
-            margin-top: 10px;
-        }}
-        
-        .category {{
-            display: inline-block;
+            padding: 15px;
             background: #f8f9fa;
-            color: #495057;
-            padding: 3px 8px;
-            margin: 2px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }}
+        
+        .paper-abstract.show {{
+            display: block;
         }}
         
         .no-papers {{
@@ -330,13 +337,14 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
                 padding: 20px;
             }}
             
-            .paper-links {{
-                text-align: center;
+            .paper-header {{
+                flex-direction: column;
+                gap: 5px;
             }}
             
-            .paper-links a {{
-                display: block;
-                margin: 5px 0;
+            .paper-date {{
+                min-width: auto;
+                font-size: 0.8em;
             }}
         }}
     </style>
@@ -377,26 +385,20 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             if len(abstract) > 500:
                 abstract = abstract[:500] + "..."
             
-            # Generate category tags
-            categories_html = ""
-            for category in paper.categories[:5]:  # Limit to 5 categories
-                categories_html += f'<span class="category">{category}</span>'
-            
             html_content += f"""
             <article class="paper">
-                <div class="paper-title">
-                    <a href="{paper.arxiv_url}" target="_blank" rel="noopener">{paper.title}</a>
+                <div class="paper-header">
+                    <div class="paper-date">{formatted_date}</div>
+                    <div class="paper-title">
+                        <a href="{paper.arxiv_url}" target="_blank" rel="noopener">{paper.title}</a>
+                    </div>
                 </div>
                 <div class="paper-authors">{authors_display}</div>
-                <div class="paper-meta">
-                    arXiv:{paper.arxiv_id} • Published: {formatted_date}
+                <div class="abstract-toggle">
+                    <span class="arrow">▶</span>
+                    <span>Show Abstract</span>
                 </div>
                 <div class="paper-abstract">{abstract}</div>
-                <div class="categories">{categories_html}</div>
-                <div class="paper-links">
-                    <a href="{paper.arxiv_url}" target="_blank" rel="noopener">View on arXiv</a>
-                    <a href="{paper.pdf_url}" target="_blank" rel="noopener" class="pdf">Download PDF</a>
-                </div>
             </article>
 """
 
@@ -413,6 +415,19 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             <p>Data provided by <a href="https://arxiv.org/" target="_blank" rel="noopener" class="github-link">arXiv.org</a></p>
         </footer>
     </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {{
+            const toggles = document.querySelectorAll('.abstract-toggle');
+            toggles.forEach(function(toggle) {{
+                toggle.addEventListener('click', function() {{
+                    this.classList.toggle('expanded');
+                    const abstract = this.nextElementSibling;
+                    abstract.classList.toggle('show');
+                }});
+            }});
+        }});
+    </script>
 </body>
 </html>"""
 
