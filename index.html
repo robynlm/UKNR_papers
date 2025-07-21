@@ -268,10 +268,29 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-07-20 06:24:03 UTC</div>
+            <div class="last-updated">Last updated: 2025-07-21 06:27:21 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">18 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.14071v1" target="_blank" rel="noopener">Direct Measurement of the Accretion Disk Formed in Prompt Collapse Mergers with Future Gravitational-Wave Observatories</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Arnab Dhani, Alessandro Camilletti, Alessio Ludovico De Santis, Andrea Cozzumbo, David Radice and 4 others</div>
+                </div>
+                <div class="paper-abstract">The production site of heavy r-process elements, such as Gold and Uranium, is uncertain. Neutron star mergers are the only astrophysical phenomenon in which we have witnessed their formation. However, the amount of heavy elements resulting from the merger remains poorly constrained, mainly due to uncertainties on the mass and angular momentum of the disk formed in the merger remnant. Matter accretion from the disk is also thought to power gamma ray-bursts. We discover from numerical relativity simulations that the accretion disk influences the ringdown gravitational-wave signal produced by binaries that promptly collapse to black-hole at merger. We propose a method to <em>directly</em> measure the mass of the accretion disk left during black hole formation in binary mergers using observatories such as the Einstein Telescope or Cosmic Explorer with a relative error of 10\% for binaries at a distance of up to 30~Mpc, corresponding to an event rate of 0.001 to 0.25 events per year.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-header">
@@ -746,25 +765,6 @@
                     <div class="paper-authors">Shrobana Ghosh, Mark Hannam</div>
                 </div>
                 <div class="paper-abstract">Gravitational wave (GW) astronomy has been hailed as a gateway to discovering unexpected phenomena in the universe. Over the last decade there have been close to one hundred GW observations of compact-binary mergers. While these signals are largely consistent with mergers of binary black holes, binary neutron stars, or black hole-neutron star systems, some events suggest the intriguing possibility of binaries involving exotic compact objects (ECOs). Identifying and characterising an ECO merger would require accurate ECO waveform models. Using large numbers of numerical relativity simulations to develop customised models for ECO mergers akin to those used for binary black holes, would be not only computationally expensive but also challenging due to the limited understanding of the underlying physics. Alternatively, key physical imprints of the ECO on the inspiral or merger could in principle be incorporated phenomenologically into waveform models, sufficient to quantify generic properties. In this work we present a first application of this idea to assess the detectability and distinguishability of ECO mergers, and we propose a phenomenological approach that can iteratively incorporate features of ECO mergers, laying the groundwork for an effective exotic compact object identifier in compact binary coalescences. We demonstrate that within this framework the compactness of the objects in GW150914 are consistent with that of black holes. The efficacy of the identifier can be refined by adding information from numerical relativity simulations involving fundamental fields. Conversely, such an identifier framework can help focus future numerical relativity and modeling efforts for exotic objects.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">21 May 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2505.15912v1" target="_blank" rel="noopener">BHaHAHA: A Fast, Robust Apparent Horizon Finder Library for Numerical Relativity</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Zachariah B. Etienne, Thiago Assumpção, Leonardo Rosa Werneck, Samuel D. Tootle</div>
-                </div>
-                <div class="paper-abstract">Apparent horizon (AH) finders are essential for characterizing black holes and excising their interiors in numerical relativity (NR) simulations. However, open-source AH finders to date are tightly coupled to individual NR codes. We introduce BHaHAHA, the BlackHoles@Home Apparent Horizon Algorithm, the first open-source, infrastructure-agnostic library for AH finding in NR. BHaHAHA implements the first-ever hyperbolic flow-based approach, recasting the elliptic partial differential equation for a marginally outer trapped surface as a damped nonlinear wave equation. To enhance performance, BHaHAHA incorporates a multigrid-inspired refinement strategy, an over-relaxation technique, and OpenMP parallelization. When compared to a naïve hyperbolic relaxation implementation, these enhancements result in 64x speedups for difficult common-horizon finds on a single spacetime slice, enabling BHaHAHA to achieve runtimes within 10% of the widely used (single-core) AHFinderDirect and outperform it on multiple cores. For dynamic horizon tracking with typical core counts on a high-performance-computing cluster, BHaHAHA is approximately 2.1 times faster than AHFinderDirect at accuracies limited by interpolation of metric data from the host NR code. Implemented and tested in both the Einstein Toolkit and BlackHoles@Home, BHaHAHA demonstrates that hyperbolic relaxation can be a robust, versatile, and performant approach for AH finding.</div>
             </article>
 
         </main>
