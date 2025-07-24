@@ -12,6 +12,24 @@ import argparse
 from typing import List, Dict
 import os
 
+# Configuration: Add author names here to automatically include their papers
+# These authors' papers will be included even if they don't contain the main search keywords
+TARGET_AUTHORS = [
+    "Clough, Katy",              # Queen Mary University of London
+    # Examples of other prominent numerical relativity researchers:
+    # "Pretorius, Frans",           # Princeton University
+    # "Campanelli, Manuela",       # RIT
+    # "Zlochower, Yosef",          # RIT  
+    # "Lousto, Carlos O.",         # RIT
+    # "Buonanno, Alessandra",      # Max Planck Institute
+    # "Pfeiffer, Harald P.",       # Max Planck Institute
+    # "Kidder, Lawrence E.",       # Cornell University
+    # "Teukolsky, Saul A.",        # Cornell University
+    # "Schnetter, Erik",           # Perimeter Institute
+    # "Rezzolla, Luciano",         # Goethe University Frankfurt
+    # Add/remove authors as needed - use format "Last, First" or partial names
+]
+
 class ArxivPaper:
     """Class to represent an arXiv paper."""
     
@@ -27,14 +45,15 @@ class ArxivPaper:
         self.arxiv_url = f"https://arxiv.org/abs/{arxiv_id}"
         self.pdf_url = f"https://arxiv.org/pdf/{arxiv_id}.pdf"
 
-def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List[ArxivPaper]:
+def search_arxiv(query: str, max_results: int = 50, days_back: int = 30, target_authors: List[str] = None) -> List[ArxivPaper]:
     """
-    Search arXiv for papers matching the query.
+    Search arXiv for papers matching the query or from specific authors.
     
     Args:
         query: Search query string
         max_results: Maximum number of results to return
         days_back: How many days back to search
+        target_authors: List of author names to search for (optional)
         
     Returns:
         List of ArxivPaper objects
@@ -46,7 +65,10 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List
     # arXiv API URL
     base_url = "http://export.arxiv.org/api/query"
     
-    # Build search query
+    all_papers = []
+    seen_arxiv_ids = set()
+    
+    # Search for keyword-based papers
     search_query = f'all:"{query}"'
     
     params = {
@@ -58,8 +80,52 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List
     }
     
     print(f"Searching arXiv for: {query}")
-    print(f"Looking for papers from the last {days_back} days...")
+    keyword_papers = fetch_papers_from_query(base_url, params, start_date)
     
+    for paper in keyword_papers:
+        if paper.arxiv_id not in seen_arxiv_ids:
+            all_papers.append(paper)
+            seen_arxiv_ids.add(paper.arxiv_id)
+    
+    # Search for papers by specific authors if provided
+    if target_authors:
+        print(f"Also searching for papers by specific authors: {', '.join(target_authors)}")
+        for author in target_authors:
+            author_query = f'au:"{author}"'
+            author_params = {
+                'search_query': author_query,
+                'start': 0,
+                'max_results': max_results,
+                'sortBy': 'submittedDate',
+                'sortOrder': 'descending'
+            }
+            
+            print(f"  - Searching for papers by: {author}")
+            author_papers = fetch_papers_from_query(base_url, author_params, start_date)
+            
+            for paper in author_papers:
+                if paper.arxiv_id not in seen_arxiv_ids:
+                    all_papers.append(paper)
+                    seen_arxiv_ids.add(paper.arxiv_id)
+    
+    # Sort all papers by publication date (newest first)
+    all_papers.sort(key=lambda p: p.published, reverse=True)
+    
+    print(f"Found {len(all_papers)} unique papers from the last {days_back} days")
+    return all_papers
+
+def fetch_papers_from_query(base_url: str, params: dict, start_date: datetime) -> List[ArxivPaper]:
+    """
+    Fetch papers from arXiv API for a given query.
+    
+    Args:
+        base_url: arXiv API base URL
+        params: Query parameters
+        start_date: Earliest date to include papers from
+        
+    Returns:
+        List of ArxivPaper objects
+    """
     try:
         response = requests.get(base_url, params=params, timeout=30)
         response.raise_for_status()
@@ -80,7 +146,6 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List
                 'arxiv': 'http://arxiv.org/schemas/atom'}
     
     entries = root.findall('atom:entry', namespace)
-    print(f"Found {len(entries)} total papers")
     
     for entry in entries:
         try:
@@ -122,7 +187,6 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30) -> List
             print(f"Error processing entry: {e}")
             continue
     
-    print(f"Found {len(papers)} papers from the last {days_back} days")
     return papers
 
 def process_latex_text(text: str) -> str:
@@ -166,6 +230,7 @@ def process_latex_text(text: str) -> str:
     
     # Handle escaped underscore
     text = re.sub(r'\\_', '_', text)
+    text = re.sub(r'\\%', '%', text)
     
     # Apply all LaTeX text formatting transformations first
     # \emph{text} -> <em>text</em>
@@ -579,13 +644,18 @@ def main():
                        help='Maximum number of results (default: 50)')
     parser.add_argument('--days-back', type=int, default=30,
                        help='How many days back to search (default: 30)')
+    parser.add_argument('--authors', nargs='*', default=None,
+                       help='List of author names to search for (e.g., --authors "John Doe" "Jane Smith")')
     parser.add_argument('--output', default='index.html',
                        help='Output HTML file (default: index.html)')
     
     args = parser.parse_args()
     
+    # Use command line authors if provided, otherwise use configured TARGET_AUTHORS
+    authors_to_search = args.authors if args.authors else (TARGET_AUTHORS if TARGET_AUTHORS else None)
+    
     # Search arXiv
-    papers = search_arxiv(args.query, args.max_results, args.days_back)
+    papers = search_arxiv(args.query, args.max_results, args.days_back, authors_to_search)
     
     # Generate HTML
     generate_html(papers, args.output)

@@ -13,7 +13,7 @@ This repository automatically scrapes arXiv for recent papers containing "numeri
 
 ## Live Demo
 
-The generated page is automatically deployed to GitHub Pages: `https://robynlm.github.io/UKNR_papers/`
+The generated page is automatically deployed to GitHub Pages: [https://robynlm.github.io/UKNR_papers/](https://robynlm.github.io/UKNR_papers/)
 
 ## Setup Instructions
 
@@ -52,7 +52,29 @@ Available parameters:
 - `--query`: Search terms (default: "numerical relativity")
 - `--days-back`: How many days back to search (default: 30)
 - `--max-results`: Maximum papers to fetch (default: 50)
+- `--authors`: List of author names to search for (optional)
 - `--output`: Output HTML file name (default: index.html)
+
+## Author-Based Search
+
+You can include papers from specific authors even if they don't contain the main search keywords. This is useful for tracking papers from key researchers in the field.
+
+### Method 1: Configuration File
+Edit the `TARGET_AUTHORS` list in `arxiv_scraper.py`:
+
+```python
+TARGET_AUTHORS = [
+    "Pretorius, Frans",
+    "Campanelli, Manuela", 
+    "Buonanno, Alessandra",
+    # Add more authors as needed
+]
+```
+
+### Method 2: Command Line
+```bash
+python arxiv_scraper.py --authors "Pretorius, Frans" "Campanelli, Manuela"
+```
 
 ## Local Development
 
@@ -73,8 +95,14 @@ pip install -r requirements.txt
 # Basic usage
 python arxiv_scraper.py
 
-# Custom search
+# Custom search with keywords
 python arxiv_scraper.py --query "gravitational waves" --days-back 14 --max-results 25
+
+# Include specific authors
+python arxiv_scraper.py --authors "Pretorius, Frans" "Campanelli, Manuela"
+
+# Combine keyword and author search
+python arxiv_scraper.py --query "black holes" --authors "Buonanno, Alessandra"
 
 # View the generated HTML
 open index.html
@@ -145,6 +173,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - Data provided by [arXiv.org](https://arxiv.org/)
 - Built with GitHub Actions and GitHub Pages
 - Inspired by the numerical relativity community's need for staying updated with recent research
+- **Entirely written by Claude Sonnet 4 (Anthropic's AI assistant)**
 
 ## Troubleshooting
 
