@@ -40,12 +40,12 @@
         
         .header {
             margin-bottom: 30px;
-            border-bottom: 2px solid #45818e;
+            border-bottom: 2px solid #C46444;
             padding-bottom: 15px;
         }
         
         .header h1 {
-            color: #45818e;
+            color: #C46444;
             margin: 0 0 5px 0;
             font-size: 2.2em;
         }
@@ -97,7 +97,7 @@
         }
         
         .paper-title a {
-            color: #45818e;
+            color: #C46444;
             text-decoration: none;
         }
         
@@ -166,7 +166,7 @@
             padding: 12px;
             background: #f8f9fa;
             border-radius: 4px;
-            border-left: 3px solid #45818e;
+            border-left: 3px solid #C46444;
             font-size: 0.9em;
         }
         
@@ -205,7 +205,7 @@
         }
         
         .github-link {
-            color: #76AFB5;
+            color: #C46444;
             text-decoration: none;
         }
         
@@ -268,10 +268,143 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-07-24 11:57:11 UTC</div>
+            <div class="last-updated">Last updated: 2025-08-11 13:14:35 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">07 August 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2508.05743v1" target="_blank" rel="noopener">Perturbative Hyperboloidal Extraction of Gravitational Waves in 3+1 Numerical Relativity</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Sebastiano Bernuzzi, Joan Fontbuté, Simone Albanesi, Anil Zenginoğlu</div>
+                </div>
+                <div class="paper-abstract">We present a framework to propagate to null infinity gravitational waves computed at timelike worldtubes in the interior of a 3+1 (Cauchy) numerical relativity simulations. In our method, numerical relativity data are used as the inner inflowing boundary of a perturbative time-domain Regge-Wheeler-Zerilli simulation in hyperboloidal coordinates that reaches null infinity. We showcase waveforms from (3+1)D simulations of gravitational collapse of rotating neutron stars, binary black holes mergers and scattering, and binary neutron star mergers and compare them to other extrapolation methods. Our perturbative hyperboloidal extraction provides a simple yet efficient procedure to compute gravitational waves with data quality comparable to the Cauchy characteristic extraction for several practical applications. Nonlinear effects in the wave propagation are not captured by our method, but the present work is a stepping stone towards more sophisticated hyperboloidal schemes for gravitational-wave extraction.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">05 August 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2508.03799v1" target="_blank" rel="noopener">Covariant and Gauge-invariant Metric-based Gravitational-waves Extraction in Numerical Relativity</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Joan Fontbuté, Sebastiano Bernuzzi, Simone Albanesi, David Radice, Alireza Rashti and 3 others</div>
+                </div>
+                <div class="paper-abstract">We revisit the problem of gravitational-wave extraction in numerical relativity with gauge-invariant metric perturbation theory of spherical spacetimes. Our extraction algorithm allows the computation of even-parity (Zerilli-Moncrief) and odd-parity (Regge-Wheeler) multipoles of the strain from a (3+1) metric without the assumption that the spherical background is in Schwarzschild coordinates. The algorithm is validated with a comprehensive suite of 3D problems including fluid ($f$-modes) and spacetime ($w$-modes) perturbations of neutron stars, gravitational collapse of rotating neutron stars, circular binary black holes mergers and black hole dynamical captures and binary neutron star mergers. We find that metric extraction is robust in all the considered scenarios and delivers waveforms of overall quality similar to curvature (Weyl) extraction. Metric extraction is particularly valuable in identifying waveform systematics for problems in which the reconstruction of the strain from the Weyl multipoles is ambiguous. Direct comparison of different choices for the gauge-invariant master functions show very good agreement in the even-parity sector. Instead, in the odd-parity sector, assuming the background in Schwarzschild coordinates can minimize gauge effects related to the use of the $\Gamma$-driver shift. Moreover, for optimal choices of the extraction radius, a simple extrapolation to null infinity can deliver waveforms compatible to Cauchy-characteristic extrapolated waveforms.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">02 August 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2508.01414v1" target="_blank" rel="noopener">Gravitational Waves from Simulated Mergers of 2 and 3 Black Holes</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Faisal Alotaibi</div>
+                </div>
+                <div class="paper-abstract">In this project, we simulate the collision of two and three black holes using NRPy+ (`Python-based code generation for numerical relativity and beyond') module and BSSN (Baumgarte-Shapiro-Shibata-Nakamura) formulation, and extract the resulting gravitational waveforms. Using Brill-Lindquist initial data and sixth-order finite differences, we evolve the system using the BSSN formulation and compute the gravitational-wave signal via the Weyl scalar $\psi_4$. To assess numerical error, we plot the Hamiltonian constraint and observe that constraint violations are significantly higher in the three-black-hole collision. Unexpected gravitational recoil is also detected, which may influence waveform extraction and that is left for further investigation. Despite the limitations in computational resources imposed by the Google Colab, we successfully model the merger of a binary black hole system, and we were able to extract the corresponding gravitational waves.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">31 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.23684v1" target="_blank" rel="noopener">Simulating Binary Neutron Star Mergers with Finite-temperature Equations of State: The influences of the slope of the symmetry energy and artificial heating</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Henrique Gieg, Maximiliano Ujevic, Armen Sedrakian, Tim Dietrich</div>
+                </div>
+                <div class="paper-abstract">We present a new set of numerical-relativity simulations of merging binary neutron stars, aiming to identify possible observable signatures of the slope of the symmetry energy $L_{\rm sym}$. To achieve this goal, we employ a set of equations of state based on a parameterization of the covariant density functional theory of nuclear matter that allows controlled variations of $L_{\rm sym}$ and the skewness $Q_{\rm sat}$, holding the latter fixed. For a set of our simulations, we identify a steep energy gradient in the equation of state at subsaturation densities, which acts as a source of heating with subsequent stiffening produced by thermal support. Accounting for related structural modifications in the tidal deformability reconciles our results with theoretical expectations. On the other hand, we show that gravitational waves are unlikely to distinguish the role of $L_{\rm sym}$. In contrast to this, we find that the ejecta composition is significantly altered in our simulations, which employ an M1 moment scheme, when $L_{\rm sym}$ is varied. Based on our extracted dynamical ejecta properties, we compute r-process yields and find that they are distinct for the different $L_{\rm sym}$, especially at lower mass numbers $A \lesssim 120$. This suggests that electromagnetic counterparts are more likely to exhibit signatures; however, a direct connection to $L_{\rm sym}$ remains a challenge, given the complex interplay between details of the ejecta properties and the kilonova signal.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">30 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.22862v1" target="_blank" rel="noopener">Parameter Estimation for GW200208_22 with Targeted Eccentric Numerical-relativity Simulations</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Patricia McMillin, Katelyn J. Wagner, Giuseppe Ficarra, Carlos O. Lousto, Richard O'Shaughnessy</div>
+                </div>
+                <div class="paper-abstract">We have analyzed LVK gravitational wave events that show some evidence of eccentricity from TEOBResumS modeling parameter estimations and have confronted them independently with full numerical generated waveforms from our bank of nearly two thousand simulations of binary black holes. We have used RIFT for Bayesian parameter estimation and found that GW200208_{22} KDE estimates favor eccentricities $e_{20} = 0.217_{-0.184}^{+0.076}$ upon entering the LVK band at $\sim20$Hz within a 90% confidence limit. Within this event analysis we employed 39 new targeted full numerical relativity simulations and we have thus found a top improved likelihood $\ln \mathcal{L}$ matching waveform, compared to model-based analysis, with an estimated eccentricity at 20Hz, $e_{20}=0.200$, thus reinforcing the eccentric hypothesis of the binary. We have also used our full bank of numerical waveforms on GW190620 finding that it favors eccentricities in the range of {$0\leq e_{10}\leq0.3$}. New specifically targeted simulations will be required to narrow this eccentricity range.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">25 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.19431v1" target="_blank" rel="noopener">Remnant properties of binary neutron star mergers undergoing prompt collapse</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Arnab Dhani, Alessandro Camilletti, David Radice, Rahul Kashyap, Bangalore Sathyaprakash and 2 others</div>
+                </div>
+                <div class="paper-abstract">We study the properties of remnants formed in prompt-collapse binary neutron star mergers. We consider non-spinning binaries over a range of total masses and mass ratios across a set of 22 equations of state, totaling 107 numerical relativity simulations. We report the final mass and spin of the systems (including the accretion disk and ejecta) to be constrained in a narrow range, regardless of the binary configuration and matter effects. This sets them apart from binary black-hole merger remnants. We assess the detectability of the postmerger signal in a future 40 km Cosmic Explorer observatory and find that the signal-to-noise ratio in the postmerger of an optimally located and oriented binary at a distance of 100 Mpc can range from ${<}1$ to 8, depending on the binary configuration and equation of state, with a majority of them greater than 4 in the set of simulations that we consider. We also consider the distinguishability between prompt-collapse binary neutron star and binary black hole mergers with the same masses and spins. We find that Cosmic Explorer will be able to distinguish such systems primarily via the measurement of tidal effects in the late inspiral. Neutron star binaries with <em>reduced tidal deformability</em> $\tilde\Lambda$ as small as ${\sim}3.5$ can be identified up to a distance of 100 Mpc, while neutron star binaries with $\tilde\Lambda\sim22$ can be identified to distances greater than 250 Mpc. This is larger than the distance up to which the postmerger will be visible. Finally, we discuss the possible implications of our findings for the equation of state of neutron stars from the gravitational-wave event GW230529.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">25 July 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2507.19166v1" target="_blank" rel="noopener">Non-linear Dynamics and Primordial Black Hole Formation During Kination</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Cheng Cheng, Panagiotis Giannadakis, Lucien Heurtier, Eugene A. Lim</div>
+                </div>
+                <div class="paper-abstract">We investigate the effects of large scalar inhomogeneities during the kination epoch, a period in which the universe's dynamics are dominated by the kinetic energy of a scalar field, by fully evolving the Einstein equations using numerical relativity. By tracking the non-linear growth of scalar perturbations with both sub-horizon and super-horizon initial wavelengths, we are able to compare their evolution to perturbative results. Our key findings show that in the deep sub-horizon limit, the perturbative behaviour remains valid, whereas in the super-horizon regime, non-linear dynamics exhibit a much richer phenomenology. Finally, we discuss the possibility of primordial black hole formation from the collapse of such perturbations and assess whether this process could serve as a viable mechanism to reheat the universe in the post-inflationary era.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-header">
@@ -313,25 +446,6 @@
 
             <article class="paper">
                 <div class="paper-header">
-                    <div class="paper-date">17 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.13046v1" target="_blank" rel="noopener">Challenges in the nonlinear evolution of unequal mass binaries in sGB gravity</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Llibert Aresté Saló, Daniela D. Doneva, Katy Clough, Pau Figueras, Stoytcho S. Yazadjiev</div>
-                </div>
-                <div class="paper-abstract">It has only recently become possible to simulate the full nonlinear dynamics of binary black holes in scalar-Gauss-Bonnet theories of gravity. The simulations remain technically challenging and evolutions of unequal mass binaries in particular have been difficult to follow through the merger. Even when the merger is successful, accurately quantifying the physical dephasing, as opposed to contributions from transients in the initial data and gauge adjustments, remains difficult. We show the first full simulations of 2:1 and 3:1 binaries through merger, and we discuss how specific choices in the setup affect the dephasing observed and our ability to obtain reliable results. In cases with weaker couplings, we match the expected PN value for the dephasing, whereas for larger couplings, eccentricity introduced by the initial data transients can lead to artificial deviations. Our work highlights the need for improvements in the initial data methods used, to ensure reliable waveforms are obtained for data analysis in beyond-GR models.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
                     <div class="paper-date">15 July 2025</div>
                     <div class="paper-title">
                         <a href="https://arxiv.org/abs/2507.11589v1" target="_blank" rel="noopener">Einstein Fields: A Neural Perspective To Computational General Relativity</a>
@@ -347,386 +461,6 @@
                     <div class="paper-authors">Sandeep Suresh Cranganore, Andrei Bodnar, Arturs Berzins, Johannes Brandstetter</div>
                 </div>
                 <div class="paper-abstract">We introduce Einstein Fields, a neural representation that is designed to compress computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights. By modeling the <em>metric</em>, which is the core tensor field of general relativity, Einstein Fields enable the derivation of physical quantities via automatic differentiation. However, unlike conventional neural fields (e.g., signed distance, occupancy, or radiance fields), Einstein Fields are <em>Neural Tensor Fields</em> with the key difference that when encoding the spacetime geometry of general relativity into neural field representations, dynamics emerge naturally as a byproduct. Einstein Fields show remarkable potential, including continuum modeling of 4D spacetime, mesh-agnosticity, storage efficiency, derivative accuracy, and ease of use. We address these challenges across several canonical test beds of general relativity and release an open source JAX-based library, paving the way for more scalable and expressive approaches to numerical relativity. Code is made available at https://github.com/AndreiB137/EinFields</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">11 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">Defining eccentricity for spin-precessing binaries</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Md Arif Shaikh, Vijay Varma, Antoni Ramos-Buades, Harald P. Pfeiffer, Michael Boyle and 2 others</div>
-                </div>
-                <div class="paper-abstract">Standardizing the definition of eccentricity is necessary for unambiguous inference of the orbital eccentricity of compact binaries from gravitational wave observations. In previous works, we proposed a definition of eccentricity for systems without spin-precession that relies solely on the gravitational waveform, is applicable to any waveform model, and has the correct Newtonian limit. In this work, we extend this definition to spin-precessing systems. This simple yet effective extension relies on first transforming the waveform from the inertial frame to the coprecessing frame, and then adopting an amplitude and a phase with reduced spin-induced effects. Our method includes a robust procedure for filtering out spin-induced modulations, which become non-negligible in the small eccentricity and large spin-precession regime. Finally, we apply our method to a set of Numerical Relativity and Effective One Body waveforms to showcase its robustness for generic eccentric spin-precessing binaries. We make our method public via Python implementation in <code>gw_eccentricity</code>.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">10 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.08071v1" target="_blank" rel="noopener">Highly accurate simulations of asymmetric black-hole scattering and cross validation of effective-one-body models</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Oliver Long, Harald P. Pfeiffer, Alessandra Buonanno, Gustav Uhre Jakobsen, Gustav Mogull and 4 others</div>
-                </div>
-                <div class="paper-abstract">The study of unbound binary-black-hole encounters provides a gauge-invariant approach to exploring strong-field gravitational interactions in two-body systems, which can subsequently inform waveform models for bound orbits. In this work, we present 60 new highly accurate numerical relativity (NR) simulations of black-hole scattering, generated using the Spectral Einstein Code (SpEC). Our simulations include 14 spin-aligned configurations, as well as 16 configurations with unequal masses, up to a mass ratio of 10. We perform the first direct comparison of scattering angles computed using different NR codes, finding good agreement. We compare our NR scattering angle results to the post-Minkowskian (PM)-based effective-one-body (EOB) closed-form models SEOB-PM and $w_{\rm EOB}$, finding less than 5% deviation except near the scatter-capture separatrix. Comparisons with the post-Newtonian-based EOB evolution models SEOBNRv5 and TEOBResumS-Dalí reveal that the former agrees within 8% accuracy with non-spinning NR results across most parameter ranges, whereas the latter matches similarly at lower energies but diverges significantly at higher energies. Both evolution EOB models exhibit increased deviations for spinning systems, predicting a notably different location of the capture separatrix compared to NR. Our key finding is the first measurement of disparate scattering angles from NR simulations due to asymmetric gravitational-wave emission. We compare these results to SEOB-PM models constructed to calculate the scattering angle of a single black hole in asymmetric systems.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">08 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.06145v2" target="_blank" rel="noopener">Non-linear stability analysis of $\ell$-Proca stars</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Claudio Lazarte, Nicolas Sanchis-Gual, José A. Font, Miguel Alcubierre</div>
-                </div>
-                <div class="paper-abstract">Vector boson stars, also known as Proca stars, exhibit remarkable dynamical robustness, making them strong candidates for potential astrophysical exotic compact objects. In search of theoretically well-motivated Proca star models, we recently introduced the $\ell$-Proca star, a multi-field extension of the spherical Proca star, whose $(2\ell + 1)$ constitutive fields have the same time and radial dependence, and their angular structure is given by all the available spherical harmonics for a fixed angular momentum number $\ell$. In this work, we conduct a non-linear stability analysis of these stars by numerically solving the Einstein-(multi, complex) Proca system for the case of $\ell = 2$, which are formed by five constitutive independent, complex Proca fields with $m = 0, |1|$, and $|2|$. Our analysis is based on long-term, fully non-linear, 3-dimensional numerical-relativity simulations without imposing any symmetry. We find that ($\ell=2$)-Proca stars are unstable throughout their entire domain of existence. In particular, we highlight that less compact configurations dynamically lose their global spherical symmetry, developing a non-axisymmetric $\tilde{m}=4$ mode instability and a subsequent migration into a new kind of multi-field Proca star formed by fields with different angular momentum number, $\ell=1$ and $\ell=2$, that we identify as unstable multi-$\ell$ Proca stars.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">03 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.02604v1" target="_blank" rel="noopener">PhenomXPNR: An improved gravitational wave model linking precessing inspirals and NR-calibrated merger-ringdown</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Eleanor Hamilton, Marta Colleoni, Jonathan E. Thompson, Charlie Hoy, Anna Heffernan and 8 others</div>
-                </div>
-                <div class="paper-abstract">We present the frequency-domain quasi-circular precessing binary-black-hole model PhenomXPNR. This model combines the most precise available post-Newtonian description of the evolution of the precession dynamics through inspiral with merger-ringdown model informed by numerical relativity. This, along with a phenomenological model of the dominant multipole asymmetries, results in the most accurate and complete representation of the physics of precessing binaries natively in the frequency-domain to date. All state-of-the-art precessing models show bias when inferring binary parameters in certain regions of the parameter space. We demonstrate that the developments presented ensure that for some precessing systems PhenomXPNR shows the least degree of bias. Further, as a phenomenological, frequency-domain model, PhenomXPNR remains one of the most computationally efficient models available and is therefore well-suited to the era of gravitational-wave astronomy with its ever growing rate of detected signals.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">01 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.01095v1" target="_blank" rel="noopener">A theoretical prediction for the dipole in nearby distances using cosmography</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Hayley J. Macpherson, Asta Heinesen</div>
-                </div>
-                <div class="paper-abstract">Cosmography is a widely applied method to infer kinematics of the Universe at small cosmological scales while remaining agnostic about the theory of gravity at play. Usually cosmologists invoke the Friedmann-Lemaitre-Robertson-Walker (FLRW) metric in cosmographic analyses, however generalised approaches allow for analyses outside of any assumed geometrical model. These methods have great promise to be able to model-independently map the cosmic neighborhood where the Universe has not yet converged to isotropy. In this regime, anisotropies can bias parameter inferences if they are not accounted for, and thus must be included for precision cosmology analyses, even when the principle aim is to infer the background cosmology. In this paper, we develop a method to predict the dipole in luminosity distances that arises due to nearby inhomogeneities. This is the leading-order correction to the standard isotropic distance-redshift law. Within a very broad class of general-relativistic universe models, we provide an interpretation of the dipole in terms of the gradients in expansion rate and density which is free from any underlying background cosmology. We use numerical relativity simulations, with improved initial data methods, alongside fully relativistic ray tracing to test the power of our prediction. We find our prediction accurately captures the dipole signature in our simulations to within ~10% for redshifts $z\lesssim 0.07$ in reasonably smooth simulations. In the presence of more non-linear density fields, we find this reduces to $z\lesssim 0.02$. This represents up to an order of magnitude improvement with respect to what is achieved by naive, local cosmography-based predictions. Our paper thus addresses important issues regarding convergence properties of anisotropic cosmographic series expansions that would otherwise limit their applicability to very narrow redshift ranges.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">30 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.00113v1" target="_blank" rel="noopener">Black-hole - neutron-star mergers: new numerical-relativity simulations and multipolar effective-one-body model with spin precession and eccentricity</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Alejandra Gonzalez, Sebastiano Bernuzzi, Alireza Rashti, Francesco Brandoli, Rossella Gamba</div>
-                </div>
-                <div class="paper-abstract">In this paper, we present 52 new numerical-relativity (NR) simulations of black-hole-neutron-star merger (BHNS) mergers and employ the data to inform TEOBResumS-Dalí: a multipolar effective-one-body model also including precession and eccentricity. Our simulations target quasicircular mergers and the parameter space region characterized by significant tidal disruption of the star. Convergent gravitational waveforms are produced with a detailed error budget after extensive numerical tests. We study in detail the multipolar amplitude hierarchy and identify a characteristic tidal signature in the $(\ell,m)=(2,0)$, and $(3,0)$ modes. We also develop new NR-informed models for the remnant black hole and for the recoil velocity. The numerical data is then used to inform next-to-quasicircular corrections and the ringdown of TEOBResumS-Dalí for BHNS. We show an overall order of magnitude improvement in the waveform's amplitude at merger and more consistent multipoles over our older TEOBResumS-GIOTTO for BHNS. TEOBResumS-Dalí is further validated with a new 12 orbit precessing simulation, showing phase and relative amplitude differences below $\sim 0.5$ (rad) throughout the inspiral. The computed mismatches including all the modes lie at the one percent level for low inclinations. Finally, we demonstrate for the first time that TEOBResumS-Dalí can produce robust waveforms with both eccentricity and precession, and use the model to identify the most urgent BHNS to simulate for waveform development. Our new numerical data are publicly released as part of the CoRe database.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">27 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.22363v1" target="_blank" rel="noopener">Binary black holes in the heat of merger</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Samanwaya Mukherjee, Sayak Datta, Sukanta Bose, Khun Sang Phukon</div>
-                </div>
-                <div class="paper-abstract">A black hole binary approaching merger undergoes changes in its inspiral rate as energy and angular momentum are lost from the orbits into the horizons. This effect strengthens as the black holes come closer. We use numerical relativity data to model this so-called tidal heating in the strong gravity regime. We present a frequency-domain approximant for nonspinning black hole binaries that accounts for tidal heating effects up to the merger frequency. The approximant includes horizon parameters that characterize the nature of the compact objects. By applying this model to a binary black hole baseline that incorporates tidal heating, one can construct a more accurate point-particle waveform, one that is devoid of finite-size effects of the component objects. We also discuss its ramifications in modeling binary neutron star systems.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">26 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.21696v1" target="_blank" rel="noopener">Impact of magnetic field-driven anisotropies on the equation of state probed in neutron star mergers</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Elias R. Most, Jeffrey Peterson, Luigi Scurto, Helena Pais, Veronica Dexheimer</div>
-                </div>
-                <div class="paper-abstract">Binary neutron star mergers can produce extreme magnetic fields, some of which can lead to strong magnetar-like remnants. While strong magnetic fields have been shown to affect the dynamics of outflows and angular momentum transport in the remnant, they can also crucially alter the properties of nuclear matter probed in the merger. In this work, we provide a first assessment of the latter, determining the strength of the pressure anisotropy caused by Landau level quantization and the anomalous magnetic moment. To this end, we perform the first numerical relativity simulation with a magnetic polarization tensor and a magnetic-field-dependent equation of state using a new algorithm we present here, which also incorporates a mean-field dynamo model to control the magnetic field strength present in the merger remnant. Our results show that -- in the most optimistic case -- corrections to the anisotropy can be in excess of $10%$, and are potentially largest in the outer layers of the remnant. This work paves the way for a systematic investigation of these effects.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">24 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.19990v1" target="_blank" rel="noopener">Waging a Campaign: Results from an Injection-Recovery Study involving 35 numerical Relativity Simulations and three Waveform Models</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Sarp Akçay, Charlie Hoy, Jake Mac Uilliam</div>
-                </div>
-                <div class="paper-abstract">We present Bayesian inference results from an extensive injection-recovery campaign to test the validity of three state of the art quasicircular gravitational waveform models: <span style="font-variant: small-caps;">SEOBNRv5PHM</span>, <span style="font-variant: small-caps;">IMRPhenomTPHM</span>, <span style="font-variant: small-caps;">IMRPhenomXPHM</span>, the latter with the <span style="font-variant: small-caps;">SpinTaylorT4</span> implementation for its precession dynamics. We analyze 35 strongly precessing binary black hole numerical relativity simulations with all available harmonic content. Ten simulations have a mass ratio of $4:1$ and five, mass ratio of $8:1$. Overall, we find that <span style="font-variant: small-caps;">SEOBNRv5PHM</span> is the most consistent model to numerical relativity, with the majority of true source properties lying within the inferred 90% credible interval. However, we find that none of the models can reliably infer the true source properties for binaries with mass ratio $8:1$ systems. We additionally conduct inspiral-merger-ringdown (IMR) consistency tests to determine if our chosen state of the art waveform models infer consistent properties when analysing only the inspiral (low frequency) and ringdown (high frequency) portions of the signal. For the simulations considered in this work, we find that the IMR consistency test depends on the frequency that separates the inspiral and ringdown regimes. For two sensible choices of the cutoff frequency, we report that <span style="font-variant: small-caps;">IMRPhenomXPHM</span> can produce false GR deviations. Meanwhile, we find that <span style="font-variant: small-caps;">IMRPhenomTPHM</span> is the most reliable model under the IMR consistency test. Finally, we re-analyze the same 35 simulations, but this time we incorporate model accuracy into our Bayesian inference. Consistent with the work in Hoy et al. 2024 [arXiv: 2409.19404], we find this approach generally yields more accurate inferred properties for binary black holes with less biases compared to methods that combine model-dependent posterior distributions based on their evidence, or with equal weight.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">24 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.19911v1" target="_blank" rel="noopener">Adding equatorial-asymmetric effects for spin-precessing binaries into the SEOBNRv5PHM waveform model</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Héctor Estellés, Alessandra Buonanno, Raffi Enficiaud, Cheng Foo, Lorenzo Pompili</div>
-                </div>
-                <div class="paper-abstract">Gravitational waves from spin-precessing binaries exhibit equatorial asymmetries absent in non-precessing systems, leading to net linear momentum emission and contributing to the remnant's recoil. This effect, recently incorporated into only a few waveform models, is crucial for accurate recoil predictions and improved parameter estimation. We present an upgrade to the SEOBNRv5PHM model -- SEOBNRv5PHM_w/asym -- which includes equatorial asymmetric contributions to the l=m<=4 waveform modes in the co-precessing frame. The model combines post-Newtonian inputs with calibrated amplitude and phase corrections and a phenomenological merger-ringdown description, tuned against 1523 quasi-circular spin-precessing numerical relativity waveforms and single-spin precessing test-body plunging-geodesic waveforms. We find that SEOBNRv5PHM_w/asym improves the agreement with NR waveforms across inclinations, with median unfaithfulness reduced by up to 50% compared to SEOBNRv5PHM, and achieves 30-60% lower unfaithfulness than IMRPhenomXPNR and 76-80% lower than TEOBResumS_Dali. The model significantly improves the prediction of the recoil velocity, reducing the median relative error with numerical relativity from 70% to 1%. Bayesian inference on synthetic injections demonstrates improved recovery of spin orientations and mass parameters, and a reanalysis of GW200129 shows a threefold increase in the spin-precessing Bayes factor, highlighting the importance of these effects for interpreting spin-precessing events.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">23 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.18610v1" target="_blank" rel="noopener">A numerical approach to particle creation in accelerating toy models</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Pedro Duarte Baptista, Alex Vañó-Viñuales, Adrían del Río Vega</div>
-                </div>
-                <div class="paper-abstract">The formation of black holes by the gravitational collapse of stars is known to spontaneously excite particle pairs out of the quantum vacuum. For the canonical vacuum state at past null infinity, the expected number of particles received at future null infinity can be obtained in full closed form at sufficiently late times. However, for intermediate times, or for more complicated astrophysical processes (e.g. binary black hole mergers), the problem is technically challenging and has not yet been resolved. We develop here a numerical approach to study scattering problems of massless quantum fields in asymptotically flat spacetimes, based on the hyperboloidal slice method used in numerical relativity and perturbation theory. This promising approach can reach both past and future null infinities, and therefore it has the potential to address the Hawking scattering problem more rigorously than evolution on the usual Cauchy slices. We test this approach with some dynamical toy models in Minkowski using effective potentials that mimic the effects of gravity, and compute the spectrum of particles received at future null infinity. We finally discuss future prospects for applying this framework in more relevant gravitational scenarios.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">20 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.17492v1" target="_blank" rel="noopener">Modeling Relative Peak Times of Gravitational Wave Harmonics</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Anuj Kankani, Sean McWilliams</div>
-                </div>
-                <div class="paper-abstract">Accurate modeling of gravitational waves from binary black hole mergers is essential for extracting their rich physics. A key detail for understanding the physics of mergers is predicting the precise time when the amplitude of the gravitational wave strain peaks, which can differ significantly among the different harmonic modes. We propose two semi-analytical methods to predict these differences using the same three inputs from Numerical Relativity (NR): the remnant mass and spin and the instantaneous frequency of each mode at its peak amplitude. The first method uses the frequency evolution predicted by the Backwards-One-Body model, while the second models the motion of an equatorial timelike geodesic in the remnant black hole spacetime. We compare our models to the SXS waveform catalog for quasi-circular, non-precessing systems and find excellent agreement for $l = |m|$ modes up to $l=8$, with mean and median differences from NR below 1$M$ in nearly all cases across the parameter space. We compare our results to the differences predicted by leading Effective-One-Body and NR surrogate waveform models and find that in cases corresponding to the largest timing differences, our models can provide significant increases in accuracy.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">19 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.15979v1" target="_blank" rel="noopener">Impact of Detector Calibration Accuracy on Black Hole Spectroscopy</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Mallika R. Sinha, Ling Sun, Sizheng Ma</div>
-                </div>
-                <div class="paper-abstract">Systematic errors in detector calibration can bias signal analyses and potentially lead to incorrect interpretations suggesting violations of general relativity. In this study, we investigate how calibration systematics affect black hole (BH) spectroscopy, a technique that uses the quasinormal modes (QNMs) emitted during the ringdown phase of gravitational waves (GWs) to study remnant BHs formed in compact binary coalescences. We simulate a series of physically motivated, tunable calibration errors and use them to intentionally miscalibrate numerical relativity waveforms. We then apply a QNM extraction method -- the rational QNM filter -- to quantify the impact of these calibration errors. We find that current calibration standards (errors within $10%$ in magnitude and $10^i̧rc$ in phase across the most sensitive frequency range of 20--2000 Hz) are adequate for BH ringdown analyses with existing observations, but insufficient for the accuracy goals of future upgraded and next-generation observatories. Specifically, we show that for events with a high ringdown signal-to-noise ratio of $\sim 120$, calibration errors must remain $\lesssim 6%$ in magnitude and $\lesssim 4^i̧rc$ in phase to avoid introducing biases. While this analysis addresses a particular aspect of BH spectroscopy, the results offer broadly applicable quantitative benchmarks for calibration standards crucial to fully realizing the potential of precision GW astrophysics in the next-generation detector era.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">12 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.11204v1" target="_blank" rel="noopener">Gravitational Scattering of Two Neutron Stars</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Joan Fontbuté, Sebastiano Bernuzzi, Piero Rettegno, Simone Albanesi, Wolfgang Tichy</div>
-                </div>
-                <div class="paper-abstract">We present the first numerical relativity simulations of the gravitational scattering of two neutron stars. Constraint-satisfying initial data for two equal-mass non-spinning sequences are constructed at fixed energy and various initial angular momenta (impact parameter) and evolved with Einstein equations through the scattering process. The strong-field scattering dynamics are explored up to scattering angles of $225^i̧rc$ and the threshold of dynamical captures. The transition to bound orbits is aided by significant mass ejecta up to baryon mass ${\sim}1M_\odot$. A quantitative comparison with predictions of the scattering angle from state-of-the-art effective-one-body and post-Minkowskian calculations indicates quantitative agreement for large initial angular momenta although significant discrepancies in the tidal contribution emerge towards the capture threshold. Gravitational waveforms and radiated energy are in qualitative agreement with the analogous black hole problem and state-of-the-art effective-one-body predictions. Towards the capture threshold waveforms from scattering dynamics carry a strong imprint of matter effects, including the stars' $f$-mode excitations during the close encounter. Overall, our simulations open a new avenue to study tidal interactions in the relativistic two-body problem.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">10 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.08888v1" target="_blank" rel="noopener">Waveform model for the $(\ell=2, m=0)$ spherical harmonic and the displacement memory contribution from precessing binary black holes</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Maria Rosselló-Sastre, Sascha Husa</div>
-                </div>
-                <div class="paper-abstract">In this paper we construct the first phenomenological waveform model which contains the "complete" $\ell=2$ spherical harmonic mode content for gravitational wave signals emitted by the coalescence of binary black holes with spin precession: The model contains the dominant part of the gravitational wave displacement memory, which manifests in the $(\ell=2, m=0)$ spherical harmonic in a co-precessing frame, as well as the oscillatory component of this mode. The model is constructed by twisting up the oscillatory contribution of the mode, as it was previously done for the rest of spherical harmonic modes in IMRPhenomTPHM and the Phenom family of waveform models. Regarding the displacement memory contribution present in the aligned spin (2,0) mode, we discuss a procedure to analytically compute the "precessing memory" in all the $\ell=2$ modes using the integration derived from the Bondi-Metzner-Sachs balance laws. The final waveform of the (2,0) mode is then obtained by summing together both contributions. We implement this as an extension of the computationally efficient IMRPhenomTPHM waveform model, and we test its accuracy by comparing against a set of Numerical Relativity simulations. Finally, we employ the model to perform a Bayesian parameter estimation injection analysis.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">04 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.03634v1" target="_blank" rel="noopener">External Attention Transformer: A Robust AI Model for Identifying Initial Eccentricity Signatures in Binary Black Hole Events in Simulated Advanced LIGO Data</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Elahe Khalouei, Cristiano G. Sabiu, Hyung Mok Lee, A. Gopakumar</div>
-                </div>
-                <div class="paper-abstract">Initial orbital eccentricities of gravitational wave (GW) events associated with merging binary black holes (BBHs) should provide clues to their formation scenarios, mainly because various BBH formation channels predict distinct eccentricity distributions. However, searching for inspiral GWs from eccentric BBHs is computationally challenging due to sophisticated approaches to model such GW events. This ensures that Bayesian parameter estimation methods to characterize such events are computationally daunting. These considerations influenced us to propose a novel approach to identify and characterize eccentric BBH events in the LIGO-Virgo-KAGRA (LVK) collaboration data sets that leverages external attention transformer models. Employing simulated data that mimic LIGO O4 run, eccentric inspiral events modeled by an effective-one-body numerical-relativity waveform family, we show the effectiveness of our approach. By integrating this transformer-based framework with a convolutional neural network (CNN) architecture, we provide efficient way to identify eccentric BBH GW events and accurately characterize their source properties.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">02 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.02189v1" target="_blank" rel="noopener">Self-force framework for merger-ringdown waveforms</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Lorenzo Küchler, Geoffrey Compère, Adam Pound</div>
-                </div>
-                <div class="paper-abstract">The prospect of observing asymmetric compact binaries with next-generation gravitational-wave detectors has motivated the development of fast and accurate waveform models in gravitational self-force theory. These models are based on a two-stage process: in a (slow) offline stage, waveform ingredients are pre-computed as functions on the orbital phase space; in a (fast) online stage, the waveform is generated by evolving through the phase space. While this framework has traditionally been restricted to the inspiral stage of a binary, we recently extended it across the transition to plunge, where the small companion crosses the innermost stable circular orbit around the primary black hole. In this paper, for the special case of quasicircular, nonspinning binaries, we show how the "offline/online" phase-space paradigm also extends through the final plunge, which generates the binary's merger-ringdown signal. We implement the method at leading, geodesic order in the plunge. The resulting plunge waveform agrees well with a stationary-phase approximation at early times and with a (self-consistently calculated) quasinormal mode sum at late times, but we highlight that neither of the two approximations reaches the peak of the full plunge waveform. Finally, we compare the plunge waveform to numerical relativity simulations. Our framework offers the prospect of fast, accurate inspiral-merger-ringdown waveform models for asymmetric binaries.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">02 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.02115v1" target="_blank" rel="noopener">The error budget of binary neutron star merger simulations for configurations with high spin</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Hao-Jui Kuan, Ivan Markin, Maximiliano Ujevic, Tim Dietrich, Kenta Kiuchi and 2 others</div>
-                </div>
-                <div class="paper-abstract">Numerical-relativity simulations offer a unique approach to investigating the dynamics of binary neutron star mergers and provide the most accurate predictions of waveforms in the late inspiral phase. However, the numerical predictions are prone to systematic biases originating from the construction of initial quasi-circular binary configurations, the numerical methods used to evolve them, and to extract gravitational signals. To assess uncertainties arising from these aspects, we analyze mergers of highly spinning neutron stars with dimensionless spin parameter $ḩi=0.5$. The initial data are prepared by two solvers, <span style="font-variant: small-caps;">FUKA</span> and <span style="font-variant: small-caps;">SGRID</span>, which are then evolved by two independent codes, <span style="font-variant: small-caps;">SACRA</span> and <span style="font-variant: small-caps;">BAM</span>. We assess the impact of numerical discretizations, finite extraction radii, and differences in numerical frameworks on the resulting gravitational waveforms. Our analysis reveals that the primary source of uncertainty in numerical waveforms is the evolution code, while the initial data solver has a smaller impact. We also compare our numerical-relativity waveforms with state-of-the-art analytical models, finding that the discrepancies between them exceed the estimated numerical uncertainties. Few suggestions are offered: (i) the analytic waveform becomes an inadequate approximation after the two neutron stars come into contact and the binary enters the essentially-one-body phase, (ii) the analytical models may not capture finite-size effects beyond quadrupole moment, and (iii) the inconsistent use of the binary black hole baseline in the analytical models may also be contributing to these discrepancies. The presented results benchmark the error budget for numerical waveforms of binary neutron star mergers, and provide information for the analytic models to explore further the high spin parameter space of binary neutron star mergers.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">02 June 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2506.01760v1" target="_blank" rel="noopener">First eccentric inspiral-merger-ringdown analysis of neutron star-black hole mergers</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Maria de Lluc Planas, Sascha Husa, Antoni Ramos-Buades, Jorge Valencia</div>
-                </div>
-                <div class="paper-abstract">The gravitational wave event GW200105 was the first confident neutron star-black hole (NSBH) merger identified by the LIGO-Virgo-KAGRA collaboration. A recent analysis by Morras et al. with an eccentric precessing waveform model that describes the inspiral phase of the $l=2$ and $m=\{0,\pm 2\}$ modes has identified this event as the first NSBH merger with strong evidence of orbital eccentricity. In this paper we perform the first analysis of this event with an aligned-spin eccentric waveform model that describes the full inspiral, merger, and ringdown, includes subdominant harmonics, and is partially calibrated to numerical relativity simulations. This analysis confirms the results and finds evidence in favor of eccentricity even with a log-uniform prior in eccentricity. We also analyze the NSBH events GW200115 and GW230529, completing the analysis of all NSBHs with IMRPhenomTEHM, and find that these signal are consistent with vanishing eccentricity. Finally, we briefly discuss computational challenges when performing the analysis with time-domain eccentric waveform models.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">28 May 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2505.22763v3" target="_blank" rel="noopener">Probability of the Initial Conditions for Inflation and Slow Contraction</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Mark P. Hertzberg, Daniel Jiménez-Aguilar</div>
-                </div>
-                <div class="paper-abstract">Some recent studies based on numerical relativity simulations claim that slow contraction/ekpyrosis is strongly preferred over inflation as the smoothing mechanism that brought the universe into the homogeneous, isotropic and flat state we observe today on large scales. In this paper, we evaluate the likelihood of the initial conditions employed in the aforementioned simulations by estimating the probability that a free scalar field dominating the universe at the beginning of inflation or ekpyrosis will be sufficiently homogeneous on scales comparable to the Hubble radius at that time. We explore the space of parameters that characterize the initial power spectrum of the scalar field, finding that either can be more likely than the other for a fixed choice of parameters. On the other hand, when we extremize over these parameters, we find that the maximal probability for inflation is much higher than that of ekpyrosis.</div>
             </article>
 
         </main>

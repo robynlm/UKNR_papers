@@ -306,12 +306,12 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         
         .header {{
             margin-bottom: 30px;
-            border-bottom: 2px solid #45818e;
+            border-bottom: 2px solid #C46444;
             padding-bottom: 15px;
         }}
         
         .header h1 {{
-            color: #45818e;
+            color: #C46444;
             margin: 0 0 5px 0;
             font-size: 2.2em;
         }}
@@ -363,7 +363,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .paper-title a {{
-            color: #45818e;
+            color: #C46444;
             text-decoration: none;
         }}
         
@@ -432,7 +432,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             padding: 12px;
             background: #f8f9fa;
             border-radius: 4px;
-            border-left: 3px solid #45818e;
+            border-left: 3px solid #C46444;
             font-size: 0.9em;
         }}
         
@@ -471,7 +471,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .github-link {{
-            color: #76AFB5;
+            color: #C46444;
             text-decoration: none;
         }}
         
