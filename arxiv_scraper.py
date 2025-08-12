@@ -287,18 +287,32 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
+        :root {{
+            --primary-color: #c16742;
+            --text-color: #533a1c;
+            --background-color: #ede9d0;
+            --card-background: #ede9d0;
+            --border-color: #ede9d0;
+            --muted-text: #533a1c;
+            --secondary-text: #533a1c;
+            --light-background: #ede9d0;
+            --highlight-background: #ede9d0;
+            --button-text: #533a1c;
+            --footer-border: #ede9d0;
+        }}
+        
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: var(--background-color);
         }}
         
         .container {{
-            background: white;
+            background: var(--card-background);
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 30px;
@@ -306,25 +320,25 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         
         .header {{
             margin-bottom: 30px;
-            border-bottom: 2px solid #C46444;
+            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 15px;
         }}
         
         .header h1 {{
-            color: #C46444;
+            color: var(--primary-color);
             margin: 0 0 5px 0;
             font-size: 2.2em;
         }}
         
         .last-updated {{
-            color: #6c757d;
+            color: var(--muted-text);
             font-size: 0.9em;
         }}
         
         .paper {{
             margin: 3px 0;
             padding: 3px 0;
-            border-bottom: 1px solid #e9ecef;
+            border-bottom: 1px solid var(--border-color);
             transition: transform 0.2s ease;
         }}
         
@@ -345,7 +359,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         
         .paper-date {{
             font-size: 0.85em;
-            color: #6c757d;
+            color: var(--muted-text);
             font-weight: bold;
             min-width: 90px;
             flex-shrink: 0;
@@ -356,14 +370,14 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         .paper-title {{
             font-size: 1.2em;
             font-weight: bold;
-            color: #2c3e50;
+            color: var(--secondary-text);
             flex: 1;
             line-height: 1.3;
             margin-bottom: 6px;
         }}
         
         .paper-title a {{
-            color: #C46444;
+            color: var(--primary-color);
             text-decoration: none;
         }}
         
@@ -379,7 +393,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .paper-authors {{
-            color: #6c757d;
+            color: var(--muted-text);
             font-style: italic;
             font-size: 0.9em;
             line-height: 1.4;
@@ -401,7 +415,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             cursor: pointer;
             user-select: none;
             font-size: 0.8em;
-            color: #495057;
+            color: var(--button-text);
             transition: background-color 0.2s ease;
             display: flex;
             align-items: center;
@@ -412,7 +426,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .abstract-toggle:hover {{
-            background: #f8f9fa;
+            background: var(--highlight-background);
         }}
         
         .abstract-toggle .arrow {{
@@ -430,9 +444,9 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             margin: 0 0 10px 0;
             line-height: 1.6;
             padding: 12px;
-            background: #f8f9fa;
+            background: var(--highlight-background);
             border-radius: 4px;
-            border-left: 3px solid #C46444;
+            border-left: 3px solid var(--primary-color);
             font-size: 0.9em;
         }}
         
@@ -441,7 +455,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         }}
         
         .paper-abstract code {{
-            background-color: #f1f3f4;
+            background-color: var(--light-background);
             padding: 2px 4px;
             border-radius: 3px;
             font-family: 'Courier New', monospace;
@@ -455,7 +469,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
         
         .no-papers {{
             text-align: center;
-            color: #6c757d;
+            color: var(--muted-text);
             font-style: italic;
             margin: 40px 0;
             font-size: 1.1em;
@@ -465,13 +479,13 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #dee2e6;
-            color: #6c757d;
+            border-top: 1px solid var(--footer-border);
+            color: var(--muted-text);
             font-size: 0.9em;
         }}
         
         .github-link {{
-            color: #C46444;
+            color: var(--primary-color);
             text-decoration: none;
         }}
         

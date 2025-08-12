@@ -21,18 +21,32 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
+        :root {
+            --primary-color: #c16742;
+            --text-color: #533a1c;
+            --background-color: #ede9d0;
+            --card-background: #ede9d0;
+            --border-color: #ede9d0;
+            --muted-text: #533a1c;
+            --secondary-text: #533a1c;
+            --light-background: #ede9d0;
+            --highlight-background: #ede9d0;
+            --button-text: #533a1c;
+            --footer-border: #ede9d0;
+        }
+        
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: var(--text-color);
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: var(--background-color);
         }
         
         .container {
-            background: white;
+            background: var(--card-background);
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             padding: 30px;
@@ -40,25 +54,25 @@
         
         .header {
             margin-bottom: 30px;
-            border-bottom: 2px solid #C46444;
+            border-bottom: 2px solid var(--primary-color);
             padding-bottom: 15px;
         }
         
         .header h1 {
-            color: #C46444;
+            color: var(--primary-color);
             margin: 0 0 5px 0;
             font-size: 2.2em;
         }
         
         .last-updated {
-            color: #6c757d;
+            color: var(--muted-text);
             font-size: 0.9em;
         }
         
         .paper {
             margin: 3px 0;
             padding: 3px 0;
-            border-bottom: 1px solid #e9ecef;
+            border-bottom: 1px solid var(--border-color);
             transition: transform 0.2s ease;
         }
         
@@ -79,7 +93,7 @@
         
         .paper-date {
             font-size: 0.85em;
-            color: #6c757d;
+            color: var(--muted-text);
             font-weight: bold;
             min-width: 90px;
             flex-shrink: 0;
@@ -90,14 +104,14 @@
         .paper-title {
             font-size: 1.2em;
             font-weight: bold;
-            color: #2c3e50;
+            color: var(--secondary-text);
             flex: 1;
             line-height: 1.3;
             margin-bottom: 6px;
         }
         
         .paper-title a {
-            color: #C46444;
+            color: var(--primary-color);
             text-decoration: none;
         }
         
@@ -113,7 +127,7 @@
         }
         
         .paper-authors {
-            color: #6c757d;
+            color: var(--muted-text);
             font-style: italic;
             font-size: 0.9em;
             line-height: 1.4;
@@ -135,7 +149,7 @@
             cursor: pointer;
             user-select: none;
             font-size: 0.8em;
-            color: #495057;
+            color: var(--button-text);
             transition: background-color 0.2s ease;
             display: flex;
             align-items: center;
@@ -146,7 +160,7 @@
         }
         
         .abstract-toggle:hover {
-            background: #f8f9fa;
+            background: var(--highlight-background);
         }
         
         .abstract-toggle .arrow {
@@ -164,9 +178,9 @@
             margin: 0 0 10px 0;
             line-height: 1.6;
             padding: 12px;
-            background: #f8f9fa;
+            background: var(--highlight-background);
             border-radius: 4px;
-            border-left: 3px solid #C46444;
+            border-left: 3px solid var(--primary-color);
             font-size: 0.9em;
         }
         
@@ -175,7 +189,7 @@
         }
         
         .paper-abstract code {
-            background-color: #f1f3f4;
+            background-color: var(--light-background);
             padding: 2px 4px;
             border-radius: 3px;
             font-family: 'Courier New', monospace;
@@ -189,7 +203,7 @@
         
         .no-papers {
             text-align: center;
-            color: #6c757d;
+            color: var(--muted-text);
             font-style: italic;
             margin: 40px 0;
             font-size: 1.1em;
@@ -199,13 +213,13 @@
             text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #dee2e6;
-            color: #6c757d;
+            border-top: 1px solid var(--footer-border);
+            color: var(--muted-text);
             font-size: 0.9em;
         }
         
         .github-link {
-            color: #C46444;
+            color: var(--primary-color);
             text-decoration: none;
         }
         
@@ -268,10 +282,29 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-08-11 13:18:43 UTC</div>
+            <div class="last-updated">Last updated: 2025-08-12 14:42:07 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">09 August 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2508.06862v1" target="_blank" rel="noopener">Confronting General Relativity with Principal Component Analysis: Simulations and Results from GWTC-3 Events</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Parthapratim Mahapatra, Sayantani Datta, Ish Gupta, Poulami Dutta Roy, Muhammed Saleem and 8 others</div>
+                </div>
+                <div class="paper-abstract">We present a comprehensive assessment of multiparameter tests of general relativity (GR) in the inspiral regime of compact binary coalescences using Principal Component Analysis (PCA). Our analysis is based on an extensive set of simulated gravitational wave signals, including both general relativistic and non-GR sources, injected into zero-noise data colored by the noise power spectral densities of the LIGO and Virgo detectors at their designed sensitivities. We evaluate the performance of PCA-based methods in the context of two established frameworks: TIGER and FTI. For GR-consistent signals, we find that PCA enables stringent constraints on potential deviations from GR, even in the presence of multiple free parameters. Applying the method to simulated signals that explicitly violate GR, we demonstrate that PCA is effective at identifying such deviations. We further test the method using numerical relativity waveforms of eccentric binary black hole systems and show that missing physical effects-such as orbital eccentricity-can lead to apparent violations of GR if not properly included in the waveform models used for analysis. Finally, we apply our PCA-based test to selected real gravitational-wave events from GWTC-3, including GW190814 and GW190412. We present joint constraints from selected binary black hole events in GWTC-3, finding that the 90% credible bound on the most informative PCA parameter is $0.03^{+0.08}_{-0.08}$ in the TIGER framework and $-0.01^{+0.05}_{-0.04}$ in the FTI framework, both of which are consistent with GR. These results highlight the sensitivity and robustness of the PCA-based approach and demonstrate its readiness for application to future observational data from the fourth observing runs of LIGO, Virgo, and KAGRA.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-header">
