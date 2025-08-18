@@ -400,6 +400,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             flex: 1;
             padding-top: 4px;
             padding-bottom: 4px;
+            margin-left: 17px;
         }}
         
         .abstract-section {{
@@ -528,6 +529,7 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             .paper-meta {{
                 flex-direction: column;
                 gap: 5px;
+                margin-left: 0;
             }}
             
             .paper-authors {{
