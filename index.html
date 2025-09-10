@@ -284,10 +284,48 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-09-09 06:24:18 UTC</div>
+            <div class="last-updated">Last updated: 2025-09-10 06:23:43 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">08 September 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2509.07291v1" target="_blank" rel="noopener">Parameter control for binary black hole initial data</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Iago B. Mendes, Nils L. Vu, Oliver Long, Harald P. Pfeiffer, Robert Owen</div>
+                </div>
+                <div class="paper-abstract">When numerically solving Einstein's equations for binary black holes (BBH), we must find initial data on a three-dimensional spatial slice by solving constraint equations. The construction of initial data is a multi-step process, in which one first chooses freely specifiable data that define a conformal background and impose boundary conditions. Then, one numerically solves elliptic equations and calculates physical properties such as horizon masses, spins, and asymptotic quantities from the solution. To achieve desired properties, one adjusts the free data in an iterative ``control'' loop. Previous methods for these iterative adjustments rely on Newtonian approximations and do not allow the direct control of total energy and angular momentum of the system, which becomes particularly important in the study of hyperbolic encounters of black holes. Using the $<code>SpECTRE</code>$ code, we present a novel parameter control procedure that benefits from Broyden's method in all controlled quantities. We use this control scheme to minimize drifts in bound orbits and to enable the construction of hyperbolic encounters. We see that the activation of off-diagonal terms in the control Jacobian gives us better efficiency when compared to the simpler implementation in the Spectral Einstein Code ($<code>SpEC</code>$). We demonstrate robustness of the method across extreme configurations, including spin magnitudes up to $ḩi = 0.9999$, mass ratios up to $q = 50$, and initial separations up to $D_0 = 1000M$. Given the open-source nature of $<code>SpECTRE</code>$, this is the first time a parameter control scheme for constructing bound and unbound BBH initial data is available to the numerical-relativity community.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-header">
+                    <div class="paper-date">08 September 2025</div>
+                    <div class="paper-title">
+                        <a href="https://arxiv.org/abs/2509.07111v1" target="_blank" rel="noopener">Ringdown mode amplitudes of charged binary black holes</a>
+                    </div>
+                </div>
+                <div class="paper-meta">
+                    <div class="abstract-section">
+                        <div class="abstract-toggle">
+                            <span class="arrow">▶</span>
+                            <span>Abstract</span>
+                        </div>
+                    </div>
+                    <div class="paper-authors">Zexin Hu, Daniela D. Doneva, Ziming Wang, Vasileios Paschalidis, Gabriele Bozzola and 2 others</div>
+                </div>
+                <div class="paper-abstract">The ringdown phase of the binary black hole (BBH) merger provides a clean and direct probe of strong-field gravity and tests of the nature of black holes. The quasinormal mode (QNM) frequencies in modified gravity theories, as well as their amplitudes and phases, might deviate from the Kerr ones in general relativity. Charged black holes (BHs) in Einstein-Maxwell theory provide an excellent example of a beyond-Kerr solution with direct astrophysical and fundamental physics applications. In this work, we extract the ringdown mode amplitudes and phases for charged BBH mergers based on fully general relativistic simulations with charge-to-mass ratio up to 0.3. Our results suggest that even though the inspiral phase of charged BBHs can be significantly accelerated or decelerated, the ringdown mode excitation only changes mildly. We further explore the charge detectability with the ringdown-only signal for the Einstein Telescope and Cosmic Explorer. We find that previous studies may have overestimated the charge detectability and including higher modes in charged waveforms is necessary for future ringdown analysis. This constitutes the first such analysis based on waveforms generated by numerical relativity simulations of charged BHs in full Einstein-Maxwell theory.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-header">
@@ -781,25 +819,6 @@
                     <div class="paper-authors">Sandeep Suresh Cranganore, Andrei Bodnar, Arturs Berzins, Johannes Brandstetter</div>
                 </div>
                 <div class="paper-abstract">We introduce Einstein Fields, a neural representation that is designed to compress computationally intensive four-dimensional numerical relativity simulations into compact implicit neural network weights. By modeling the <em>metric</em>, which is the core tensor field of general relativity, Einstein Fields enable the derivation of physical quantities via automatic differentiation. However, unlike conventional neural fields (e.g., signed distance, occupancy, or radiance fields), Einstein Fields are <em>Neural Tensor Fields</em> with the key difference that when encoding the spacetime geometry of general relativity into neural field representations, dynamics emerge naturally as a byproduct. Einstein Fields show remarkable potential, including continuum modeling of 4D spacetime, mesh-agnosticity, storage efficiency, derivative accuracy, and ease of use. We address these challenges across several canonical test beds of general relativity and release an open source JAX-based library, paving the way for more scalable and expressive approaches to numerical relativity. Code is made available at https://github.com/AndreiB137/EinFields</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-header">
-                    <div class="paper-date">11 July 2025</div>
-                    <div class="paper-title">
-                        <a href="https://arxiv.org/abs/2507.08345v1" target="_blank" rel="noopener">Defining eccentricity for spin-precessing binaries</a>
-                    </div>
-                </div>
-                <div class="paper-meta">
-                    <div class="abstract-section">
-                        <div class="abstract-toggle">
-                            <span class="arrow">▶</span>
-                            <span>Abstract</span>
-                        </div>
-                    </div>
-                    <div class="paper-authors">Md Arif Shaikh, Vijay Varma, Antoni Ramos-Buades, Harald P. Pfeiffer, Michael Boyle and 2 others</div>
-                </div>
-                <div class="paper-abstract">Standardizing the definition of eccentricity is necessary for unambiguous inference of the orbital eccentricity of compact binaries from gravitational wave observations. In previous works, we proposed a definition of eccentricity for systems without spin-precession that relies solely on the gravitational waveform, is applicable to any waveform model, and has the correct Newtonian limit. In this work, we extend this definition to spin-precessing systems. This simple yet effective extension relies on first transforming the waveform from the inertial frame to the coprecessing frame, and then adopting an amplitude and a phase with reduced spin-induced effects. Our method includes a robust procedure for filtering out spin-induced modulations, which become non-negligible in the small eccentricity and large spin-precession regime. Finally, we apply our method to a set of Numerical Relativity and Effective One Body waveforms to showcase its robustness for generic eccentric spin-precessing binaries. We make our method public via Python implementation in <code>gw_eccentricity</code>.</div>
             </article>
 
         </main>
