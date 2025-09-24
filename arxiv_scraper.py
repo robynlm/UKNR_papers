@@ -15,9 +15,9 @@ import os
 # Configuration: Add author names here to automatically include their papers
 # These authors' papers will be included even if they don't contain the main search keywords
 TARGET_AUTHORS = [
-    "Clough, Katy",
-    "Shum, Harry L. H.",
-    "Bezares, Miguel"
+    "Katy Clough",
+    "Harry L. H. Shum",
+    "Miguel Bezares"
     # Add/remove authors as needed - use format "Last, First" or partial names
 ]
 
