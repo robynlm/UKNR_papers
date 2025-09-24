@@ -617,8 +617,8 @@ def generate_html(papers: List[ArxivPaper], output_file: str = "index.html"):
             formatted_date = pub_date.strftime("%d %B %Y")
             
             # Format authors (limit to first 5 for display)
-            if len(paper.authors) > 5:
-                authors_display = ", ".join(paper.authors[:5]) + f" and {len(paper.authors) - 5} others"
+            if len(paper.authors) > 8:
+                authors_display = ", ".join(paper.authors[:8]) + f" and {len(paper.authors) - 8} others"
             else:
                 authors_display = ", ".join(paper.authors)
             
