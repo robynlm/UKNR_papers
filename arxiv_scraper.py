@@ -15,18 +15,8 @@ import os
 # Configuration: Add author names here to automatically include their papers
 # These authors' papers will be included even if they don't contain the main search keywords
 TARGET_AUTHORS = [
-    "Clough, Katy",              # Queen Mary University of London
-    # Examples of other prominent numerical relativity researchers:
-    # "Pretorius, Frans",           # Princeton University
-    # "Campanelli, Manuela",       # RIT
-    # "Zlochower, Yosef",          # RIT  
-    # "Lousto, Carlos O.",         # RIT
-    # "Buonanno, Alessandra",      # Max Planck Institute
-    # "Pfeiffer, Harald P.",       # Max Planck Institute
-    # "Kidder, Lawrence E.",       # Cornell University
-    # "Teukolsky, Saul A.",        # Cornell University
-    # "Schnetter, Erik",           # Perimeter Institute
-    # "Rezzolla, Luciano",         # Goethe University Frankfurt
+    "Clough, Katy",
+    "Shum, Harry L. H.",
     # Add/remove authors as needed - use format "Last, First" or partial names
 ]
 
