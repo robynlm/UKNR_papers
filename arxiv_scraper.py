@@ -17,7 +17,8 @@ import os
 TARGET_AUTHORS = [
     "Katy Clough",
     "Harry L. H. Shum",
-    "Miguel Bezares"
+    "Miguel Bezares",
+    "Pau Figueras"
     # Add/remove authors as needed - use format "Last, First" or partial names
 ]
 
