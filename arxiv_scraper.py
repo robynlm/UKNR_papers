@@ -703,15 +703,13 @@ def main():
                        help='Maximum number of results (default: 50)')
     parser.add_argument('--days-back', type=int, default=30,
                        help='How many days back to search (default: 30)')
-    parser.add_argument('--authors', nargs='*', default=None,
-                       help='List of author names to search for (e.g., --authors "John Doe" "Jane Smith")')
     parser.add_argument('--output', default='index.html',
                        help='Output HTML file (default: index.html)')
     
     args = parser.parse_args()
     
-    # Use command line authors if provided, otherwise use configured TARGET_AUTHORS
-    authors_to_search = args.authors if args.authors else (TARGET_AUTHORS if TARGET_AUTHORS else None)
+    # Always use the configured TARGET_AUTHORS list, ignore command line --authors
+    authors_to_search = TARGET_AUTHORS if TARGET_AUTHORS else None
     
     # Search arXiv
     papers = search_arxiv(args.query, args.max_results, args.days_back, authors_to_search)

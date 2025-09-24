@@ -33,7 +33,7 @@ jobs:
     
     - name: Run arXiv scraper
       run: |
-        python arxiv_scraper.py --days-back 60 --max-results 100 --authors "Katy Clough" --output index.html
+        python arxiv_scraper.py --days-back 60 --max-results 100 --output index.html
     
     - name: Commit and push changes
       run: |
