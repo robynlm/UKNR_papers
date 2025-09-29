@@ -292,10 +292,25 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-09-28 06:21:58 UTC</div>
+            <div class="last-updated">Last updated: 2025-09-29 06:25:59 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-date">25 September 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2509.21652v1" target="_blank" rel="noopener">A Python Interface for Numerical Relativity Program AMSS-NCKU</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Chen-Kai Qiao, Yi Zheng, Zhou-Jian Cao</div>
+                <div class="paper-abstract">Numerical relativity has produced wide-ranging influences on modern astrophysics and gravitational-wave astronomy. In this work, we develop a Python interface for the numerical relativity program AMSS-NCKU, which enables the automation of initializing and starting the AMSS-NCKU simulations and the automatically generating visualizations of the output results. Numerical relativity simulations using this Python interface have been presented through two representative examples (binary back hole and triple black hole merger processes), and well-behaved stable numerical results and the expected physical behaviors for black hole systems have been acquired. The Python operational interface significantly lowers the operational complexity of the simulation workflow of AMSS-NCKU simulations, reducing the technical barriers for freshman users.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-date">24 September 2025</div>
@@ -685,6 +700,66 @@
                 </div>
                 <div class="paper-authors">Parthapratim Mahapatra, Sayantani Datta, Ish Gupta, Poulami Dutta Roy, Muhammed Saleem, Purnima Narayan, Soumen Roy, Jan Steinhoff and 5 others</div>
                 <div class="paper-abstract">We present a comprehensive assessment of multiparameter tests of general relativity (GR) in the inspiral regime of compact binary coalescences using Principal Component Analysis (PCA). Our analysis is based on an extensive set of simulated gravitational wave signals, including both general relativistic and non-GR sources, injected into zero-noise data colored by the noise power spectral densities of the LIGO and Virgo detectors at their designed sensitivities. We evaluate the performance of PCA-based methods in the context of two established frameworks: TIGER and FTI. For GR-consistent signals, we find that PCA enables stringent constraints on potential deviations from GR, even in the presence of multiple free parameters. Applying the method to simulated signals that explicitly violate GR, we demonstrate that PCA is effective at identifying such deviations. We further test the method using numerical relativity waveforms of eccentric binary black hole systems and show that missing physical effects-such as orbital eccentricity-can lead to apparent violations of GR if not properly included in the waveform models used for analysis. Finally, we apply our PCA-based test to selected real gravitational-wave events from GWTC-3, including GW190814 and GW190412. We present joint constraints from selected binary black hole events in GWTC-3, finding that the 90% credible bound on the most informative PCA parameter is $0.03^{+0.08}_{-0.08}$ in the TIGER framework and $-0.01^{+0.05}_{-0.04}$ in the FTI framework, both of which are consistent with GR. These results highlight the sensitivity and robustness of the PCA-based approach and demonstrate its readiness for application to future observational data from the fourth observing runs of LIGO, Virgo, and KAGRA.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">07 August 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2508.05743v2" target="_blank" rel="noopener">Perturbative Hyperboloidal Extraction of Gravitational Waves in 3+1 Numerical Relativity</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Sebastiano Bernuzzi, Joan Fontbuté, Simone Albanesi, Anil Zenginoğlu</div>
+                <div class="paper-abstract">We present a framework to propagate to null infinity gravitational waves computed at timelike worldtubes in the interior of a 3+1 (Cauchy) numerical relativity simulations. In our method, numerical relativity data are used as the inner inflowing boundary of a perturbative time-domain Regge-Wheeler-Zerilli simulation in hyperboloidal coordinates that reaches null infinity. We showcase waveforms from (3+1)D simulations of gravitational collapse of rotating neutron stars, binary black holes mergers and scattering, and binary neutron star mergers and compare them to other extrapolation methods. Our perturbative hyperboloidal extraction provides a simple yet efficient procedure to compute gravitational waves with data quality comparable to the Cauchy characteristic extraction for several practical applications. Nonlinear effects in the wave propagation are not captured by our method, but the present work is a stepping stone towards more sophisticated hyperboloidal schemes for gravitational-wave extraction.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">05 August 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2508.03799v1" target="_blank" rel="noopener">Covariant and Gauge-invariant Metric-based Gravitational-waves Extraction in Numerical Relativity</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Joan Fontbuté, Sebastiano Bernuzzi, Simone Albanesi, David Radice, Alireza Rashti, William Cook, Boris Daszuta, Alessandro Nagar</div>
+                <div class="paper-abstract">We revisit the problem of gravitational-wave extraction in numerical relativity with gauge-invariant metric perturbation theory of spherical spacetimes. Our extraction algorithm allows the computation of even-parity (Zerilli-Moncrief) and odd-parity (Regge-Wheeler) multipoles of the strain from a (3+1) metric without the assumption that the spherical background is in Schwarzschild coordinates. The algorithm is validated with a comprehensive suite of 3D problems including fluid ($f$-modes) and spacetime ($w$-modes) perturbations of neutron stars, gravitational collapse of rotating neutron stars, circular binary black holes mergers and black hole dynamical captures and binary neutron star mergers. We find that metric extraction is robust in all the considered scenarios and delivers waveforms of overall quality similar to curvature (Weyl) extraction. Metric extraction is particularly valuable in identifying waveform systematics for problems in which the reconstruction of the strain from the Weyl multipoles is ambiguous. Direct comparison of different choices for the gauge-invariant master functions show very good agreement in the even-parity sector. Instead, in the odd-parity sector, assuming the background in Schwarzschild coordinates can minimize gauge effects related to the use of the $Γ$-driver shift. Moreover, for optimal choices of the extraction radius, a simple extrapolation to null infinity can deliver waveforms compatible to Cauchy-characteristic extrapolated waveforms.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">02 August 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2508.01414v1" target="_blank" rel="noopener">Gravitational Waves from Simulated Mergers of 2 and 3 Black Holes</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Faisal Alotaibi</div>
+                <div class="paper-abstract">In this project, we simulate the collision of two and three black holes using NRPy+ (`Python-based code generation for numerical relativity and beyond') module and BSSN (Baumgarte-Shapiro-Shibata-Nakamura) formulation, and extract the resulting gravitational waveforms. Using Brill-Lindquist initial data and sixth-order finite differences, we evolve the system using the BSSN formulation and compute the gravitational-wave signal via the Weyl scalar $\psi_4$. To assess numerical error, we plot the Hamiltonian constraint and observe that constraint violations are significantly higher in the three-black-hole collision. Unexpected gravitational recoil is also detected, which may influence waveform extraction and that is left for further investigation. Despite the limitations in computational resources imposed by the Google Colab, we successfully model the merger of a binary black hole system, and we were able to extract the corresponding gravitational waves.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">31 July 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2507.23684v1" target="_blank" rel="noopener">Simulating Binary Neutron Star Mergers with Finite-temperature Equations of State: The influences of the slope of the symmetry energy and artificial heating</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Henrique Gieg, Maximiliano Ujevic, Armen Sedrakian, Tim Dietrich</div>
+                <div class="paper-abstract">We present a new set of numerical-relativity simulations of merging binary neutron stars, aiming to identify possible observable signatures of the slope of the symmetry energy $L_{\rm sym}$. To achieve this goal, we employ a set of equations of state based on a parameterization of the covariant density functional theory of nuclear matter that allows controlled variations of $L_{\rm sym}$ and the skewness $Q_{\rm sat}$, holding the latter fixed. For a set of our simulations, we identify a steep energy gradient in the equation of state at subsaturation densities, which acts as a source of heating with subsequent stiffening produced by thermal support. Accounting for related structural modifications in the tidal deformability reconciles our results with theoretical expectations. On the other hand, we show that gravitational waves are unlikely to distinguish the role of $L_{\rm sym}$. In contrast to this, we find that the ejecta composition is significantly altered in our simulations, which employ an M1 moment scheme, when $L_{\rm sym}$ is varied. Based on our extracted dynamical ejecta properties, we compute r-process yields and find that they are distinct for the different $L_{\rm sym}$, especially at lower mass numbers $A \lesssim 120$. This suggests that electromagnetic counterparts are more likely to exhibit signatures; however, a direct connection to $L_{\rm sym}$ remains a challenge, given the complex interplay between details of the ejecta properties and the kilonova signal.</div>
             </article>
 
         </main>
