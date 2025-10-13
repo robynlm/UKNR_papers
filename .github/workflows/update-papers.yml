@@ -2,8 +2,8 @@ name: Update Numerical Relativity Papers
 
 on:
   schedule:
-    # Run every day at 6 AM UTC
-    - cron: '0 6 * * *'
+    # Run Monday-Friday at 6 AM UTC (day of week: 1-5, where 0 is Sunday)
+    - cron: '0 6 * * 1-5'
   workflow_dispatch: # Allow manual triggering
   push:
     branches: [ main ] # Triggers on push to main branch
@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add index.html
+        git add index.html papers.json
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else

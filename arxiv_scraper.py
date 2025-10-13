@@ -11,6 +11,7 @@ import re
 import argparse
 from typing import List, Dict
 import os
+import json
 
 # Configuration: Add author names here to automatically include their papers
 # These authors' papers will be included even if they don't contain the main search keywords
@@ -36,6 +37,136 @@ class ArxivPaper:
         self.categories = categories
         self.arxiv_url = f"https://arxiv.org/abs/{arxiv_id}"
         self.pdf_url = f"https://arxiv.org/pdf/{arxiv_id}.pdf"
+    
+    def to_dict(self) -> Dict:
+        """Convert paper to dictionary for JSON serialization."""
+        return {
+            'title': self.title,
+            'authors': self.authors,
+            'abstract': self.abstract,
+            'arxiv_id': self.arxiv_id,
+            'published': self.published,
+            'updated': self.updated,
+            'categories': self.categories
+        }
+    
+    @classmethod
+    def from_dict(cls, data: Dict) -> 'ArxivPaper':
+        """Create paper from dictionary."""
+        return cls(
+            title=data['title'],
+            authors=data['authors'],
+            abstract=data['abstract'],
+            arxiv_id=data['arxiv_id'],
+            published=data['published'],
+            updated=data['updated'],
+            categories=data['categories']
+        )
+
+def load_papers_database(database_file: str = "papers.json") -> List[ArxivPaper]:
+    """
+    Load papers from the JSON database file.
+    
+    Args:
+        database_file: Path to the JSON database file
+        
+    Returns:
+        List of ArxivPaper objects
+    """
+    if not os.path.exists(database_file):
+        print(f"Database file {database_file} not found, starting fresh")
+        return []
+    
+    try:
+        with open(database_file, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        papers = [ArxivPaper.from_dict(paper_dict) for paper_dict in data]
+        print(f"Loaded {len(papers)} papers from database")
+        return papers
+    except Exception as e:
+        print(f"Error loading database: {e}")
+        return []
+
+def save_papers_database(papers: List[ArxivPaper], database_file: str = "papers.json"):
+    """
+    Save papers to the JSON database file.
+    
+    Args:
+        papers: List of ArxivPaper objects
+        database_file: Path to the JSON database file
+    """
+    try:
+        data = [paper.to_dict() for paper in papers]
+        with open(database_file, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        print(f"Saved {len(papers)} papers to database")
+    except Exception as e:
+        print(f"Error saving database: {e}")
+
+def prune_old_papers(papers: List[ArxivPaper], max_age_days: int = 90) -> List[ArxivPaper]:
+    """
+    Remove papers older than max_age_days.
+    
+    Args:
+        papers: List of ArxivPaper objects
+        max_age_days: Maximum age in days to keep papers
+        
+    Returns:
+        List of papers within the age limit
+    """
+    cutoff_date = datetime.now() - timedelta(days=max_age_days)
+    pruned_papers = []
+    removed_count = 0
+    
+    for paper in papers:
+        published_date = datetime.fromisoformat(paper.published.replace('Z', '+00:00')).replace(tzinfo=None)
+        if published_date >= cutoff_date:
+            pruned_papers.append(paper)
+        else:
+            removed_count += 1
+    
+    if removed_count > 0:
+        print(f"Pruned {removed_count} papers older than {max_age_days} days")
+    
+    return pruned_papers
+
+def merge_papers(existing_papers: List[ArxivPaper], new_papers: List[ArxivPaper]) -> List[ArxivPaper]:
+    """
+    Merge new papers into existing papers, avoiding duplicates.
+    
+    Args:
+        existing_papers: Existing papers from database
+        new_papers: Newly fetched papers
+        
+    Returns:
+        Merged list of papers
+    """
+    # Create a dictionary of existing papers by arxiv_id
+    papers_dict = {paper.arxiv_id: paper for paper in existing_papers}
+    
+    # Add new papers (or update existing ones if they have newer data)
+    added_count = 0
+    updated_count = 0
+    
+    for new_paper in new_papers:
+        if new_paper.arxiv_id not in papers_dict:
+            papers_dict[new_paper.arxiv_id] = new_paper
+            added_count += 1
+        else:
+            # Update if the new paper has a more recent update date
+            existing = papers_dict[new_paper.arxiv_id]
+            if new_paper.updated > existing.updated:
+                papers_dict[new_paper.arxiv_id] = new_paper
+                updated_count += 1
+    
+    print(f"Added {added_count} new papers, updated {updated_count} existing papers")
+    
+    # Convert back to list and sort by publication date
+    merged_papers = list(papers_dict.values())
+    merged_papers.sort(key=lambda p: p.published, reverse=True)
+    
+    return merged_papers
+
 
 def search_arxiv(query: str, max_results: int = 50, days_back: int = 30, target_authors: List[str] = None) -> List[ArxivPaper]:
     """
@@ -72,12 +203,18 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30, target_
     }
     
     print(f"Searching arXiv for: {query}")
+    print(f"  -> Keyword query: {search_query} | max_results={max_results} | days_back={days_back}")
     keyword_papers = fetch_papers_from_query(base_url, params, start_date)
+    print(f"  -> Keyword query returned {len(keyword_papers)} papers before filtering")
     
     for paper in keyword_papers:
         if paper.arxiv_id not in seen_arxiv_ids:
             all_papers.append(paper)
             seen_arxiv_ids.add(paper.arxiv_id)
+        else:
+            print(f"    Skipping duplicate keyword result: {paper.arxiv_id}")
+    
+    print(f"Found {len(all_papers)} unique papers from the last {days_back} days")
     
     # Search for papers by specific authors if provided
     if target_authors:
@@ -93,12 +230,16 @@ def search_arxiv(query: str, max_results: int = 50, days_back: int = 30, target_
             }
             
             print(f"  - Searching for papers by: {author}")
+            print(f"    -> Author query: {author_query} | max_results={max_results}")
             author_papers = fetch_papers_from_query(base_url, author_params, start_date)
+            print(f"    -> Author query returned {len(author_papers)} papers before filtering")
             
             for paper in author_papers:
                 if paper.arxiv_id not in seen_arxiv_ids:
                     all_papers.append(paper)
                     seen_arxiv_ids.add(paper.arxiv_id)
+                else:
+                    print(f"      Skipping duplicate author result: {paper.arxiv_id}")
     
     # Sort all papers by publication date (newest first)
     all_papers.sort(key=lambda p: p.published, reverse=True)
@@ -118,8 +259,10 @@ def fetch_papers_from_query(base_url: str, params: dict, start_date: datetime) -
     Returns:
         List of ArxivPaper objects
     """
+    print(f"    -> Requesting arXiv API with params: {params}")
     try:
         response = requests.get(base_url, params=params, timeout=30)
+        print(f"       HTTP {response.status_code} | {len(response.content)} bytes")
         response.raise_for_status()
     except requests.RequestException as e:
         print(f"Error fetching data from arXiv: {e}")
@@ -128,6 +271,7 @@ def fetch_papers_from_query(base_url: str, params: dict, start_date: datetime) -
     # Parse XML response
     try:
         root = ET.fromstring(response.content)
+        print("       XML parsed successfully")
     except ET.ParseError as e:
         print(f"Error parsing XML response: {e}")
         return []
@@ -138,6 +282,7 @@ def fetch_papers_from_query(base_url: str, params: dict, start_date: datetime) -
                 'arxiv': 'http://arxiv.org/schemas/atom'}
     
     entries = root.findall('atom:entry', namespace)
+    print(f"       Found {len(entries)} <entry> elements in feed")
     
     for entry in entries:
         try:
@@ -174,11 +319,14 @@ def fetch_papers_from_query(base_url: str, params: dict, start_date: datetime) -
                 paper = ArxivPaper(title, authors, abstract, arxiv_id, 
                                  published, updated, categories)
                 papers.append(paper)
+            else:
+                print(f"       Skipping {arxiv_id} published {published_date} (older than cutoff {start_date})")
             
         except Exception as e:
             print(f"Error processing entry: {e}")
             continue
     
+    print(f"       Returning {len(papers)} papers after date filtering")
     return papers
 
 def process_latex_text(text: str) -> str:
@@ -706,19 +854,49 @@ def main():
                        help='How many days back to search (default: 30)')
     parser.add_argument('--output', default='index.html',
                        help='Output HTML file (default: index.html)')
+    parser.add_argument('--database', default='papers.json',
+                       help='Papers database file (default: papers.json)')
+    parser.add_argument('--max-age', type=int, default=90,
+                       help='Maximum age in days to keep papers (default: 90)')
     
     args = parser.parse_args()
     
-    # Always use the configured TARGET_AUTHORS list, ignore command line --authors
+    # Load existing papers from database
+    print("=" * 60)
+    print("Loading papers database...")
+    existing_papers = load_papers_database(args.database)
+    
+    # Always use the configured TARGET_AUTHORS list
     authors_to_search = TARGET_AUTHORS if TARGET_AUTHORS else None
     
-    # Search arXiv
-    papers = search_arxiv(args.query, args.max_results, args.days_back, authors_to_search)
+    # Search arXiv for new papers
+    print("\n" + "=" * 60)
+    print("Fetching new papers from arXiv...")
+    new_papers = search_arxiv(args.query, args.max_results, args.days_back, authors_to_search)
+    
+    # Merge new papers with existing ones
+    print("\n" + "=" * 60)
+    print("Merging papers...")
+    merged_papers = merge_papers(existing_papers, new_papers)
+    
+    # Prune old papers
+    print("\n" + "=" * 60)
+    print(f"Pruning papers older than {args.max_age} days...")
+    final_papers = prune_old_papers(merged_papers, args.max_age)
+    
+    # Save updated database
+    print("\n" + "=" * 60)
+    print("Saving database...")
+    save_papers_database(final_papers, args.database)
     
     # Generate HTML
-    generate_html(papers, args.output)
+    print("\n" + "=" * 60)
+    print("Generating HTML...")
+    generate_html(final_papers, args.output)
     
-    print(f"Done! Found {len(papers)} papers and generated {args.output}")
+    print("\n" + "=" * 60)
+    print(f"Done! Database contains {len(final_papers)} papers (generated {args.output})")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()
