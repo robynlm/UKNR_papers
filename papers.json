@@ -1,5 +1,20 @@
 [
   {
+    "title": "Quasinormal modes from numerical relativity with Bayesian inference",
+    "authors": [
+      "Richard Dyer",
+      "Christopher J. Moore"
+    ],
+    "abstract": "Numerical relativity (NR) enables the study of physics in strong and dynamical gravitational fields and provides predictions for the gravitational-wave signals produced by merging black holes. Despite the impressive accuracy of modern codes, the resulting waveforms inevitably contain numerical uncertainties. Quantifying these uncertainties is important, especially for studies probing subdominant or nonlinear effects around the merger and ringdown. This paper describes a flexible Gaussian-process model for the numerical uncertainties in all the spherical-harmonic waveform modes across a state-of-the-art catalog of NR waveforms and a highly efficient procedure for sampling the posteriors of quasinormal mode models without the need for expensive Markov chain Monte Carlo. The Gaussian-process model is used to define a likelihood function which allows many Bayesian data analysis techniques - already widely used in the analysis of experimental gravitational wave data - to be applied to NR waveforms as well. The efficacy of this approach is demonstrated by applying it to the analysis of quasinormal modes in Cauchy-characteristic evolved waveforms.",
+    "arxiv_id": "2510.11783v1",
+    "published": "2025-10-13T18:00:02Z",
+    "updated": "2025-10-13T18:00:02Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Hybridization of second-order gravitational self-force and numerical relativity waveforms for quasi-circular and non-spinning black hole binaries",
     "authors": [
       "Hector Iglesias",
