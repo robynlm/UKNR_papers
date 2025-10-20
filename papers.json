@@ -1,5 +1,24 @@
 [
   {
+    "title": "Impact of Neutrino Flavor Conversions on Neutron Star Merger Dynamics, Ejecta, Nucleosynthesis, and Multi-Messenger Signals",
+    "authors": [
+      "Yi Qiu",
+      "David Radice",
+      "Sherwood Richers",
+      "Federico Maria Guercilena",
+      "Albino Perego",
+      "Maitraya Bhattacharyya"
+    ],
+    "abstract": "We present numerical relativity simulations of binary neutron star mergers incorporating neutrino flavor transformations triggered by fast flavor instability, quantum many-body effects, or potential beyond standard model physics. In both long-lived and short-lived remnant scenarios, neutrino flavor conversions modify species-dependent neutrino luminosities and mean energies, and drive the matter towards more neutron rich conditions. They produce up to $300\\%$ more neutron rich ejecta and significantly boost the r-process yields, especially in low-density, near-equatorial outflows. We identify regions unstable to fast flavor instabilities and find that these instabilities persist despite flavor conversions. We further test the sensitivity to the equilibration timescale of the flavor conversions, finding that slower flavor conversions can interact with thermodynamic equilibration, and increase the neutron richness of the ejecta. Flavor conversions may also contribute to stronger gravitational wave and neutrino emissions, pointing to a correlation between neutrino transport and merger dynamics. These results highlight the potential impact of flavor conversions while motivating future work to improve on theoretical understanding of flavor instabilities in global simulations.",
+    "arxiv_id": "2510.15028v1",
+    "published": "2025-10-16T18:00:01Z",
+    "updated": "2025-10-16T18:00:01Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
     "title": "General-relativistic radiation magnetohydrodynamics simulations of binary neutron star mergers: The influence of spin on the multi-messenger picture",
     "authors": [
       "Anna Neuweiler",
