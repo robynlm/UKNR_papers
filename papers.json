@@ -1,5 +1,36 @@
 [
   {
+    "title": "Effects of Dynamical Capture on two equal-mass non-spinning black holes",
+    "authors": [
+      "Jorge L. Rodríguez-Monteverde",
+      "Santiago Jaraba",
+      "Juan García-Bellido"
+    ],
+    "abstract": "Dynamical captures of black holes are unique events that provide an exceptional opportunity to probe the strong-field regime of gravitational physics. In this article, we perform numerical relativity simulations to study the events of dynamical capture of two equal-mass non-spinning black holes. We consider a suite of scenarios within a range of initial linear momenta ($p/M=0.095-0.75$) and incidence angles ($\\theta=6.36^\\circ-2.83^\\circ$), and study the emitted Weyl scalar ($\\Psi_4$) of each case, as well as the spins and masses of the black holes before and after they merge. We provide a simple analytical model which accurately fits the gravitational-wave emission. We study the dependence of the time-interval between the capture and the merger emissions with respect to the incidence angle, which can be well parametrized by a first-order divergent behavior, allowing to find the angle that separates a scattering event from a dynamical capture. We also find that, in general, the parameters that model the first emission can be well described by linear or exponentially decaying functions in terms of the incidence angle, while others display more complex behaviors that offer valuable insights into the nature of these events.",
+    "arxiv_id": "2510.19699v1",
+    "published": "2025-10-22T15:50:18Z",
+    "updated": "2025-10-22T15:50:18Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO"
+    ]
+  },
+  {
+    "title": "Numerical simulations of Scalar Dark Matter Around Binary Neutron Star mergers",
+    "authors": [
+      "Rohan Srikanth",
+      "Tim Dietrich",
+      "Katy Clough"
+    ],
+    "abstract": "Binary neutron star mergers provide a laboratory for probing fundamental physics through their gravitational- wave emission and electromagnetic counterparts. In particular, they may allow us to explore signatures of physics beyond the Standard Model in strong-gravity regimes, such as those of dark matter. In this work, we investigate the dynamics of light dark matter, modeled as a minimally coupled scalar field, surrounding a binary neutron star system. Our primary focus is to assess whether the scalar field remains bound to the binary over the late inspiral-merger timescales and to determine its potential impact on observable signatures. We find that, in a range of scenarios, the scalar field forms a common cloud around the binary that does not disperse. At sufficiently high densities, this leads to measurable effects, including a dephasing of the binary inspiral, a less compact post-merger remnant, and suppression of the dynamical ejecta. For densities motivated by astrophysical considerations, however, these effects remain small and are unlikely to be detectable with current or next-generation gravitational-wave observatories.",
+    "arxiv_id": "2510.19547v1",
+    "published": "2025-10-22T12:55:17Z",
+    "updated": "2025-10-22T12:55:17Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Scalar fields around black hole binaries in LIGO-Virgo-KAGRA",
     "authors": [
       "Soumen Roy",
