@@ -1,5 +1,49 @@
 [
   {
+    "title": "Parameter matching between horizon quasi-local and point-particle definitions at 1PN for quasi-circular and non spinning BBH systems in harmonic gauge",
+    "authors": [
+      "Dongze Sun",
+      "Leo C. Stein"
+    ],
+    "abstract": "We investigate how commonly used parameter definitions in Post-Newtonian (PN) theory compare with those from Numerical Relativity (NR) for binary black hole (BBH) systems. In NR, masses and spins of each companion are measured quasi-locally from apparent horizon geometry, whereas in PN they are attributes of point particles defined via asymptotic matching in body zones. Although these definitions coincide in the infinite-separation limit, they could differ by finite-separation corrections that matter for precision modeling. Working entirely in harmonic gauge, we perform asymptotic matching between each companion's inner zone metric -- obtained from black hole perturbation theory -- and the PN two-body metric, and construct the coordinate transformation that preserves the gauge in the strong field region. We solve perturbatively for the apparent horizon (AH) on a group of harmonic inertial time slice and compute its quasi-local areal mass from the horizon geometry. Then we establish the leading order matching between quasi-local (AH based) and PN (point-particle) parameter definitions in harmonic gauge. We find that on a horizon penetrating harmonic slicing, the AH quasi-local mass agrees with the PN point-particle mass at 1PN order. For generic harmonic slicings that deviate from the horizon penetrating condition by a 1PN order perturbation, the AH mass differs from the PN mass also by a 1PN correction. This parameter matching is crucial for hybridizing PN and NR waveforms and for providing better initial conditions in NR and Cauchy-Characteristic Evolution (CCE) simulations. The framework provides a bridge between different descriptions of BBH systems, and it can be extended to spinning and eccentric cases and more general NR gauges.",
+    "arxiv_id": "2510.25618v1",
+    "published": "2025-10-29T15:21:31Z",
+    "updated": "2025-10-29T15:21:31Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Gauge Boundary conditions to mitigate CoM drift in BBH simulations",
+    "authors": [
+      "Dongze Sun",
+      "Sizheng Ma",
+      "Mark A. Scheel",
+      "Saul A. Teukolsky"
+    ],
+    "abstract": "Long-term numerical relativity (NR) simulations of binary black hole (BBH) systems in the Spectral Einstein Code (SpEC) code exhibit an unexpected exponential drift of the center-of-mass (CoM) away from the simulation's origin. In our work, we analyze this phenomenon and demonstrate that it is not a physical effect but rather a manifestation of a gauge artifact. The origin of this drift is the reflection of the gauge waves off the outer boundary of the computational domain. These reflections are introduced by inaccuracies in the gauge boundary condition, specifically, the application of the Sommerfeld condition to the time derivative of the gauge fields. Such an approach fails to completely suppress or correctly absorb the outgoing modes, thereby generating artificial feedback into the simulation. To mitigate this problem, we introduce a modified boundary condition that incorporates an explicit CoM correction source term designed to counteract the CoM motion. Our numerical experiments, performed with the SpEC code, reveal that this new boundary treatment reduces the CoM drift by several orders of magnitude compared to the standard implementation, and does not introduce any unwanted physical artifacts.",
+    "arxiv_id": "2510.25465v1",
+    "published": "2025-10-29T12:39:01Z",
+    "updated": "2025-10-29T12:39:01Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "BOB the (Waveform) Builder: Optimizing Analytical Black-Hole Binary Merger Waveforms",
+    "authors": [
+      "Anuj Kankani",
+      "Sean T. McWilliams"
+    ],
+    "abstract": "The Backwards-One-Body (BOB) model provides a fully analytical and physically motivated description of the merger-ringdown gravitational radiation emanating from a black hole binary merger. We perform a comprehensive validation of BOB for the dominant $(2,2)$ mode of quasi-circular and non-precessing systems, assessing its accuracy against numerical relativity (NR) simulations, state-of-the-art waveform models, and a sum of quasinormal modes. We demonstrate that BOB most accurately describes the gravitational wave news, achieving accuracy comparable to highly-calibrated Effective-One-Body and NR surrogate models. Because BOB is minimally tuned to NR catalogs, it retains a high level of accuracy in regions of the parameter space sparsely covered by current NR catalogs. BOB yields an analytic link between the amplitude of the fundamental quasinormal mode and the peak amplitude of the News, which we verify to within the errors of a surrogate ringdown model. We identify a flavor of BOB that requires only the remnant mass and spin, yet matches the accuracy of models that fit a sum of many overtones. Lastly, we show that BOB accurately models both the mass and current quadrupole waves for superkick configurations, contrary to a claim in the literature, and explain why that study was not actually implementing BOB as it has been defined. Our findings establish BOB as a powerful tool for gravitational wave analysis, for providing independent tests of NR-calibrated models, and for better understanding the underlying physics of the merger. We provide a companion python package, gwBOB, allowing for the easy construction of various flavors of BOB and comparison to NR waveforms.",
+    "arxiv_id": "2510.25012v1",
+    "published": "2025-10-28T22:21:34Z",
+    "updated": "2025-10-28T22:21:34Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Primordial black hole formation from collapsing domain walls with full general relativity",
     "authors": [
       "Naoya Kitajima"
