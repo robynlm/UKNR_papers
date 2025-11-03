@@ -1,5 +1,21 @@
 [
   {
+    "title": "Renormalisation Group approach to General Relativity",
+    "authors": [
+      "F. Gutiérrez",
+      "K. Falls",
+      "A. Codello"
+    ],
+    "abstract": "The detection of gravitational waves has intensified the need for efficient, high-precision modeling of the two-body problem in General Relativity. Current analytical methods, primarily the Post-Minkowskian and Post-Newtonian expansions, are inherently perturbative, while numerical relativity remains computationally expensive. In this Letter, we introduce a middle path: an exact renormalization group (RG) equation for classical gravitational systems. We demonstrate that our equation correctly reproduces the first three orders of the Post-Minkowskian expansion. Crucially, it provides a framework for non-perturbative approximations. As a first application, we show that our method efficiently recovers the 1PN two-body action, bypassing the need for complex three-graviton vertex calculations by leveraging the intrinsic nonlinearity of the RG flow. This establishes the exact RG as a powerful new tool for tackling strong-field dynamics in gravity.",
+    "arxiv_id": "2510.27676v1",
+    "published": "2025-10-31T17:42:42Z",
+    "updated": "2025-10-31T17:42:42Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
     "title": "Parameter matching between horizon quasi-local and point-particle definitions at 1PN for quasi-circular and non spinning BBH systems in harmonic gauge",
     "authors": [
       "Dongze Sun",
