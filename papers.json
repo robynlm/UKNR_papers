@@ -1,5 +1,21 @@
 [
   {
+    "title": "Spin-up and mass-gain in hyperbolic encounters of spinning black holes",
+    "authors": [
+      "Healey Kogan",
+      "Frederick C. L. Pardoe",
+      "Helvi Witek"
+    ],
+    "abstract": "Scattering black holes spin up and gain mass through the re-absorption of orbital angular momentum and energy radiated in gravitational waves during their encounter. In this work, we perform a series of numerical relativity simulations to investigate the spin-up and mass-gain for equal-mass black holes with a wide range of equal initial spins, $\\chi_{\\rm i}\\in[-0.7,0.7]$, aligned (or anti-aligned) to the orbital angular momentum. We also consider a variety of initial momenta. Furthermore, we explore a range of incident angles and identify the threshold between scattering and merging configurations. The spin-up and mass-gain are typically largest in systems with incident angles close to the threshold value, large momenta, and negative (i.e. anti-aligned) initial spins. When evaluated at the threshold angle, we find that the spin-up decreases linearly with initial spin. Intriguingly, systems with initial spin $\\chi_{\\rm i}=0.7$ sometimes experience a spin-down, in spite of an increase in the black-hole angular momentum, due to a corresponding gain in the black-hole mass. Across the simulation suite, we find a maximum spin-up of $0.3$ and a maximum increase in the black-hole mass of $15\\%$.",
+    "arxiv_id": "2511.00307v1",
+    "published": "2025-10-31T23:11:47Z",
+    "updated": "2025-10-31T23:11:47Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Renormalisation Group approach to General Relativity",
     "authors": [
       "F. Gutiérrez",
