@@ -1,5 +1,25 @@
 [
   {
+    "title": "Accuracy of ringdown models calibrated to numerical relativity simulations",
+    "authors": [
+      "Francesco Crescimbeni",
+      "Gregorio Carullo",
+      "Emanuele Berti",
+      "Giada Caneva Santoro",
+      "Mark Ho-Yeuk Cheung",
+      "Paolo Pani"
+    ],
+    "abstract": "The ''ringdown'' stage of gravitational-wave signals from binary black hole mergers, mainly consisting of a superposition of quasinormal modes emitted by the merger remnant, is a key tool to test fundamental physics and to probe black hole dynamics. However, ringdown models are known to be accurate only in the late-time, stationary regime. A key open problem in the field is to understand if these models are robust when extrapolated to earlier times, and if they can faithfully recover a larger portion of the signal. We address this question through a systematic time-domain calculation of the mismatch between non-precessing, quasi-circular ringdown models parameterised by the progenitor binary's degrees of freedom and full numerical relativity inspiral-merger-ringdown waveforms from the Simulating eXtreme Spacetimes (SXS) simulation catalog. For the best-performing models, the mismatch is typically in the range $[10^{-6}, 10^{-4}]$ for the $(\\ell,|m|)= (2,2)$ harmonic, and $[10^{-4}, 10^{-2}]$ for higher-order modes. Our findings inform ongoing observational searches for quasinormal modes, and underscore the need for improved modeling of higher-order modes to meet the sensitivity requirements of future gravitational-wave detectors.",
+    "arxiv_id": "2511.02915v1",
+    "published": "2025-11-04T19:00:24Z",
+    "updated": "2025-11-04T19:00:24Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "hep-ph"
+    ]
+  },
+  {
     "title": "Spin-up and mass-gain in hyperbolic encounters of spinning black holes",
     "authors": [
       "Healey Kogan",
