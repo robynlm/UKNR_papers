@@ -1,5 +1,20 @@
 [
   {
+    "title": "AthenaK Simulations of Magnetized Binary Neutron Star Mergers",
+    "authors": [
+      "Jacob Fields",
+      "David Radice"
+    ],
+    "abstract": "We present new numerical-relativity simulations of a magnetized binary neutron star merger performed with AthenaK. The simulations employ a temperature- and composition-dependent tabulated nuclear equation of state, with initially dipolar fields with a maximum initial strength of ${\\sim}10^{16}\\ {\\rm G}$ which extend outside the stars. We employ adaptive mesh refinement and consider three grid resolutions, with grid spacing down to $\\Delta x_{\\rm min} \\simeq 92\\ {\\rm m}$ in the most refined region. When comparing the two highest resolution simulations, we find orbital dephasing of over 7 orbits until merger of only $0.06$ radians. The magnetic field is amplified during the merger and we observe the formation of a magnetized funnel in the polar region of the remnant. Simulations are continued until about $30$ milliseconds after merger. However, due to significant baryonic pollution, the binary fails to produce a magnetically-dominated outflow. Finally, we discuss possible numerical and physical effects that might alter this outcome.",
+    "arxiv_id": "2511.06058v1",
+    "published": "2025-11-08T15:56:33Z",
+    "updated": "2025-11-08T15:56:33Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Accuracy of ringdown models calibrated to numerical relativity simulations",
     "authors": [
       "Francesco Crescimbeni",
