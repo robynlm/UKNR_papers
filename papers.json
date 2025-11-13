@@ -152,7 +152,7 @@
     "abstract": "Binary neutron star mergers provide a laboratory for probing fundamental physics through their gravitational- wave emission and electromagnetic counterparts. In particular, they may allow us to explore signatures of physics beyond the Standard Model in strong-gravity regimes, such as those of dark matter. In this work, we investigate the dynamics of light dark matter, modeled as a minimally coupled scalar field, surrounding a binary neutron star system. Our primary focus is to assess whether the scalar field remains bound to the binary over the late inspiral-merger timescales and to determine its potential impact on observable signatures. We find that, in a range of scenarios, the scalar field forms a common cloud around the binary that does not disperse. At sufficiently high densities, this leads to measurable effects, including a dephasing of the binary inspiral, a less compact post-merger remnant, and suppression of the dynamical ejecta. For densities motivated by astrophysical considerations, however, these effects remain small and are unlikely to be detectable with current or next-generation gravitational-wave observatories.",
     "arxiv_id": "2510.19547v1",
     "published": "2025-10-22T12:55:17Z",
-    "updated": "2025-10-22T12:55:17Z",
+    "updated": "2025-10-23T00:46:16Z",
     "categories": [
       "gr-qc"
     ]
@@ -169,9 +169,10 @@
     "abstract": "Light scalar particles arise naturally in many extensions of the Standard Model and are well-motivated dark matter candidates. Gravitational interactions near black holes can trigger the growth of dense scalar configurations that, if sustained during inspiral, alter binary dynamics and imprint signatures on gravitational-wave signals. Detecting such effects would provide a novel probe of fundamental physics and dark matter. Here we develop a semi-analytic waveform model for binaries in scalar environments, validated against numerical relativity simulations, and apply it in a Bayesian analysis of the LIGO-Virgo-KAGRA catalog. Our results set physically meaningful upper bounds on scalar environments around compact binaries. When superradiance priors are included, we find tentative evidence for such an environment in GW190728 with $\\ln B_{\\mathrm{vac}}^{\\mathrm{env}} \\approx 3.5$, which would correspond to the existence of a light scalar field with mass $\\sim 10^{-12}\\,\\mathrm{eV}$.",
     "arxiv_id": "2510.17967v1",
     "published": "2025-10-20T18:00:02Z",
-    "updated": "2025-10-20T18:00:02Z",
+    "updated": "2025-10-23T00:29:09Z",
     "categories": [
       "gr-qc",
+      "astro-ph.CO",
       "astro-ph.HE",
       "hep-ph"
     ]
@@ -322,12 +323,11 @@
     "abstract": "We present MHDuet, an open source evolution code for general relativistic magnetohydrodynamics with neutrino transport. The code solves the full set of Einstein equations coupled to a relativistic, magnetized fluid with an M1 neutrino radiation scheme using advanced techniques, including adaptive mesh and large eddy simulation techniques, to achieve high accuracy. The Simflowny platform generates the code from a high-level specification of the computational system, producing code that runs with either the SAMRAI or AMReX infrastructure. The choice of AMReX enables compilation and execution on GPUs, running an order of magnitude faster than on CPUs at the node level. We validate the code against benchmark tests, reproducing previous results obtained with the SAMRAI infrastructure, and demonstrate its capabilities with simulations of neutron stars employing realistic tabulated equations of state. Resolution studies clearly demonstrate convergence faster than second order in the grid spacing. Scaling tests reveal excellent strong and weak scaling performance when running on GPUs. The goal of the code is to provide a powerful tool for studying the dynamics of compact objects within multi-messenger astrophysics.",
     "arxiv_id": "2510.13965v1",
     "published": "2025-10-15T18:00:09Z",
-    "updated": "2025-10-15T18:00:09Z",
+    "updated": "2025-10-17T00:03:21Z",
     "categories": [
       "gr-qc",
       "astro-ph.HE",
-      "astro-ph.IM",
-      "85-08, 83-08"
+      "astro-ph.IM"
     ]
   },
   {
@@ -519,12 +519,12 @@
     "authors": [
       "Thomas W. Baumgarte",
       "Katy Clough",
-      "John T. Giblin Jr"
+      "John T. Giblin"
     ],
     "abstract": "Numerical relativity simulations provide a means by which to study the evolution and end point of strong over-densities in cosmological spacetimes. Specific applications include studies of primordial black hole formation and the robustness of inflation. Here we adopt a toy model previously used in asymptotically flat spacetimes to show that, for given values of the over-density and the mean curvature, solutions to the Hamiltonian constraint need not exist, and if they do exist they are not unique. Specifically, pairs of solutions exist on two branches, corresponding to strong-field and weak-field solutions, that join at a maximum beyond which solutions cease to exist. As a result, there is a limit to the extent to which an over-density can be balanced by intrinsic rather than extrinsic curvature on the initial slice. Even below this limit, iterative methods to construct initial data may converge to solutions on either one of the two branches, depending on the starting guess, leading to potentially inconsistent physical results in the evolution.",
     "arxiv_id": "2509.26470v1",
     "published": "2025-09-30T16:19:50Z",
-    "updated": "2025-09-30T16:19:50Z",
+    "updated": "2025-10-01T01:15:14Z",
     "categories": [
       "gr-qc",
       "astro-ph.CO"
@@ -583,7 +583,7 @@
     "abstract": "Numerical relativity has produced profound and extensive impacts on modern astrophysics and gravitational-wave astronomy. In this work, we develop a Python interface for the numerical relativity program AMSS-NCKU. This interface enables the automation of initializing and executing the AMSS-NCKU simulations, as well as the automated visualization of the output data. To show the practical utility of this Python interface, we present two representative examples of numerical relativity simulations (the binary and triple black hole merger processes), obtaining well-behaved stable numerical results and the expected physical behaviors for black hole systems. The Python operational interface significantly reduces the operational complexity of the AMSS-NCKU simulation workflow, lowering the technical barriers for freshman users. Keywords: Numerical Relativity, Gravitational Waves, Black Hole Physics, Python",
     "arxiv_id": "2509.21652v2",
     "published": "2025-09-25T22:12:52Z",
-    "updated": "2025-10-10T15:45:08Z",
+    "updated": "2025-10-13T00:57:56Z",
     "categories": [
       "gr-qc",
       "astro-ph.HE"
@@ -638,7 +638,7 @@
     "abstract": "The recently proposed first-order viscous relativistic hydrodynamics formulation by Bemfica, Disconzi, Noronha, and Kovtun (commonly known as the BDNK formulation) has been shown to be causal, stable, strongly hyperbolic, and thus locally well-posed. It is now a viable new option for modelling out-of-equilibrium effects in fluids, and has attracted wide attention in its potential applications to astrophysical systems. In this work, we present the first non-linear numerical simulation of spherically symmetric neutron stars using the BDNK formulation under the Cowling approximation. Using a simplified equation of state, we show that stable evolutions can be constructed within a restricted parameter space up to the simulation time we explored. From these simulations, we analyse the frequency content of the quasi-normal modes and the decay rate of the fundamental mode. This analysis serves as a first step towards constructing a fully consistent model of neutron stars using the BDNK formulation.",
     "arxiv_id": "2509.15303v1",
     "published": "2025-09-18T18:00:02Z",
-    "updated": "2025-09-18T18:00:02Z",
+    "updated": "2025-09-22T00:03:12Z",
     "categories": [
       "gr-qc",
       "astro-ph.HE",
