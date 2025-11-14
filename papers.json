@@ -906,34 +906,5 @@
     "categories": [
       "gr-qc"
     ]
-  },
-  {
-    "title": "Perturbations of Solitonic Boson Stars: Nonlinear Radial Stability and Binding Energy",
-    "authors": [
-      "Gareth Arturo Marks"
-    ],
-    "abstract": "We study the nonlinear radial stability of boson stars with a solitonic potential across the entire parameter space, focusing especially on families of solutions that support ultracompact models on the perturbatively stable branch. Using a dimensional reduction of the CCZ4 formulation of numerical relativity, we dynamically evolve these models with both internal and external perturbations. We find in particular that there are perturbatively stable models with positive binding energy that do not effectively disperse even under explicit perturbations, challenging the conventional wisdom that negative binding energy is a necessary condition for the dynamical stability of boson stars and other compact objects.",
-    "arxiv_id": "2508.11757v1",
-    "published": "2025-08-15T18:04:19Z",
-    "updated": "2025-08-15T18:04:19Z",
-    "categories": [
-      "gr-qc",
-      "hep-th"
-    ]
-  },
-  {
-    "title": "Assessing the stability of ultracompact spinning boson stars with nonlinear evolutions",
-    "authors": [
-      "Tamara Evstafyeva",
-      "Nils Siemonsen",
-      "William E. East"
-    ],
-    "abstract": "We reinvestigate the stability properties of ultracompact spinning boson stars with a stable light ring using fully nonlinear 3+1 and 2+1 numerical relativity simulations and two different formulations of the Einstein equations. We find no evidence of an instability on timescales of $t \\mu \\sim 10^4$ (in units of the scalar mass), when allowing the star to be perturbed either solely by discretization error or by imposing various types of perturbations to our initial data. We find that the initially imposed perturbations exhibit slow decay, even for magnitudes just below the order where immediate collapse is induced.",
-    "arxiv_id": "2508.11527v1",
-    "published": "2025-08-15T15:09:39Z",
-    "updated": "2025-08-15T15:09:39Z",
-    "categories": [
-      "gr-qc"
-    ]
   }
 ]
