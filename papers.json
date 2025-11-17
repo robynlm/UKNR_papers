@@ -1,5 +1,642 @@
 [
   {
+    "title": "Accurate models for recoil velocity distribution in black hole mergers with comparable to extreme mass-ratios and their astrophysical implications",
+    "authors": [
+      "Tousif Islam",
+      "Digvijay Wadekar"
+    ],
+    "abstract": "Modeling the remnant recoil velocity (kick) distribution from binary black hole mergers is crucial for understanding hierarchical mergers in active galactic nuclei or globular clusters. Existing analytic models often show large discrepancies with numerical relativity (NR) data, while data-driven models are limited to mass ratios of q<=8 (aligned spins) and q<=4 (precessing spins) and break down when extrapolated outside their training ranges. Using ~5000 of NR simulations from the SXS and RIT catalogs up to q=128 and ~100 black hole perturbation theory simulations up to q=200, we present two classes of models: (i) gwModel_kick_q200 (gwModel_kick_q200_GPR), an analytic (Gaussian process regression) model for aligned-spin binaries. (ii) gwModel_kick_prec_flow, a normalizing-flow model for kick distribution from precessing binaries with isotropic spins. Our approach combines analytic insights from post-Newtonian theory with data-driven techniques to ensure correct limiting behavior and high accuracy across parameter space. Both gwModel_kick_q200 and gwModel_kick_prec_flow are valid from comparable to extreme mass ratios. Extensive validation shows all three models outperform existing ones within their respective domains. Finally, using both back-of-the-envelope estimates and 1404 detailed star cluster simulations incorporating our kick models, we find that the black hole retention probability in low mass globular clusters can vary noticeably when the gwModel_kick_prec_flow model is employed. The models are publicly available through the gwModels package.",
+    "arxiv_id": "2511.11536v1",
+    "published": "2025-11-14T18:13:37Z",
+    "updated": "2025-11-14T18:13:37Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Laminar boundary layers over small-scale textured surfaces",
+    "authors": [
+      "Samuel D. Tomlinson",
+      "Demetrios T. Papageorgiou"
+    ],
+    "abstract": "We develop a model for steady, laminar boundary layers over small-scale textured surfaces. Although the texture is small relative to the boundary-layer thickness, it modifies the flow via a slip length. We use matched asymptotic expansions to simplify the problem, dividing the flow into outer, boundary-layer and inner regions. The far-field behaviour of the inner problem yields a slip boundary condition for the boundary layer. We derive an asymptotic solution valid when the slip length is small. For arbitrary slip lengths, we develop a numerical method combining Chebyshev collocation and finite differences. We apply this framework to canonical small-scale textured surfaces, including superhydrophobic surfaces and riblets, and utilise existing analytical slip formulae. We demonstrate how slip can effect the boundary layer's velocity field, wall shear stress and displacement thickness. Our approach enables computationally inexpensive modelling of small-scale textured surfaces in applications ranging from microfluidics to marine transport.",
+    "arxiv_id": "2511.11471v1",
+    "published": "2025-11-14T16:42:17Z",
+    "updated": "2025-11-14T16:42:17Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "On-Device Fine-Tuning via Backprop-Free Zeroth-Order Optimization",
+    "authors": [
+      "Prabodh Katti",
+      "Sangwoo Park",
+      "Bipin Rajendran",
+      "Osvaldo Simeone"
+    ],
+    "abstract": "On-device fine-tuning is a critical capability for edge AI systems, which must support adaptation to different agentic tasks under stringent memory constraints. Conventional backpropagation (BP)-based training requires storing layer activations and optimizer states, a demand that can be only partially alleviated through checkpointing. In edge deployments in which the model weights must reside entirely in device memory, this overhead severely limits the maximum model size that can be deployed. Memory-efficient zeroth-order optimization (MeZO) alleviates this bottleneck by estimating gradients using forward evaluations alone, eliminating the need for storing intermediate activations or optimizer states. This enables significantly larger models to fit within on-chip memory, albeit at the cost of potentially longer fine-tuning wall-clock time. This paper first provides a theoretical estimate of the relative model sizes that can be accommodated under BP and MeZO training. We then numerically validate the analysis, demonstrating that MeZO exhibits accuracy advantages under on-device memory constraints, provided sufficient wall-clock time is available for fine-tuning.",
+    "arxiv_id": "2511.11362v1",
+    "published": "2025-11-14T14:46:29Z",
+    "updated": "2025-11-14T14:46:29Z",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "Analytical approximations for curved primordial tensor spectra",
+    "authors": [
+      "Ezra Msolla",
+      "Ayngaran Thavanesan"
+    ],
+    "abstract": "We build upon previous analytical treatments of scalar perturbations in curved inflationary universes to obtain analytical templates for the primordial tensor power spectrum in models with non-zero primordial spatial curvature. These templates are derived without assuming a particular inflaton potential, thereby isolating the universal imprints of curvature on tensor modes. Our results predict characteristic large-scale features -- including low-$\\ell$ cut-offs and oscillatory patterns -- that are consistent with numerical solutions and provide a clear physical interpretation of how curvature modifies the underlying dynamics. In particular, we show that curvature effects manifest mathematically as systematic shifts in the dynamically relevant wavevectors, mirroring the behaviour previously identified in the scalar power spectrum. These features translate into distinctive signatures in the large-angle $B$-mode polarisation spectrum, offering a potential discriminant for spatial curvature in forthcoming CMB observations.",
+    "arxiv_id": "2511.10644v1",
+    "published": "2025-11-13T18:58:49Z",
+    "updated": "2025-11-13T18:58:49Z",
+    "categories": [
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Information phases of partial projected ensembles generated from random quantum states",
+    "authors": [
+      "Alan Sherry",
+      "Saptarshi Mandal",
+      "Sthitadhi Roy"
+    ],
+    "abstract": "The projected ensemble -- an ensemble of pure states on a subsystem conditioned on projective measurement outcomes on its complement -- provides a finer probe of ergodicity and information structure than the reduced density matrix of the subsystem in bipartite quantum states. This framework can be generalised to partial projected ensembles in tripartite settings, where outcomes from part of the measured subsystem are discarded, leading to ensembles of mixed states. We show that information measures defined for such ensembles, in particular the Holevo information, yield a more detailed characterisation of how quantum information is distributed between subsystems compared to conventional entanglement measures. Using exact analytical results supported by numerical results, we uncover a qualitative change in the scaling of the Holevo information with system size in partial projected ensembles generated by Haar-random states, as the relative sizes of the subsystem are varied. In one phase, the Holevo information decays exponentially with system size, while in the other it grows linearly, thereby defining distinct information phases separated by sharp transitions signalled by non-analyticities in the Holevo information. The exponentially decaying phase rigorously establishes the existence of a measurement-invisible quantum-correlated phase -- a manifestation of many-body information scrambling with no bipartite analogue. Finally, we contrast this information-phase diagram with the entanglement-phase structure of tripartite Haar-random states obtained from logarithmic negativity, and show that the Holevo information reveals additional fine structure beyond conventional entanglement measures.",
+    "arxiv_id": "2511.10595v1",
+    "published": "2025-11-13T18:33:59Z",
+    "updated": "2025-11-13T18:33:59Z",
+    "categories": [
+      "quant-ph",
+      "cond-mat.dis-nn",
+      "cond-mat.stat-mech"
+    ]
+  },
+  {
+    "title": "Learning Post-Newtonian Corrections from Numerical Relativity",
+    "authors": [
+      "Jooheon Yoo",
+      "Michael Boyle",
+      "Nils Deppe"
+    ],
+    "abstract": "Accurate modeling of gravitational waveforms from compact binary coalescences remains central to gravitational-wave (GW) astronomy. Post-Newtonian (PN) approximations capture the early inspiral dynamics analytically but break down near merger, while numerical relativity (NR) provides the accurate yet computationally expensive waveforms over limited parameter ranges. We develop a physics-informed neural network (PINN) framework that learns corrections mapping PN dynamics and waveforms to their NR counterparts. As a demonstration of the approach, we use the TaylorT4 PN model as the baseline, and train the network on hybridized NR surrogate data (NRHybSur3dq8) to learn higher-order corrections to the orbital dynamics and waveform modes for nonspinning noneccentric systems. Physically motivated loss terms enforce known limits and symmetries, such as vanishing corrections in the Newtonian limit and suppression of odd-$m$ modes in equal-mass systems, promoting consistent and reliable extrapolation beyond the training region. We simultaneously incorporate corrections that account for the different meaning of mass parameters in PN and NR descriptions. The learned corrections significantly reduce the phase and amplitude error through the inspiral up to about $200M$ before the merger. This approach provides a differentiable and computationally efficient bridge between PN and NR, offering a path toward waveform models that generalize more robustly beyond existing NR datasets.",
+    "arxiv_id": "2511.10522v1",
+    "published": "2025-11-13T17:25:31Z",
+    "updated": "2025-11-13T17:25:31Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Frequency Spectra of Isolated Laser Pulse Envelopes",
+    "authors": [
+      "L. H. Ford",
+      "Brian Fu"
+    ],
+    "abstract": "This paper will deal with isolated laser pulses, those which last for a finite time interval and whose envelope function is strictly zero outside of this interval. We numerically calculate the Fourier transform of this function and study its asymptotic behavior at high frequencies. This work is motivated by recent results on the probability distributions of quadratic operators in second quantized systems. An example is the density of a material which is subject to zero point fluctuations in the phonon vacuum state. These distributions can decrease very slowly, leading to a relatively high probability for large fluctuations. If the operator is measured by a laser pulse, the rate of decrease of the distribution mirrors the rate of decrease of the pulse envelope Fourier transform. We describe a model for the creation of isolated pulses in which this Fourier transform falls as an exponential of a fractional power of frequency and find examples where this fraction is in the range 0.1 to 0.2. The probability distribution for large fluctuation has the same functional form and implies a significant probability for fluctuations very large compared to the variance.",
+    "arxiv_id": "2511.10506v1",
+    "published": "2025-11-13T17:12:43Z",
+    "updated": "2025-11-13T17:12:43Z",
+    "categories": [
+      "quant-ph",
+      "cond-mat.mes-hall",
+      "physics.optics"
+    ]
+  },
+  {
+    "title": "Analytical Nuclear Gradients for the Multiconfigurational Self-Consistent Field Method Coupled with the Polarizable Fluctuating Charges Model",
+    "authors": [
+      "Francesco Mazza",
+      "Marco Trinari",
+      "Chiara Sepali",
+      "Chiara Cappelli"
+    ],
+    "abstract": "The multiscale model combining the multiconfigurational self-consistent field (MCSCF) method with the fully atomistic polarizable Fluctuating Charges (FQ) force field (J. Chem. Theory Comput. 2024, 20, 9954-9967) is here extended to the calculation of analytical nuclear gradients. The gradients are derived from first principles, implemented in the OpenMolcas package, and validated against numerical references. The resulting MCSCF/FQ nuclear gradients are employed to simulate vibronic absorption spectra of aromatic molecules in aqueous solution, namely benzene and phenol. By integrating this approach with molecular dynamics simulations, both solute conformational flexibility and the dynamical aspects of solvation are properly captured. The computed spectra reproduce experimental profiles and relative band intensities with remarkable accuracy, demonstrating the capability of the MCSCF/FQ model to simultaneously describe the multireference character of the solute and its interaction with the solvent environment.",
+    "arxiv_id": "2511.10295v1",
+    "published": "2025-11-13T13:33:21Z",
+    "updated": "2025-11-13T13:33:21Z",
+    "categories": [
+      "physics.chem-ph"
+    ]
+  },
+  {
+    "title": "Black-hole scattering with numerical relativity: Self-force extraction and post-Minkowskian validation",
+    "authors": [
+      "Oliver Long",
+      "Harald P. Pfeiffer",
+      "Lawrence E. Kidder",
+      "Mark A. Scheel"
+    ],
+    "abstract": "The asymptotic nature of unbound binary-black-hole encounters provides a clean method for comparing different approaches for modeling the two-body problem in general relativity. In this work, we use numerical relativity simulations of black-hole scattering, generated using the Spectral Einstein Code, to explore the self-force and post-Minkowskian expansions of the scattering angle. First, we use a set of unequal-mass simulations to extract the self-force contributions to the scattering angle. Our main result is that using information up to second-order in the symmetric mass ratio (2SF) reproduces numerical relativity within the error bars across the full range of mass-ratios, including equal mass. Next, we compare our numerical relativity results to state-of-the-art post-Minkowskian predictions at larger impact parameters than previously explored. We find good agreement in the weak-field regime and discuss the relative importance of higher-order terms.",
+    "arxiv_id": "2511.10196v1",
+    "published": "2025-11-13T11:08:39Z",
+    "updated": "2025-11-13T11:08:39Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Addressable fault-tolerant universal quantum gate operations for high-rate lift-connected surface codes",
+    "authors": [
+      "Josias Old",
+      "Juval Bechar",
+      "Markus Müller",
+      "Sascha Heußen"
+    ],
+    "abstract": "Quantum low-density parity check (qLDPC) codes are among the leading candidates to realize error-corrected quantum memories with low qubit overhead. Potentially high encoding rates and large distance relative to their block size make them appealing for practical suppression of noise in near-term quantum computers. In addition to increased qubit-connectivity requirements compared to more conventional topological quantum error correcting codes, qLDPC codes remain notoriously hard to compute with. In this work, we introduce a construction to implement all Clifford quantum gate operations on the recently introduced lift-connected surface (LCS) codes (Old et al. 2024). These codes can be implemented in a 3D-local architecture and achieve asymptotic scaling $[[n, \\mathcal{O}(n^{1/3}), \\mathcal{O}(n^{1/3})]]$. In particular, LCS codes realize favorable instances with small numbers of qubits: For the $[[15,3,3]]$ LCS code, we provide deterministic fault-tolerant (FT) circuits of the logical gate set $\\{\\overline{H}_i, \\overline{H}_i, \\overline{C_i X_j}\\}_{i,j \\in (0,1,2)}$ based on flag qubits. By adding a procedure for FT magic state preparation, we show quantitatively how to realize an FT universal gate set in $d=3$ LCS codes. Numerical simulations indicate that our gate constructions can attain pseudothresholds in the range $p_{\\mathrm{th}} \\approx 4.8\\cdot 10^{-3}-1.2\\cdot 10^{-2}$ for circuit-level noise. The schemes use a moderate number of qubits and are therefore feasible for near-term experiments, facilitating progress for fault-tolerant error corrected logic in high-rate qLPDC codes.",
+    "arxiv_id": "2511.10191v1",
+    "published": "2025-11-13T11:01:44Z",
+    "updated": "2025-11-13T11:01:44Z",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "Veiled Singularities in Einstein-Weyl Gravity: Stability and Physical Interpretation of Horizonless Solutions",
+    "authors": [
+      "Alfio M. Bonanno",
+      "Samuele Silveravalle",
+      "Andrea Spina"
+    ],
+    "abstract": "We investigate a class of horizonless solutions in Einstein-Weyl gravity, corresponding to the so-called attractive naked singularities of the (-2,2) type. In contrast to General Relativity, where naked singularities are generically unstable and excluded by the cosmic censorship conjecture, we show that these configurations are linearly stable under tensor perturbations. By numerically evolving the perturbation equations in the time domain, we find that all modes decay with characteristic oscillatory tails, a behavior consistent with the dynamics of massive field perturbations in quadratic gravity. This establishes that attractive naked singularities in Einstein-Weyl gravity are dynamically stable and can persist as stationary configurations. We argue that these horizonless configurations are observationally concealed, and therefore we refer to them as veiled singularities. Their stability and phenomenological similarity to black holes suggest that they may represent viable horizonless alternatives in higher-derivative theories of gravity, offering a novel perspective on the interplay between singularity resolution, stability, and effective field dynamics beyond Einstein's theory.",
+    "arxiv_id": "2511.10151v1",
+    "published": "2025-11-13T10:04:47Z",
+    "updated": "2025-11-13T10:04:47Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Debiased Dual-Invariant Defense for Adversarially Robust Person Re-Identification",
+    "authors": [
+      "Yuhang Zhou",
+      "Yanxiang Zhao",
+      "Zhongyun Hua",
+      "Zhipu Liu",
+      "Zhaoquan Gu",
+      "Qing Liao",
+      "Leo Yu Zhang"
+    ],
+    "abstract": "Person re-identification (ReID) is a fundamental task in many real-world applications such as pedestrian trajectory tracking. However, advanced deep learning-based ReID models are highly susceptible to adversarial attacks, where imperceptible perturbations to pedestrian images can cause entirely incorrect predictions, posing significant security threats. Although numerous adversarial defense strategies have been proposed for classification tasks, their extension to metric learning tasks such as person ReID remains relatively unexplored. Moreover, the several existing defenses for person ReID fail to address the inherent unique challenges of adversarially robust ReID. In this paper, we systematically identify the challenges of adversarial defense in person ReID into two key issues: model bias and composite generalization requirements. To address them, we propose a debiased dual-invariant defense framework composed of two main phases. In the data balancing phase, we mitigate model bias using a diffusion-model-based data resampling strategy that promotes fairness and diversity in training data. In the bi-adversarial self-meta defense phase, we introduce a novel metric adversarial training approach incorporating farthest negative extension softening to overcome the robustness degradation caused by the absence of classifier. Additionally, we introduce an adversarially-enhanced self-meta mechanism to achieve dual-generalization for both unseen identities and unseen attack types. Experiments demonstrate that our method significantly outperforms existing state-of-the-art defenses.",
+    "arxiv_id": "2511.09933v1",
+    "published": "2025-11-13T03:56:40Z",
+    "updated": "2025-11-13T03:56:40Z",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Electromagnetic Quantitative Inversion for Translationally Moving Targets via Phase Correlation Registration of Back-Projection Images",
+    "authors": [
+      "Yitao Lin",
+      "Dahai Dai",
+      "Shilong Sun",
+      "Yuchen Wu",
+      "Bo Pang"
+    ],
+    "abstract": "An novel electromagnetic quantitative inversion scheme for translationally moving targets via phase correlation registration of back-projection (BP) images is proposed. Based on a time division multiplexing multiple-input multiple-output (TDM-MIMO) radar architecture, the scheme first achieves high-precision relative positioning of the target, then applies relative motion compensation to perform iterative inversion on multi-cycle MIMO measurement data, thereby reconstructing the target's electromagnetic parameters. As a general framework compatible with other mainstream inversion algorithms, we exemplify our approach by incorporating the classical cross-correlated contrast source inversion (CC-CSI) into iterative optimization step of the scheme, resulting in a new algorithm termed RMC-CC-CSI. Numerical and experimental results demonstrate that RMC-CC-CSI offers accelerated convergence, enhanced reconstruction fidelity, and improved noise immunity over conventional CC-CSI for stationary targets despite increased computational cost.",
+    "arxiv_id": "2511.09898v1",
+    "published": "2025-11-13T02:59:42Z",
+    "updated": "2025-11-13T02:59:42Z",
+    "categories": [
+      "eess.IV"
+    ]
+  },
+  {
+    "title": "Local arrows of time in quantum many-body systems",
+    "authors": [
+      "Andrew G. Yates",
+      "Jordan Cotler",
+      "Nishad Maskara",
+      "Mikhail D. Lukin"
+    ],
+    "abstract": "We demonstrate that in quantum many-body systems, local arrows of time can differ from the global time $t$ induced by Hamiltonian evolution. That is, within a quantum many-body system, the flow of time can be relative to each observer or by proxy each local subsystem. We provide a definition of local arrows of time in quantum many-body systems, and explain their relation to spacetime quantum entropies. Then we give a variety of numerical and analytical examples which explore different ways in which local arrows of time can manifest in quantum many-body dynamics, including exotic arrows of time arising from quantum thermalization and quantum error correction.",
+    "arxiv_id": "2511.09758v1",
+    "published": "2025-11-12T21:42:07Z",
+    "updated": "2025-11-12T21:42:07Z",
+    "categories": [
+      "quant-ph",
+      "cond-mat.str-el"
+    ]
+  },
+  {
+    "title": "glitterin: Towards Replacing the Role of Lorenz-Mie Theory in Astronomy Using Neural Networks Trained on Light Scattering of Irregularly Shaped Grains",
+    "authors": [
+      "Zhe-Yu Daniel Lin",
+      "Alycia J. Weinberger",
+      "Evgenij Zubko",
+      "Jessica A. Arnold",
+      "Gorden Videen"
+    ],
+    "abstract": "Light scattering by dust particles is often modeled assuming the dust is spherical for numerical simplicity and speed. However, real dust particles have highly irregular morphologies that significantly affect their scattering properties. We have developed glitterin, a neural network trained to predict light scattering from irregularly shaped dust grains, offering a computationally efficient alternative to Lorenz-Mie theory. We computed scattering properties using the Discrete Dipole Approximation code ADDA for irregularly shaped particles across size parameters x from 0.1 to 65, covering a range in complex refractive index m that includes astrosilicates, pyroxene, enstatite, water-ice, etc. The neural network operates at millisecond timescales while maintaining superior accuracy compared to linear interpolation. Irregular grains exhibit x-dependent deviations from spherical predictions. At small x, cross-sections approach volume-equivalent spheres for low m. At large x, irregular grains show enhanced cross-sections due to greater geometric extension. Increasing m also enhances the absorption cross-section relative to the volume-equivalent spheres. This differential x and m dependence creates mid-IR solid-state features distinct from predictions from spherical grains. Validation against laboratory measurements of forsterite and hematite demonstrates that our neural network captures both qualitative and quantitative behaviors more accurately than spherical models. Millimeter-wavelength applications reveal that spherical grains produce opposite polarization signatures compared to irregular grains, potentially relaxing stringent ~100um grain size constraints in protoplanetary disks. glitterin is publicly available and alleviates the computational barriers to incorporating emission and scattering of realistic grain morphologies.",
+    "arxiv_id": "2511.09668v1",
+    "published": "2025-11-12T19:15:00Z",
+    "updated": "2025-11-12T19:15:00Z",
+    "categories": [
+      "astro-ph.EP"
+    ]
+  },
+  {
+    "title": "Finite Populations & Finite Time: The Non-Gaussianity of a Gravitational Wave Background",
+    "authors": [
+      "William G. Lamb",
+      "Jeremy M. Wachter",
+      "Andrea Mitridate",
+      "Shashwat C. Sardesai",
+      "Bence Bécsy",
+      "Emily L. Hagen",
+      "Stephen R. Taylor",
+      "Luke Zoltan Kelley"
+    ],
+    "abstract": "Strong evidence for an isotropic, Gaussian gravitational wave background (GWB) has been found by multiple pulsar timing arrays (PTAs). The GWB is expected to be sourced by a finite population of supermassive black hole binaries (SMBHBs) emitting in the PTA sensitivity band, and astrophysical inference of PTA data sets suggests a GWB signal that is at the higher end of GWB spectral amplitude estimates. However, current inference analyses make simplifying assumptions, such as modeling the GWB as Gaussian, assuming that all SMBHBs only emit at frequencies that are integer multiples of the total observing time, and ignoring the interference between the signals of different SMBHBs. In this paper, we build analytical and numerical models of an astrophysical GWB without the above approximations, and compare the statistical properties of its induced PTA signal to those of a signal produced by a Gaussian GWB. We show that interference effects introduce non-Gaussianities in the PTA signal, which are currently unmodeled in PTA analyses.",
+    "arxiv_id": "2511.09659v1",
+    "published": "2025-11-12T19:05:59Z",
+    "updated": "2025-11-12T19:05:59Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Hybrid model for inspiral-merger-ringdown gravitational waveforms from comparable-mass, nonspinning binary black holes",
+    "authors": [
+      "Nur E. M. Rifat",
+      "David A. Nichols",
+      "Kent Yagi"
+    ],
+    "abstract": "Gravitational waves from comparable-mass binary-black-hole mergers are often described in terms of three stages: inspiral, merger and ringdown. Post-Newtonian and black-hole perturbation theories are used to model the inspiral and ringdown parts of the waveform, respectively, while the merger phase has been modeled most accurately using numerical relativity (NR). Nevertheless, there have been several approaches used to model the merger phase using analytical methods. In this paper, we adapt a hybrid approximation method that applies post-Newtonian and black-hole perturbation theories at the same times in different spatial regions of a binary-black-hole waveform (and which are matched at a boundary region with prescribed dynamics). Prior work with the hybrid method used leading post-Newtonian theory and the perturbation theory of nonrotating black holes, which led to errors during the late inspiral and disagreement with the dominant quasinormal-mode frequency extracted from NR simulations during the ringdown. To obtain a better match with NR waveforms of binary-black-hole mergers, we made several phenomenological modifications to the hybrid method. Specifically, to better capture the inspiral dynamics, we use the effective-one-body method for modeling the trajectory of the boundary between the two spatial regions. The waveform is determined by evolving a Regge-Wheeler-Zerilli-type equation for an effective black-hole perturbation theory problem with a modified Poschl-Teller potential. By tuning the potential to match the dominant quasinormal-mode frequency of the remnant black hole and also optimizing the boundary data on the matching region, we could match NR waveforms from nonspinning, comparable-mass binary black holes with mass ratios between one and eight, with a relative error of order $10^{-3}$.",
+    "arxiv_id": "2511.09646v1",
+    "published": "2025-11-12T19:00:10Z",
+    "updated": "2025-11-12T19:00:10Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Dark matter by design: $Q$-balls, neural networks and galaxy rotation curves",
+    "authors": [
+      "Alexandre M. Pombo",
+      "Lorenzo Pizzuti",
+      "Alessandra di Giacomo"
+    ],
+    "abstract": "Can a dynamically robust (\\textit{aka} stable) $Q$-ball reproduce the rotation curve of a disk galaxy? In an astrophysical environment, $Q$-balls are non-topological solitons that are transparent and only perceived by their gravitational effects. Traditionally, scalar $Q$-balls are modelled with a polynomial potential, but axion-like periodic potentials are also expected to support such solitonic configurations. In the presence of angular momentum, $Q$-balls acquire a toroidal structure with a central density void, qualitatively resembling the structure of disk galaxies. Motivated by this similarity, we investigate whether rotating scalar $Q$-balls can reproduce the observed galactic rotation curves. In this work, we use a recently developed hybrid numerical framework that combines a high-accuracy pseudo-spectral method with a physics-informed neural network approach to construct both static and rotating $Q$-ball solutions. We then assess their ability to act as the dark matter halos in galaxies by fitting the observed rotation curves of a sample of disk galaxies from the SPARC catalogue. Our simplified model provides an overall good agreement with observational data; we have further found an average constraint on the scalar field particle's mass $m\\sim 10^{-27}$ eV, in agreement with similar galactic-scale soliton solutions.",
+    "arxiv_id": "2511.09634v1",
+    "published": "2025-11-12T19:00:03Z",
+    "updated": "2025-11-12T19:00:03Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "title": "Depth-enhanced molecular imaging with two-photon oblique plane microscopy",
+    "authors": [
+      "Kevin Keomanee-Dizon",
+      "Yaakov Clenman",
+      "Alejandra Duran",
+      "Sergey Ryabichko",
+      "Pauline Hansen",
+      "Tohn Borjigin",
+      "Richard Thornton",
+      "Jared E. Toettcher",
+      "Harold M. McNamara"
+    ],
+    "abstract": "High-numerical-aperture (NA) oblique plane microscopy enables noninvasive fluorescence imaging of subcellular dynamics without requiring radical sample modification. However, performance degrades at depth in multicellular specimens as scattering and refractive-index heterogeneity raise out-of-focus background. We report a two-photon oblique plane microscope that improves resolution at depth by combining high-NA single-objective detection with multiphoton plane illumination. The microscope achieves $\\sim\\!300$ nm lateral and $\\sim\\!650$ nm axial resolution, with single-molecule sensitivity in vivo. Compared with two-photon point scanning, the lower illumination NA delivers an order of magnitude lower peak intensity, enabling $>\\!5\\times$ faster volumetric acquisition (up to $3.25 \\times 10^6$ voxels s$^{-1}$) with reduced photodamage. In multicellular contexts, near-infrared nonlinear excitation enhances contrast throughout the illumination depth by $\\sim\\!2\\times$ and restores volumetric resolving power by $>\\!2\\times$ relative to linear excitation. We demonstrate these capabilities through molecular imaging of epithelial tissue, stem-cell-derived gastruloids, and living fruit fly embryos, including multicolor transcription-factor dynamics, optogenetic subcellular control, and single-mRNA tracking, all using standard glass-based mounting.",
+    "arxiv_id": "2511.09462v1",
+    "published": "2025-11-12T16:27:30Z",
+    "updated": "2025-11-12T16:27:30Z",
+    "categories": [
+      "physics.optics",
+      "physics.bio-ph",
+      "physics.ins-det"
+    ]
+  },
+  {
+    "title": "QCD Equation of State at very high temperature: computational strategy, simulations and data analysis",
+    "authors": [
+      "Matteo Bresciani",
+      "Mattia Dalla Brida",
+      "Leonardo Giusti",
+      "Michele Pepe"
+    ],
+    "abstract": "We present a detailed account of the theoretical progress and the computational strategy that led to the non-perturbative determination of the QCD Equation of State (EoS) at temperatures up to the electroweak scale reported in [Phys. Rev. Lett. 134, 201904 (2025)]. The two key ingredients that make such a calculation feasible with controlled uncertainties are: (i) the definition of lines of constant physics through the running of a non-perturbatively defined finite-volume coupling across a wide range of energy scales, and (ii) the use of shifted boundary conditions which allow a direct determination of the entropy density thus without the need for a zero-temperature subtraction. Considering the case of QCD with $N_f =3$ massless flavours in the temperature interval between 3 GeV and 165 GeV, we describe the numerical strategy based on integrating in the bare coupling and quark mass, the perturbative improvement of lattice observables, the optimization of numerical simulations, and the continuum extrapolation. Extensive consistency checks, including finite-volume and topological-freezing effects, confirm the robustness of the method. The final results have a relative accuracy of about $1\\%$ or better, and the errors are dominated by the statistical fluctuations of the Monte Carlo ensembles. We also compare our non-perturbative results with predictions from standard and hard thermal loop perturbation theory showing that at the level of $\\%$-precision contributions beyond those known, including non-perturbative ones due to ultrasoft modes, are relevant up to the highest temperatures explored. The methodological framework is general and readily applicable to QCD with four and five massive quark flavours and to other thermal observables, paving the way for systematic non-perturbative studies of thermal QCD at very high temperatures.",
+    "arxiv_id": "2511.09160v1",
+    "published": "2025-11-12T09:52:02Z",
+    "updated": "2025-11-12T09:52:02Z",
+    "categories": [
+      "hep-lat"
+    ]
+  },
+  {
+    "title": "The Dawn of Gravitational Wave Astronomy at Light-year Wavelengths: Insights from Pulsar Timing Arrays",
+    "authors": [
+      "Stephen R. Taylor"
+    ],
+    "abstract": "Arrays of precisely-timed millisecond pulsars are used to search for gravitational waves with periods of months to decades. Gravitational waves affect the path of radio pulses propagating from a pulsar to Earth, causing the arrival times of those pulses to deviate from expectations based on the physical characteristics of the pulsar system. By correlating these timing residuals in a pulsar timing array (PTA), one can search for a statistically isotropic background of gravitational waves by revealing evidence for a distinctive pattern predicted by General Relativity, known as the Hellings \\& Downs curve. On June 29 2023, five regional PTA collaborations announced the first evidence for GWs at light-year wavelengths, predicated on support for this correlation pattern with statistical significances ranging from $\\sim\\!2-4σ$. The amplitude and shape of the recovered GW spectrum has also allowed many investigations of the expected source characteristics, ranging from a cosmic population of supermassive binary black holes to numerous processes in the early Universe. In the future, we expect to resolve signals from individual binary systems of supermassive black holes, and probe fundamental assumptions about the background, including its polarization, anisotropy, Gaussianity, and stationarity, all of which will aid efforts to discriminate its origin. In tandem with new facilities like DSA-2000 and the SKA, fueling further observations by regional PTAs and the International Pulsar Timing Array, PTAs have extraordinary potential to be engines of nanohertz GW discovery.",
+    "arxiv_id": "2511.08966v1",
+    "published": "2025-11-12T04:18:26Z",
+    "updated": "2025-11-12T04:18:26Z",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "title": "Symbolic Regression Is All You Need: From Simulations to Scaling Laws in Binary Neutron Star Mergers",
+    "authors": [
+      "P. Darc",
+      "Clecio R. Bom",
+      "Charles Kilpatrick",
+      "Bernardo M. O. Fraga",
+      "Gabriel S. M. Teixeira"
+    ],
+    "abstract": "Gravitational wave sources with electromagnetic counterparts have highlighted the need for predictive, interpretable models linking the parameters of compact binary systems to post-merger remnants and mass outflows. In this work, we explore AI-driven symbolic regression (SR) frameworks to derive updated analytical relations for disk ejecta mass in binary neutron star mergers, trained on state-of-the-art numerical relativity simulations. Our method reveals a set of compact equations that outperform existing fitting formulae across multiple statistical metrics while remaining physically interpretable. Notably, SR also enables alternative predictor sets (e.g., $\\{M_1,M_2,\\tildeΛ\\}$) that match or exceed the accuracy of models relying solely on compactness of the lightest neutron star ($C_1$), enabling new parameter constraints from electromagnetic observations. Unlike traditional black-box machine learning models, these closed-form expressions generalize robustly to regions of the parameter space not represented in the training data, offering a physics-informed tool for multimessenger observations and constraints on the neutron star equation of state.",
+    "arxiv_id": "2511.08784v1",
+    "published": "2025-11-11T21:11:48Z",
+    "updated": "2025-11-11T21:11:48Z",
+    "categories": [
+      "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Excitation factors for horizonless compact objects: long-lived modes, echoes, and greybody factors",
+    "authors": [
+      "Romeo Felice Rosato",
+      "Shauvik Biswas",
+      "Sumanta Chakraborty",
+      "Paolo Pani"
+    ],
+    "abstract": "We present an analytical and numerical investigation of the quasinormal excitation factors of ultracompact horizonless objects. These systems possess long lived quasinormal modes with extremely small imaginary parts, originating from the effective cavity between the photon sphere and the object's interior. We show that the excitation of such modes is strongly suppressed, scaling with the imaginary part of their frequency, and therefore they contribute to the waveform only at very late times. This hierarchy naturally explains the structure of echo signals: the prompt ringdown is dominated by standard light ring modes, the early echoes arise from moderately damped cavity modes, and only the latest echoes are governed by long lived modes. Based on this, we propose a practical ringdown waveform model based on a superposition of ordinary black hole quasinormal modes and cavity modes, which captures the complexity of the ringdown of horizonless ultracompact objects. We further demonstrate that the combination of small excitation factors and weak damping enhances the robustness of long lived modes against localized perturbations, in contrast to the spectral instabilities affecting standard black hole quasinormal modes. Finally, we extend the analysis of greybody factors to exotic compact objects and wormholes, showing that they remain stable under small deformations of the effective potential and thus represent robust observables. Our results provide a unified framework for understanding excitation, stability, and echoes in ultracompact horizonless objects, with direct implications for their spectral properties and gravitational wave signatures.",
+    "arxiv_id": "2511.08692v1",
+    "published": "2025-11-11T19:00:08Z",
+    "updated": "2025-11-11T19:00:08Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "hep-ph"
+    ]
+  },
+  {
+    "title": "Emulating Radiative Transfer in Astrophysical Environments",
+    "authors": [
+      "Rune Rost",
+      "Lorenzo Branca",
+      "Tobias Buck"
+    ],
+    "abstract": "Radiative transfer is a fundamental process in astrophysics, essential for both interpreting observations and modeling thermal and dynamical feedback in simulations via ionizing radiation and photon pressure. However, numerically solving the underlying radiative transfer equation is computationally intensive due to the complex interaction of light with matter and the disparity between the speed of light and the typical gas velocities in astrophysical environments, making it particularly expensive to include the effects of on-the-fly radiation in hydrodynamic simulations. This motivates the development of surrogate models that can significantly accelerate radiative transfer calculations while preserving high accuracy. We present a surrogate model based on a Fourier Neural Operator architecture combined with U-Nets. Our model approximates three-dimensional, monochromatic radiative transfer in time-dependent regimes, in absorption-emission approximation, achieving speedups of more than 2 orders of magnitude while maintaining an average relative error below 3%, demonstrating our approach's potential to be integrated into state-of-the-art hydrodynamic simulations.",
+    "arxiv_id": "2511.08219v1",
+    "published": "2025-11-11T13:24:52Z",
+    "updated": "2025-11-11T13:24:52Z",
+    "categories": [
+      "astro-ph.IM",
+      "astro-ph.GA",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Extreme mass ratio inspirals into black holes surrounded by matter: Resonance crossings",
+    "authors": [
+      "Michal Stratený",
+      "Georgios Lukes-Gerakopoulos",
+      "Ondřej Zelenka"
+    ],
+    "abstract": "The forthcoming space-based gravitational-wave observatory Laser Interferometer Space Antenna (LISA) should enable the detection of Extreme Mass Ratio Inspirals (EMRIs), in which a stellar-mass compact object gradually inspirals into a supermassive black hole while emitting gravitational waves. Modeling the waveforms of such systems is a challenging task, requiring precise computation of energy and angular momentum fluxes as well as proper treatment of orbital resonances, during which two fundamental orbital frequencies become commensurate. In this work, we perform a systematic comparison of fluxes derived from three approaches: the quadrupole formula, post-Newtonian approximations, and time-domain solutions of the Teukolsky equation. We show that quadrupole-based fluxes remain in good agreement with Teukolsky results across a broad range of orbital configurations, including perturbed orbits. Building on these insights, we explore the dynamical impact of resonance crossings within the adiabatic approximation. By introducing novel numerical methods, we reduce computational costs and uncover diverse resonance-crossing behaviors. These results contribute to the effort to understand theoretically and model adequately resonance crossings during an EMRI.",
+    "arxiv_id": "2511.08057v1",
+    "published": "2025-11-11T09:57:30Z",
+    "updated": "2025-11-11T09:57:30Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "nlin.CD"
+    ]
+  },
+  {
+    "title": "Probing Supernovae through gravitational wave entropy",
+    "authors": [
+      "Aknur Sakan",
+      "Nurzhan Ussipov",
+      "Ernazar Abdikamalov",
+      "Almat Akhmetali",
+      "Marat Zaidyn",
+      "Alisher Zhunuskanov",
+      "José A. Font",
+      "Matthew C. Edwards",
+      "Sultan Abylkairov"
+    ],
+    "abstract": "We study an entropy-based framework to analyze gravitational-wave signals from core-collapse supernovae. We use waveforms generated by numerical simulations and analyze them in both the time domain and the time-frequency domain using short-time Fourier and continuous wavelet transforms. From each representation, we compute four entropy measures -- Shannon, exponential, Rényi, and Tsallis -- and apply three feature selection methods to identify the most informative features. We then train machine-learning classifiers on these features to compare the performance of different methodological combinations. We find that the combination of Rényi entropy from the wavelet domain and the Relief-F selection method yields the most effective discrimination among different gravitational-wave signals.",
+    "arxiv_id": "2511.08010v1",
+    "published": "2025-11-11T09:12:16Z",
+    "updated": "2025-11-11T09:12:16Z",
+    "categories": [
+      "astro-ph.HE",
+      "astro-ph.IM",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Angular Patterns of Photoluminescence in Quantum Dot Spherical Superparticles Mediated by Whispering-Gallery Modes",
+    "authors": [
+      "Yu. E. Geints"
+    ],
+    "abstract": "Quantum dot superparticles are a specific class of metamaterials created through the self-assembly of nanometer semiconductor quantum dots into organized micro-scale structures, such as microspheres. Superparticles exhibit unique optical, chemical, and electronic properties. These properties are not merely the sum of the constituent quantum dots but rather bear the signature of the collective behavior of the nanoscale building blocks. In particular, assembling an ensemble of quantum dots into a super-sphere allows them to function as a single, high-quality optical resonator. This structure efficiently confines the emission from the pump-excited quantum dots via whispering gallery modes. The emissive properties of such a superparticle resonator remain an area of active investigation. Using numerical simulation, we study the angular structure of the photoluminescence from superparticles of various sizes and architectures formed from CdS quantum dots. We show that, in general, the angular distribution of the SP emission is characterized by strong asymmetry, with a maximum in the backward direction relative to the incident pump beam. In contrast, this asymmetry is virtually absent in the forward and side-scattering directions. The excitation of resonant modes in the superparticle enhances the emission intensity and reduces the degree of its backward asymmetry. Furthermore, coating the CdS quantum dot particle with a silicon dioxide layer increases the probability of exciting field resonances in such a core-shell superparticle.",
+    "arxiv_id": "2511.07962v1",
+    "published": "2025-11-11T08:18:47Z",
+    "updated": "2025-11-11T08:18:47Z",
+    "categories": [
+      "cond-mat.mes-hall",
+      "physics.optics"
+    ]
+  },
+  {
+    "title": "Structure-Preserving Transfer of Grad-Shafranov Equilibria to Magnetohydrodynamic Solvers",
+    "authors": [
+      "Rushan Zhang",
+      "Golo Wimmer",
+      "Qi Tang"
+    ],
+    "abstract": "Magnetohydrodynamic (MHD) solvers used to study dynamic plasmas for magnetic confinement fusion typically rely on initial conditions that describe force balance, which are provided by an equilibrium solver based on the Grad-Shafranov (GS) equation. Transferring such equilibria from the GS discretization to the MHD discretization often introduces errors that lead to unwanted perturbations to the equilibria on the level of the MHD discretization. In this work, we identify and analyze sources of such errors in the context of finite element methods, with a focus on the force balance and divergence-free properties of the loaded equilibria. In particular, we reveal three main sources of errors: (1) the improper choice of finite element spaces in the MHD scheme relative to the poloidal flux and toroidal field function spaces in the GS scheme, (2) the misalignment of the meshes from two solvers, and (3) possibly under-resolved strong gradients near the separatrix. With this in mind, we study the impact of different choices of finite element spaces, including those based on compatible finite elements. In addition, we also investigate the impact of mesh misalignment and propose to conduct mesh refinement to resolve the strong gradients near the separatrix. Numerical experiments are conducted to demonstrate equilibria errors arising in the transferred initial conditions. Results show that force balance is best preserved when structure-preserving finite element spaces are used and when the MHD and GS meshes are both aligned and refined. Given that the poloidal flux is often computed in continuous Galerkin spaces, we further demonstrate that projecting the magnetic field into divergence-conforming spaces is optimal for preserving force balance, while projection into curl-conforming spaces, although less optimal for force balance, weakly preserves the divergence-free property.",
+    "arxiv_id": "2511.07763v1",
+    "published": "2025-11-11T02:26:44Z",
+    "updated": "2025-11-11T02:26:44Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "Kerr Polarization Transport: Accuracy and Performance in General Relativistic Light Propagation",
+    "authors": [
+      "Shakibul Chowdhury"
+    ],
+    "abstract": "We present a compact and reproducible method for general relativistic polarization transport in the Kerr metric that achieves median electric vector position angle (EVPA) residuals of $\\langle Δ\\mathrm{PA} \\rangle \\approx 0.09^\\circ$, a 95th percentile of $0.31^\\circ$, and a worst case $Δ\\mathrm{PA} \\lesssim 0.32^\\circ$ for spins up to $|a/M|=0.9$, while maintaining a fivefold or greater speedup relative to a strict reference integrator. Across the benchmark grid, typical residuals remain at the sub-tenth-degree level, with only modest degradation ($Δ\\mathrm{PA} \\lesssim 2^\\circ$) near the Thorne spin limit. Photon four-momenta $k^μ$ and polarization four-vectors $f^μ$ are advanced using a fourth order Runge-Kutta scheme with cached Christoffel symbols, maintaining the constraints $u\\cdot f=0$ and $n\\cdot f=0$, where $u^μ$ is the ZAMO four-velocity and $n^μ$ is the disk normal, while keeping $k\\cdot f \\simeq 0$. A physically motivated gauge is enforced by projecting the polarization into the local zero-angular-momentum observer (ZAMO) screen at every substep, ensuring numerical stability of the orthogonality constraints. Accuracy and performance are benchmarked over a representative grid in spin, inclination, image-plane azimuth, and radius. The method comfortably meets IXPE and NICER polarization tolerances and approaches EHT requirements. The approach provides a practical foundation for future general relativistic polarimetry and simulation pipelines.",
+    "arxiv_id": "2511.07762v1",
+    "published": "2025-11-11T02:26:27Z",
+    "updated": "2025-11-11T02:26:27Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "High-dimensional Bayesian filtering through deep density approximation",
+    "authors": [
+      "Kasper Bågmark",
+      "Filip Rydin"
+    ],
+    "abstract": "In this work, we benchmark two recently developed deep density methods for nonlinear filtering. Starting from the Fokker--Planck equation with Bayes updates, we model the filtering density of a discretely observed SDE. The two filters: the deep splitting filter and the deep BSDE filter, are both based on Feynman--Kac formulas, Euler--Maruyama discretizations and neural networks. The two methods are extended to logarithmic formulations providing sound and robust implementations in increasing state dimension. Comparing to the classical particle filters and ensemble Kalman filters, we benchmark the methods on numerous examples. In the low-dimensional examples the particle filters work well, but when we scale up to a partially observed 100-dimensional Lorenz-96 model the particle-based methods fail and the logarithmic deep density method prevails. In terms of computational efficiency, the deep density methods reduce inference time by roughly two to five orders of magnitude relative to the particle-based filters.",
+    "arxiv_id": "2511.07261v1",
+    "published": "2025-11-10T16:06:31Z",
+    "updated": "2025-11-10T16:06:31Z",
+    "categories": [
+      "math.NA",
+      "stat.CO",
+      "stat.ML"
+    ]
+  },
+  {
+    "title": "Sample-efficient quantum error mitigation via classical learning surrogates",
+    "authors": [
+      "Wei-You Liao",
+      "Ge Yan",
+      "Yujin Song",
+      "Tian-Ci Tian",
+      "Wei-Ming Zhu",
+      "De-Tao Jiang",
+      "Yuxuan Du",
+      "He-Liang Huang"
+    ],
+    "abstract": "The pursuit of practical quantum utility on near-term quantum processors is critically challenged by their inherent noise. Quantum error mitigation (QEM) techniques are leading solutions to improve computation fidelity with relatively low qubit-overhead, while full-scale quantum error correction remains a distant goal. However, QEM techniques incur substantial measurement overheads, especially when applied to families of quantum circuits parameterized by classical inputs. Focusing on zero-noise extrapolation (ZNE), a widely adopted QEM technique, here we devise the surrogate-enabled ZNE (S-ZNE), which leverages classical learning surrogates to perform ZNE entirely on the classical side. Unlike conventional ZNE, whose measurement cost scales linearly with the number of circuits, S-ZNE requires only constant measurement overhead for an entire family of quantum circuits, offering superior scalability. Theoretical analysis indicates that S-ZNE achieves accuracy comparable to conventional ZNE in many practical scenarios, and numerical experiments on up to 100-qubit ground-state energy and quantum metrology tasks confirm its effectiveness. Our approach provides a template that can be effectively extended to other quantum error mitigation protocols, opening a promising path toward scalable error mitigation.",
+    "arxiv_id": "2511.07092v1",
+    "published": "2025-11-10T13:29:29Z",
+    "updated": "2025-11-10T13:29:29Z",
+    "categories": [
+      "quant-ph",
+      "cs.AI",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "A catalog of new blue stragglers in open clusters with Gaia DR3",
+    "authors": [
+      "Songmei Qin",
+      "Jing Zhong",
+      "Friedrich Anders",
+      "Lola Balaguer-Núñez",
+      "Chunyan Li",
+      "Yueyue Jiang",
+      "Guimei Liu",
+      "Tong Tang",
+      "Li Chen"
+    ],
+    "abstract": "The high-precision {\\it Gaia} data release 3 (DR3) enables the discovery of numerous open clusters in the Milky Way, providing an excellent opportunity to search for blue straggler stars in open clusters and investigate their formation and evolution in these environments. Using the member stars from literature open cluster catalogs, we visually inspected the color-magnitude diagram (CMD) of each cluster and selected cluster candidates that potentially host blue stragglers. We then reassessed cluster memberships using the {\\tt pyUPMASK} algorithm with {\\it Gaia} DR3 and performed isochrone fitting to derive physical parameters for each cluster, including age, distance modulus, mean reddening, and metallicity. Finally, we empirically identified straggler stars based on their positions relative to the best-fitting isochrone, zero-age main sequence (ZAMS), and equal-mass binary sequence on the CMD. In total, we identified 272 new straggler stars in 99 open clusters, comprising 153 blue stragglers, 98 probable blue stragglers, and 21 yellow stragglers. Compared to the reported blue straggler catalogs based on earlier {\\it Gaia} data, our results increase the number of open clusters with stragglers in the Milky Way by 22.2\\%, and the total number of blue stragglers by 11.2\\%.",
+    "arxiv_id": "2511.07043v1",
+    "published": "2025-11-10T12:38:23Z",
+    "updated": "2025-11-10T12:38:23Z",
+    "categories": [
+      "astro-ph.SR"
+    ]
+  },
+  {
+    "title": "Geometric and statistical analysis of avian skull morphology",
+    "authors": [
+      "Kaikwan Lau",
+      "Gary P. T. Choi"
+    ],
+    "abstract": "Understanding the growth and form of shapes is one of the most fundamental problems in biology. While many prior works have analyzed the beak shapes of Darwin's finches, other cranial features are relatively less explored. In this work, we develop geometric and statistical methods for analyzing the skull morphology of Darwin's finches and their relatives, focusing on the relationship between their skull dimensions, orbit curvature, and neurocranial geometries. Specifically, by utilizing tools in computational geometry, differential geometry, and numerical optimization, we develop efficient algorithms for quantifying various key geometric features of the skull. We then perform a statistical analysis and discover a strong correlation between skull size and orbit curvature. Based on our findings, we further establish a predictive model that can estimate the orbit curvature using easily obtainable linear skull measurements. Our results show that the predictive model is highly effective and is capable of explaining 85.48\\% of the variance (R-squared) in curvature with an average prediction error of only 6.35\\%. Altogether, our work provides a quantitative foundation for understanding the functional and evolutionary pressures that shape avian skulls, thereby offering a validated framework for future studies in comparative anatomy and evolutionary biology.",
+    "arxiv_id": "2511.06426v1",
+    "published": "2025-11-09T15:46:26Z",
+    "updated": "2025-11-09T15:46:26Z",
+    "categories": [
+      "q-bio.QM"
+    ]
+  },
+  {
+    "title": "The curvature perturbations and induced gravitational waves induced by the first-order phase transition during reheating",
+    "authors": [
+      "Xiao-Bin Sui",
+      "Jing Liu",
+      "Rong-Gen Cai"
+    ],
+    "abstract": "We propose a novel mechanism where a first-order phase transition modulates the decay rate of a massive field. This modulation, even if the scalar field has negligible energy density, subsequently generates an observable stochastic gravitational-wave background. The stochastic nature of bubble nucleation leads to the asynchrony of phase transitions, generating superhorizon-scale density perturbations through spatial variations in the decay rate $Γ$. These perturbations subsequently source second-order gravitational waves with peak amplitudes governed by the phase transition parameter \\(β/H_*\\) and decay rate $Γ$. We apply this mechanism in the reheating scanario where the decay rate of inflaton are modulated by the scalar field that undergoes a first-order phase transition. Numerical calculations reveal that the gravitational wave energy spectrum typically reaches \\(Ω_{\\text{GW}} \\sim 10^{-10}\\), demonstrating prospects for detection by space-based interferometers like LISA, TianQin and Taiji. This work establishes a new approach to probe phase transition processes in the early Universe without requiring significant vacuum energy release.",
+    "arxiv_id": "2511.06421v1",
+    "published": "2025-11-09T15:24:03Z",
+    "updated": "2025-11-09T15:24:03Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "A framework of discontinuous Galerkin neural networks for iteratively approximating residuals",
+    "authors": [
+      "Long Yuan",
+      "Hongxing Rui"
+    ],
+    "abstract": "We propose an abstract discontinuous Galerkin neural network (DGNN) framework for analyzing the convergence of least-squares methods based on the residual minimization when feasible solutions are neural networks. Within this framework, we define a quadratic loss functional as in the least square method with $h-$refinement and introduce new discretization sets spanned by element-wise neural network functions. The desired neural network approximate solution is recursively supplemented by solving a sequence of quasi-minimization problems associated with the underlying loss functionals and the adaptively augmented discontinuous neural network sets without the assumption on the boundedness of the neural network parameters. We further propose a discontinuous Galerkin Trefftz neural network discretization (DGTNN) only with a single hidden layer to reduce the computational costs. Moreover, we design a template based on the considered models for initializing nonlinear weights. Numerical experiments confirm that compared to existing PINN algorithms, the proposed DGNN method with one or two hidden layers is able to improve the relative $L^2$ error by at least one order of magnitude at low computational costs.",
+    "arxiv_id": "2511.06349v1",
+    "published": "2025-11-09T12:09:18Z",
+    "updated": "2025-11-09T12:09:18Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "Phonon-Dominated Thermal Transport and Large Violation of the Wiedemann-Franz Law in Topological Semimetal CoSi",
+    "authors": [
+      "Luyao Zhong",
+      "Xin Jin",
+      "Mingquan He",
+      "Rui Wang",
+      "Xiaoyuan Zhou",
+      "Tianqi Deng",
+      "Xiaolong Yang"
+    ],
+    "abstract": "The Wiedemann-Franz (WF) law, relating the electronic thermal conductivity ($κ_{\\rm e}$) to the electrical conductivity, is vital in numerous applications such as in the design of thermoelectric materials and in the experimental determination of the lattice thermal conductivity ($κ_{\\rm L}$). While the WF law is generally robust, violations are frequently observed, typically manifesting in a reduced Lorenz number ($L$) relative to the Sommerfeld value ($L_0$) due to inelastic scattering. Here, we report a pronounced departure from the WF law in the topological semimetal CoSi, where the electronic Lorenz number ($L_{\\rm e}$) instead rises up to $\\sim40\\%$ above $L_0$. We demonstrate that this anomaly arises from strong bipolar diffusive transport, enabled by topological band-induced electron-hole compensation, which allows electrons and holes to flow cooperatively and additively enhance the heat current. Concurrently, we unveil that the lattice contribution to thermal conductivity is anomalously large and becomes the dominant component below room temperature. As a result, if $κ_{\\rm L}$ is assumed negligible -- as conventional in metals, the resulting $L$ from the total thermal conductivity ($κ_{\\rm tot}=κ_{\\rm L}+κ_{\\rm e}$) deviates from $L_0$ by more than a factor of three. Our work provides deeper insight into the unconventional thermal transport physics in topological semimetals.",
+    "arxiv_id": "2511.06290v2",
+    "published": "2025-11-09T09:01:57Z",
+    "updated": "2025-11-12T08:23:34Z",
+    "categories": [
+      "cond-mat.mtrl-sci"
+    ]
+  },
+  {
+    "title": "The extended inner shadow of Kerr-Taub-NUT black hole with thin disk flows",
+    "authors": [
+      "Yu-Yan Wang",
+      "Meng-Die Zhao",
+      "Xin-Yu Wang",
+      "Guo-Ping Li"
+    ],
+    "abstract": "In this paper, we apply numerical backward ray-tracing to study the observational appearance of Kerr-Taub-NUT (KTN) black holes illuminated by thin accretion disk flows. We obtained the inner shadow, redshift characteristics, and intensity distribution of thin-disk images of the KTN black hole, as observed by a common observer located at different positions. The results show that increasing the spin parameter progressively deforms the critical curve into a \"D\" shape while simultaneously shrinking and distorting the inner shadow. More importantly, for n = 0.3 at theta_o = 80 degrees, the inner shadow develops a novel \"duck-cap-like\" morphology with a sharply protruding lower-right edge beyond the critical curve. We term this feature the \"extended inner shadow\", a structure distinct from the Kerr case. Unlike the standard inner shadow, it consists partly of photons absorbed by the horizon and partly of photons that avoid both absorption and crossing the disk plane, thus receiving no emission. Such deviations from Kerr predictions could be tested by future high-precision astronomical observations, potentially offering new evidence for the existence of NUT charge (or the gravitomagnetic monopole) in black holes.",
+    "arxiv_id": "2511.06219v1",
+    "published": "2025-11-09T04:28:31Z",
+    "updated": "2025-11-09T04:28:31Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Black holes and black regions, horizons and barriers in Lorentzian manifolds",
+    "authors": [
+      "Cristina Giannotti",
+      "Andrea Spiro"
+    ],
+    "abstract": "We prove that if S is a time-oriented null hypersurface of a Lorentzian n-manifold (M, g), the causal world-lines, which intersect transversally S and are time-oriented in a compatible way, cross the hypersurface all in the same direction, the other being forbidden. Even if it is known that a smooth event horizon (in the sense of Penrose, Hawking and Ellis) is a null hypersurface and has the above semi-permeability property, at the best of our knowledge, it was not known so far that the latter is a mere consequence of the former. Our result leads to the concepts of barriers (= null hypersurfaces separating the space-time into disjoint regions) and black regions (= time-oriented regions bounded by barriers). These objects naturally include (smooth) event horizons and (smoothly bounded) black holes. Since barriers are defined by two simple properties -- the merely local property of \"nullity\" combined with the global property of \"separating the space-time\" -- we expect they may be used to simplify computations for locating static and/or dynamic horizons in numerical computations.",
+    "arxiv_id": "2511.06133v1",
+    "published": "2025-11-08T20:51:05Z",
+    "updated": "2025-11-08T20:51:05Z",
+    "categories": [
+      "gr-qc",
+      "math-ph",
+      "math.DG"
+    ]
+  },
+  {
     "title": "AthenaK Simulations of Magnetized Binary Neutron Star Mergers",
     "authors": [
       "Jacob Fields",
@@ -11,6 +648,389 @@
     "updated": "2025-11-08T15:56:33Z",
     "categories": [
       "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "A Universal Framework for Horizon-Scale Tests of Gravity with Black Hole Shadows",
+    "authors": [
+      "Wentao Liu",
+      "Yang Liu",
+      "Di Wu",
+      "Yu-Xiao Liu"
+    ],
+    "abstract": "In this Letter, we have developed a numerically efficient framework for evaluating parameters in metric theories of gravity, and applied it to constrain the horizon-scale magnetic field in the Kerr-Bertotti-Robinson (Kerr-BR) spacetime using the latest EHT observations. The method's adaptive ray-tracing strategy achieves near-linear computational efficiency without loss of numerical accuracy. Owing to this efficiency, the framework enables high precision shadow modeling at minimal computational cost and, for the first time, supports statistically robust inference of black hole parameters from horizon-scale observations for arbitrary stationary black holes. The above framework is applied to the recently obtained Kerr-BR black hole, an exact magnetized and rotating solution to the Einstein field equations. We have evaluated the horizon-scale magnetic fields of M87* and Sgr A*, with the latter showing a field strength of $93.3^{+14.7}_{-23.8}G$, consistent with the equipartition estimate of $71G$ from polarized ALMA observations, thereby supporting Einstein's gravity.",
+    "arxiv_id": "2511.06017v1",
+    "published": "2025-11-08T14:09:16Z",
+    "updated": "2025-11-08T14:09:16Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Factorization method for the biharmonic scattering problem for an absorbing penetrable scatterer",
+    "authors": [
+      "Rafael Ceja Ayala",
+      "Isaac Harris",
+      "General Ozochiawaeze"
+    ],
+    "abstract": "This work extends the factorization method to the inverse scattering problem of reconstructing the shape and location of an absorbing penetrable scatterer embedded in a thin infinite elastic (Kirchhoff--Love) plate. With the assumption that the plate thickness is small compared to the wavelength of the incident wave, the propagation of flexural perturbations is modeled by the two--dimensional biharmonic wave equation in the frequency domain. Within this setting, we provide a rigorous justification of the factorization method and demonstrate that it yields a binary criterion for distinguishing whether a sampling point lies inside or outside the scatterer, using only the spectral data of the far--field operator. In addition, we numerically analyze the Born approximation for weak scatterers in this biharmonic scattering context and compute the relative error against exact far--field data for sample weak scatterers, thereby quantifying its validity as a limited but useful approximation.",
+    "arxiv_id": "2511.05711v2",
+    "published": "2025-11-07T21:03:39Z",
+    "updated": "2025-11-12T17:55:05Z",
+    "categories": [
+      "math.AP"
+    ]
+  },
+  {
+    "title": "Cluster-robust inference with a single treated cluster using the t-test",
+    "authors": [
+      "Chun Pong Lau",
+      "Xinran Li"
+    ],
+    "abstract": "This paper considers inference when there is a single treated cluster and a fixed number of control clusters, a setting that is common in empirical work, especially in difference-in-differences designs. We use the t-statistic and develop suitable critical values to conduct valid inference under weak assumptions allowing for unknown dependence within clusters. In particular, our inference procedure does not involve variance estimation. It only requires specifying the relative heterogeneity between the variances from the treated cluster and some, but not necessarily all, control clusters. Our proposed test works for any significance level when there are at least two control clusters. When the variance of the treated cluster is bounded by those of all control clusters up to some prespecified scaling factor, the critical values for our t-statistic can be easily computed without any optimization for many conventional significance levels and numbers of clusters. In other cases, one-dimensional numerical optimization is needed and is often computationally efficient. We have also tabulated common critical values in the paper so researchers can use our test readily. We illustrate our method in simulations and empirical applications.",
+    "arxiv_id": "2511.05710v1",
+    "published": "2025-11-07T21:01:02Z",
+    "updated": "2025-11-07T21:01:02Z",
+    "categories": [
+      "econ.EM"
+    ]
+  },
+  {
+    "title": "Analytic One-loop Scattering Waveform in General Relativity",
+    "authors": [
+      "Giacomo Brunello",
+      "Stefano De Angelis",
+      "David A. Kosower"
+    ],
+    "abstract": "Leveraging the computational framework presented in reference [JHEP 07, 062 (2024)], we evaluate the analytic scattering waveform in General Relativity to second order, $G^3 M^3 /r b^2$ and to all orders in velocity. This new representation of the next-to-leading order waveform is well-suited for numerical evaluation. Integrating the [modulus square of the] waveform over the angles on the celestial sphere, we also compute the power spectrum of the radiation to order $G^4$ numerically.",
+    "arxiv_id": "2511.05412v1",
+    "published": "2025-11-07T16:38:03Z",
+    "updated": "2025-11-07T16:38:03Z",
+    "categories": [
+      "hep-th",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Modeling Solar Atmosphere Dynamics with MAGEC",
+    "authors": [
+      "Anamaría Navarro",
+      "E. Khomenko",
+      "N. Vitas",
+      "T. Felipe"
+    ],
+    "abstract": "Modeling the solar atmosphere is challenging due to its layered structure and multi-scale dynamics. We aim to validate the new radiative MHD code MAGEC, which combines the MANCHA and MAGNUS codes into a finite-volume, shock-capturing framework, and to test its performance through 2D simulations of magneto-convection. MAGEC is MPI-parallelized and includes improvements for coronal modeling, such as LTE radiative losses and a hyperbolic treatment of thermal conduction that mitigates restrictive time steps. We also estimated its numerical viscosity and resistivity. To assess robustness, we performed 2D simulations covering a domain from 2 Mm below the surface to 18.16 Mm into the corona, using both open and closed magnetic-field configurations. For each case, we analyzed steady-state temperature profiles and the contributions to the internal-energy balance at different heights. A separate experiment examined the role of perpendicular thermal conduction. MAGEC reproduced the expected temperature stratification set by boundary conditions and magnetic geometry, and all simulations reached thermal equilibrium. Open-field cases produced higher coronal temperatures than closed, arcade-like fields. Analysis of the explicit and implicit energy terms clarified their relative effects on heating and cooling. Perpendicular thermal conduction, often neglected in coronal models, was found to influence plasma dynamics near reconnection; although local effects are small, they can cumulatively modify the average coronal temperature. These results show that MAGEC is a reliable and efficient tool for radiative MHD simulations, well suited to capturing the shocks and dynamic processes of the solar atmosphere.",
+    "arxiv_id": "2511.05380v1",
+    "published": "2025-11-07T16:01:57Z",
+    "updated": "2025-11-07T16:01:57Z",
+    "categories": [
+      "astro-ph.SR"
+    ]
+  },
+  {
+    "title": "Momentum accelerated power iterations and the restarted Lanczos method",
+    "authors": [
+      "Alessandro Barletta",
+      "Nicholas Marshall",
+      "Sara Pollock"
+    ],
+    "abstract": "In this paper we compare two methods for finding extremal eigenvalues and eigenvectors: the restarted Lanczos method and momentum accelerated power iterations. The convergence of both methods is based on ratios of Chebyshev polynomials evaluated at subdominant and dominant eigenvalues; however, the convergence is not the same. Here we compare the theoretical convergence properties of both methods, and determine the relative regimes where each is more efficient. We further introduce a preconditioning technique for the restarted Lanczos method using momentum accelerated power iterations, and demonstrate its effectiveness. The theoretical results are backed up by numerical tests on benchmark problems.",
+    "arxiv_id": "2511.05364v1",
+    "published": "2025-11-07T15:52:17Z",
+    "updated": "2025-11-07T15:52:17Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "The $\\boldsymbol{r^{-3}}$ Curvature Decay and the Infrared Structure of Linearized Gravity",
+    "authors": [
+      "Michael Wilson"
+    ],
+    "abstract": "We identify curvature decay $|\\mathrm{Riem}| \\sim r^{-3}$ as a sharp spectral threshold in linearized gravity on asymptotically flat manifolds. For faster decay, the spatial Lichnerowicz operator possesses a purely continuous spectrum $σ_{\\mathrm{ess}}(L) = [0,\\infty)$, corresponding to freely radiating tensor modes. At the inverse-cube rate, compactness fails and zero energy enters $σ_{\\mathrm{ess}}(L)$, yielding marginally bound, finite-energy configurations that remain spatially extended. These static modes constitute the linear precursors of gravitational memory and soft-graviton phenomena, delineating the geometric boundary between dispersive and infrared behavior. A complementary numerical study of the radial model \\[ L_p = -\\frac{d^2}{dr^2} + \\frac{\\ell(\\ell+1)}{r^2} + \\frac{C}{r^p} \\] confirms the analytic scaling law, locating the same transition at $p = 3$. The eigenvalue trends approach the flat-space limit continuously for $p > 3$ and strengthen progressively for $p < 3$, demonstrating a smooth yet sharp spectral transition rather than a discrete confinement regime. The result parallels the critical threshold of the non-Abelian covariant Laplacian~[18], indicating a common $r^{-3}$ scaling that governs the infrared structure of gauge and gravitational fields.",
+    "arxiv_id": "2511.05345v1",
+    "published": "2025-11-07T15:39:24Z",
+    "updated": "2025-11-07T15:39:24Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Extreme internal waves: gravity currents and overturning fronts",
+    "authors": [
+      "Robin Ming Chen",
+      "Samuel Walsh",
+      "Miles H. Wheeler"
+    ],
+    "abstract": "Hydrodynamic bores are front-type traveling wave solutions to the two-layer free boundary Euler equations in two dimensions. The velocity field in each layer is assumed to be incompressible and irrotational, and it limits to distinct laminar flows upstream and downstream. Rigid horizontal boundaries confine the fluids from above and below. A constant gravitational force acts on the waves, but surface tension is neglected. It was recently shown by the authors that there exist two large-amplitude families of hydrodynamic bores: a curve of depression bores and a curve of elevation bores. We now prove that in the limit along the elevation bore family, the solutions must overturn: the interface separating the layers develops a vertical tangent. This type of behavior was first observed over 45 years ago in numerical computations of internal gravity waves and gravity water waves with vorticity. Despite considerable progress over the past decade in constructing families of water waves that potentially overturn, a proof that overturning definitively occurs has been stubbornly elusive. We further show that in the limit along the depression bore family, either overturning occurs or the solutions converge to a gravity current: the free boundary contacts the upper wall and the relative velocity in the upper fluid is stagnant. We also determine the contact angle between the interface and the rigid barrier for the limiting gravity current, giving the first rigorous confirmation of a conjecture of von Kármán. The resolutions of these questions in the specific case of hydrodynamic bores is accomplished through the use of novel geometric analysis techniques, including bounds on the decay of the velocity field near a hypothetical double stagnation point. These ideas may have broader applications to bifurcation theoretic studies of large-amplitude waves.",
+    "arxiv_id": "2511.05329v1",
+    "published": "2025-11-07T15:28:00Z",
+    "updated": "2025-11-07T15:28:00Z",
+    "categories": [
+      "math.AP"
+    ]
+  },
+  {
+    "title": "Optimizing broadband microwave absorbers for applications in the 70-200 GHz range",
+    "authors": [
+      "Gaganpreet Singh",
+      "Rustam Balafendiev",
+      "Mahesh Singh Bist",
+      "Thomas J. L. J. Gascard",
+      "Gagandeep Kaur",
+      "Vid Primožič",
+      "Jon E. Gudmundsson"
+    ],
+    "abstract": "We present results of an extensive suite of numerical simulations that probe square-tiled microwave absorber performance as a function of material properties, frequency, geometry, and unit cell size. The work, which probes both specular reflection and total absorption, highlights the critical importance of the absorber scale size relative to the incidence wavelength while suggesting that material properties have a comparatively weaker impact on overall performance. We show that some absorber designs can achieve 99.5-99.9% frequency-averaged absorption across the 70 to 200 GHz range for normal incidence and that low specular reflectance does not necessarily guarantee optimal absorption performance. Our results indicate that exponential, Klopfenstein, and linear impedance tapers provide comparable performance as long as a unit cell size of 1 to 4 mm is chosen. Simulation results are validated against measurements of specular reflectance.",
+    "arxiv_id": "2511.05309v1",
+    "published": "2025-11-07T15:11:24Z",
+    "updated": "2025-11-07T15:11:24Z",
+    "categories": [
+      "astro-ph.IM",
+      "physics.optics"
+    ]
+  },
+  {
+    "title": "A multiple-scales framework for branched channel filters",
+    "authors": [
+      "T. Fastnedge",
+      "C. J. W. Breward",
+      "I. M. Griffiths"
+    ],
+    "abstract": "Fibres shed from our clothes during a washing machine cycle constitute around 35% of the primary microplastics in our oceans. Current conventional dead-end washing machine filters clog relatively quickly and require frequent cleaning. We consider a new concept, ricochet separation, inspired by the feeding process of manta rays, to reduce the cleaning frequency. In such a device, some fluid is diverted through branched channels whilst particles ricochet off the wall structure, forcing them back into the main flow and then into the dead-end filter. In this paper, we consider a simple branched-channel filter structure beneath a high-Reynolds-number laminar flow, in the case where the branch separation is much larger than the thickness of the viscous boundary layer. We use multiple-scales techniques to derive an effective leakage boundary condition, which smooths out localised effects in the flow velocity and pressure that arise due to the discrete branched channels, and then use this boundary condition to explicitly determine the flow away from the boundary. We find that our explicit solution compares well with an analogous numerical solution containing a discrete set of branched channels. We further consider the behaviour of individual spherical particles in the device, with their trajectories determined via a simple force balance model with a wall-bounce condition. We explore the dependence of the fraction of particles that flow into the branched channels on the particle's Stokes number. The resulting combined model is able to predict the relationship between the efficiency of a ricochet filter device and the design and operating parameters, avoiding the need to conduct extensive numerically challenging simulations.",
+    "arxiv_id": "2511.05157v1",
+    "published": "2025-11-07T11:22:33Z",
+    "updated": "2025-11-07T11:22:33Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "The tidal response of a relativistic star",
+    "authors": [
+      "Nils Andersson",
+      "Rhys Counsell",
+      "Fabian Gittins",
+      "Suprovo Ghosh"
+    ],
+    "abstract": "We develop a fully relativistic approach for determining the frequency-dependent tidal response of a compact star. The strategy involves matching the solution for the linearised fluid dynamics in the star's interior to the spacetime perturbations in the near-zone surrounding the body, along with an identification of the tidal driving and the star's response. Notably, this identification is exact in Newtonian gravity and we provide strong evidence that it remains robust also in the relativistic case. The argument does not involve a sum over the star's quasinormal modes and hence circumvents one of the obstacles that have held up the development of models for relativistic tides. Numerical results are provided, at the proof-of-principle level, for a realistic matter equation of state from the BSk family, including composition stratification leading to the presence of low-frequency gravity modes. We also sketch the connection with the field-theory inspired approach to the problem, in which the tidal response is expressed in terms of asymptotic scattering amplitudes.",
+    "arxiv_id": "2511.05139v1",
+    "published": "2025-11-07T10:36:09Z",
+    "updated": "2025-11-07T10:36:09Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Annular Channel Eigenmodes: A Physical-Layer Approach to Suppressing OAM Modal Crosstalk",
+    "authors": [
+      "Chenghao Li",
+      "Pengyang An",
+      "Ziao Huang",
+      "Qiwen Zhan",
+      "Guanghui Yuan"
+    ],
+    "abstract": "Modal crosstalk is a fundamental limitation for orbital angular momentum (OAM)-based spatial-division multiplexing. Here, we introduce Annular Channel Eigenmodes (ACEs) - rigorously derived as the optimal band-limited solution for maximizing energy concentration within distinct annular channels. This approach reformulates the design as a Hermitian eigenvalue problem, efficiently yielding optimal beams that are physically isolated in space. Numerical simulations demonstrate that under identical conditions, conventional Gaussian-enveloped perfect optical vortices (POVs) exhibit an average modal crosstalk of -16 dB, whereas ACEs suppress crosstalk to nearly -30 dB. Moreover, the crosstalk suppression of ACEs continues to improve exponentially with increasing channel width, while that of POVs saturates at a fundamental limit. We experimentally generated ACEs and confirmed a 36% enhancement in energy confinement relative to POVs. ACEs thus provide a physically robust basis for high-fidelity, high-density OAM communications.",
+    "arxiv_id": "2511.05070v1",
+    "published": "2025-11-07T08:33:52Z",
+    "updated": "2025-11-07T08:33:52Z",
+    "categories": [
+      "physics.optics"
+    ]
+  },
+  {
+    "title": "A semi-analytical approach for computing the largest singularity-free spheres of a class of 6-6 Stewart-Gough platforms for specified orientation workspaces",
+    "authors": [
+      "Bibekananda Patra",
+      "Sandipan Bandyopadhyay"
+    ],
+    "abstract": "This article presents a method for computing the largest singularity-free sphere (SFS) of a 6-6 Stewart-Gough platform manipulator (SGPM) over a specified orientation workspace. For a fixed orientation of the moving platform, the SFS is computed analytically. This process is repeated over a set of samples generated within the orientation workspace, and the smallest among them is designated as the desired SFS for the given orientation workspace. Numerical experiments are performed on four distinct architectures of the SGPM to understand their relative performances w.r.t. SFS volumes over the same orientation workspace. This study demonstrates the potential utility of the proposed computational method both in analysis and design of SGPMs.",
+    "arxiv_id": "2511.04992v1",
+    "published": "2025-11-07T05:33:19Z",
+    "updated": "2025-11-07T05:33:19Z",
+    "categories": [
+      "cs.RO"
+    ]
+  },
+  {
+    "title": "A-BHPT-toolkit: Analytic Black Hole Perturbation Theory Package for Gravitational Scattering Amplitudes",
+    "authors": [
+      "Jovan Markovic",
+      "Mikhail M. Ivanov"
+    ],
+    "abstract": "Applications of effective field theory (EFT) and scattering amplitudes to gravitational problems have recently produced many unique results that advanced our understanding of the dynamics of compact binaries. Many of these results were made possible by comparing gravitational scattering amplitudes in EFT with exact expressions from general relativity. However, the latter expressions are not easily available as they require intricate solution techniques for the Teukolsky master equation, such as the Mano-Suzuki-Takasugi (MST) method. In this paper, we develop and present the first public package that enables computations of gravitational scattering amplitudes in black hole perturbation theory within the MST framework. Our package supports both analytic computations to a given post-Minkowskian (PM) order in the low-frequency limit and exact numerical computations for an arbitrary frequency of the perturbing field. As an application, we compute scattering phase shifts and inelasticity parameters for massless spin - 0, 1, and 2 fields resulting from scattering off a rotating Kerr black hole through the third PM order and compare these results with the exact numerical solutions.",
+    "arxiv_id": "2511.04765v1",
+    "published": "2025-11-06T19:35:07Z",
+    "updated": "2025-11-06T19:35:07Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Addressing the DESI DR2 Phantom-Crossing Anomaly and Enhanced $H_0$ Tension with Reconstructed Scalar-Tensor Gravity",
+    "authors": [
+      "Dimitrios Efstratiou",
+      "Evangelos Achilleas Paraskevas",
+      "Leandros Perivolaropoulos"
+    ],
+    "abstract": "Recent cosmological data, including DESI DR2, highlight significant tensions within the $Λ$CDM paradigm. When analyzed in the context of General Relativity (GR), the latest DESI data favor a dynamical dark energy (DDE) equation of state, $w(z)$, that crosses the phantom divide line $w=-1$. However, this framework prefers a lower Hubble constant, $H_0$, than Planck 2018, thereby worsening the tension with local measurements. This phantom crossing is a key feature that cannot be achieved by minimally coupled scalar fields (quintessence) within GR. This suggests the need for a new degree of freedom that can simultaneously: (A) increase the best-fit value of $H_0$ in the context of the DESI DR2 data, and (B) allow the crossing of the $w=-1$ line within a new theoretical approach. We argue that both of these goals may be achieved in the context of Modified Gravity (MG), and in particular, Scalar-Tensor (ST) theories, where phantom crossing is a natural and viable feature. We demonstrate these facts by analyzing a joint dataset including DESI DR2, Pantheon+, CMB, and growth-rate (RSD) data in the context of simple parametrizations for the effective gravitational constant, $μ_G(z) \\equiv G_{eff}/G_N$, and the DDE equation of state, $w(z)$. This MG framework significantly alleviates the tension, leading to a higher inferred value of $H_0 = 70.6 \\pm 1.7 \\, \\text{km s}^{-1} \\text{Mpc}^{-1}$. We also present a systematic, data-driven reconstruction of the required underlying ST Lagrangian and provide simple, generic analytical expressions for both the non-minimal coupling $F(Φ) = 1+ξΦ^{2}e^{nΦ}$ and the scalar potential $U(Φ) = U_{0}+ae^{bΦ^{2}}$, which well-describe the reconstructed functions.",
+    "arxiv_id": "2511.04610v1",
+    "published": "2025-11-06T18:01:59Z",
+    "updated": "2025-11-06T18:01:59Z",
+    "categories": [
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-ph",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Mixed precision multigrid with smoothing based on incomplete Cholesky factorization",
+    "authors": [
+      "Petr Vacek",
+      "Hartwig Anzt",
+      "Erin Carson",
+      "Nils Kohl",
+      "Ulrich Rüde",
+      "Yu-Hsiang Tsai"
+    ],
+    "abstract": "Multigrid methods are popular iterative methods for solving large-scale sparse systems of linear equations. We present a mixed precision formulation of the multigrid V-cycle with general assumptions on the finite precision errors coming from the application of coarsest-level solver and smoothing. Inspired by existing analysis, we derive a bound on the relative finite precision error of the V-cycle which gives insight into how the finite precision errors from the individual components of the method may affect the overall finite precision error. We use the result to study V-cycle methods with smoothing based on incomplete Cholesky factorization. The results imply that in certain settings the precisions used for applying the IC smoothing can be significantly lower than the precision used for computing the residual, restriction, prolongation and correction on the concrete level. We perform numerical experiments using simulated floating point arithmetic with the MATLAB Advanpix toolbox as well as experiments computed on GPUs using the Ginkgo library. The experiments illustrate the theoretical findings and show that in the considered settings the IC smoothing can be applied in relatively low precisions, resulting in significant speedups (up to 1.43x) and energy savings (down to 71%) in comparison with the uniform double precision variant.",
+    "arxiv_id": "2511.04566v1",
+    "published": "2025-11-06T17:21:27Z",
+    "updated": "2025-11-06T17:21:27Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "Preconditioning of GMRES for Helmholtz problems with quasimodes",
+    "authors": [
+      "Victorita Dolean",
+      "Pierre Marchand",
+      "Axel Modave",
+      "Timothée Raynaud"
+    ],
+    "abstract": "Finite element methods are effective for Helmholtz problems involving complex geometries and heterogeneous media. However, the resulting linear systems are often large, indefinite, and challenging for iterative solvers, particularly at high wave numbers or near resonant conditions. We derive a GMRES convergence bound that incorporates the nonlinear behavior of the relative residual and relates convergence to harmonic Ritz values. This perspective reveals how small eigenvalues associated with quasimodes can hinder convergence, and when they cease to have an effect. These phenomena occur in domain decomposition, and we illustrate them through numerical experiments. We also combine domain decomposition methods with deflation techniques using (approximate) eigenvectors tailored to resonant regimes. Their impact on GMRES performance is evaluated.",
+    "arxiv_id": "2511.04512v1",
+    "published": "2025-11-06T16:28:36Z",
+    "updated": "2025-11-06T16:28:36Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "Directed autonomous motion of active Janus particles induced by wall-particle alignment interactions",
+    "authors": [
+      "Poulami Bag",
+      "Tanwi Debnath",
+      "Shubhadip Nayak",
+      "Pulak K. Ghosh"
+    ],
+    "abstract": "We propose a highly efficient mechanism to rectify the motion of active particles by exploiting particle-wall alignment interactions. Through numerical simulations of active particles' dynamics in a narrow channel, we demonstrate that a slight difference in alignment strength between the top and bottom walls or a small gravitational drag suffices to break upside-down symmetry, leading to rectifying the motion of chiral active particles with over 60% efficiency. In contrast, for achiral swimmers to achieve rectified motion using this protocol, an unbiased fluid flow is necessary that can induce orbiting motion in the particle's dynamics. Thus, an achiral particle subject to Couette flow exhibits spontaneous directed motion due to an upside-down asymmetry in particle-wall alignment interaction. The rectification effects caused by alignment we report are robust against variations in self-propulsion properties, particle's chirality, and the most stable orientation of self-propulsion velocities relative to the walls. Our findings offer insights into controlled active matter transport and could be useful to sort artificial as well as natural microswimmers (such as bacteria and sperm cells) based on their chirality and self-propulsion velocities.",
+    "arxiv_id": "2511.04259v1",
+    "published": "2025-11-06T10:51:07Z",
+    "updated": "2025-11-06T10:51:07Z",
+    "categories": [
+      "cond-mat.soft"
+    ]
+  },
+  {
+    "title": "Relative entropy estimate and geometric ergodicity for implicit Langevin Monte Carlo",
+    "authors": [
+      "Lei Li",
+      "Jian-Guo Liu",
+      "Yuliang Wang"
+    ],
+    "abstract": "We study the implicit Langevin Monte Carlo (iLMC) method, which simulates the overdamped Langevin equation via an implicit iteration rule. In many applications, iLMC is favored over other explicit schemes such as the (explicit) Langevin Monte Carlo (LMC). LMC may blow up when the drift field $\\nabla U$ is not globally Lipschitz, while iLMC has convergence guarantee when the drift is only one-sided Lipschitz. Starting from an adapted continuous-time interpolation, we prove a time-discretization error bound under the relative entropy (or the Kullback-Leibler divergence), where a crucial gradient estimate for the logarithm numerical density is obtained via a sequence of PDE techniques, including Bernstein method. Based on a reflection-type continuous-discrete coupling method, we prove the geometric ergodicity of iLMC under the Wasserstein-1 distance. Moreover, we extend the error bound to a uniform-in-time one by combining the relative entropy error bound and the ergodicity. Our proof technique is universal and can be applied to other implicit or splitting schemes for simulating stochastic differential equations with non-Lipschitz drifts.",
+    "arxiv_id": "2511.04041v1",
+    "published": "2025-11-06T04:21:31Z",
+    "updated": "2025-11-06T04:21:31Z",
+    "categories": [
+      "math.NA",
+      "math.PR"
+    ]
+  },
+  {
+    "title": "Boson Stars Hosting Black Holes",
+    "authors": [
+      "Amitayus Banik",
+      "Jeong Han Kim",
+      "Xing-Yu Yang"
+    ],
+    "abstract": "We study a system of a self-gravitating condensate, a boson star, formed from scalar ultra-light dark matter (ULDM), with a black hole hosted at its center. We numerically solve the equations of hydrostatic equilibrium in the non-relativistic limit, consistently incorporating the gravitational potential of the black hole, to obtain all possible configurations of this BS-BH system for different boson star masses, interaction types, and black hole masses. We also propose an analytic expression for the density profile and compare it with the numerical results, finding good agreement for attractive interactions and for a finite range of mass ratios between the black hole and boson star. Finally, considering the inspiral of this BS-BH system with a second, smaller black hole, we study the dephasing of gravitational waves due to the presence of the ULDM environment. A Fisher matrix analysis reveals the regions of parameter space of the ULDM mass and self-coupling that future gravitational-wave observatories such as LISA can probe.",
+    "arxiv_id": "2511.03788v1",
+    "published": "2025-11-05T19:00:04Z",
+    "updated": "2025-11-05T19:00:04Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO",
+      "hep-ph"
+    ]
+  },
+  {
+    "title": "Extreme-Mass-Ratio Inspirals Embedded in Dark Matter Halo I:Existence of Homoclinic Orbit and Near-Horizon Chaos",
+    "authors": [
+      "Surajit Das",
+      "Surojit Dalui",
+      "Bum-Hoon Lee",
+      "Yi-Fu Cai"
+    ],
+    "abstract": "We study the existence of homoclinic orbit and the onset of chaotic motion for a massive particle moving around a Schwarzschild-like black hole embedded in a Dehnen-(1,4,5/2) type dark matter halo, within the extreme-mass-ratio limit q = m/M << 1, where m and M are the masses of the particle and the central black hole, respectively. The presence of the halo modifies the spacetime curvature and consequently deforms the effective potential governing the particle's motion. Using the Hamiltonian formulation, we derive the conditions under which unstable circular orbit and the associated homoclinic trajectory arise, marking the separatrix between bound and plunging motion. By analyzing the effective potential and the corresponding phase-space structure, we identify the transition from regular to chaotic dynamics in the near-horizon region. Numerical analyses through Poincare sections and Lyapunov exponents calculations demonstrate that increasing the halo density, scale radius along with energy amplifies nonlinear effects which leads to chaos eventually. We demonstrate that within a dark matter halo environment, the dynamical stability of particle motion can be significantly altered without violating the universal surface gravity bound on chaos. This work provides a deeper understanding of horizon-induced chaos in astrophysically realistic environments and serves as a theoretical basis for exploring its possible imprints on gravitational wave signals in extreme-mass-ratio inspirals system.",
+    "arxiv_id": "2511.03657v1",
+    "published": "2025-11-05T17:13:23Z",
+    "updated": "2025-11-05T17:13:23Z",
+    "categories": [
+      "gr-qc",
+      "hep-th",
+      "nlin.CD"
+    ]
+  },
+  {
+    "title": "Ringdown modulation of acceleration radiation in the Schwarzschild background",
+    "authors": [
+      "Reggie C. Pantig"
+    ],
+    "abstract": "We present an analytic, first-order description of how black hole ringdown imprints on the operational signature of near-horizon thermality. Building on a static Schwarzschild baseline in which a freely falling two-level system coupled to a single outgoing mode exhibits geometric photon statistics and a detailed-balance ratio set by the surface gravity, we introduce an even-parity, axisymmetric quadrupolar perturbation and work in an ingoing Eddington-Finkelstein, horizon-regular framework. The perturbation corrects the outgoing eikonal through a gauge-invariant double-null contraction of the metric, yielding a compact redshift map that, when pulled back to the detector worldline, produces a universal, decaying-oscillatory modulation of the Boltzmann exponent at the quasinormal frequency. We derive a closed boundary formula for the response coefficient at the sampling radius, identify the precise adiabatic window in which the result holds, and prove that the modulation vanishes in all stationary limits. Detector specifics (gap, switching wavepacket width) enter only through a smooth prefactor, while the geometric content is captured by the quasinormal pair and the response coefficient. The analysis clarifies that near-horizon \"thermality\" is robust but not rigid: detailed balance persists as the organizing structure and is gently driven by ringdown dynamics. The framework is minimal yet extensible to other multipoles, parities, and slow rotation, and it suggests direct numerical and experimental cross-checks in controlled analog settings.",
+    "arxiv_id": "2511.03766v1",
+    "published": "2025-11-05T14:57:44Z",
+    "updated": "2025-11-05T14:57:44Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Oscillon decay via parametric resonance: the case of three-point scalar interactions",
+    "authors": [
+      "Siyao Li"
+    ],
+    "abstract": "We investigate the decay dynamics of oscillons through interactions with an external scalar field. To examine how robust the decay dynamics of oscillons via parametric resonance we previously found in Li et al. 2025 are to the specific form of the coupling, we extend the analysis to include a three-point interaction $g_3φχ^2$. We compute the Floquet exponents of the external field $χ$ under an oscillating oscillon background and analyze how the instability bands depend on the coupling constants and the oscillon shapes. Numerical simulations of the two-field system show that, similar to the four-point case, the parametric resonance may cease before the oscillon is destroyed, leaving a smaller oscillon that decays only perturbatively. This indicates that the partial decay of oscillons through parametric resonance is a generic phenomenon of oscillon-scalar couplings, qualitatively insensitive to the specific interaction form, while the shape of instability bands, parameter dependence, and the precise critical oscillon energies depend on the specific coupling. Our findings provide further insights into the decay dynamics of oscillons and their potential role in the post-inflationary reheating process.",
+    "arxiv_id": "2511.03501v1",
+    "published": "2025-11-05T14:33:04Z",
+    "updated": "2025-11-05T14:33:04Z",
+    "categories": [
+      "hep-ph",
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Joule-Thomson expansion for quantum corrected AdS-Reissner-Nördstrom black holes in Kiselev spacetime with Barrow fractal entropy",
+    "authors": [
+      "Everton M. C. Abreu",
+      "Henrique Boschi-Filho",
+      "Rafael A. Costa-Silva"
+    ],
+    "abstract": "How can we detect the difference in the effects of the quantum corrections included in the metric of a spacetime and the quantum corrections included in the entropy of such a system? Recently, J. Barrow designed an expression based directly on black hole (BH) entropy of Bekenstein-Hawking where the geometry of the event horizon can also have an intricate, non smooth, structure, a fractal geometry. These fractal features are represented by a numerical constant parameter, the fractal parameter (FP). Since then, several interesting issues have been explored in the literature. In this work, we investigate the inversion temperature connected to the Joule-Thomson expansion from the thermodynamics of AdS-Reissner-Nördstrom BH by using the Barrow entropy equation where the FP has several values within a certain validity interval. We include quantum corrections in a cosmological fluid that can describe phantom dark matter or quintessence, both in a Kiselev scenario. The description of such physical systems also involves numerical solutions concerning the FP. The results are shown by temperature-pressure curves for multiple values of the parameters of the system used here. In conclusion of our analysis, we also show isenthalpic curves corresponding to fixed-mass BH processes, and we respond numerically to the question made in the first line of this abstract.",
+    "arxiv_id": "2511.03160v1",
+    "published": "2025-11-05T03:50:39Z",
+    "updated": "2025-11-05T03:50:39Z",
+    "categories": [
+      "hep-th",
       "gr-qc"
     ]
   },
@@ -35,6 +1055,223 @@
     ]
   },
   {
+    "title": "Analytically Continuing the Randomized Measurement Toolbox",
+    "authors": [
+      "Akash Vijay",
+      "Ayush Raj",
+      "Jonah Kudler-Flam",
+      "Benoît Vermersch",
+      "Andreas Elben",
+      "Laimei Nie"
+    ],
+    "abstract": "We develop a framework for extracting non-polynomial analytic functions of density matrices in randomized measurement experiments by a method of analytical continuation. A central advantage of this approach, dubbed stabilized analytic continuation (SAC), is its robustness to statistical noise arising from finite repetitions of a quantum experiment, making it well-suited to realistic quantum hardware. As a demonstration, we use SAC to estimate the von Neumann entanglement entropy of a numerically simulated quenched Néel state from Rényi entropies estimated via the randomized measurement protocol. We then apply the method to experimental Rényi data from a trapped-ion quantum simulator, extracting subsystem von Neumann entropies at different evolution times. Finally, we briefly note that the SAC framework is readily generalizable to obtain other nonlinear diagnostics, such as the logarithmic negativity and Rényi relative entropies.",
+    "arxiv_id": "2511.02912v1",
+    "published": "2025-11-04T19:00:04Z",
+    "updated": "2025-11-04T19:00:04Z",
+    "categories": [
+      "quant-ph",
+      "cond-mat.quant-gas"
+    ]
+  },
+  {
+    "title": "A Joint Variational Framework for Multimodal X-ray Ptychography and Fluorescence Reconstruction",
+    "authors": [
+      "Eric Zou",
+      "Elle Buser",
+      "Zichao Wendy Di",
+      "Yuanzhe Xi"
+    ],
+    "abstract": "Recovering high-resolution structural and compositional information from coherent X-ray measurements involves solving coupled, nonlinear, and ill-posed inverse problems. Ptychography reconstructs a complex transmission function from overlapping diffraction patterns, while X-ray fluorescence provides quantitative, element-specific contrast at lower spatial resolution. We formulate a joint variational framework that integrates these two modalities into a single nonlinear least-squares problem with shared spatial variables. This formulation enforces cross-modal consistency between structural and compositional estimates, improving conditioning and promoting stable convergence. The resulting optimization couples complementary contrast mechanisms (i.e., phase and absorption from ptychography, elemental composition from fluorescence) within a unified inverse model. Numerical experiments on simulated data demonstrate that the joint reconstruction achieves faster convergence, sharper and more quantitative reconstructions, and lower relative error compared with separate inversions. The proposed approach illustrates how multimodal variational formulations can enhance stability, resolution, and interpretability in computational X-ray imaging.",
+    "arxiv_id": "2511.02153v1",
+    "published": "2025-11-04T00:44:46Z",
+    "updated": "2025-11-04T00:44:46Z",
+    "categories": [
+      "math.NA",
+      "math.OC"
+    ]
+  },
+  {
+    "title": "Bayesian spatio-temporal weighted regression for integrating missing and misaligned environmental data",
+    "authors": [
+      "Yovna Junglee",
+      "Vianey Leos Barajas",
+      "Meredith Franklin"
+    ],
+    "abstract": "Estimating environmental exposures from multi-source data is central to public health research and policy. Integrating data from satellite products and ground monitors are increasingly used to produce exposure surfaces. However, spatio-temporal misalignment often induced from missing data introduces substantial uncertainty and reduces predictive accuracy. We propose a Bayesian weighted predictor regression framework that models spatio-temporal relationships when predictors are observed on irregular supports or have substantial missing data, and are not concurrent with the outcome. The key feature of our model is a spatio-temporal kernel that aggregates the predictor over local space-time neighborhoods, built directly into the likelihood, eliminating any separate gap-filling or forced data alignment stage. We introduce a numerical approximation using a Voronoi-based spatial quadrature combined with irregular temporal increments for estimation under data missingness and misalignment. We showed that misspecification of the spatial and temporal lags induced bias in the mean and parameter estimates, indicating the need for principled parameter selection. Simulation studies confirmed these theoretical findings, where careful tuning was critical to control bias and achieve accurate prediction, while the proposed quadrature performed well under severe missingness. As an illustrative application, we estimated fine particulate matter (PM$_{2.5}$) in northern California using satellite-derived aerosol optical depth (AOD) and wildfire smoke plume indicators. Relative to a traditional collocated linear model, our approach improved out-of-sample predictive performance (over 50\\% increase in R$^2$), reduced uncertainty, and yielded robust temporal predictions and spatial surface estimation. Our framework is extensible to additional spatio-temporally varying covariates and other kernel families.",
+    "arxiv_id": "2511.02149v1",
+    "published": "2025-11-04T00:40:32Z",
+    "updated": "2025-11-04T00:40:32Z",
+    "categories": [
+      "stat.ME",
+      "stat.AP"
+    ]
+  },
+  {
+    "title": "Explicit invariant-preserving integration of differential equations using homogeneous projection",
+    "authors": [
+      "Benjamin Kwanen Tapley"
+    ],
+    "abstract": "We develop a general framework for numerically solving differential equations while preserving invariants. As in standard projection methods, we project an arbitrary base integrator onto an invariant-preserving manifold, however, our method exploits homogeneous symmetries to evaluate the projection exactly and in closed form. This yields explicit invariant-preserving integrators for a broad class of nonlinear systems, as well as pseudo-invariant-preserving schemes capable of preserving multiple invariants to arbitrarily high precision. The resulting methods are high-order and introduce negligible computational overhead relative to the base solver. When incorporated into adaptive solvers such as Dormand-Prince 8(5,3), they provide error-controlled, invariant-preserving, high-order time-stepping schemes. Numerical experiments on double-pendulum and Kepler ODEs as well as semidiscretised KdV and Camassa-Holm PDEs demonstrate substantial improvements in both accuracy and efficiency over standard approaches.",
+    "arxiv_id": "2511.02131v1",
+    "published": "2025-11-03T23:48:13Z",
+    "updated": "2025-11-03T23:48:13Z",
+    "categories": [
+      "math.NA",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "title": "Euler-Heisenberg action for fermions coupled to gauge and axial vectors: Hessian diagonalization, sector classification, and applications",
+    "authors": [
+      "Lucas Pereira de Souza"
+    ],
+    "abstract": "We derive the closed-form one-loop Euler--Heisenberg effective actions for Dirac fermions coupled simultaneously to classical electromagnetic vector and massive pseudo-vector backgrounds within a controlled quasi-static approximation. Through complete diagonalization of the functional Hessian, we systematically delineate the parameter space into distinct sectors characterized by stability properties and spectral structure. We identify subspaces that encompass and extend results from previous studies into a broader class, admitting propagating axial fields as physically viable regimes; strikingly, we note a sector presenting chirality-asymmetric instability. This addresses long-standing questions regarding the well-defined nature, diagonalizability, and stability of the model. From the effective action, we derive novel nonperturbative pair-production rates for simultaneously propagating electromagnetic and axial vector backgrounds; remarkably, we find pronounced vacuum stabilization compared to previous results. Furthermore, we demonstrate that this framework allows for a unified derivation of the chiral anomaly structures in the general case and show that the electromagnetic coupling induces instanton-like configurations for the axial field, even when it is not a fundamental gauge field. As a proof-of-concept, we analyze a cosmological toy model of baryogenesis driven by an axial vector, providing numerical estimates that support the viability of this hypothesis. Additionally, we outline qualitative predictions for Weyl/Dirac semi-metals and briefly discuss potential applications in related phenomena, such as the Strong-CP problem.",
+    "arxiv_id": "2511.02118v2",
+    "published": "2025-11-03T23:18:20Z",
+    "updated": "2025-11-14T06:55:03Z",
+    "categories": [
+      "hep-th",
+      "astro-ph.CO",
+      "cond-mat.other",
+      "gr-qc",
+      "hep-ph"
+    ]
+  },
+  {
+    "title": "Towards Multi-Fidelity Scaling Laws of Neural Surrogates in CFD",
+    "authors": [
+      "Paul Setinek",
+      "Gianluca Galletti",
+      "Johannes Brandstetter"
+    ],
+    "abstract": "Scaling laws describe how model performance grows with data, parameters and compute. While large datasets can usually be collected at relatively low cost in domains such as language or vision, scientific machine learning is often limited by the high expense of generating training data through numerical simulations. However, by adjusting modeling assumptions and approximations, simulation fidelity can be traded for computational cost, an aspect absent in other domains. We investigate this trade-off between data fidelity and cost in neural surrogates using low- and high-fidelity Reynolds-Averaged Navier-Stokes (RANS) simulations. Reformulating classical scaling laws, we decompose the dataset axis into compute budget and dataset composition. Our experiments reveal compute-performance scaling behavior and exhibit budget-dependent optimal fidelity mixes for the given dataset configuration. These findings provide the first study of empirical scaling laws for multi-fidelity neural surrogate datasets and offer practical considerations for compute-efficient dataset generation in scientific machine learning.",
+    "arxiv_id": "2511.01830v1",
+    "published": "2025-11-03T18:37:38Z",
+    "updated": "2025-11-03T18:37:38Z",
+    "categories": [
+      "cs.LG",
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Measurement Strategies and Estimation Precision in Quantum Network Tomography",
+    "authors": [
+      "Athira Kalavampara Raghunadhan",
+      "Matheus Guedes De Andrade",
+      "Don Towsley",
+      "Indrakshi Dey",
+      "Daniel Kilper",
+      "Nicola Marchetti"
+    ],
+    "abstract": "This work investigates measurement strategies for link parameter estimation in Quantum Network Tomography (QNT), where network links are modeled as depolarizing quantum channels distributing Werner states. Three distinct measurement schemes are analyzed: local Z-basis measurements (LZM), joint Bell-state measurements (JBM), and pre-shared entanglement-assisted measurements (PEM). For each scheme, we derive the probability distributions of measurement outcomes and examine how noise in the distributed states influences estimation precision. Closed-form expressions for the Quantum Fisher Information Matrix (QFIM) are obtained, and the estimation precision is evaluated through the Quantum Cramer-Rao Bound (QCRB). Numerical analysis reveals that the PEM scheme achieves the lowest QCRB, offering the highest estimation accuracy, while JBM provides a favorable balance between precision and implementation complexity. The LZM method, although experimentally simpler, exhibits higher estimation error relative to the other schemes; however, it outperforms JBM in high-noise regimes for single-link estimation. We further evaluate the estimation performance on a four-node star network by comparing a JBM-only configuration with a hybrid configuration that combines JBM and LZM. When two monitors are used, the JBM-only strategy outperforms the hybrid approach across all noise regimes. However, with three monitors, it achieves a lower QCRB only in low-noise regimes with heterogeneous links. The results establish a practical basis for selecting measurement strategies in experimental quantum networks, enabling more accurate and scalable link parameter estimation under realistic noise conditions.",
+    "arxiv_id": "2511.01657v1",
+    "published": "2025-11-03T15:19:48Z",
+    "updated": "2025-11-03T15:19:48Z",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "On the phase of the de Sitter density of states",
+    "authors": [
+      "Yiming Chen",
+      "Douglas Stanford",
+      "Haifeng Tang",
+      "Zhenbin Yang"
+    ],
+    "abstract": "The one-loop gravitational path integral around Euclidean de Sitter space $S^D$ has a complex phase that casts doubt on a state counting interpretation. Recently, it was proposed to cancel this phase by including an observer. We explore this proposal in the case where the observer is a charged black hole in equilibrium with the de Sitter horizon. We compute the phase of the one-loop determinant within a two-dimensional dilaton gravity reduction, using both numerical and analytical methods. Our results interpolate between previous studies of a probe geodesic observer and the Nariai solution. We also revisit the prescription for going from the Euclidean path integral to the state-counting partition function, finding a positive sign in the final density of states.",
+    "arxiv_id": "2511.01400v1",
+    "published": "2025-11-03T09:49:22Z",
+    "updated": "2025-11-03T09:49:22Z",
+    "categories": [
+      "hep-th",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Universal Barrier Functions for Safety and Stability of Constrained Nonlinear Systems",
+    "authors": [
+      "Vrushabh Zinage",
+      "Efstathios Bakolas"
+    ],
+    "abstract": "In this paper, we address the problem of synthesizing safe and stabilizing controllers for nonlinear systems subject to complex safety specifications and input constraints. We introduce the Universal Barrier Function (UBF), a single continuously differentiable scalar-valued function that encodes both stability and safety criteria while accounting for input constraints. Using the UBF, we formulate a Quadratic Program (UBF-QP) to generate control inputs that are both safe and stabilizing under input constraints. We demonstrate that the UBF-QP is feasible if a UBF exists. Furthermore, under mild conditions, we prove that a UBF always exists. The proposed framework is then extended to systems with higher relative degrees. Finally, numerical simulations illustrate the effectiveness of our proposed approach.",
+    "arxiv_id": "2511.01067v1",
+    "published": "2025-11-02T20:23:12Z",
+    "updated": "2025-11-02T20:23:12Z",
+    "categories": [
+      "eess.SY"
+    ]
+  },
+  {
+    "title": "HEATNETs: Explainable Random Feature Neural Networks for High-Dimensional Parabolic PDEs",
+    "authors": [
+      "Kyriakos Georgiou",
+      "Gianluca Fabiani",
+      "Constantinos Siettos",
+      "Athanasios N. Yannacopoulos"
+    ],
+    "abstract": "We deal with the solution of the forward problem for high-dimensional parabolic PDEs with random feature (projection) neural networks (RFNNs). We first prove that there exists a single-hidden layer neural network with randomized heat-kernels arising from the fundamental solution (Green's functions) of the heat operator, that we call HEATNET, that provides an unbiased universal approximator to the solution of parabolic PDEs in arbitrary (high) dimensions, with the rate of convergence being analogous to the ${O}(N^{-1/2})$, where $N$ is the size of HEATNET. Thus, HEATNETs are explainable schemes, based on the analytical framework of parabolic PDEs, exploiting insights from physics-informed neural networks aided by numerical and functional analysis, and the structure of the corresponding solution operators. Importantly, we show how HEATNETs can be scaled up for the efficient numerical solution of arbitrary high-dimensional parabolic PDEs using suitable transformations and importance Monte Carlo sampling of the integral representation of the solution, in order to deal with the singularities of the heat kernel around the collocation points. We evaluate the performance of HEATNETs through benchmark linear parabolic problems up to 2,000 dimensions. We show that HEATNETs result in remarkable accuracy with the order of the approximation error ranging from $1.0E-05$ to $1.0E-07$ for problems up to 500 dimensions, and of the order of $1.0E-04$ to $1.0E-03$ for 1,000 to 2,000 dimensions, with a relatively low number (up to 15,000) of features.",
+    "arxiv_id": "2511.00886v1",
+    "published": "2025-11-02T10:50:11Z",
+    "updated": "2025-11-02T10:50:11Z",
+    "categories": [
+      "math.NA",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Electromagnetic deflection effects in the integrated luminosity measurement at the CEPC",
+    "authors": [
+      "Ivan Smiljanić",
+      "Ivanka Božović",
+      "Ivana Vidaković",
+      "Nataša Vukašinović",
+      "Goran Kačarević"
+    ],
+    "abstract": "In order to ensure measurement of the integrated luminosity with a relative precision of $\\mathrm{10^{-4}}$ at the $\\mathrm{Z^{0}}$ pole at CEPC, numerous systematic effects have to be quantified and, if possible, corrected for. Here we discuss the impact of electromagnetic fields of incoming bunches on the initial state electrons and positrons (EMD1) as well as on the Bhabha scattering final states (EMD2). Both effects change four-momenta of the final state particles, leading to a modification of the Bhabha count in the luminometer. These effects are quantified in simulation, together with their stability with respect to the beam parameters variations. Possible correction methods based on experimental measurements with the CEPC detector are discussed on a conceptual level.",
+    "arxiv_id": "2511.00687v1",
+    "published": "2025-11-01T19:58:44Z",
+    "updated": "2025-11-01T19:58:44Z",
+    "categories": [
+      "hep-ex"
+    ]
+  },
+  {
+    "title": "Polariton-induced superconductivity in two-dimensional metals",
+    "authors": [
+      "Riccardo Riolo",
+      "Frank H. L. Koppens",
+      "Pablo Jarillo-Herrero",
+      "Giacomo Mazza",
+      "Allan H. MacDonald",
+      "Marco Polini"
+    ],
+    "abstract": "The electronic properties of two-dimensional (2D) metals are altered by changes in their three-dimensional dielectric environment. In this Letter we propose that superconductivity can be induced in a 2D metal by resonant coupling between its plasmonic collective modes and optical phonons in a nearby polar dielectric. Specifically, we predict that relatively high-temperature superconductivity can be induced in bilayer graphene twisted to an angle somewhat larger than the magic value by surrounding it with a THz polar dielectric. Our conclusions are based on numerical solutions of Eliashberg equations for massless Dirac fermions with tunable Fermi velocities and Fermi energies, and can be understood qualitatively in terms of a generalized McMillan formula.",
+    "arxiv_id": "2511.00608v1",
+    "published": "2025-11-01T16:18:42Z",
+    "updated": "2025-11-01T16:18:42Z",
+    "categories": [
+      "cond-mat.str-el",
+      "cond-mat.supr-con"
+    ]
+  },
+  {
+    "title": "Structural Properties of Magnetized Neutron Stars under f (R, T ) Gravity Framework",
+    "authors": [
+      "Charul Rathod",
+      "M. Mishra",
+      "Prasanta Kumar Das"
+    ],
+    "abstract": "The current work investigates the structural properties of neutron stars in the presence of a strong magnetic field within the framework of f(R,T) modified gravity, where the matter-geometry coupling leads to deviations from general relativity at high matter densities. We present here the mass-radius sequences, as well as the mass and pressure distributions for various values of the modified gravity parameter and the central magnetic field. The modified Tolman-Oppenheimer- Volkoff equations are numerically solved using isotropic equations of state, specifically the APR, FPS, and SLy models. Comparing the corresponding results in the context of general relativity suggests that more negative values of the modified gravity parameter result in higher maximum gravitational masses. In contrast, strong central magnetic fields of up to 1018 Gauss cause only a slight decrease in maximum mass without disrupting spherical symmetry. Our findings are in agreement with the observed data from GW170817, PSR and NICER.",
+    "arxiv_id": "2511.00425v1",
+    "published": "2025-11-01T06:34:15Z",
+    "updated": "2025-11-01T06:34:15Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Spin-up and mass-gain in hyperbolic encounters of spinning black holes",
     "authors": [
       "Healey Kogan",
@@ -48,6 +1285,24 @@
     "categories": [
       "gr-qc",
       "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Every Wrinkle Carries A Memory: An Integro-differential Bootstrap for Features in Cosmological Correlators",
+    "authors": [
+      "Sadra Jazayeri",
+      "Xi Tong",
+      "Yuhang Zhu"
+    ],
+    "abstract": "Motivated by cosmological observations, we push the cosmological bootstrap program beyond the de Sitter invariance lamppost by considering correlators that explicitly break scale invariance, thereby exhibiting primordial features. For exchange processes involving heavy fields with time-dependent masses and sound speeds, we demonstrate that locality in the bulk implies a set of integro-differential equations for correlators on the boundary. These scale-breaking boundary equations come with a built-in memory kernel in momentum-kinematic space encapsulating the universe's evolution during inflation. Specialising to heavy fields with sinusoidal masses such as those found in axion monodromy scenarios, we show that a powerful synthesis of microcausality and analyticity allows an analytical solution of these equations at leading order in the amplitude of mass oscillations. Meanwhile, we also unveil non-perturbative information in the integro-differential equations by resumming apparent infrared divergences as parametric resonances. In addition, we provide a first-of-its-kind example of numerical bootstrap that directly maps out the solution space of such boundary equations. Finally, we compute the bispectrum and uncover, in the squeezed limit, a scale-breaking cosmological collider signal, whose amplitude can be exponentially enhanced (with respect to the Boltzmann suppression) due to particle production triggered by high-frequency mass oscillations.",
+    "arxiv_id": "2511.00152v1",
+    "published": "2025-10-31T18:00:12Z",
+    "updated": "2025-10-31T18:00:12Z",
+    "categories": [
+      "hep-th",
+      "astro-ph.CO",
+      "gr-qc",
+      "hep-ph"
     ]
   },
   {
@@ -67,6 +1322,234 @@
     ]
   },
   {
+    "title": "Incentives for self-isolation based on incidence rather than prevalence could help to flatten the curve: a modelling study",
+    "authors": [
+      "Giulia de Meijere",
+      "Hugo Martin"
+    ],
+    "abstract": "In recent years, numerous advances have been made in understanding how epidemic dynamics is affected by changes in individual behaviours. We propose an SIS-based compartmental model to tackle the simultaneous and coupled evolution of an outbreak and of the adoption by individuals of the isolation measure. The compliance with self-isolation is described with the help of the imitation dynamics framework. Individuals are incentivised to isolate based on the prevalence and the incidence rate of the outbreak, and are tempted to defy isolation recommendations depending on the duration of isolation and on the cost of putting social interactions on hold. We are able to derive analytical results on the equilibria of the model under the homogeneous mean-field approximation. Simulating the compartmental model on empirical networks, we also do a preliminary check of the impact of a network structure on our analytical predictions. We find that the dynamics collapses to surprisingly simple regimes where either the imitation dynamics no longer plays a role or the equilibrium prevalence depends on only two parameters of the model, namely the cost and the relative time spent in isolation. Whether individuals prioritise disease prevalence or incidence as an indicator of the state of the outbreak appears to play no role on the equilibria of the dynamics. However, it turns out that favouring incidence may help to flatten the curve in the transient phase of the dynamics. We also find a fair agreement between our analytical predictions and simulations run on an empirical multiplex network.",
+    "arxiv_id": "2511.00138v1",
+    "published": "2025-10-31T16:07:20Z",
+    "updated": "2025-10-31T16:07:20Z",
+    "categories": [
+      "physics.soc-ph",
+      "q-bio.PE"
+    ]
+  },
+  {
+    "title": "Uniturbulence and Alfvén Wave Solar Model in MPI-AMRVAC",
+    "authors": [
+      "M. McMurdo",
+      "T. Van Doorsselaere",
+      "N. Magyar",
+      "L. Banovic",
+      "D. Lim"
+    ],
+    "abstract": "The coronal heating problem remains a fundamental challenge in solar physics. While AWSoM-type models (Alfvén Wave Solar Model) have proven highly successful in reproducing the large-scale structure of the solar corona, they inherently neglect contributions from additional wave modes that arise when the effects of transverse structuring is fully incorporated into the magnetohydrodynamic (MHD) equations. In this paper, we compare the roles of kink wave- and Alfvén wave-driven heating in sustaining a region of the solar atmosphere, using newly developed physics and radiative cooling modules within MPI-AMRVAC. We extend the existing MHD physics module in MPI-AMRVAC by incorporating additional Alfvén and kink wave energy contributions to the MHD equations. We examine their roles in heating the solar atmosphere and driving the solar wind. To validate our approach, we compare numerical results from Python-based simulations with those obtained using the UAWSoM module in MPI-AMRVAC. Furthermore, we assess the heating efficiency of kink waves relative to that of pure Alfvén waves through two parameter studies: (1) exploring how different Alfvén wave reflection rates impact the simulated atmosphere, and (2) varying the relative magnitudes of Alfvén and kink wave energy injections. Finally, we present results from a larger-scale domain, sustained entirely by kink wave-driven heating. Our results show that kink wave-driven (UAWSoM) models are able to sustain a stable atmosphere without requiring any artificial background heating terms, unlike traditional Alfvén-only models. We attribute this to the increased heating rate associated with kink waves compared with Alfvén waves, given the same energy injection. Kink waves can sustain a model plasma with temperature and density values representative of coronal conditions without resorting to ad hoc heating terms.",
+    "arxiv_id": "2510.27553v1",
+    "published": "2025-10-31T15:28:29Z",
+    "updated": "2025-10-31T15:28:29Z",
+    "categories": [
+      "astro-ph.SR"
+    ]
+  },
+  {
+    "title": "Holographic equation of state matched with hadron gas equation as a tool for the study of the quark-gluon plasma evolution",
+    "authors": [
+      "A. V. Anufriev",
+      "V. N. Kovalenko"
+    ],
+    "abstract": "In this paper, we discuss the matching of the holographic equation of state with the equation of Hadron Resonance Gas for studying the nuclear matter properties within the framework of relativistic heavy-ion collisions. Machine learning methods are applied to the calibration of model's free parameters using the lattice QCD results for the physical values of quark masses. One of the most advanced procedures for matching is used with the function that approximate behavior of both models on particular limit adopted from NEOS equation. Final hadronic spectra are obtained within multi-staged numerical approach of the iEBE-MUSIC and SMASH-vHLLE packages. The code of relativistic hydrodynamics is modified by implementing a tabulated holographic equation of state, enabling simulations of quark-gluon plasma evolution with dynamically generated initial conditions via the 3D Monte Carlo Glauber Model and SMASH. Hybrid iSS+UrQMD and Hadron Sampler+SMASH approaches are utilized at the freeze-out stage.",
+    "arxiv_id": "2510.27541v1",
+    "published": "2025-10-31T15:16:45Z",
+    "updated": "2025-10-31T15:16:45Z",
+    "categories": [
+      "nucl-th",
+      "gr-qc",
+      "hep-ph",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Benchmarking Proton Tunneling Splittings with a Wavefunction-Based Double-Well Model: Application to the Formic Acid Dimer",
+    "authors": [
+      "Krishna Kingkar Pathak"
+    ],
+    "abstract": "Proton tunneling across hydrogen bonds is a fundamental quantum effect with implications for spectroscopy, catalysis, and biomolecular stability. While state-of-the-art instanton and path-integral methods provide accurate multidimensional tunneling splittings, simplified one-dimensional models remain valuable as conceptual and benchmarking tools. Here we develop a wavefunction-based framework for tunneling splittings using a Cornell-type double-well potential and apply it as a benchmark for hydrogen-bond tunneling. Analytical WKB estimates and numerical finite-difference solutions are compared across a range of barrier parameters, showing consistent agreement. As a test case, we map the formic acid dimer (FAD) barrier onto a quartic double-well model parameterized to reproduce the reported barrier height of $V_b \\\\approx 2848~\\\\text{cm}^{-1}$. The resulting tunneling splitting of about $0.037~\\\\text{cm}^{-1}$ matches the reduced-dimensional calculations of Qu and Bowman. The close agreement between numerical and semiclassical results highlights the pedagogical and diagnostic value of one-dimensional models, while comparison with molecular benchmarks clarifies their limitations relative to full multidimensional quantum treatments.",
+    "arxiv_id": "2511.01903v1",
+    "published": "2025-10-31T05:45:15Z",
+    "updated": "2025-10-31T05:45:15Z",
+    "categories": [
+      "physics.chem-ph",
+      "hep-ph",
+      "nlin.CD",
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "Magnetically supramassive and hypermassive compact stars",
+    "authors": [
+      "Koji Uryu",
+      "Shijun Yoshida",
+      "Eric Gourgoulhon",
+      "Charalampos Markakis",
+      "Kotaro Fujisawa",
+      "Antonios Tsokaros",
+      "Keisuke Taniguchi",
+      "Mina Zamani",
+      "Lambros Boukas"
+    ],
+    "abstract": "It is known that the mass of magnetized relativistic compact star is larger than that of non-magnetized one for the same equation of state and central density, albeit the excess of mass is sizable only if the magnetic fields are strong enough B~10^17-10^18G. Using our recently developed numerical code COCAL, we systematically compute such compact star solutions in equilibrium associated with mixed poloidal and toroidal magnetic fields, and show the magnetically supramassive solutions whose masses exceed by more than 10% of the maximum mass of the static and spherically symmetric solutions. For some extremely strong magnetic field configurations, we also obtain solutions more massive than the maximum mass of the uniformly rotating solutions at the Kepler (mass-shedding) limit, namely magnetically hypermassive solutions.",
+    "arxiv_id": "2510.27188v1",
+    "published": "2025-10-31T05:18:38Z",
+    "updated": "2025-10-31T05:18:38Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Predictive Compensation in Finite-Horizon LQ Games under Gauss-Markov Deviations",
+    "authors": [
+      "Navid Mojahed",
+      "Mahdis Rabbani",
+      "Shima Nazari"
+    ],
+    "abstract": "This paper develops a predictive compensation framework for finite-horizon, discrete-time linear quadratic dynamic games subject to Gauss-Markov execution deviations from feedback Nash strategies. One player's control is corrupted by temporally correlated stochastic perturbations modeled as a first-order autoregressive (AR(1)) process, while the opposing player has causal access to past deviations and employs a predictive feedforward strategy that anticipates their future effect. We derive closed-form recursions for mean and covariance propagation under the resulting perturbed closed loop, establish boundedness and sensitivity properties of the equilibrium trajectory, and characterize the reduction in expected cost achieved by optimal predictive compensation. Numerical experiments corroborate the theoretical results and demonstrate performance gains relative to nominal Nash feedback across a range of disturbance persistence levels.",
+    "arxiv_id": "2511.03744v3",
+    "published": "2025-10-31T02:03:10Z",
+    "updated": "2025-11-13T02:21:19Z",
+    "categories": [
+      "eess.SY"
+    ]
+  },
+  {
+    "title": "Do Vision-Language Models Measure Up? Benchmarking Visual Measurement Reading with MeasureBench",
+    "authors": [
+      "Fenfen Lin",
+      "Yesheng Liu",
+      "Haiyu Xu",
+      "Chen Yue",
+      "Zheqi He",
+      "Mingxuan Zhao",
+      "Miguel Hu Chen",
+      "Jiakang Liu",
+      "JG Yao",
+      "Xi Yang"
+    ],
+    "abstract": "Reading measurement instruments is effortless for humans and requires relatively little domain expertise, yet it remains surprisingly challenging for current vision-language models (VLMs) as we find in preliminary evaluation. In this work, we introduce MeasureBench, a benchmark on visual measurement reading covering both real-world and synthesized images of various types of measurements, along with an extensible pipeline for data synthesis. Our pipeline procedurally generates a specified type of gauge with controllable visual appearance, enabling scalable variation in key details such as pointers, scales, fonts, lighting, and clutter. Evaluation on popular proprietary and open-weight VLMs shows that even the strongest frontier VLMs struggle measurement reading in general. A consistent failure mode is indicator localization: models can read digits or labels but misidentify the key positions of pointers or alignments, leading to big numeric errors despite plausible textual reasoning. We have also conducted preliminary experiments with reinforcement learning over synthetic data, and find encouraging results on in-domain synthetic subset but less promising for real-world images. Our analysis highlights a fundamental limitation of current VLMs in fine-grained spatial grounding. We hope this resource can help future advances on visually grounded numeracy and precise spatial perception of VLMs, bridging the gap between recognizing numbers and measuring the world.",
+    "arxiv_id": "2510.26865v1",
+    "published": "2025-10-30T17:20:51Z",
+    "updated": "2025-10-30T17:20:51Z",
+    "categories": [
+      "cs.CV",
+      "cs.AI"
+    ]
+  },
+  {
+    "title": "Quantifying Resolution in Pink Beam Dark Field X-ray Microscopy: Experiments and Simulations",
+    "authors": [
+      "Michela La Bella",
+      "Henning Friis Poulsen",
+      "Steffen Staeck",
+      "Nils Axel Henningsson",
+      "Merve Pinar Kabukcuoglu",
+      "Carsten Detlefs",
+      "Can Yildirim"
+    ],
+    "abstract": "Pink-beam Dark-Field X-ray Microscopy (pDFXM) is a powerful emerging technique for time-resolved studies of microstructure and strain evolution in bulk crystalline materials. In this work, we systematically assess the performance of pDFXM relative to monochromatic DFXM when using a compound refractive lens (CRL) as the objective. Analytical expressions for the spatial and angular resolution are derived and compared with numerical simulations based on geometrical optics and experimental data. The pink-beam configuration provides an increased diffraction intensity depending on the deformation state of the sample, accompanied by a general tenfold degradation in angular resolution along the rocking and longitudinal directions. This trade-off is disadvantageous for axial strain mapping, but can be advantageous in cases where integrated intensities are needed. For a perfect crystal under parallel illumination with a pink beam, our results show that chromatic aberration is absent, whereas under condensed illumination it becomes significant. The aberration is shown to depend strongly on the local distortion of the crystal. Weak-beam imaging conditions, such as those required for resolving dislocations, are shown to remain feasible under pink-beam operation and may even provide an improved signal-to-noise ratio. The higher incident flux, enhanced by nearly two orders of magnitude, is quantified in terms of beam heating effects, and implications for optimized scanning protocols are discussed.",
+    "arxiv_id": "2510.26665v1",
+    "published": "2025-10-30T16:34:59Z",
+    "updated": "2025-10-30T16:34:59Z",
+    "categories": [
+      "physics.optics",
+      "physics.ins-det"
+    ]
+  },
+  {
+    "title": "A theoretical comparison of weight constraints in forecast combination and model averaging",
+    "authors": [
+      "Jiahui Zou",
+      "Andrey Vasnev",
+      "Wendun Wang",
+      "Xinyu Zhang"
+    ],
+    "abstract": "Forecast combination and model averaging have become popular tools in forecasting and prediction, both of which combine a set of candidate estimates with certain weights and are often shown to outperform single estimates. A data-driven method to determine combination/averaging weights typically optimizes a criterion under certain weight constraints. While a large number of studies have been devoted to developing and comparing various weight choice criteria, the role of weight constraints on the properties of combination forecasts is relatively less understood, and the use of various constraints in practice is also rather arbitrary. In this study, we summarize prevalent weight constraints used in the literature, and theoretically and numerically compare how they influence the properties of the combined forecast. Our findings not only provide a comprehensive understanding on the role of various weight constraints but also practical guidance for empirical researchers how to choose relevant constraints based on prior information and targets.",
+    "arxiv_id": "2510.26456v1",
+    "published": "2025-10-30T13:06:06Z",
+    "updated": "2025-10-30T13:06:06Z",
+    "categories": [
+      "math.ST"
+    ]
+  },
+  {
+    "title": "Analysis of near wall flame and wall heat flux modeling in turbulent premixed combustion",
+    "authors": [
+      "Kunlin Li",
+      "Chenlin Guo",
+      "Zhaofan Zhu",
+      "Haiou Wang",
+      "Lipo Wang"
+    ],
+    "abstract": "Reactive flows in confined spaces involve complex flame-wall interaction (FWI). This work aims to gain more insights into the physics of the premixed near-wall flame and the wall heat flux as an important engineering relevant quantity. Two different flame configurations have been studied, including the normal flushing flame and inclined sweeping flame. By introducing the skin friction vector defined second-order tensor, direct numerical simulation (DNS) results of these two configurations show consistently that larger flame curvatures are associated with small vorticity magnitude under the influence of the vortex pair structure. Correlation of both the flame normal and tangential strain rates with the flame curvature has also been quantified. Alignment of the progress variable gradient with the most compressive eigenvector on the wall is similar to the boundary free behavior. To characterize the flame ordered structure, especially in the near-wall region, a species alignment index is proposed. The big difference in this index for flames in different regions suggests distinct flame structures. Building upon these fundamental insights, a predictive model for wall heat flux is proposed. For the purpose of applicability, realistic turbulent combustion situations need to be taken into account, for instance, flames with finite thickness, complex chemical kinetics, non-negligible near-wall reactions, and variable flame orientation relative to the wall. The model is first tested in an one-dimensional laminar flame and then validated against DNS datasets, justifying the model performance with satisfying agreement.",
+    "arxiv_id": "2510.26192v1",
+    "published": "2025-10-30T07:06:14Z",
+    "updated": "2025-10-30T07:06:14Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Beyond GRMHD: A Robust Numerical Scheme for Extended, Non-Ideal General Relativistic Multifluid Simulations",
+    "authors": [
+      "Jonathan Gorard",
+      "James Juno",
+      "Ammar Hakim"
+    ],
+    "abstract": "The equations of general relativistic magnetohydrodynamics (GRMHD) have become the standard mathematical framework for modeling high-energy plasmas in curved spacetimes. However, the fragility of the primitive variable reconstruction operation in GRMHD, as well as the difficulties in maintaining strong hyperbolicity of the equations, sharply limit the applicability of the GRMHD model in scenarios involving large Lorentz factors and high magnetizations, such as around neutron stars. Non-ideal effects, such as electron inertia and Hall terms, are also neglected, and the absence of an explicitly evolved electric field precludes the self-consistent modeling of the strong poloidal fields found around spinning black holes, which are known to be crucial for jet formation. Here, we present a general relativistic multifluid model which strictly generalizes the GRMHD equations, consisting of an arbitrary number of relativistic fluid species interacting with a shared electromagnetic field via an explicit coupling of their source terms, thus allowing for the incorporation of non-ideal effects. We sketch how our model may be derived from general relativistic kinetics (via moments of the relativistic Boltzmann-Vlasov equation), as well as how GRMHD may be recovered in the single-fluid limit as the mobility of charge carriers goes to infinity. We present a numerical scheme for solving the general relativistic multifluid equations, and validate it against the analogous scheme for the GRMHD equations. Since the primitive variable reconstruction operation for our multifluid model is purely hydrodynamic, and therefore independent of the magnetic field, the resulting solver is highly robust, and able to simulate significantly larger Lorentz factors and higher magnetizations (across both black hole and neutron star spacetimes) than GRMHD without loss of either accuracy or stability.",
+    "arxiv_id": "2510.26019v1",
+    "published": "2025-10-29T23:28:45Z",
+    "updated": "2025-10-29T23:28:45Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Confined floating active carpets generate coherent vortical flows that enhance transport",
+    "authors": [
+      "Felipe A. Barros",
+      "Italo Salas",
+      "Enkeleida Lushi",
+      "Francisca Guzman-Lastra"
+    ],
+    "abstract": "Slicks are thin viscous films that can be found at the air--water interface of water bodies such as lakes, rivers and oceans. These micro-layers are enriched in surfactants, organic matter, and microorganisms, and exhibit steep physical and chemical gradients across only tens to hundreds of micrometers. In such geometrically confined environments, the hydrodynamics and transport of nutrients, pollutants, and microorganisms are constrained, yet they collectively sustain key biogenic processes. It remains however largely unexplored how the hydrodynamic flows and transport are affected by the vertical extent of slicks relative to the size of microbial colonies. Here, we study this question by combining analytical and numerical approaches to model a microbial colony as an active carpet: a two-dimensional distribution of micro-swimmers exerting dipolar forces. We show that there exists a ratio between the carpet size and the confinement height that is optimal for the enhancement of particle transport toward the colony edges through advective flows that recirculate in 3D vortex-ring-like patterns with a characteristic length comparable to the confinement height. Our results demonstrate that finite, coherent vortex-ring-like structures can arise solely from the geometrical confinement ratio of slick thickness to microbial colony size. These findings shed light on the interplay between collective activity and out-of-equilibrium transport, and on how microbial communities form, spread, and persist in geometrically constrained environments such as surface slicks.",
+    "arxiv_id": "2510.25730v1",
+    "published": "2025-10-29T17:35:36Z",
+    "updated": "2025-10-29T17:35:36Z",
+    "categories": [
+      "physics.flu-dyn",
+      "physics.bio-ph"
+    ]
+  },
+  {
+    "title": "HybriNet-Hybrid Neural Network-based framework for Multi-Parametric Database Generation, Enhancement, and Forecasting",
+    "authors": [
+      "Guillermo Barragán",
+      "Ashton Hetherington",
+      "Arindam Sengupta",
+      "Rodrigo Abadía-Heredia",
+      "Jesús Garicano-Mena",
+      "Soledad Le Clainche"
+    ],
+    "abstract": "In this work, we introduce HybriNet an innovative and robust framework capable of enhancing spatial resolution, generating fluid dynamics databases for specific flow parameters, and predicting their temporal evolution. The methodology is based on the development of a reduced-order model (ROM) by integrating high-order singular value decomposition (HOSVD) with machine learning (ML) and deep learning (DL) techniques. The ROM enables the generation of multi-parametric fluid dynamics databases concerning varying flow conditions, increases the spatial resolution, and predicts the behaviour of the fluid dynamics problem in terms of time. This helps to accelerate numerical simulations and generate new data efficiently. The performance of the proposed approach has been validated using a collection of 30 two-dimensional laminar flow simulations over a square cylinder at different Reynolds numbers and angles of attack. The databases reconstructed using the proposed methodology exhibited a relative root mean square error below 2% when compared to ground-truth high-resolution data, demonstrating the robustness, accuracy, and efficiency of the proposed framework.",
+    "arxiv_id": "2510.25625v1",
+    "published": "2025-10-29T15:29:05Z",
+    "updated": "2025-10-29T15:29:05Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
     "title": "Parameter matching between horizon quasi-local and point-particle definitions at 1PN for quasi-circular and non spinning BBH systems in harmonic gauge",
     "authors": [
       "Dongze Sun",
@@ -78,6 +1561,38 @@
     "updated": "2025-10-29T15:21:31Z",
     "categories": [
       "gr-qc"
+    ]
+  },
+  {
+    "title": "Characteristic Critical Collapse of a Yang-Mills Field With Null Infinity",
+    "authors": [
+      "Rita P. Santos",
+      "Krinio Marouda",
+      "David Hilditch"
+    ],
+    "abstract": "Solutions to the Einstein equations near the threshold of black hole formation exhibit remarkable behavior known as critical phenomena gravitational collapse. In this work we perform characteristic evolution in compactified Bondi coordinates in order to study the critical collapse of a Yang-Mills field, allowing for the extraction of global quantities such as the Bondi mass and news function. Our numerical approach is fourth-order accurate. First, we demonstrate that the collapsing field exhibits local DSS behavior, characterized by an echoing period of~$Δ\\simeq 0.7388$, agreeing with previous works up to the second decimal place. We find that global quantities such as the Bondi mass and news function display the same DSS behavior. We furthermore show that the mass of the black holes formed during near-threshold evolutions scales as a function of the distance to the critical parameter, with a critical exponent of approximately~$γ=0.1977\\pm0.0009$. Finally, our findings indicate that these results are universal, irrespective of the initial data.",
+    "arxiv_id": "2510.25534v1",
+    "published": "2025-10-29T14:00:00Z",
+    "updated": "2025-10-29T14:00:00Z",
+    "categories": [
+      "gr-qc",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "title": "Distributional Evaluation of Generative Models via Relative Density Ratio",
+    "authors": [
+      "Yuliang Xu",
+      "Yun Wei",
+      "Li Ma"
+    ],
+    "abstract": "We propose a functional evaluation metric for generative models based on the relative density ratio (RDR) designed to characterize distributional differences between real and generated samples. We show that the RDR as a functional summary of the goodness-of-fit for the generative model, possesses several desirable theoretical properties. It preserves $φ$-divergence between two distributions, enables sample-level evaluation that facilitates downstream investigations of feature-specific distributional differences, and has a bounded range that affords clear interpretability and numerical stability. Functional estimation of the RDR is achieved efficiently through convex optimization on the variational form of $φ$-divergence. We provide theoretical convergence rate guarantees for general estimators based on M-estimator theory, as well as the convergence rates of neural network-based estimators when the true ratio is in the anisotropic Besov space. We demonstrate the power of the proposed RDR-based evaluation through numerical experiments on MNIST, CelebA64, and the American Gut project microbiome data. We show that the estimated RDR not only allows for an effective comparison of the overall performance of competing generative models, but it can also offer a convenient means of revealing the nature of the underlying goodness-of-fit. This enables one to assess support overlap, coverage, and fidelity while pinpointing regions of the sample space where generators concentrate and revealing the features that drive the most salient distributional differences.",
+    "arxiv_id": "2510.25507v1",
+    "published": "2025-10-29T13:31:35Z",
+    "updated": "2025-10-29T13:31:35Z",
+    "categories": [
+      "stat.ME",
+      "stat.ML"
     ]
   },
   {
@@ -94,6 +1609,35 @@
     "updated": "2025-10-29T12:39:01Z",
     "categories": [
       "gr-qc"
+    ]
+  },
+  {
+    "title": "Highly damped Quasi-Normal Modes of a Loop Quantum Black Hole",
+    "authors": [
+      "Clara Montagnon"
+    ],
+    "abstract": "We compute asymptotic Quasi-Normal Mode (QNM) frequencies -- i.e. frequencies with a very large Imaginary part -- of a Loop Quantum Gravity inspired Black Hole. The deformations from the Schwarzschild Black Hole are encoded via two parameters: the minimal area gap $a_0$ and the polymeric deformation parameter $P$. In this study, we focus on the effect of the latter one, $P$, on the highly-damped part of QNM spectra. We consider both spin 0 and spin 2 test-field perturbations on the Black Hole as proper gravitational perturbations cannot be performed on an effective model. We use an analytical method of computation of QNMs referred to as the monodromy technique, which allows us to compute the asymptotic behaviour of QNMs. We found interesting oscillating behaviour in both the Real part and the Imaginary part of the QNMs, where the oscillation period varies with the polymeric deformation parameter $P$. We compare these analytical predictions to numerical results obtained thanks to the Continued fraction method. Even though the latter does not converge for QNMs with a very large Imaginary part, the numerical results are in rather good agreement with the monodromy prediction.",
+    "arxiv_id": "2510.25397v1",
+    "published": "2025-10-29T11:16:26Z",
+    "updated": "2025-10-29T11:16:26Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Balanced conic rectified flow",
+    "authors": [
+      "Kim Shin Seong",
+      "Mingi Kwon",
+      "Jaeseok Jeong",
+      "Youngjung Uh"
+    ],
+    "abstract": "Rectified flow is a generative model that learns smooth transport mappings between two distributions through an ordinary differential equation (ODE). Unlike diffusion-based generative models, which require costly numerical integration of a generative ODE to sample images with state-of-the-art quality, rectified flow uses an iterative process called reflow to learn smooth and straight ODE paths. This allows for relatively simple and efficient generation of high-quality images. However, rectified flow still faces several challenges. 1) The reflow process requires a large number of generative pairs to preserve the target distribution, leading to significant computational costs. 2) Since the model is typically trained using only generated image pairs, its performance heavily depends on the 1-rectified flow model, causing it to become biased towards the generated data. In this work, we experimentally expose the limitations of the original rectified flow and propose a novel approach that incorporates real images into the training process. By preserving the ODE paths for real images, our method effectively reduces reliance on large amounts of generated data. Instead, we demonstrate that the reflow process can be conducted efficiently using a much smaller set of generated and real images. In CIFAR-10, we achieved significantly better FID scores, not only in one-step generation but also in full-step simulations, while using only of the generative pairs compared to the original method. Furthermore, our approach induces straighter paths and avoids saturation on generated images during reflow, leading to more robust ODE learning while preserving the distribution of real images.",
+    "arxiv_id": "2510.25229v1",
+    "published": "2025-10-29T07:06:01Z",
+    "updated": "2025-10-29T07:06:01Z",
+    "categories": [
+      "cs.CV"
     ]
   },
   {
@@ -873,38 +2417,6 @@
     "categories": [
       "gr-qc",
       "astro-ph.HE"
-    ]
-  },
-  {
-    "title": "GW200105: A detailed study of eccentricity in the neutron star-black hole binary",
-    "authors": [
-      "Aasim Jan",
-      "Bing-Jyun Tsao",
-      "Richard O'Shaughnessy",
-      "Deirdre Shoemaker",
-      "Pablo Laguna"
-    ],
-    "abstract": "GW200105_162426 is the first neutron star-black hole merger to be confidently confirmed through either gravitational-wave or electromagnetic observations. Although initially analyzed after detection, the event has recently gained renewed attention following a study, Morras et al. (2025), that employed a post-Newtonian inspiral-only waveform model and reported strong evidence for orbital eccentricity. In this work, we perform a detailed analysis of GW200105 using state-of-the-art effective-one-body waveform models. Importantly, we present the first study of this event utilizing a physically complete model that incorporates both orbital eccentricity and spin precession across the full inspiral, merger, and ringdown stages, along with higher-order gravitational wave modes. Our results support the presence of eccentricity in the signal, with zero eccentricity excluded from $99\\%$ credible interval, but yield a mass ratio closer to the original LIGO-Virgo-KAGRA analysis, differing from the findings of Morras et al. (2025). Additionally, similar to previous eccentric-only analysis Planas et al. (2025), we observe a multimodal structure in the eccentricity posterior distribution. We conduct targeted investigations to understand the origin of this multimodality and complement our analysis with numerical relativity simulations to examine how the inclusion of eccentricity impacts the merger dynamics.",
-    "arxiv_id": "2508.12460v1",
-    "published": "2025-08-17T18:14:40Z",
-    "updated": "2025-08-17T18:14:40Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
-  },
-  {
-    "title": "Strong Field Scattering of Two Black Holes: Exploring Gauge Flexibility",
-    "authors": [
-      "Adam Clark",
-      "Geraint Pratten"
-    ],
-    "abstract": "Recent advances in post-Minkowskian (PM) gravity provide new avenues for the high precision modelling of compact binaries. In conjunction with the Effective One Body (EOB) formalism, highly accurate PM informed models of binary black holes on scattering trajectories have emerged. Several complementary approaches currently exist, in particular the SEOB-PM model, the $w_{\\rm eob}$ framework and the recent LEOB approach. These models incorporate PM results in fundamentally different ways, employing distinct resummation schemes and gauge choices. Notably, both SEOB-PM and LEOB have been used to compute gravitational waves of bound systems, showing excellent agreement with numerical relativity (NR). The essential component to all of the models is the EOB mass-shell condition describing the dynamics of the two-body spacetime. In this work we will investigate how this mass-shell condition is constructed, paying particular attention to the impact of gauge choices and how they interact with different resummation schemes, showing that there is a strong dependence on both coordinate choice and EOB gauge. For the region of parameter space considered, we find that the best performing gauges coincide with the choices made in SEOB-PM and $w_{eob}$, with other choices exhibiting worse performance. The case of spinning black holes is also considered, where the current techniques for spinning EOB-PM are reviewed and compared. We also introduce a new gauge based upon the centrifugal radius, which improves upon previous models, particularly for large and negative spins. This offers a promising avenue for further resummation of spin information within the EOB-PM framework.",
-    "arxiv_id": "2508.12126v1",
-    "published": "2025-08-16T18:32:19Z",
-    "updated": "2025-08-16T18:32:19Z",
-    "categories": [
-      "gr-qc"
     ]
   }
 ]
