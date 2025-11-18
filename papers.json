@@ -1,5 +1,268 @@
 [
   {
+    "title": "Gravitational--Electromagnetic Coupling on Kerr Spacetime",
+    "authors": [
+      "Fawzi Aly",
+      "Dejan Stojkovic"
+    ],
+    "abstract": "We extend previous metric-based Schwarzschild studies of gravitational--electromagnetic (GEM) coupling to rotating black holes by working directly in a curvature-based Newman--Penrose/Teukolsky framework on Kerr spacetime. Within a minimally coupled Einstein--Maxwell system, we derive explicit quadratic electromagnetic source terms for the spin-$-2$ Teukolsky equation, providing a foundation for future numerical studies of GEM interactions in the framework of black-hole spectroscopy. Moreover, we give order-of-magnitude arguments showing that GEM quadratic quasinormal modes (QQNMs) can become relevant in a range of charged and magnetized astrophysical scenarios. Finally, we show through a brief dilaton-theory example that the GEM QQNM spectrum is sensitive to how gravity couples to electromagnetism, thereby providing a model-based way to test minimal coupling and to constrain hidden $U(1)$ sectors with gravitational-wave observations.",
+    "arxiv_id": "2511.13642v1",
+    "published": "2025-11-17T17:55:20Z",
+    "updated": "2025-11-17T17:55:20Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "hep-ph"
+    ]
+  },
+  {
+    "title": "Minimax Multi-Target Conformal Prediction with Applications to Imaging Inverse Problems",
+    "authors": [
+      "Jeffrey Wen",
+      "Rizwan Ahmad",
+      "Philip Schniter"
+    ],
+    "abstract": "In ill-posed imaging inverse problems, uncertainty quantification remains a fundamental challenge, especially in safety-critical applications. Recently, conformal prediction has been used to quantify the uncertainty that the inverse problem contributes to downstream tasks like image classification, image quality assessment, fat mass quantification, etc. While existing works handle only a scalar estimation target, practical applications often involve multiple targets. In response, we propose an asymptotically minimax approach to multi-target conformal prediction that provides tight prediction intervals while ensuring joint marginal coverage. We then outline how our minimax approach can be applied to multi-metric blind image quality assessment, multi-task uncertainty quantification, and multi-round measurement acquisition. Finally, we numerically demonstrate the benefits of our minimax method, relative to existing multi-target conformal prediction methods, using both synthetic and magnetic resonance imaging (MRI) data.",
+    "arxiv_id": "2511.13533v1",
+    "published": "2025-11-17T16:06:37Z",
+    "updated": "2025-11-17T16:06:37Z",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Emergent spectral geometry in the Coherence--Curvature Model",
+    "authors": [
+      "Jorge Lamas"
+    ],
+    "abstract": "We investigate the Coherence--Curvature Model (CCM), a dynamical ensemble of connected graphs governed by a Hamiltonian that couples algebraic connectivity, Ollivier-Ricci curvature, and an edge-density penalty. Using connected simulated annealing we generate low-energy graph configurations and characterize their emergent geometry through the spectral dimension (ds), the Hausdorff dimension (dh), and the average distance. Finite-size scaling shows a clear growth of ds with system size, while dh increases more mildly. At the largest volumes explored the data are compatible with ds ~ 4 and dh ~ 3, implying ds > dh and a nontrivial hierarchy between spectral and volumetric notions of dimension. We also map the dependence on the curvature coupling gamma and the locality coupling beta, and we find a slow power-law growth of typical distances with a small exponent eta. The CCM therefore provides a controlled numerical laboratory in which the interplay of coherence, curvature, and locality yields finite-dimensional, fractal-like geometries.",
+    "arxiv_id": "2511.13423v1",
+    "published": "2025-11-17T14:34:33Z",
+    "updated": "2025-11-17T14:34:33Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Emergence of Multi-Scroll Attractors",
+    "authors": [
+      "Tanmayee Patra",
+      "Biplab Ganguli"
+    ],
+    "abstract": "Phase space trajectories are fundamentally important for understanding and analysing chaotic attractors. This is mostly carried out by direct numerical solution of the dynamical equations. Though the origin of scrolls can be understood from the properties of dynamical equations, their appearance in the phase space can also be inferred from the geometry and relative orientations of Nambu surfaces, drawn using Nambu Hamiltonians than from direct numerical solutions. Therefore, one can attribute the origin of wings in the phase space due to energy like Nambu surfaces, giving a geometrical interpretation. In this article, we have carried out, both numerical analysis of bifurcation diagram and Lyapunov exponents(LEs) to characterise chaos and geometric approach by applying the Nambu generalized Hamiltonian mechanics to explain the fundamental reason for the appearance of wings like geometry in the phase space. We have shown how a fixed number of scrolls or wings can appear in the phase space due to specific geometry of the Nambu surfaces and how different geometries are formed when set of parameters are changed.",
+    "arxiv_id": "2511.13332v1",
+    "published": "2025-11-17T13:05:10Z",
+    "updated": "2025-11-17T13:05:10Z",
+    "categories": [
+      "nlin.CD"
+    ]
+  },
+  {
+    "title": "Instability and breaking of internal waves in a horizontal shear layer",
+    "authors": [
+      "Samuel F. Lewin",
+      "Alexis K. Kaminski",
+      "Arun Balakrishna",
+      "Miles M. P. Couchman"
+    ],
+    "abstract": "The behaviour of internal waves propagating in a background shear flow is studied in the case where the direction of shear is orthogonal to gravity. Ray-tracing theory is used to predict properties of the wave state at locations where instability occurs. It is found that local wave energy growth may result from two distinct mechanisms: an increase in wave steepness due to refraction by the shear, or an increase in streamwise velocity perturbations due to wave advection of the background flow. Based on the initial conditions, a dimensionless parameter $F$ is constructed to predict the relative importance of these two mechanisms in facilitating wave-breaking according to the local ratio of perturbation kinetic to potential energy. When $F$ is small but wave amplitudes are locally large, energy remains equipartitioned and subsequent instabilities are expected to develop due to a combination of shear and convection. On the other hand, as $F$ increases, kinetic energy dominates and wave advection of momentum may instead cause breaking to become increasingly driven by enhanced vertical shear. To test these predictions, fully nonlinear direct numerical simulations are conducted, spanning a range of wave-breaking dynamics. Good qualitative agreement with the theory is found despite substantial departures from the underlying assumptions. Wave breaking leads to significant turbulent dissipation, which in some cases greatly exceeds the initial wave energy. Momentum and energy transfers between the wave, background flow and turbulence are found to be sensitive to the dynamics of breaking, as are the mixing properties.",
+    "arxiv_id": "2511.13280v1",
+    "published": "2025-11-17T11:54:49Z",
+    "updated": "2025-11-17T11:54:49Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Electroviscous effects in electrolyte liquid flow through an oppositely-charged contraction-expansion microfluidic slit device",
+    "authors": [
+      "Jitendra Dhakar",
+      "Ram Prakash Bharti"
+    ],
+    "abstract": "Electrokinetic flows in microchannels with opposite charge asymmetry, i.e., unequal and contrasting surface charges on opposing channel walls, significantly influence microfluidic hydrodynamics and can be exploited for enhanced control of mass transfer, mixing, and heat transport in microfluidic applications. This study numerically investigates electroviscous flow of a liquid electrolyte through an oppositely charged non-uniform microslit. The governing Poisson, Nernst-Planck, and Navier-Stokes equations are solved using the finite element method to determine the coupled electrokinetic fields for a wide range of dimensionless parameters: Reynolds number (Re = 0.01), Schmidt number (Sc = 1000), inverse Debye length (K = 2-20), top-wall surface charge density (St = 4-16), surface charge density ratio (Sr = -2 to 0), and contraction ratio (dc = 0.25). For completeness, results for like-charged devices, where both walls carry surface charges of the same sign (Sr = 0-2), are also included. The results show that maximum enhancement in total electrical potential (|ΔU|) and pressure drop (|ΔP|) reaches 296.82% at K = 20, St = 4, -2 \\le Sr \\le -1.25, and 14.57% at St = 16, Sr = 0, K = 2-20, respectively. The electroviscous correction factor Y exhibits maximum increases of 14.02% at K = 2, St = 16; 11.81% at K = 2, Sr = 0; and 14.57% at Sr = 0, St = 16, when Sr increases (-0.75 to 0), St increases (4 to 16), and K decreases (20 to 2), respectively. The overall maximum increment in Y is 15.13% at K = 2, Sr = 0, St = 16, relative to the non-electroviscous flow case. These findings demonstrate that opposite charge asymmetry, though weaker than similar asymmetry, still strongly influences electroviscous flow in non-uniform microchannels.",
+    "arxiv_id": "2511.13164v1",
+    "published": "2025-11-17T09:10:12Z",
+    "updated": "2025-11-17T09:10:12Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Preserving Extreme Singular Values with One Oblivious Sketch",
+    "authors": [
+      "John M. Mango",
+      "Ronald Katende"
+    ],
+    "abstract": "We study when a single linear sketch can control the largest and smallest nonzero singular values of every rank-$r$ matrix. Classical oblivious embeddings require $s=Θ(r/\\varepsilon^{2})$ for $(1\\pm\\varepsilon)$ distortion, but this does not yield constant-factor control of extreme singular values or condition numbers. We formalize a conjecture that $s=O(r\\log r)$ suffices for such preservation. On the constructive side, we show that combining a sparse oblivious sketch with a deterministic geometric balancing map produces a sketch whose nonzero singular values collapse to a common scale under bounded condition number and coherence. On the negative side, we prove that any oblivious sketch achieving relative $\\varepsilon$-accurate singular values for all rank-$r$ matrices must satisfy $s=Ω((r+\\log(1/δ))/\\varepsilon^{2})$. Numerical experiments on structured matrix families confirm that balancing improves conditioning and accelerates iterative solvers, while coherent or nearly rank-deficient inputs manifest the predicted failure modes.",
+    "arxiv_id": "2511.12802v1",
+    "published": "2025-11-16T22:15:31Z",
+    "updated": "2025-11-16T22:15:31Z",
+    "categories": [
+      "math.NA",
+      "cs.DS"
+    ]
+  },
+  {
+    "title": "Change-Point Detection Utilizing Normalized Entropy as a Fundamental Metric",
+    "authors": [
+      "Qingqing Song",
+      "Shaoliang Xia"
+    ],
+    "abstract": "This paper introduces a concept for change-point detection based on normalized entropy as a fundamental metric, aiming to overcome the dependence of traditional entropy methods on assumptions about data distribution and absolute scales. Normalized entropy maps entropy values to the [0,1] interval through standardization, accurately capturing relative changes in data complexity. By utilizing a sliding window to compute normalized entropy, this approach transforms the challenge of detecting change points in complex time series, arising from variations in scale, distribution, and diversity, into the task of identifying significant features within the normalized entropy sequence, thereby avoiding interference from parametric assumptions and effectively highlighting distributional shifts. Experimental results show that normalized entropy exhibits significant numerical fluctuation characteristics and patterns near change points across various distributions and parameter combinations. The average deviation between fluctuation moments and actual change points is only 2.4% of the sliding window size, demonstrating strong adaptability. This paper provides theoretical support for change-point detection in complex data environments and lays a methodological foundation for precise and automated detection based on normalized entropy as a fundamental metric.",
+    "arxiv_id": "2511.12703v1",
+    "published": "2025-11-16T17:38:24Z",
+    "updated": "2025-11-16T17:38:24Z",
+    "categories": [
+      "stat.AP",
+      "stat.ME"
+    ]
+  },
+  {
+    "title": "Analytical and numerical study of accretion processes around charged spherically symmetric black holes in scalar-tensor Gauss-Bonnet gravity",
+    "authors": [
+      "G. Mustafa",
+      "O. Donmez",
+      "A. Errehymy",
+      "F. Javed",
+      "A. Ditta",
+      "T. Naseer",
+      "S. K. Maurya",
+      "F. Atamurotov"
+    ],
+    "abstract": "We investigate the physical phenomena occurring around a spherically symmetric, non-rotating charged black hole (BH) to explore the effects of scalar-tensor Gauss-Bonnet gravity on circular motion, accretion disk properties, and Bondi-Hoyle-Lyttleton (BHL) accretion flow. By analytically and numerically examining the influence of the Gauss-Bonnet coupling constant $c_1$ and the cosmological parameter $Λ$, we reveal how these modified gravity parameters alter the underlying physical processes. Using geodesic analysis, we compute the specific energy, angular momentum, innermost stable circular orbit (ISCO) radius, and radiation flux of test particles, providing insight into how the modified gravity framework affects orbital stability and the organization of the accretion flow. Subsequently, through numerical solutions of the general relativistic hydrodynamic (GRHD) equations, we describe the morphology of the shock cone formed via the BHL accretion mechanism around the BH. The numerical results demonstrate that increasing the values of $c_1$ and negative $Λ$ reduce gravitational focusing. Consequently, depending on the parameter choices, the opening angle of the shock cone either widens or narrows compared to the Schwarzschild case. However, because of weakened gravitational focusing, both the amount of accreted matter and the density of material trapped inside the cone decrease significantly. These results indicate that scalar-tensor Gauss-Bonnet corrections act as an effective gravitational damping term, transferring turbulence and transforming shock-dominated accretion into more stable configurations. The consistency between theoretical and numerical results suggests that the observable properties of accretion disks and quasi-periodic oscillations (QPOs) can serve as probes to constrain the parameters of scalar-tensor Gauss-Bonnet gravity in strong-field regimes.",
+    "arxiv_id": "2511.12670v1",
+    "published": "2025-11-16T16:16:57Z",
+    "updated": "2025-11-16T16:16:57Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Black hole spacetimes with dark matter spikes: Energy-momentum tensor and backreaction effects",
+    "authors": [
+      "Wei Xiong",
+      "Peng-Cheng Li"
+    ],
+    "abstract": "We study the energy-momentum tensor of a dark matter (DM) spike formed during the adiabatic growth of a black hole embedded in a DM halo, and investigate its backreaction on the spacetime geometry. Within the Einstein cluster framework, we derive the complete tensor, explicitly incorporating the kinetic contribution to the energy density and the anisotropic pressure arising from noncircular particle orbits. Adopting the Hernquist profile as an illustrative model of DM halo and employing parameters appropriate to the Milky Way, we find that near the spike, the kinetic term enhances the total energy density by approximately $50\\%$ relative to the rest-mass component, while the nonzero radial pressure induces a mild anisotropy in the stress tensor. The derived tensor satisfies all standard energy conditions. By treating it as a fixed source in Einstein' s equations, we numerically obtain a static, spherically symmetric metric that deviates from the Schwarzschild solution by an amount more than twice that found when only the mass density is considered. These results demonstrate that including the full dynamical structure of the DM spike is essential for accurately modeling the backreaction of DM on black hole spacetimes.",
+    "arxiv_id": "2511.12570v1",
+    "published": "2025-11-16T12:22:22Z",
+    "updated": "2025-11-16T12:22:22Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Collusion-proof Auction Design using Side Information",
+    "authors": [
+      "Sukanya Kudva",
+      "Anil Aswani"
+    ],
+    "abstract": "We study the problem of auction design in the presence of bidder collusion. Specifically, we consider a multi-unit auction of identical items with single-minded bidders, where a subset of bidders may collude by coordinating bids and transferring payments and items among themselves. While the classical Vickrey-Clarke-Groves (VCG) mechanism achieves efficient and truthful outcomes, it is highly vulnerable to collusion. In contrast, fully collusion-proof mechanisms are limited to posted-price formats, which fail to guarantee even approximate efficiency. This paper aims to bridge this gap by designing auctions that achieve good welfare and revenue guarantees even when some bidders collude. We first characterize the strategic behavior of colluding bidders under VCG and prove that such bidders optimally bid shade: they never overbid or take additional items, but instead reduce the auction price. This characterization enables a Bulow-Klemperer type result: adding colluding bidders can only improve welfare and revenue relative to running VCG on the non-colluding group alone. We then propose a Hybrid VCG (H-VCG) mechanism that combines VCG applied to non-colluding bidders with a posted-price mechanism for colluding bidders, assuming access to a black-box collusion detection algorithm. We show that H-VCG is ex-post dominant-strategy incentive compatible (DSIC) and derive probabilistic guarantees on expected welfare and revenue under both known and unknown valuation distributions. Numerical experiments across several distributions demonstrate that H-VCG consistently outperforms VCG restricted to non-colluding bidders and approaches the performance of the ideal VCG mechanism assuming universal truthfulness. Our results provide a principled framework for incorporating collusion detection into mechanism design, offering a step toward collusion-resistant auctions.",
+    "arxiv_id": "2511.12456v1",
+    "published": "2025-11-16T04:57:20Z",
+    "updated": "2025-11-16T04:57:20Z",
+    "categories": [
+      "cs.GT",
+      "econ.TH"
+    ]
+  },
+  {
+    "title": "Safe and Operationally Efficient Longitudinal Control of Autonomous Truck Platoons",
+    "authors": [
+      "Alexander Hammerl",
+      "Ravi Seshadri",
+      "Thomas Kjær Rasmussen",
+      "Otto Anker Nielsen"
+    ],
+    "abstract": "This paper presents a hierarchical longitudinal control architecture for autonomous truck platoons that jointly addresses safety, string stability, and economic efficiency. The framework integrates a high-rate safety projection filter, a spacing-regulation layer based on a lag-aware proportional-integral-derivative (PID) controller, and a slow-timescale economic optimizer balancing fuel consumption and travel time. The safety layer guarantees collision avoidance under bounded actuation delays by enforcing forward invariance of a velocity-aware headway constraint through a high-order control barrier function. The regulation layer shapes the spacing-error dynamics into a second-order form with interpretable parameters for damping and natural frequency while explicitly accounting for actuator lag. At the macroscopic level, fuel use is modeled by a tractive-power relation that captures aerodynamic benefits of close spacing, enabling a long-term optimization of speed trajectories subject to comfort and energy trade-offs. We show that the closed-loop dynamics converge to the Optimal Velocity Model with Relative Velocity (OVRV) under undisturbed conditions and derive worst-case upper bounds for platoon stabilization time. Numerical case studies demonstrate the superiority of the proposed design over an canonical baseline controllers in both transient behavior and long-term energy efficiency.",
+    "arxiv_id": "2511.12336v1",
+    "published": "2025-11-15T19:30:36Z",
+    "updated": "2025-11-15T19:30:36Z",
+    "categories": [
+      "math.OC"
+    ]
+  },
+  {
+    "title": "Relativistic framework for high-precision GNSS-based navigation in cislunar space",
+    "authors": [
+      "Slava G. Turyshev",
+      "Yoaz E. Bar-Sever",
+      "William I. Bertiger"
+    ],
+    "abstract": "We present a relativistic modeling framework for GNSS-based navigation in Geocentric and Barycentric Celestial Reference Systems, i.e., GCRS and BCRS, respectively. Using the IAU-adopted GCRS and BCRS conventions, we derive closed-form transformations for position, velocity, and acceleration that are required to achieve fractional-frequency transfer precision of 10^{-16} and sub-cm positional accuracy. Numerical simulations with GipsyX validate cm-level orbit determination and timing stability within tens of picoseconds across GCRS and BCRS and demonstrate mm-level round-trip GCRS <--> BCRS frame closure over 24 h. These results underscore the necessity of relativistic corrections for high-precision GNSS throughout the Earth-Moon system and demonstrate that GNSS signals can support a decimeter-level orbit accuracy and sub-nanosecond-scale timing synchronization in cislunar space, establishing a robust framework for future operations. We introduce the Lunicentric Celestial Reference System (LCRS) and its associated time scale to extend GNSS-based navigation into cislunar space. We present a minimal cislunar case study (NRHO-like geometry) that applies the improved position/velocity/acceleration transformations and the light-time model.",
+    "arxiv_id": "2511.12058v1",
+    "published": "2025-11-15T06:51:26Z",
+    "updated": "2025-11-15T06:51:26Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "FG-PINNs: A neural network method for solving nonhomogeneous PDEs with high frequency components",
+    "authors": [
+      "Jiachun Zheng",
+      "Yunqing Huang",
+      "Nianyu Yi",
+      "Yunlei Yang"
+    ],
+    "abstract": "In this work, we propose the frequency-guided physics-informed neural networks (FG-PINNs), specifically designed for solving partial differential equations (PDEs) with high-frequency components. The proposed algorithm relies on prior knowledge about high-frequency components obtained from PDEs. It aims to use this prior knowledge to guide the neural network in rapidly approximating the solution's high-frequency components. The FG-PINNs consist of two subnetworks, including a high-frequency subnetwork for capturing high-frequency components and a low-frequency subnetwork for capturing low-frequency components. The key innovation in the high-frequency subnetworks is to embed prior knowledge for high-frequency components into the network structure. For nonhomogeneous PDEs ($f(x)\\neq c, c\\in R$), we embed the source term as an additional feature into the neural network. The source term typically contains partial or complete frequency information of the target solution, particularly its high-frequency components. This provides prior knowledge about the high-frequency components of the target solution. For homogeneous PDEs, we embed the initial/boundary conditions with high-frequency components into the neural network. Based on spectral bias, we use a fully connected neural network as the low-frequency subnetwork to capture low-frequency components of the target solution. A series of numerical examples demonstrate the effectiveness of the FG-PINNs, including the one-dimensional heat equation (relative $L^{2}$ error: $O(10^{-4})$), the nonlinear wave equations (relative $L^{2}$ error: $O(10^{-4})$) and the two-dimensional heat equation (relative $L^{2}$ error: $O(10^{-3})$).",
+    "arxiv_id": "2511.12055v1",
+    "published": "2025-11-15T06:46:25Z",
+    "updated": "2025-11-15T06:46:25Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "Spin precession effects in the phasing formula of eccentric compact binary inspirals till the second post-Newtonian order",
+    "authors": [
+      "Soham Bhattacharyya",
+      "Omkar Sridhar"
+    ],
+    "abstract": "Compact binary systems emitting gravitational waves (GWs) can exhibit orbital eccentricity, along with generic spin orientations, leading to the precession of the orbital angular momentum, individual spins, and the orbital plane. While eccentric binaries with aligned spins are well studied, closed form post Newtonian (PN) expressions that simultaneously include eccentricity and precessing spin effects have remained unavailable. Eccentricity complicates orbital evolution because solving the coupled differential equations typically requires numerical integration, which slows down the generation of waveforms. We exploit the separation of timescales between orbital motion, spin precession, and radiation reaction, applying the precession averaging method of Morras et al. (2025) to remove explicit time dependence from the spin orbit and spin spin dynamics through the second PN order. Using this framework, we derive analytic phasing formulae from the evolution equations for orbital frequency and eccentricity, treating eccentricity as a small parameter. Closed form solutions for the eccentricity evolution and GW phase are obtained up to eighth order in the initial eccentricity. We also generalize the TaylorT2 approximant to include spin precession effects and compute the orbital phase in both time and frequency domains. To improve accuracy for moderate to high initial eccentricities, we perform a resummation of the TaylorT2 phasing. These results offer efficient, closed form phasing expressions that capture the coupled dynamics of eccentricity and precession, enabling more accurate and computationally tractable GW waveform modeling for data analysis.",
+    "arxiv_id": "2511.12042v1",
+    "published": "2025-11-15T05:22:16Z",
+    "updated": "2025-11-15T05:22:16Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Disk mass predictions for binary neutron star mergers: limitations of proposed symbolic regression models",
+    "authors": [
+      "Francois Foucart"
+    ],
+    "abstract": "Modeling disk formation and mass ejection in binary neutron star systems is an important component in the construction of models for the electromagnetic signals powered by these events. Most models rely on analytical formulae for the disk mass and dynamical ejecta that are fitted to the results of numerical simulations, yet these fits have large uncertainties that significantly limit our ability to extract information from merger observations. In a recent manuscript, Darc et al claim that disk mass formulae constructed using symbolic regression outperform existing formulae and robustly extend to regions of the parameter space outside of the fitting region. I show here that the improvement over the most directly comparable existing model comes mostly from the use of different error measures in optimizing the fitting parameters. For the limited training data used so far, that existing fitting formula has a performance similar to symbolic regression models when optimized over the same error measure. More importantly, I show that many of the formulae obtained through symbolic regression provide unphysical results when used over the whole range of parameters relevant to the modeling of binary neutron star mergers, making them dangerous to use within parameter estimation pipelines. I conclude that fitting formulae with more physics input (e.g. Lund et al 2025), albeit certainly imperfect, remain safer to use in data analysis than these symbolic regression results. Symbolic regression results used in conjunction with careful physics-based vetting may however outperform them in the future.",
+    "arxiv_id": "2511.11887v1",
+    "published": "2025-11-14T21:41:32Z",
+    "updated": "2025-11-14T21:41:32Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Testing general relativity with amplitudes of subdominant gravitational-wave modes",
+    "authors": [
+      "Ish Gupta",
+      "Purnima Narayan",
+      "Lionel London",
+      "Shubhanshu Tiwari",
+      "Bangalore Sathyaprakash"
+    ],
+    "abstract": "We present an improved subdominant-mode amplitude (SMA) test of general relativity (GR), which probes amplitude-level deviations in the higher-order modes of gravitational-wave (GW) signals from binary black hole mergers while keeping the dominant quadrupole mode fixed. Using a comprehensive parameter-estimation campaign, we benchmark the test against Gaussian noise fluctuations, waveform modeling systematics, and physical effects such as spin precession and orbital eccentricity. When applied to numerical-relativity simulations, the SMA test performs reliably for aligned-spin and mildly precessing systems but exhibits measurable biases for strongly precessing or eccentric binaries. Although designed to detect amplitude deviations, the test also responds coherently to phase perturbations, yielding apparent GR violations when applied to phase-modified waveforms. Applied to recent GW detections, we report the strongest constraint on the hexadecapolar (4,4) mode amplitude deviation, $δA_{44} = -0.30^{+1.16}_{-3.45}$, consistent with GR. With these results, this work establishes the SMA test as a robust and broadly sensitive framework for probing strong-field gravity and demonstrates a systematic approach for assessing the robustness of GW tests of GR.",
+    "arxiv_id": "2511.11886v1",
+    "published": "2025-11-14T21:35:46Z",
+    "updated": "2025-11-14T21:35:46Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO",
+      "hep-th"
+    ]
+  },
+  {
     "title": "Accurate models for recoil velocity distribution in black hole mergers with comparable to extreme mass-ratios and their astrophysical implications",
     "authors": [
       "Tousif Islam",
@@ -23,6 +286,20 @@
     "arxiv_id": "2511.11471v1",
     "published": "2025-11-14T16:42:17Z",
     "updated": "2025-11-14T16:42:17Z",
+    "categories": [
+      "physics.flu-dyn"
+    ]
+  },
+  {
+    "title": "Laminar boundary layers over small-scale textured surfaces",
+    "authors": [
+      "Samuel D. Tomlinson",
+      "Demetrios T. Papageorgiou"
+    ],
+    "abstract": "We develop a model for steady, laminar boundary layers over small-scale textured surfaces. Although the texture is small relative to the boundary-layer thickness, it modifies the flow via a slip length. We use matched asymptotic expansions to simplify the problem, dividing the flow into outer, boundary-layer and inner regions. The far-field behaviour of the inner problem yields a slip boundary condition for the boundary layer. We derive an asymptotic solution valid when the slip length is small. For arbitrary slip lengths, we develop a numerical method combining Chebyshev collocation and finite differences. We apply this framework to canonical small-scale textured surfaces, including superhydrophobic surfaces and riblets, and utilise existing analytical slip formulae. We demonstrate how slip can effect the boundary layer's velocity field, wall shear stress and displacement thickness. Our approach enables computationally inexpensive modelling of small-scale textured surfaces in applications ranging from microfluidics to marine transport.",
+    "arxiv_id": "2511.11471v2",
+    "published": "2025-11-14T16:42:17Z",
+    "updated": "2025-11-17T10:06:01Z",
     "categories": [
       "physics.flu-dyn"
     ]
@@ -174,6 +451,24 @@
     ]
   },
   {
+    "title": "Physics-Informed Neural ODEs with Scale-Aware Residuals for Learning Stiff Biophysical Dynamics",
+    "authors": [
+      "Kamalpreet Singh Kainth",
+      "Prathamesh Dinesh Joshi",
+      "Raj Abhijit Dandekar",
+      "Rajat Dandekar",
+      "Sreedat Panat"
+    ],
+    "abstract": "Neural differential equations offer a powerful framework for modeling continuous-time dynamics, but forecasting stiff biophysical systems remains unreliable. Standard Neural ODEs and physics informed variants often require orders of magnitude more iterations, and even then may converge to suboptimal solutions that fail to preserve oscillatory frequency or amplitude. We introduce PhysicsInformed Neural ODEs with with Scale-Aware Residuals (PI-NODE-SR), a framework that combines a low-order explicit solver (Heun method) residual normalisation to balance contributions between state variables evolving on disparate timescales. This combination stabilises training under realistic iteration budgets and avoids reliance on computationally expensive implicit solvers. On the Hodgkin-Huxley equations, PI-NODE-SR learns from a single oscillation simulated with a stiff solver (Rodas5P) and extrapolates beyond 100 ms, capturing both oscillation frequency and near-correct amplitudes. Remarkably, end-to-end learning of the vector field enables PI-NODE-SR to recover morphological features such as sharp subthreshold curvature in gating variables that are typically reserved for higher-order solvers, suggesting that neural correction can offset numerical diffusion. While performance remains sensitive to initialisation, PI-NODE-SR consistently reduces long-horizon errors relative to baseline Neural-ODEs and PINNs, offering a principled route to stable and efficient learning of stiff biological dynamics.",
+    "arxiv_id": "2511.11734v1",
+    "published": "2025-11-13T06:52:11Z",
+    "updated": "2025-11-13T06:52:11Z",
+    "categories": [
+      "cs.LG",
+      "cs.AI"
+    ]
+  },
+  {
     "title": "Debiased Dual-Invariant Defense for Adversarially Robust Person Re-Identification",
     "authors": [
       "Yuhang Zhou",
@@ -190,6 +485,24 @@
     "updated": "2025-11-13T03:56:40Z",
     "categories": [
       "cs.CV"
+    ]
+  },
+  {
+    "title": "A flow and transport model for simulation of microbial enhanced oil recovery processes at core scale and laboratory conditions",
+    "authors": [
+      "Martín A. Díaz-Viera",
+      "Arturo Ortiz-Tapia",
+      "Joaquín R. Hernández-Pérez",
+      "Gladys Castorena-Cortés",
+      "Teresa Roldán-Carrillo",
+      "Patricia Olguín-Lora"
+    ],
+    "abstract": "A general 3D flow-and-transport model in porous media is derived using an axiomatic continuum-mechanics approach and implemented with the finite element method to simulate microbial enhanced oil recovery (MEOR) at core scale under laboratory conditions. The development pipeline (conceptual -> mathematical -> numerical -> computational) is detailed. The model captures clogging/declogging from biomass, changes in interfacial tension due to biosurfactant, and the resulting impact on relative permeability, capillary pressure, and residual oil saturation via a trapping-number framework. The flow model is validated (Buckley-Leverett and coreflood benchmarks); transport (microbes/nutrients/surfactant) is validated against Hendry et al. 1997 breakthrough data. Finally, the model accurately predicts a Berea-core MEOR case study using field microbes and brine, matching recovery histories with small RMS error. Owing to its generality, the framework can be extended to other EOR scenarios and constitutive laws.",
+    "arxiv_id": "2511.11724v1",
+    "published": "2025-11-13T03:54:00Z",
+    "updated": "2025-11-13T03:54:00Z",
+    "categories": [
+      "math.GM"
     ]
   },
   {
@@ -497,6 +810,21 @@
       "math.NA",
       "stat.CO",
       "stat.ML"
+    ]
+  },
+  {
+    "title": "How many stations are sufficient? Exploring the effect of urban weather station density reduction on imputation accuracy of air temperature and humidity",
+    "authors": [
+      "Marvin Plein",
+      "Carsten F. Dormann",
+      "Andreas Christen"
+    ],
+    "abstract": "Urban weather station networks (WSNs) are widely used to monitor urban weather and climate patterns and aid urban planning. However, maintaining WSNs is expensive and labor-intensive. Here, we present a step-wise station removal procedure to thin an existing WSN in Freiburg, Germany, and analyze the ability of WSN subsets to reproduce air temperature and humidity patterns of the entire original WSN for a year following a simulated reduction of WSN density. We found that substantial reductions in station numbers after one year of full deployment are possible while retaining high predictive accuracy. A reduction from 42 to 4 stations, for instance, increased mean prediction RMSEs from 0.69 K to 0.83 K for air temperature and from 3.8% to 4.4% for relative humidity, corresponding to RMSE increases of only 20% and 16%, respectively. Predictive accuracy is worse for remote stations in forests than for stations in built-up or open settings, but consistently better than a state-of-the-art numerical urban land-surface model (Surface Urban Energy and Water Balance Scheme). Stations located at the edges between built-up and rural areas are most valuable when reconstructing city-wide climate characteristics. Our study demonstrates the potential of thinning WSNs to maximize the efficient allocation of financial and personnel-related resources in urban climate research.",
+    "arxiv_id": "2511.11652v1",
+    "published": "2025-11-10T14:48:54Z",
+    "updated": "2025-11-10T14:48:54Z",
+    "categories": [
+      "cs.LG"
     ]
   },
   {
