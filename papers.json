@@ -1,5 +1,204 @@
 [
   {
+    "title": "An Analytical Formula for Gravitational Faraday Rotation in the ADM Split of Spacetime",
+    "authors": [
+      "Mark T. Lusk"
+    ],
+    "abstract": "An analytical expression is derived for the rate of gravitational Faraday rotation measured by Eulerian observers. The reference frame is a Fermi-Walker triad aligned with the spatial wave vector. Attention is restricted to the ADM split of Kerr spacetime and geometric optics. Our exact, closed-form GFR formula is implemented and verified to be consistent with numerical predictions. The approach offers a new perspective on Faraday rotation, and it allows a single Eulerian observer to compare experimentally measured polarization holonomy with analytical prediction. Sliced spacetime does not suffer from a mathematical singularity at the ergosphere associated with Boyer-Lindquist coordinates in the threading decomposition. These physically intuitive coordinates can therefore be used to analytically produce and study GFR predictions for transits of light that pierce the ergosphere.",
+    "arxiv_id": "2511.15639v1",
+    "published": "2025-11-19T17:22:14Z",
+    "updated": "2025-11-19T17:22:14Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "GPU-Accelerated Dynamic Programming for Multistage Stochastic Energy Storage Arbitrage",
+    "authors": [
+      "Thomas Lee",
+      "Andy Sun"
+    ],
+    "abstract": "We develop a GPU-accelerated dynamic programming (DP) method for valuing, operating, and bidding energy storage under multistage stochastic electricity prices. Motivated by computational limitations in existing models, we formulate DP backward induction entirely in tensor-based algebraic operations that map naturally onto massively parallel GPU hardware. Our method accommodates general, potentially non-concave payoff structures, by combining a discretized DP formulation with a convexification procedure that produces market-feasible, monotonic price-quantity bid curves. Numerical experiments using ISO-NE real-time prices demonstrate up to a 100x speedup by the proposed GPU-based DP method relative to CPU computation, and an 8,000x speedup compared to a commercial MILP solver, while retaining sub-0.3% optimality gaps compared to exact benchmarks.",
+    "arxiv_id": "2511.15629v1",
+    "published": "2025-11-19T17:13:35Z",
+    "updated": "2025-11-19T17:13:35Z",
+    "categories": [
+      "math.OC",
+      "eess.SY"
+    ]
+  },
+  {
+    "title": "AVATAAR: Agentic Video Answering via Temporal Adaptive Alignment and Reasoning",
+    "authors": [
+      "Urjitkumar Patel",
+      "Fang-Chun Yeh",
+      "Chinmay Gondhalekar"
+    ],
+    "abstract": "With the increasing prevalence of video content, effectively understanding and answering questions about long form videos has become essential for numerous applications. Although large vision language models (LVLMs) have enhanced performance, they often face challenges with nuanced queries that demand both a comprehensive understanding and detailed analysis. To overcome these obstacles, we introduce AVATAAR, a modular and interpretable framework that combines global and local video context, along with a Pre Retrieval Thinking Agent and a Rethink Module. AVATAAR creates a persistent global summary and establishes a feedback loop between the Rethink Module and the Pre Retrieval Thinking Agent, allowing the system to refine its retrieval strategies based on partial answers and replicate human-like iterative reasoning. On the CinePile benchmark, AVATAAR demonstrates significant improvements over a baseline, achieving relative gains of +5.6% in temporal reasoning, +5% in technical queries, +8% in theme-based questions, and +8.2% in narrative comprehension. Our experiments confirm that each module contributes positively to the overall performance, with the feedback loop being crucial for adaptability. These findings highlight AVATAAR's effectiveness in enhancing video understanding capabilities. Ultimately, AVATAAR presents a scalable solution for long-form Video Question Answering (QA), merging accuracy, interpretability, and extensibility.",
+    "arxiv_id": "2511.15578v1",
+    "published": "2025-11-19T16:09:38Z",
+    "updated": "2025-11-19T16:09:38Z",
+    "categories": [
+      "cs.CV"
+    ]
+  },
+  {
+    "title": "Variance-reduced extreme value index estimators using control variates in a semi-supervised setting",
+    "authors": [
+      "Louison Bocquet-Nouaille",
+      "Jérôme Morio",
+      "Benjamin Bobbia"
+    ],
+    "abstract": "The estimation of the Extreme Value Index (EVI) is fundamental in extreme value analysis but suffers from high variance due to reliance on only a few extreme observations. We propose a control variates based transfer learning approach in a semi-supervised framework, where a small set of coupled target and source observations is combined with abundant unpaired source data. By expressing the Hill estimator of the target EVI as a ratio of means, we apply approximate control variates to both numerator and denominator, with jointly optimized coefficients that guarantee variance reduction without introducing bias. We show theoretically and through simulations that the asymptotic relative variance reduction of the transferred Hill estimator is proportional to the tail dependence between the target and source variables and independent of their EVI values. Thus, substantial variance reduction can be achieved even without similarity in tail heaviness of the target and source distributions. The proposed approach can be extended to other EVI estimators expressed with ratio of means, as demonstrated on the moment estimator. The practical value of the proposed method is illustrated on multi-fidelity water surge and ice accretion datasets.",
+    "arxiv_id": "2511.15561v1",
+    "published": "2025-11-19T15:54:42Z",
+    "updated": "2025-11-19T15:54:42Z",
+    "categories": [
+      "stat.ME",
+      "math.ST"
+    ]
+  },
+  {
+    "title": "Starobinsky potential and power suppression in hybrid Loop Quantum Cosmology",
+    "authors": [
+      "Marceau Henry",
+      "Guillermo A. Mena Marugán",
+      "Antonio Vicente-Becerril"
+    ],
+    "abstract": "We study the effect on the primordial tensor power spectrum of varying the number of e-folds during slow-roll inflation in Loop Quantum Cosmology with a Starobinsky potential. Using the hybrid quantization approach, we derive the effective mass governing tensor mode evolution. The choice of vacuum state is crucial, especially since the preinflationary phase predicted by Loop Quantum Cosmology invalidates the choice of the Bunch-Davies state as the preferred vacuum. We adopt a choice which is optimally adapted to the dynamics, so that it provides a non-oscillating (NO) spectrum free of spurious contributions, and permits an asymptotic Hamiltonian diagonalization (AHD) of the perturbations. For this so-called NO-AHD vacuum, we compute the power spectrum using both analytic approximations and numerical integration. Our results confirm the accuracy of our approximations in a wide range of situations, including short- and long-lived inflationary scenarios. The primordial power spectrum exhibits a characteristic cutoff on a wavenumber scale determined primarily by the background dynamics around the bounce that replaces the big bang in Loop Quantum Cosmology.",
+    "arxiv_id": "2511.15553v1",
+    "published": "2025-11-19T15:46:12Z",
+    "updated": "2025-11-19T15:46:12Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Covariant Measures of Non-Markovianity in Curved Spacetime",
+    "authors": [
+      "Tushar Waghmare"
+    ],
+    "abstract": "Standard measures of quantum non-Markovianity are usually defined in terms of dynamical maps on a preferred time foliation and therefore do not extend straightforwardly to curved spacetimes, where no global time coordinate exists and causal structure is primary. We develop a covariant framework for open quantum dynamics along arbitrary timelike worldlines by building multi-time quantum processes (process tensors) from overlapping causal diamonds. For an Unruh--DeWitt detector weakly coupled to a scalar field in a Hadamard state, we define a foliation-independent measure of non-Markovianity as the operational distance between the physical process tensor and the convex set of Markovian (CP-divisible) processes. Numerical benchmarks in $(1{+}1)$ dimensions compare inertial motion, uniform acceleration, and static and infalling trajectories in Schwarzschild spacetime. Inertial trajectories are found to be almost Markovian, whereas acceleration and curvature generate pronounced long-range temporal correlations and strong non-Markovian behaviour. In Rindler spacetime, acceleration produces horizon-induced memory tails. In Schwarzschild spacetime, near-horizon field correlations cause both static and freely falling observers to experience enhanced memory, which can remain hidden in single-step diagnostics but becomes evident in multi-time protocols and can even be superactivated by combining different time steps. Our results provide, to our knowledge, the first coordinate-independent, operational quantification of quantum memory in relativistic settings. They identify spacetime curvature, horizons, and acceleration as controllable ingredients that can either degrade or be harnessed as resources in relativistic quantum information tasks, including communication and metrology with accelerated detectors and near black holes.",
+    "arxiv_id": "2511.15365v1",
+    "published": "2025-11-19T11:45:15Z",
+    "updated": "2025-11-19T11:45:15Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Addressing the gravitational collapse of a massless scalar field with Physics-Informed Neural Networks",
+    "authors": [
+      "Antonio Ferrer-Sánchez",
+      "Nino Villanueva-Espinosa",
+      "Carlos Hernani Morales",
+      "Roberto Ruiz de Austri-Bazan",
+      "José A. Font",
+      "José David Martín-Guerrero",
+      "Matthew W. Choptuik"
+    ],
+    "abstract": "The gravitational collapse of a massless scalar field remains a demanding benchmark for numerical methods in numerical relativity, as it exhibits critical behavior at the boundary between dispersion and black hole formation. In this work we revisit this problem by relying on Physics-Informed Neural Networks (PINNs) as flexible partial differential equations solvers thereby providing a comparative assessment of several recent neural architectures. Building on the Einstein-massless-Klein-Gordon formulation in polar-areal coordinates, we consider four initial-value problems encompassing subcritical, critical, and supercritical regimes and use high-resolution finite-difference simulations as reference solutions. Our study is primarily comparative: we evaluate several state-of-the-art deep learning architectures, including vanilla and high-precision PINNs, sinusoidal-feature and quadratic-residual variants, Kolmogorov-Arnold Networks, all trained under a common loss design that encodes the field equations, boundary conditions, and causal time-space enforcement, together with a novel adaptive spacetime sampling. Within this framework we also introduce ModPINN, a modest modification of standard PINNs that augments standard multiplayer perceptrons with coordinate embeddings, quadratic layers among other common ingredients in recent literature. This study shows that deep-learning-based methods can reproduce finite-difference solutions for the scalar field and the spacetime metric with competitive accuracy using significantly fewer collocation points than more traditional methodologies. While no single architecture dominates in all regimes, ModPINN achieves particularly stable and accurate solutions near criticality, indicating that suitable designed embeddings and adaptive sampling can enhance the robustness of PINNs for challenging gravitational-collapse scenarios.",
+    "arxiv_id": "2511.15247v1",
+    "published": "2025-11-19T09:06:29Z",
+    "updated": "2025-11-19T09:06:29Z",
+    "categories": [
+      "gr-qc",
+      "physics.comp-ph"
+    ]
+  },
+  {
+    "title": "Mean-Field Game of Relative Performance Portfolio for Two Populations with Poisson Common Noise",
+    "authors": [
+      "Yuchen Li",
+      "Zongxia Liang",
+      "Xiang Yu"
+    ],
+    "abstract": "This paper studies the mean field game (MFG) and N-player game on relative performance portfolio management with two heterogeneous populations. In addition to the Brownian idiosyncratic and common noise, the first population invests in assets driven by idiosyncratic Poisson jump risk, while the second population invests in assets subject to Poisson common noise. We establish the characterization of the mean-field equilibrium (MFE) in MFG with two populations as well as the Nash equilibrium in the $N_1+N_2$-player game. Furthermore, we prove the convergence of the Nash equilibrium in the $N_1+N_2$-player game to the MFE as the number of players in two populations tends to infinity. We also discuss some impacts on MFE by the Poisson idiosyncratic risk and Poisson common noise in the context of relative performance, compensated by some numerical examples and financial implications.",
+    "arxiv_id": "2511.15176v1",
+    "published": "2025-11-19T06:55:18Z",
+    "updated": "2025-11-19T06:55:18Z",
+    "categories": [
+      "math.OC"
+    ]
+  },
+  {
+    "title": "Sum-difference exponents for boundedly many slopes, and rational complexity",
+    "authors": [
+      "Terence Tao"
+    ],
+    "abstract": "The dimension of Kakeya sets can be bounded using sum-difference exponents $\\SD(R;s)$ for various sets of rational slopes $R$ and output slope $s$; the arithmetic Kakeya conjecture, which implies the Kakeya conjecture in all dimensions, asserts that the infimum of such exponents is $1$. The best upper bound on this infimum currently is $1.67513\\dots$. In this note, inspired by numerical explorations from the tool \\texttt{AlphaEvolve}, we study the regime where the cardinality of the set of slopes $R$ is bounded. In this regime, we establish that these exponents converge to $2$ at a rate controlled by the \\emph{rational complexity} of $s$ relative to $R$, which measures how efficiently $s$ can be expressed as a rational combination of slopes in $R$.",
+    "arxiv_id": "2511.15135v1",
+    "published": "2025-11-19T05:25:04Z",
+    "updated": "2025-11-19T05:25:04Z",
+    "categories": [
+      "math.CO"
+    ]
+  },
+  {
+    "title": "Position Optimization for Two-layer Movable Antenna Systems",
+    "authors": [
+      "Liujia Yao",
+      "Changsheng You",
+      "Chao Zhou",
+      "Beixiong Zheng",
+      "Weidong Mei"
+    ],
+    "abstract": "Movable antenna (MA) is a promising technology for improving the performance of wireless communication systems by providing new degrees-of-freedom (DoFs) in antenna position optimization. However, existing works on MA systems have mostly considered element-wise single-layer MA (SL-MA) arrays, where all the MAs move within the given movable region, hence inevitably incurring high control complexity and hardware cost in practice. To address this issue, we propose in this letter a new two-layer MA array (TL-MA), where the positions of MAs are jointly determined by the large-scale movement of multiple subarrays and the small-scale fine-tuning of per-subarray MAs. In particular, an optimization problem is formulated to maximize the sum-rate of the TL-MA-aided communication system by jointly optimizing the subarray-positions, per-subarray (relative) MA positions, and receive beamforming. To solve this non-convex problem, we propose an alternating optimization (AO)-based particle swarm optimization (PSO) algorithm, which alternately optimizes the positions of subarrays and per-subarray MAs, given the optimal receive beamforming. Numerical results verify that the proposed TL-MA significantly reduces the sum-displacement of MA motors (i.e., the total moving distances of all motors) of element-wise SL-MA, while achieving comparable rate performance.",
+    "arxiv_id": "2511.15108v1",
+    "published": "2025-11-19T04:31:49Z",
+    "updated": "2025-11-19T04:31:49Z",
+    "categories": [
+      "eess.SP",
+      "cs.IT"
+    ]
+  },
+  {
+    "title": "Power-law Bianchi type I inflation with multiple vector fields",
+    "authors": [
+      "Duy H. Nguyen",
+      "Tuan Q. Do"
+    ],
+    "abstract": "We seek power-law Bianchi type I solutions for an inflationary universe in a model with one scalar field non-minimally coupled to three vector fields aligned along the three axes. As a result, we find four types of power-law solutions that are classified according to the number of non-vanishing vector fields. Moreover, we find that all these solutions are stable for certain conditions on the parameters (stability regions), which are described both quantitatively and qualitatively. The attractor property of these solutions is also confirmed by numerical calculations.",
+    "arxiv_id": "2511.15081v1",
+    "published": "2025-11-19T03:42:09Z",
+    "updated": "2025-11-19T03:42:09Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO"
+    ]
+  },
+  {
+    "title": "A note on the minimal pairwise distance in optimal Lennard-Jones $N$-body clusters",
+    "authors": [
+      "Michael K. -H. Kiessling",
+      "David J. Wales"
+    ],
+    "abstract": "Good a-priori bounds on the smallest pairwise distance $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}})$ for a three-dimensional (3D) Lennard-Jones $N$-body cluster of globally minimal energy can significantly reduce the computational search space in the NP-hard problem to find this configuration. In this contribution the virial theorem is exploited for this purpose. We prove that if a configuration ${C}^{(N)}$ is a member of $\\mbox{LJ}_N^{\\rm{equ}}$ (the stationary points), then $r_{\\rm{min}}({C}^{(N)}) \\leq r_{\\rm{min}}(\\mbox{LJ}_2^{\\rm{gmin}})$. It is also shown that if ${C}^{(N)}\\in$ LJ$_N^{\\rm{gmin}}\\subset$ LJ$_N^{\\rm{equ}}$, equality holds if and only if $N\\in\\{2,3,4\\}$. We conjecture that $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}}) >1$ in units for which $r_{\\rm{min}}(\\mbox{LJ}_2^{\\rm{gmin}})= 2^\\frac16 \\approx 1.122462048$. This conjectured lower bound, if correct, would improve the best lower bound currently known, $r_{\\rm{min}}(\\mbox{LJ}_N^{\\rm{gmin}})\\geq 0.767764$, by about 25$\\%$. In these units the smallest minimal pair distance found through numerical searches for LJ$_N^{\\rm{gmin}}$ with $N\\leq 1000$ is $r_{\\rm{min}}(\\mbox{LJ}_{923}^{\\rm{gmin}}) \\approx 1.01361$, so the conjectured lower bound would presumably be close to optimal. From the virial theorem we obtain an identity for any ${C}^{(N)}\\in \\mbox{LJ}_N^{\\rm{equ}}$, which expresses $r_{\\rm{min}}({C}^{(N)})$ in terms of the distribution of relative distances in ${C}^{(N)}$. This result reveals interesting connections with the Erdős distance, and related problems.",
+    "arxiv_id": "2511.15008v1",
+    "published": "2025-11-19T01:19:53Z",
+    "updated": "2025-11-19T01:19:53Z",
+    "categories": [
+      "physics.atm-clus",
+      "math-ph"
+    ]
+  },
+  {
+    "title": "Simulations of a Conducting Sphere Moving through Magnetized Plasma: Alfvén Wings, Slow Magnetosonic Wings, and Drag Force",
+    "authors": [
+      "Nicholas Corso",
+      "Dong Lai"
+    ],
+    "abstract": "Plasma-mediated interaction between astrophysical objects can play an important role and produce electromagnetic radiation in various binary systems, ranging from planet-moon and star-planet systems to binary compact objects. We perform 3D magnetohydrodynamic numerical simulations to study an ideal magnetized plasma flowing past an unmagnetized conducting sphere. Such flow generates magnetic disturbances and produces a drag force on the sphere, and we explore the corresponding drag coefficient as a function of the flow speed relative to Alfvén speed and the $β$ parameter of the background plasma. We find that the drag is generally well-described by the Alfvén wing model, but we also show that slow magnetosonic waves provide a correction through their own wing-like features. These give rise to a nontrivial dependence of the drag coefficient on the plasma $β$, as well as enhanced drag as the flow speed approaches the Alfvén speed.",
+    "arxiv_id": "2511.14932v1",
+    "published": "2025-11-18T21:45:40Z",
+    "updated": "2025-11-18T21:45:40Z",
+    "categories": [
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "An adaptive extension to robust data-driven predictive control under parametric uncertainty",
     "authors": [
       "Ignacio Sanchez",
@@ -623,6 +822,23 @@
     "arxiv_id": "2511.09898v1",
     "published": "2025-11-13T02:59:42Z",
     "updated": "2025-11-13T02:59:42Z",
+    "categories": [
+      "eess.IV"
+    ]
+  },
+  {
+    "title": "Electromagnetic Quantitative Inversion for Translationally Moving Targets via Phase Correlation Registration of Back-Projection Images",
+    "authors": [
+      "Yitao Lin",
+      "Dahai Dai",
+      "Shilong Sun",
+      "Yuchen Wu",
+      "Bo Pang"
+    ],
+    "abstract": "A novel electromagnetic quantitative inversion scheme for translationally moving targets via phase correlation registration of back-projection (BP) images is proposed. Based on a time division multiplexing multiple-input multiple-output (TDM-MIMO) radar architecture, the scheme first achieves high-precision relative positioning of the target, then applies relative motion compensation to perform iterative inversion on multi-cycle MIMO measurement data, thereby reconstructing the target's electromagnetic parameters. As a general framework compatible with other mainstream inversion algorithms, we exemplify our approach by incorporating the classical cross-correlated contrast source inversion (CC-CSI) into iterative optimization step of the scheme, resulting in a new algorithm termed RMC-CC-CSI. Numerical and experimental results demonstrate that RMC-CC-CSI offers accelerated convergence, enhanced reconstruction fidelity, and improved noise immunity over conventional CC-CSI for stationary targets despite increased computational cost.",
+    "arxiv_id": "2511.09898v2",
+    "published": "2025-11-13T02:59:42Z",
+    "updated": "2025-11-19T07:25:59Z",
     "categories": [
       "eess.IV"
     ]
@@ -2852,22 +3068,6 @@
     "updated": "2025-08-30T18:51:37Z",
     "categories": [
       "gr-qc"
-    ]
-  },
-  {
-    "title": "Black hole spectroscopy of collapsing and merging neutron stars",
-    "authors": [
-      "Oliver Steppohn",
-      "Sebastian H. Völkel",
-      "Tim Dietrich"
-    ],
-    "abstract": "Black hole spectroscopy is an important pillar when studying gravitational waves from black holes and enables tests of general relativity. Most of the gravitational-wave signals observed over the last decade originate from binary black hole systems. Binary neutron star or black hole-neutron star systems are rarer but of particular interest for the next-generation ground-based gravitational-wave detectors. These events offer the exciting possibility of studying matter effects on the ringdown of \"dirty black holes\". In this work, we ask the question: Does matter matter? Using numerical-relativity, we simulate a wide range of collapsing neutron stars producing matter environments, both in isolated scenarios and in binary mergers. Qualitatively, the resulting ringdown signals can be classified into \"clean\", \"modified\", and \"distorted\" cases, depending on the amount of matter that is present. We apply standard strategies for extracting quasinormal modes of clean signals, using both theory-agnostic and theory-specific assumptions. Even in the presence of matter, possible modifications of quasinormal modes seem to be dominated by ringdown modeling systematics. We find that incorporating multiple quasinormal modes allows one to drastically reduce mismatches and errors in estimating the final black hole mass at early times. If not treated carefully, deviations in the fundamental quasinormal mode might artificially be overestimated and falsely attributed to the presence of matter or violations of general relativity.",
-    "arxiv_id": "2508.15534v1",
-    "published": "2025-08-21T13:10:11Z",
-    "updated": "2025-08-21T13:10:11Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
     ]
   }
 ]
