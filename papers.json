@@ -1,5 +1,164 @@
 [
   {
+    "title": "Domain walls in the scaling regime: Equal Time Correlator and Gravitational Waves",
+    "authors": [
+      "Simone Blasi",
+      "Alberto Mariotti",
+      "Aäron Rase",
+      "Miguel Vanvlasselaer"
+    ],
+    "abstract": "Domain walls are topological defects that may have formed in the early Universe through the spontaneous breakdown of discrete symmetries, and can be a strong source of gravitational waves (GWs). We perform 3D lattice field theory simulations with CosmoLattice, considering grid sizes $N = 1250$, $2048$ and $4096$, to study the dynamics of the domain wall network and its GW signatures. We first analyze how the network approaches the scaling regime with a constant $\\mathcal{O}(1)$ number of domain walls per Hubble volume, including setups with a large initial number of domains as expected in realistic scenarios, and find that scaling is always reached in a few Hubble times after the network formation. To better understand the properties of the scaling regime, we then numerically extract the Equal Time Correlator (ETC) of the energy-momentum tensor of the network, thus determining its characteristic shape for the case of domain walls, and verifying explicitly its functional dependence as predicted by scaling arguments. The ETC can be further extended to the Unequal Time Correlator (UTC) controlling the GW emission by making assumptions on the coherence of the source. By comparison with the actual GW spectrum evaluated by CosmoLattice, we are then able to infer the degree of coherence of the domain wall network. Finally, by performing numerical simulations in different background cosmologies, e.g. radiation domination and kination, we find evidence for a universal ETC at subhorizon scales and hence a universal shape of the GW spectrum in the UV, while the expansion history of the Universe may instead be determined by the IR features of the GW spectrum.",
+    "arxiv_id": "2511.16649v1",
+    "published": "2025-11-20T18:52:59Z",
+    "updated": "2025-11-20T18:52:59Z",
+    "categories": [
+      "hep-ph",
+      "astro-ph.CO",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Measurement incompatibility in Bayesian multiparameter quantum estimation",
+    "authors": [
+      "Francesco Albarelli",
+      "Dominic Branford",
+      "Jesús Rubio"
+    ],
+    "abstract": "We present a comprehensive and pedagogical formulation of Bayesian multiparameter quantum estimation, providing explicit conditions for achieving minimum quadratic losses. Within this framework, we analyse the role of measurement incompatibility and establish its quantitative effect on attainable precision. We achieve this by deriving upper bounds based on the pretty good measurement -- a notion originally developed for hypothesis testing -- combined with the evaluation of the Nagaoka-Hayashi lower bound. In general, we prove that, as in the many-copy regime of local estimation theory, incompatibility can at most double the minimum loss relative to the idealised scenario in which individually optimal measurements are assumed jointly implementable. This result implies that, in many practical situations, the latter may provide a sufficient and computationally efficient benchmark without solving the full optimisation problem. Our results, which we illustrate through a range of applications, including discrete quantum phase imaging, phase and dephasing estimation, and qubit sensing, provide analytical and numerical tools for assessing ultimate precision limits and the role of measurement incompatibility in Bayesian multiparameter quantum metrology. We also provide an open-source package that implements all bounds discussed here, enabling practical evaluation and comparison across quantum metrological models.",
+    "arxiv_id": "2511.16645v1",
+    "published": "2025-11-20T18:51:18Z",
+    "updated": "2025-11-20T18:51:18Z",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "k-inflation: Non-separable case meets ACT measurements",
+    "authors": [
+      "Tahere Fallahi Serish",
+      "Seyed Ali Hosseini Mansoori",
+      "Fereshteh Felegary",
+      "Özgür Akarsu",
+      "Mohamad Sami"
+    ],
+    "abstract": "We investigate a non-separable subset of $k$-essence in which the kinetic and potential sectors interact through an $X^ρV(φ)$ coupling, implemented via a potential-dependent prefactor $f(φ)=1+2\\mathcal{K}V$. In slow roll, this structure preserves a constant sound speed $c_s^2=1/(2ρ-1)$ while modifying the Hubble flow in a controlled way, thereby shifting the inflationary observables relative to the separable template. For monomial potentials $V=Aφ^n$ (with $n=2$ and $n=2/3$ as representative cases) we derive closed analytic expressions for $n_s(N_\\ast)$ and $r(N_\\ast)$ to $\\mathcal{O}(ε_{\\rm mix}^2)$, where $ε_{\\rm mix}\\propto\\mathcal{K}$ encodes the non-separable $X^ρV$ mixing, and we validate them against exact background integrations. The analytic and numerical predictions agree at the sub-per-mille level for $n_s$ and at the percent level for $r$, confirming the accuracy of the small-mixing expansion. For $\\mathcal{K}<0$ the mixing systematically lowers both $n_s$ and $r$ at fixed $N_\\ast$, allowing otherwise marginal monomials to fall within the region favored by recent ACT+{\\it Planck}+BAO constraints (P--ACT--LB). All solutions shown satisfy the health conditions $f(φ)>0$, $ρ>\\tfrac12$, and the positivity bound $V<1/(2|\\mathcal K|)$ (from $f>0$). We also discuss parameter dependence and the expected equilateral-type non-Gaussianity, which remains comfortably within current bounds for the benchmarks considered.",
+    "arxiv_id": "2511.16621v1",
+    "published": "2025-11-20T18:23:01Z",
+    "updated": "2025-11-20T18:23:01Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Quantum corrections in general relativity explored through a GUP-inspired maximal acceleration analysis",
+    "authors": [
+      "Christian Corda",
+      "Carlo Cafaro",
+      "Newshaw Bahreyni"
+    ],
+    "abstract": "A maximun acceleration analysis by Pati dating back to 1992 is here improved by replacing the traditional Heisenberg Uncertainty Principle (HUP) with the Generalized Uncertainty Principle (GUP), which predicts the existence of a minimum length in Nature. This new approach allows one to find a numerical value for the maximum acceleration existing in Nature for a physical particle that turns out to be a_{max}\\simeq4\\frac{c^{2}}{l_{P}}, that is, a function of two fundamental physical quantities such as the speed of light c and the Planck length l_{p}. An application of this result to black hole (BH) physics allows one to estimate a new quantum limit to general relativity. It is indeed shown that, for every real Schwarzschild BH, the maximum gravitational acceleration occurs, without becoming infinite, when the Schwarzschild radial coordinate reaches the gravitational radius. This means that quantum corrections to general relativity become necessary not at the Planck scale, as the majority of researchers in the field think, but at the Schwarzschild scale, in agreement with recent interesting results in the literature. In other words, the quantum nature of physics, which in this case manifests itself through the GUP, appears to prohibit the existence of real singularities, in this current case forbiddiing the gravitational acceleration of a Schwarzschild BH from becoming infinite.",
+    "arxiv_id": "2511.16502v1",
+    "published": "2025-11-20T16:20:04Z",
+    "updated": "2025-11-20T16:20:04Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Collision frequency between dark matter subhaloes within Milky Way-like galaxies",
+    "authors": [
+      "Koki Otaki",
+      "Yudai Kazuno",
+      "Masao Mori"
+    ],
+    "abstract": "In the standard cold dark matter (CDM) model, sub-galactic structures hierarchically collide and merge to build up larger structures. Mergers and collisions between dwarf galaxies and dark matter subhaloes (DMSHs) play an important role in the evolution and formation of structures within a massive galaxy. We investigate the collision frequency between DMSHs associated with a massive host galaxy such as the Milky Way. We analytically estimate the density distribution of DMSH pairs for the relative distance and relative velocity ($r_\\mathrm{rel}$-$v_\\mathrm{rel}$) and the distance from the centre of the host halo and relative velocity ($r$-$v_\\mathrm{rel}$) planes, based on the distribution function of the host halo in the phase space. Then, we evaluate the collision frequencies of DMSHs by integrating the orbital evolution of DMSHs in Milky-Way-like host haloes selected from cosmological $N$-body simulations. The frequency of violent encounters, in which the relative distance of DMSHs is shorter than the sum of scale radii, is averaged as $2.1\\times 10^2\\,\\mathrm{Gyr}^{-1}$. Since the time scale of violent encounters, $4.7\\,\\mathrm{Myr}$, is shorter than the dynamical time of the host halo, collisions between DMSHs occur frequently within the host halo. Although interactions between DMSHs produce pairs with higher relative velocities, the density distributions of all and colliding pairs between DMSHs provided by numerical results are approximately similar to those of the analytical model neglecting the interactions of DMSHs on $r_\\mathrm{rel}$-$v_\\mathrm{rel}$ plane for all pairs and $r$-$v_\\mathrm{rel}$ plane for colliding pairs. We compare our results with observed colliding dwarf galaxies and provide insight into the abundance of DMSHs.",
+    "arxiv_id": "2511.16464v1",
+    "published": "2025-11-20T15:29:25Z",
+    "updated": "2025-11-20T15:29:25Z",
+    "categories": [
+      "astro-ph.GA"
+    ]
+  },
+  {
+    "title": "Neutrino oscillations induced by a new bumblebee black hole",
+    "authors": [
+      "Yuxuan Shi",
+      "A. A. Araújo Filho"
+    ],
+    "abstract": "This work investigates neutrino propagation in the spacetime of a newly introduced black hole arising from spontaneous Lorentz-symmetry breaking in bumblebee gravity. The analysis focuses on three independent components: the rate at which neutrino-antineutrino annihilation deposits energy in the surrounding region, the geometric contribution to the phase accumulated by neutrino mass eigenstates, and the modifications to flavor conversion produced by weak gravitational lensing. Working with a two-flavor system, both mass orderings are examined, and the calculation incorporates the interference between distinct trajectories reaching the detector. The numerical results show that the Lorentz-violating deformation substantially increases the efficiency of the annihilation channel, produces characteristic shifts in the oscillation phase not present in earlier bumblebee configurations, and reshapes the angular dependence of the lensing-induced flavor transition pattern.",
+    "arxiv_id": "2511.16181v1",
+    "published": "2025-11-20T09:38:35Z",
+    "updated": "2025-11-20T09:38:35Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
+    "title": "Analytical Solutions for Planet-Scattering Small Bodies",
+    "authors": [
+      "Yukun Huang",
+      "Brett Gladman",
+      "Eiichiro Kokubo"
+    ],
+    "abstract": "Gravitational scattering of small bodies (planetesimals) by a planet remains a fundamental problem in celestial mechanics. It is traditionally modeled within the circular restricted three-body problem (CR3BP), where individual particle trajectories are obtained via numerical integrations. Here, we introduce a patched-conic framework to describe the random walk of the orbital energy $x$ for an ensemble of test particles on planet-crossing orbits. We show that the evolution of each particle's orbital elements $(a, e, i)$ is fully encapsulated by the 3D rotation of the relative velocity vector $\\mathbf{U}_\\infty$, whose magnitude remains constant. Consequently, the system can be reduced to two degrees of freedom. By averaging over all possible flyby geometries, we derive explicit expressions for the drift and diffusion coefficients of $x$. We then solve the resulting Fokker--Planck equation to obtain a closed-form solution for the time evolution of the particle distribution. A characteristic scattering timescale naturally emerges, scaling as $(P_{p}/M_{p}^{2})/500$, where $P_{p}$ is the planet's orbital period and $M_{p}$ its mass ratio to the central star. The typical ejection speed of small bodies by a planet is estimated to be $3 v_p M_{p}^{1/3}$, where $v_p$ is the planet's orbital speed. Our analytical solution constitutes a universal law applicable to both the Solar System and exoplanetary systems, providing a computationally efficient alternative to costly $N$-body simulations for studying the orbital distributions and ejection of planetesimals and planets (e.g., Kuiper Belt, Oort Cloud, debris disks, interstellar objects, and free-floating planets).",
+    "arxiv_id": "2511.16056v1",
+    "published": "2025-11-20T05:27:16Z",
+    "updated": "2025-11-20T05:27:16Z",
+    "categories": [
+      "astro-ph.EP"
+    ]
+  },
+  {
+    "title": "Finite-Dimensional ZX-Calculus for Loop Quantum Gravity",
+    "authors": [
+      "Ben Priestley"
+    ],
+    "abstract": "Loop quantum gravity (LQG) attempts to unify general relativity with quantum physics to offer a complete description of the universe by quantising spacetime geometry, but the numerical calculations we encounter are extraordinarily difficult. Progress has been made in the covariant formulation of LQG, but the tools do not carry over to the canonical formulation. These tools are graphical by nature, describing space with spin networks to make calculations in LQG more intuitive to the human hand. Recently, a new notation for working with spin networks has been used by arXiv:2412.20272 to offer the first accurate numerical results in canonical LQG by allowing the underlying graphs to change throughout the calculation, though they are forced to concede visual intuitiveness. In this thesis, we offer a more radical rephrasing of spin network calculations by translating them into the finite-dimensional ZX-calculus, extending previous attempts to translate into the standard (qubit) ZX-calculus (arXiv:2111.03114). Specifically, we derive the mixed-dimensional ZX-diagrams representing the generating objects of spin networks and the rules for the Penrose Spin Calculus (arXiv:2511.06012), and use these to present the ZX-form and correctness of \"loop removal\". We also derive the forms for several fundamental LQG objects in the finite-dimensional ZX-calculus for the first time. This gives us a high-level, intuitive graphical language that retains a flexibility to handle changing graph structures, and thus we argue positions the PSC as the new definitive language for canonical LQG. Furthermore, we investigate the possibility for a matrix-like normal form for spin networks deriving from a novel perspective of the PSC in terms of W-nodes.",
+    "arxiv_id": "2511.15966v1",
+    "published": "2025-11-20T01:36:52Z",
+    "updated": "2025-11-20T01:36:52Z",
+    "categories": [
+      "gr-qc",
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "Cyclone: Designing Efficient and Highly Parallel QCCD Architectural Codesigns for Fault Tolerant Quantum Memory",
+    "authors": [
+      "Sahil Khan",
+      "Abhinav Anand",
+      "Kenneth R. Brown",
+      "Jonathan M. Baker"
+    ],
+    "abstract": "Modular trapped-ion quantum computing hardware, known as QCCDs require shuttling operations in order to maintain effective all-to-all connectivity. Each module or trap can perform only one operation at a time, resulting in low intra-trap parallelism, but there is no restriction on operations happening on independent traps, enabling high inter-trap parallelism. Unlike their superconducting counterparts, the design space for QCCDs is relatively flexible and can be explored beyond current grid designs. In particular, current grid-based architectures significantly limit the performance of many promising, high-rate codes such as HGP codes and BB codes, suffering from numerous trap to trap ``roadblocks\", forcing serialization and destroying the inherent parallelism of these codes.. Many of these codes are highly parallelizable, meaning that with appropriate hardware layouts and matching software schedules, execution latency can be reduced. Faster execution, in turn, reduces error accumulation from decoherence and heating, ultimately improving code performance when mapped to realistic hardware. To address this, we propose Cyclone, a circular software-hardware codesign that departs from traditional 2D grids in favor of a flexible ring topology, where ancilla qubits move in lockstep. Cyclone eliminates roadblocks, bounds total movement, and enables high levels of parallelism, resulting in up to ~4$\\times$ speedup in execution times. With HGP codes, Cyclone achieves up to a 2$\\times$ order of magnitude improvement in logical error rate, and with BB codes, this improvement reaches up to a 3$\\times$ in order of magnitude.Spatially, Cyclone reduces the number of required traps and ancilla qubits by $2\\times$.The overall spacetime improvement over a standard grid is up to $\\sim 20 \\times$, demonstrating Cyclone as a scalable and efficient alternative to conventional 2D QCCD architectures.",
+    "arxiv_id": "2511.15910v1",
+    "published": "2025-11-19T22:26:21Z",
+    "updated": "2025-11-19T22:26:21Z",
+    "categories": [
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "The Ensemble Kalman Inversion Race",
+    "authors": [
+      "Rebecca Gjini",
+      "Matthias Morzfeld",
+      "Oliver R. A. Dunbar",
+      "Tapio Schneider"
+    ],
+    "abstract": "Ensemble Kalman methods were initially developed to solve nonlinear data assimilation problems in oceanography, but are now popular in applications far beyond their original use cases. Of particular interest is climate model calibration. As hybrid physics and machine-learning models evolve, the number of parameters and complexity of parameterizations in climate models will continue to grow. Thus, robust calibration of these parameters plays an increasingly important role. We focus on learning climate model parameters from minimizing the misfit between modeled and observed climate statistics in an idealized setting. Ensemble Kalman methods are a natural choice for this problem because they are derivative-free, scalable to high dimensions, and robust to noise caused by statistical observations. Given the many variants of ensemble methods proposed, an important question is: Which ensemble Kalman method should be used for climate model calibration? To answer this question, we perform systematic numerical experiments to explore the relative computational efficiencies of several ensemble Kalman methods. The numerical experiments involve statistical observations of Lorenz-type models of increasing complexity, frequently used to represent simplified atmospheric systems, and some feature neural network parameterizations. For each test problem, several ensemble Kalman methods and a derivative-based method \"race\" to reach a specified accuracy, and we measure the computational cost required to achieve the desired accuracy. We investigate how prior information and the parameter or data dimensions play a role in choosing the ensemble method variant. The derivative-based method consistently fails to complete the race because it does not adaptively handle the noisy loss landscape.",
+    "arxiv_id": "2511.15853v1",
+    "published": "2025-11-19T20:18:40Z",
+    "updated": "2025-11-19T20:18:40Z",
+    "categories": [
+      "physics.data-an",
+      "stat.ML"
+    ]
+  },
+  {
     "title": "An Analytical Formula for Gravitational Faraday Rotation in the ADM Split of Spacetime",
     "authors": [
       "Mark T. Lusk"
@@ -167,6 +326,19 @@
     "categories": [
       "gr-qc",
       "astro-ph.CO"
+    ]
+  },
+  {
+    "title": "Comment to Comment to Black Hole in Dehnen $\\left(1,4,\\frac{1}{2}\\right)$ Dark Matter Halo: Exact Solution, Lensing, Light Ring, and Thermodynamics",
+    "authors": [
+      "David Senjaya"
+    ],
+    "abstract": "The claim in \\cite{Al-Badawi:2025ipr} that *\"the errors in the foundational components (3) and (5) of Ref. [1] invalidate all subsequent analyses, numerical results, and physical interpretations that depend on them\"* is **entirely unfounded**. This statement reflects a fundamental misunderstanding of the typographical nature of the error and appears to be a misplaced critique originating from a competing author, rather than a substantive assessment of the results, which remain fully valid.",
+    "arxiv_id": "2511.15748v1",
+    "published": "2025-11-19T01:52:20Z",
+    "updated": "2025-11-19T01:52:20Z",
+    "categories": [
+      "gr-qc"
     ]
   },
   {
@@ -514,6 +686,22 @@
     "arxiv_id": "2511.12055v1",
     "published": "2025-11-15T06:46:25Z",
     "updated": "2025-11-15T06:46:25Z",
+    "categories": [
+      "math.NA"
+    ]
+  },
+  {
+    "title": "FG-PINNs: frequency-guided physics-informed neural networks for solving PDEs with high frequency components",
+    "authors": [
+      "Jiachun Zheng",
+      "Yunqing Huang",
+      "Nianyu Yi",
+      "Yunlei Yang"
+    ],
+    "abstract": "In this work, we propose the frequency-guided physics-informed neural networks (FG-PINNs), specifically designed for solving partial differential equations (PDEs) with high-frequency components. The core of the proposed algorithm lies in utilizing high-frequency information obtained from PDEs to guide the neural network in rapidly approximating the high-frequency components of the solution. The FG-PINNs consist of two subnetworks, including a high-frequency subnetwork for capturing high-frequency components and a low-frequency subnetwork for capturing low-frequency components. The key innovation in the high-frequency subnetworks is to embed prior knowledge for high-frequency components into the network structure. For nonhomogeneous PDEs ($f(x)\\neq c, c\\in R$), we embed the source term with high-frequency components into the neural network. For homogeneous PDEs, we embed the initial/boundary conditions with high-frequency components into the neural network. Based on spectral bias, we use a fully connected neural network as the low-frequency subnetwork to capture low-frequency components of the solution. A series of numerical examples demonstrate the effectiveness of the FG-PINNs, including the one-dimensional heat equation (relative $L^{2}$ error: $O(10^{-4})$), the nonlinear wave equations (relative $L^{2}$ error: $O(10^{-4})$) and the two-dimensional heat equation (relative $L^{2}$ error: $O(10^{-3})$).",
+    "arxiv_id": "2511.12055v2",
+    "published": "2025-11-15T06:46:25Z",
+    "updated": "2025-11-20T16:40:10Z",
     "categories": [
       "math.NA"
     ]
