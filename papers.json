@@ -1,5 +1,144 @@
 [
   {
+    "title": "Accelerating the CLEAN algorithm of radio interferometry with convex optimization",
+    "authors": [
+      "Hendrik Müller",
+      "Mingyu Hsieh",
+      "Sanjay Bhatnagar"
+    ],
+    "abstract": "In radio-interferometry, we recover an image from an incompletely sampled Fourier data. The de-facto standard algorithm, the Cotton-Schwab CLEAN, is iteratively switching between computing a deconvolution (minor loop) and subtracting the model from the visibilities (major loop). The next generation of radio interferometers is expected to deal with much higher data rates, image sizes and sensitivity, making an acceleration of current data processing algorithms necessary. We aim to achieve this by evaluating the potential of various well-known acceleration techniques in convex optimization to the major loop. For the present manuscript, we limit the scope to study these techniques only in the CLEAN framework. To this end, we identify CLEAN with a Newton scheme, and use this chain of arguments backwards to express Nesterov acceleration and conjugate gradient orthogonalization in the major and minor loop framework. The resulting algorithms are simple extensions of the traditional framework, but converge multiple times faster than traditional techniques, and reduce the residual significantly deeper. These improvements achieved by accelerating the major loop are competitive to well-known improvements by replacing the minor loop with more advanced algorithms, but at lower numerical cost. The best performance is achieved by combining these two developments.CLEAN remains among the fastest and most robust algorithms for imaging in radio interferometry, and can be easily extended to an almost an order of magnitude faster convergence speed and dynamic range. The procedure outlined in this manuscript is relatively straightforward and could be easily extended.",
+    "arxiv_id": "2511.17410v1",
+    "published": "2025-11-21T17:09:08Z",
+    "updated": "2025-11-21T17:09:08Z",
+    "categories": [
+      "astro-ph.IM"
+    ]
+  },
+  {
+    "title": "Abstract fractional linear transformations",
+    "authors": [
+      "David Handelman"
+    ],
+    "abstract": "We begin with (densely-defined) fractional linear transformations (FLT) on (some) Banach algebras and their relatives. This leads to Wedderburn's continued fractions (recursively-defined noncommutative polynomials) for any ring. Along the way, we discover a one-parameter family of (noncommutative) polynomials \\st if one of them is invertible, then read in the opposite order, the corresponding polynomial is also invertible (extending the well known $1+ab$ is invertible if $1+ ba$ is, and the not-so-well-known, $a + abc + c$ and $a + cba + c$). This in turn leads to a definition of FLT for general rings $R$, which turns out to be PE$(2,R)$ (the projective elementary group). Using Wedderburn's polynomials, this permits us to define a length function on PE$(2,R)$, which suggests a stable range type condition (for $n =1$, it {\\it is\\/} stable range one, but higher values do not correspond. Again using the length results, we prove the expected results for PE$(2,R)$: under very modest conditions on $R$, the commutator subgroup of PE$(2,R)$ is perfect and of index one or two. Along the same lines, we also prove results on simplicity of the commutator subgroup: we require the usual generative properties on the simple ring $R$, as well either the very restrictive $1$ in the range, or a mild condition about invertibles, involving intersections of three translates of GL$(1,R)$. This last property is explored in the appendices, which give examples (and non-examples). Numerous questions suggest themselves throughout.",
+    "arxiv_id": "2511.17383v1",
+    "published": "2025-11-21T16:45:47Z",
+    "updated": "2025-11-21T16:45:47Z",
+    "categories": [
+      "math.FA",
+      "math.RA"
+    ]
+  },
+  {
+    "title": "Numerical study of the effect of the relative mobilities of chemical components on the Non solvent induced phase separation process for membrane elaboration",
+    "authors": [
+      "Abderraouf Bounjad",
+      "Aoran Wu",
+      "Cyril Chevarin",
+      "Patrick Guenoun",
+      "Florent Mallogi",
+      "Jean-Pierre Mericq",
+      "Charaff Merzougui",
+      "Denis Bouyer",
+      "Hervé Henry"
+    ],
+    "abstract": "The filtration membranes are often elaborated through a phase separation process where a polymer rich phase and a polymer poor phase spontaneously form through spinodal decomposition. One process that is still not well understood from a theoretical point of view is the Non-Solvent induced phase separation where a thermodynamically stable film of a a polymer mixture is put in contact with a bad solvent of the polymer. The invasion of the film by this non-solvent drives the film out of stability and leads to spinodal decomposition. During this phase separation polymer poor and polymer rich regions form. In this article we present a numerical study of the effect of kinetic coefficients: namely the relative mobilities of polymer and solvent/non-solvent on the observed patterns. Using 2D numerical simulations of the ternary Cahn-Hilliard model we show that for a given thermodynamic landscape, this parameter has dramatic effects: depending on its value phase separation can be observed or not. We also show that it can affect the nature of the observed pattern. In addition analysing 3D simulations we analyse the final pattern using a quantitative indicator of its connectivity and show that for a wide range of initial composition of the film the final pattern is bicontinuous. We also quantify the transport properties of both polymer rich and polymer poor domains.",
+    "arxiv_id": "2511.17267v1",
+    "published": "2025-11-21T14:13:50Z",
+    "updated": "2025-11-21T14:13:50Z",
+    "categories": [
+      "cond-mat.soft",
+      "nlin.AO"
+    ]
+  },
+  {
+    "title": "On the Predictive Skill of Artificial Intelligence-based Weather Models for Extreme Events using Uncertainty Quantification",
+    "authors": [
+      "Rodrigo Almeida",
+      "Noelia Otero",
+      "Miguel-Ángel Fernández-Torres",
+      "Jackie Ma"
+    ],
+    "abstract": "Accurate prediction of extreme weather events remains a major challenge for artificial intelligence based weather prediction systems. While deterministic models such as FuXi, GraphCast, and SFNO have achieved competitive forecast skill relative to numerical weather prediction, their ability to represent uncertainty and capture extremes is still limited. This study investigates how state of the art deterministic artificial intelligence based models respond to initial-condition perturbations and evaluates the resulting ensembles in forecasting extremes. Using three perturbation strategies (Gaussian noise, Hemispheric Centered Bred Vectors, and Huge Ensembles), we generate 50 member ensembles for two major events in August 2022: the Pakistan floods and the China heatwave. Ensemble skill is assessed against ERA5 and compared with IFS ENS and the probabilistic AIFSENS model using deterministic and probabilistic metrics. Results show that flow dependent perturbations produce the most realistic ensemble spread and highest probabilistic skill, narrowing but not closing the performance gap with numerical weather prediction ensembles. Across variables, artificial intelligence based weather models capture temperature extremes more effectively than precipitation. These findings demonstrate that input perturbations can extend deterministic models toward probabilistic forecasting, paving the way for approaches that combine flow dependent perturbations with generative or latent-space uncertainty modeling for reliable artificial intelligence-driven early warning systems.",
+    "arxiv_id": "2511.17176v1",
+    "published": "2025-11-21T11:54:22Z",
+    "updated": "2025-11-21T11:54:22Z",
+    "categories": [
+      "physics.ao-ph",
+      "cs.LG"
+    ]
+  },
+  {
+    "title": "Magnetized particle motion and accretion process with shock cone morphology around a decoupled hairy black holes",
+    "authors": [
+      "G. Mustafa",
+      "Faisal Javed",
+      "S. K. Maurya",
+      "A. Ditta",
+      "Orhan Donmez",
+      "Tayyab Naseer",
+      "Abdelmalek Bouzenada",
+      "Farruh Atamurotov"
+    ],
+    "abstract": "Relativistic accretion onto compact objects such as black holes and neutron stars is one of the most efficient known mechanisms for converting gravitational potential energy into radiation. In the case of rapidly spinning black holes, up to $40\\%$ of the rest-mass energy of accreting matter can be released, far exceeding the efficiency of nuclear fusion. In this work, we investigate magnetized particle motion and relativistic accretion processes around a decoupled hairy black hole via extended geometric deformation. The developed geometry involves two hairy parameters that preserve the horizon structure with the additional feature of the fulfillment of weak energy conditions outside the event horizon. We provide the foundation with necessary formalism for magnetized particle motion around a decoupled black hole. The effective potential and innermost stable circular orbits are then derived, which demonstrate a significant reduction of the radius of the latter quantity under the hairy parameters for the magnetized particle. Afterwards, we obtain exact analytical expressions for radial velocity profiles, mass accretion rates, and a few others which reveal improved energy efficiency and emissivity as compared to the standard black hole. Furthermore, the decoupling parameter shows strong influence on oscillations, accretion presenting fantastic agreement between analytical predictions and numerical simulations, and thus offering noticeable observational signatures for future gravitational wave and X-ray astronomy.",
+    "arxiv_id": "2511.17137v1",
+    "published": "2025-11-21T11:00:21Z",
+    "updated": "2025-11-21T11:00:21Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Exceptional line and pseudospectrum in black hole spectroscopy",
+    "authors": [
+      "Li-Ming Cao",
+      "Ming-Fei Ji",
+      "Liang-Bi Wu",
+      "Yu-Sen Zhou"
+    ],
+    "abstract": "We investigate the exceptional points (EPs) and their pseudospectra in black hole perturbation theory. By considering a Gaussian bump modification to the Regge-Wheeler potential with variable amplitude, position, and width parameters, $(\\varepsilon,d,σ_0)$, a continuous line of EPs (exceptional line, EL) in this three-dimensional parameter space is revealed. We find that the vorticity $ν=\\pm1/2$ and the Berry phase $γ=π$ for loops encircling the EL, while $ν=0$ and $γ=0$ for those do not encircle the EL. Through matrix perturbation theory, we prove that the $ε$-pseudospectrum contour size scales as $ε^{1/q}$ at an EP, where $q$ is the order of the largest Jordan block of the Hamiltonian-like operator, contrasting with the linear $ε$ scaling at non-EPs. Numerical implements confirm this observation, demonstrating enhanced spectral instability at EPs for non-Hermitian systems including black holes.",
+    "arxiv_id": "2511.17067v1",
+    "published": "2025-11-21T09:18:15Z",
+    "updated": "2025-11-21T09:18:15Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "quant-ph"
+    ]
+  },
+  {
+    "title": "Quantum Optical Simulator for Unruh-DeWitt Detector Dynamics",
+    "authors": [
+      "Tai Hyun Yoon"
+    ],
+    "abstract": "We present a quantum-optical platform for simulating relativistic detector-field interactions using entangled nonlinear biphoton sources (ENBSs), realized through phase-controlled single-photon frequency-comb (SPFC) sources. By mapping the dynamical evolution of this system onto the Unruh-DeWitt (UDW) detector model, we show that signal-mode excitations emulate detector transitions driven by vacuum fluctuations, while coherently seeded idler modes act as an effective quantum field. This correspondence enables tabletop exploration of Unruh-like excitation, coherence harvesting, and field-induced entanglement. We derive the effective interaction Hamiltonian and Lindblad master equation for two coherently seeded ENBS units and obtain analytical solutions for the signal photon number \\(N_{\\rm sig}(t)\\) and second-order correlation function \\(g^{(2)}(0;t)\\). Numerical simulations confirm that phase-dependent biphoton dynamics reproduce UDW-type behavior, including tunable excitation and quantum correlations. The output signal state exhibits controllable fidelity, interference visibility, and entanglement entropy as functions of the seeding phase and amplitude. These results establish ENBSs as experimentally accessible quantum simulators of relativistic field phenomena, providing a photonic testbed for analog gravitational effects, vacuum fluctuations, and spacetime-induced coherence-all within reach of current nonlinear-optics technology.",
+    "arxiv_id": "2511.16865v1",
+    "published": "2025-11-21T00:21:36Z",
+    "updated": "2025-11-21T00:21:36Z",
+    "categories": [
+      "quant-ph",
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Numerical tiling-based simulations of decoherence in multifield models of inflation",
+    "authors": [
+      "Johor D. Peñalba Quispitupa",
+      "Guillermo F. Quispe Peña",
+      "Jose T. Galvez Ghersi"
+    ],
+    "abstract": "In previous work, we developed a method for computing two-point correlators by decomposing the mode degrees of freedom into fast and slow components. Building on this framework, we present a numerical implementation to study the evolution of primordial scalar perturbations under controlled state deformations induced by the simplest environment corrections from the Lindblad equation. Our approach generalizes to an arbitrary number of degrees of freedom and does not rely on the slow-roll approximation. The computational routine is numerically efficient and allows users to configure arbitrary sequences of decoherence events, with full control over their duration, shape, amplitude and effective wavelength range. The resulting outputs are compatible with nonlinear numerical codes, enabling studies of how decoherence effects propagate during reheating.",
+    "arxiv_id": "2511.16801v1",
+    "published": "2025-11-20T21:03:03Z",
+    "updated": "2025-11-20T21:03:03Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO",
+      "hep-th",
+      "quant-ph"
+    ]
+  },
+  {
     "title": "Domain walls in the scaling regime: Equal Time Correlator and Gravitational Waves",
     "authors": [
       "Simone Blasi",
