@@ -292,10 +292,340 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-11-25 06:37:24 UTC</div>
+            <div class="last-updated">Last updated: 2025-11-26 06:34:19 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.20621v1" target="_blank" rel="noopener">DiFR: Inference Verification Despite Nondeterminism</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Adam Karvonen, Daniel Reuter, Roy Rinberg, Luke Marks, Adrià Garriga-Alonso, Keri Warr</div>
+                <div class="paper-abstract">As demand for LLM inference grows, it is becoming increasingly important that providers and their customers can verify that inference processes are performed correctly, without errors or tampering. However, re-running the same inference process twice often leads to different results due to benign numerical noise, making it difficult to distinguish legitimate variation from actual problems. To address this problem, we introduce Token-DiFR (Token-Divergence-From-Reference), a method for verifying inference outputs by comparing generated tokens against predictions made by a trusted reference implementation conditioned on the same random seed. Sampling seed synchronization tightly constrains valid outputs, leaving providers minimal room to deviate from correct inference, which allows output tokens themselves to serve as auditable evidence of correctness at zero additional cost to the provider. Token-DiFR reliably identifies sampling errors, simulated bugs, and model quantization, detecting 4-bit quantization with AUC $>$ 0.999 within 300 output tokens. For applications requiring sample-efficient forward-pass verification, we additionally introduce Activation-DiFR, a scheme that uses random orthogonal projections to compress activations into compact fingerprints for subsequent verification. Activation-DiFR detects 4-bit quantization with AUC $>$ 0.999 using just 2 output tokens, while reducing communication overhead by 25-75% relative to existing methods. We release an open-source integration with vLLM to accelerate practical deployment of verifiable inference.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.20441v1" target="_blank" rel="noopener">Impact of the valence band on Rydberg excitons in cuprous oxide quantum wells</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Niklas Scheuler, Jörg Main, Patric Rommel, Frieder Pfeiffer, Stefan Scheel, Pavel A. Belov</div>
+                <div class="paper-abstract">The complex valence band structure of bulk cuprous oxide necessitates going beyond the parabolic approximation to precisely estimate exciton binding energies. The same is true for excitons in cuprous oxide quantum wells, for which many effects have been obtained so far only qualitatively within a hydrogenlike two-band model. Here, we derive the complete Hamiltonian for excitons in cuprous oxide quantum wells based on the Luttinger-Kohn model, taking into account the full complex valence band structure. Symmetry properties of the system are discussed. Numerical results based on the diagonalization of the Hamiltonian using B-spline functions reveal the energy shifts and the lifting of degeneracies due to the nondiagonal coupling terms of the complex valence band. The relative oscillator strengths of the excitonic transitions induced by circularly polarized light are also calculated.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.20301v1" target="_blank" rel="noopener">Quasi-Normal Mode Ringing of Binary Black Hole Mergers in Scalar-Gauss-Bonnet Gravity</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Zexin Hu, Daniela D. Doneva, Stoytcho S. Yazadjiev, Lijing Shao</div>
+                <div class="paper-abstract">Observations of gravitational waves (GWs) generated by binary black hole (BBH) mergers provide us with a powerful way to explore the strong and highly dynamical regime of gravity theories. The ringdown of BBH merger, consisting of a series of quasi-normal modes (QNMs), is of particular interest for both the black hole (BH) spectroscopy and the inspiral-merger-ringdown consistency check. Unlike the QNM frequencies that only depend on the properties of the remnant BH, the excitation amplitudes and phases of QNMs depend on the progenitor system, and calculating them is beyond the perturbative approach. In this paper, by performing self-consistent fully non-linear simulations of BBH merger in shift-symmetric scalar-Gauss-Bonnet (sGB) gravity as well as in sGB gravity allowing for scalarization, and extracting the QNM excitation, we explore the possible deviations from GR at the ringdown stage. We numerically verify that the mode frequencies are consistent with the theory prediction, and provide the fitting results of mode amplitudes and phases. We find relatively small changes in the mode excitation, considering that the largest coupling we used in the simulations is close to the limit of loss of hyperbolicity. To demonstrate that our results are robust against the eccentricity caused by the imperfect initial data, we also perform eccentricity reduction and estimate the effect caused by the initial eccentricity. These studies are useful for understanding the ringdown in sGB gravity.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.20244v1" target="_blank" rel="noopener">Mass Dependence of the Araki-Uhlmann Relative Entropy Across Dimensions</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">João G. A. Caribé, Marcelo S. Guimarães, Itzhak Roditi, Silvio P. Sorella, Arthur F. Vieira</div>
+                <div class="paper-abstract">We investigate the mass dependence of the Araki-Uhlmann relative entropy between a localized coherent excitation and the vacuum state of a free scalar quantum field on the $(1+d)$-dimensional Minkowski spacetime for $d = 1, 2, 3$. In this context, the relative entropy admits a closed expression in terms of the smeared Pauli-Jordan distribution, whose analytic structure is sensitive to both the mass and the spacetime dimensionality. Prior studies in $(1+1)$ dimensions have shown a monotonic decay of the relative entropy with increasing mass. We extend that analysis to higher dimensions using numerical techniques and elucidate how the interplay between dimensionality and mass controls the behavior of the relative entropy. Our results provide new insights for the study of the Araki-Uhlmann relative entropy in QFT and its dependence on physical parameters.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.20187v1" target="_blank" rel="noopener">A Surrogate-Informed Framework for Sparse Grid Interpolation</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Matteo Rosellini, Filippo Fruzza, Alessandro Mariotti, Maria Vittoria Salvetti, Lorenzo Tamellini</div>
+                <div class="paper-abstract">Approximating complex, high-dimensional, and computationally expensive functions is a central problem in science and engineering. Standard sparse grids offer a powerful solution by mitigating the curse of dimensionality compared to full tensor grids. However, they treat all regions of the domain isotropically, which may not be efficient for functions with localized or anisotropic behavior. This work presents a surrogate-informed framework for constructing sparse grid interpolants, which is guided by an error indicator that serves as a zero-cost estimate for the hierarchical surplus. This indicator is calculated for all candidate points, defined as those in the next-level grid $w+1$ not already present in the base grid $w$. It quantifies the local approximation error by measuring the relative difference between the predictions of two consecutive interpolants of level $w$ and $w-1$. The candidates are then ranked by this metric to select the most impactful points for refinement up to a given budget or following another criterion, as, e.g., a given threshold in the error indicator. The final higher-order model is then constructed using a surrogate-informed approach: the objective function is evaluated only at the selected high-priority points, while for the remaining nodes of the $w+1$ grid, we assign the values predicted by the initial $w$-level surrogate. This strategy significantly reduces the required number of expensive evaluations, yielding a final model that closely approximates the accuracy of a fully-resolved $w+1$ grid at a fraction of the computational cost. The accuracy and efficiency of the proposed surrogate-informed refinement criterion is demonstrated for several analytic function and for a real engineering problem, i.e., the analysis of sensitivity to geometrical parameters of numerically predicted flashback phenomenon in hydrogen-fueled perforated burners.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">25 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19839v1" target="_blank" rel="noopener">Broadband Reflective Elastic Mode Conversion Enabled by a Single Row of Inclined Long-Slits</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Kaifei Feng, Weidong Wang, Yucheng Gao, Fengming Liu, Qiujiao Du, Wenshuai Zhang, Pai Peng</div>
+                <div class="paper-abstract">Broadband longitudinal-to-transverse mode conversion under normal incidence remains difficult to achieve, especially with structurally simple designs. Numerical simulations show that a single periodic row of inclined long-slits near a free surface enables high-efficiency broadband conversion, where the conversion rate exceeds 0.8 across a normalized-frequency range of 0.27 to 0.74, corresponding to a 93.1% relative bandwidth. The broadband response originates from two intrinsic deformation modes of the mass blocks between adjacent inclined slits: a rotational mode and a quadrupole mode. The spectral overlap of these two modes sustains a continuous high-efficiency band. The effect is robust against geometric variations, demonstrating that geometric asymmetry alone offers a minimal yet effective route to broadband elastic-wave mode conversion.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19714v1" target="_blank" rel="noopener">Non-Ergodic Convergence Algorithms for Distributed Consensus and Coupling-Constrained Optimization</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Chenyang Qiu, Zongli Lin</div>
+                <div class="paper-abstract">We study distributed convex optimization with two ubiquitous forms of coupling: consensus constraints and global affine equalities. We first design a linearized method of multipliers for the consensus optimization problem. Without smoothness or strong convexity, we establish non-ergodic sublinear rates of order O(1/\sqrt{k}) for both the objective optimality and the consensus violation. Leveraging duality, we then show that the economic dispatch problem admits a dual consensus formulation, and that applying the same algorithm to the dual economic dispatch yields non-ergodic O(1/\sqrt{k}) decay for the error of the summation of the cost over the network and the equality-constraint residual under convexity and Slater's condition. Numerical results on the IEEE 118-bus system demonstrate faster reduction of both objective error and feasibility error relative to the state-of-the-art baselines, while the dual variables reach network-wide consensus.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19689v1" target="_blank" rel="noopener">Relaxation of a single-particle excitation in a Fermi system within the diffusion approximation of kinetic theory</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Sergiy V. Lukyanov</div>
+                <div class="paper-abstract">The time evolution of the Wigner distribution function for a single-particle excitation in a Fermi system was studied within the framework of the diffusion approximation of kinetic theory by numerically solving a nonlinear diffusion equation with constant kinetic coefficients. A method was proposed to separate the dissipative processes into contributions from the relaxation of the single-particle excitation and from the relaxation of the nuclear core, with a distinct relaxation time introduced for each process. The influence of the diffusion and drift coefficients on the characteristic relaxation time scale was analyzed. It was found that the resulting relaxation times exhibit a discrepancy relative to the kinetic coefficient estimates known from previous studies.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19593v1" target="_blank" rel="noopener">A parametrized model for gravitational waves from eccentric, precessing binary black holes: theory-agnostic tests of General Relativity with pTEOBResumS</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Danilo Chiaramello, Nicolò Cibrario, Jacob Lange, Koustav Chandra, Rossella Gamba, Raffaella Bonino, Alessandro Nagar</div>
+                <div class="paper-abstract">Gravitational waves from binary black hole (BBH) mergers allow us to test general relativity in the strong-field, high-curvature regime. However, existing gravitational wave-based tests have so far assumed non-eccentric signal sources, limiting their applicability to more general astrophysical scenarios. In this work, we present pTEOBResumS, a new parametrized inspiral-merger-ringdown model for null tests of GR that incorporates both orbital eccentricity and spin precession. Building on the effective-one-body model TEOBResumS-Dalí, we introduce parametrized deviations from GR both in the inspiral and the merger-ringdown regimes. We validate the model via parameter estimation of synthetic signals, including from numerical relativity simulations of BBHs and a boson star binary. These allow us to establish the model's consistency, demonstrate its capability to identify beyond-GR effects, and gauge the impact of eccentricity in tests of GR. We then analyze a set of BBH events from the first three LIGO-Virgo-KAGRA observing runs, testing whether they are best explained by a GR or non-GR waveform, under either the eccentric, spin-aligned or precessing, quasi-circular hypotheses. We find no significant statistical evidence in favor of deviations from GR. Consistent with previous works, we infer a mild preference for longer remnant quasi-normal mode damping times than expected in GR, though the limited sample and potential systematics reduce its significance. In addition, when weighting by signal strength, joint posteriors combining the individual events are still compatible with GR. We find no strong evidence for imprints of orbital eccentricity in the analyzed events, with the exception of GW200129. For this, our analysis finds a strong preference for an eccentric, GR-consistent description, although as previous works have noted this result could be influenced by data quality issues.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19431v2" target="_blank" rel="noopener">Cloud4D: Estimating Cloud Properties at a High Spatial and Temporal Resolution</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Jacob Lin, Edward Gryspeerdt, Ronald Clark</div>
+                <div class="paper-abstract">There has been great progress in improving numerical weather prediction and climate models using machine learning. However, most global models act at a kilometer-scale, making it challenging to model individual clouds and factors such as extreme precipitation, wind gusts, turbulence, and surface irradiance. Therefore, there is a need to move towards higher-resolution models, which in turn require high-resolution real-world observations that current instruments struggle to obtain. We present Cloud4D, the first learning-based framework that reconstructs a physically consistent, four-dimensional cloud state using only synchronized ground-based cameras. Leveraging a homography-guided 2D-to-3D transformer, Cloud4D infers the full 3D distribution of liquid water content at 25 m spatial and 5 s temporal resolution. By tracking the 3D liquid water content retrievals over time, Cloud4D additionally estimates horizontal wind vectors. Across a two-month deployment comprising six skyward cameras, our system delivers an order-of-magnitude improvement in space-time resolution relative to state-of-the-art satellite measurements, while retaining single-digit relative error ($<10%$) against collocated radar measurements. Code and data are available on our project page <a href="https://cloud4d.jacob-lin.com/." target="_blank" rel="noopener">https://cloud4d.jacob-lin.com/.</a></div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19353v1" target="_blank" rel="noopener">Inflation in theories with broken diffeomorphisms</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Antonio L. Maroto, Prado Martín-Moruno, Miguel Orbaneja-Pérez</div>
+                <div class="paper-abstract">We analyze the impact of breaking diffeomorphism invariance in the inflaton sector. In particular, we consider inflaton models which are invariant under the subgroup of transverse diffeomorphisms and address the possibility of implementing a slow-roll phase. We obtain the corresponding expressions for relevant quantities such as the slow-roll parameters and the number of $e$-folds, and derive the primordial power-spectrum of curvature perturbations. The scalar spectral index features modifications which are confronted with CMB data from Planck and ACT. We study in detail the quadratic potential model, combining asymptotic and numerical analysis. We show that the post-inflationary behavior can be drastically different from the diffeomorphism-invariant case, exhibiting novel dynamical regimes.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19346v1" target="_blank" rel="noopener">Disc Game Dynamics: A Latent Space Perspective on Selection and Learning in Games</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Pablo Lechon-Alonso, Andrew Dennehy, Ruizheng Bai, Nicolas Sanchez, Derek K. Wise, David Sewell, David Rosenbluth, Alexander Strang</div>
+                <div class="paper-abstract">Evolutionary game theory studies populations that change in response to an underlying game. Often, the functional form relating outcome to player attributes or strategy is complex, preventing mathematical progress. In this work, we axiomatically derive a latent space representation for pairwise, symmetric, zero-sum games by seeking a coordinate space in which the optimal training direction for an agent responding to an opponent depends only on their opponent's coordinates. The associated embedding represents the original game as a linear combination of copies of a simple game, the disc game, in a new coordinate space. In this article, we show that disc-game embedding is useful for studying learning dynamics. We demonstrate that a series of classical evolutionary processes simplify to constrained oscillator equations in the latent space. In particular, the continuous replicator equation reduces to a Hamiltonian system of coupled oscillators that exhibit Poincaré recurrence. This reduction allows exact, finite-dimensional closure when the underlying game is finite-rank, and optimal approximation otherwise. It also establishes an exact equivalence between the continuous replicator equation and adaptive dynamics in the transformed coordinates. By identifying a minimal rank representation, the disc game embedding offers numerical methods that could decouple the cost of simulation from the number of attributes used to define agents. These results generalize to metapopulation models that mix inhomogeneously, and to any time-differentiable dynamic where the rate of growth of a type, relative to its expected payout, is a nonnegative function of its frequency. We recommend disc-game embedding as an organizing paradigm for learning and selection in response to symmetric two-player zero-sum games.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19297v1" target="_blank" rel="noopener">Finite Element Spaces of Double Two-Forms With Polynomial Coefficients</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Yakov Berchenko-Kogan, Lily DiPaulo</div>
+                <div class="paper-abstract">We develop finite element spaces of symmetric tensor products of two-forms with polynomial coefficients. In three dimensions, these give higher order finite element spaces of matrix fields with normal-normal continuity, which have applications to the TDNNS method for elasticity, for example. In general dimension, these spaces can be used to represent the Riemann curvature tensor in numerical relativity. In many ways, our methods parallel Li's work generalizing Regge calculus to higher order, as Regge elements can be thought of as symmetric tensor products of one-forms. However, whereas the constant coefficient Regge space has one shape function per edge, the constant coefficient space of double-forms in our paper has one shape function per triangle and two shape functions per tetrahedron, so we must address the fact that there are shape functions of two different types. Like Li, we obtain an explicit geometrically decomposed basis of shape functions.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19179v1" target="_blank" rel="noopener">Separating the Inseparable: Constraining Arbitrary Primordial Bispectra with Cosmic Microwave Background Data</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Oliver H. E. Philcox, Kunhao Zhong, Salvatore Samuele Sirletti</div>
+                <div class="paper-abstract">To efficiently probe primordial non-Gaussianity using Cosmic Microwave Background (CMB) data, we require theoretical predictions that are factorizable, <em>i.e.</em>\ those whose kinematic dependence can be separated. This property does not hold for many models, hindering their application to data. In this work, we introduce a general framework for constructing separable approximations to primordial bispectra, enabling direct CMB constraints on arbitrary models including those computed using numerical tools. In contrast to other approaches such as modal decompositions, we learn the basis functions directly from the data, allowing high-fidelity representations with just a handful of terms. This is practically implemented using machine-learning techniques, utilizing neural network basis functions and a loss function designed to mimic the CMB cosine similarity. We validate our pipeline using a variety of input bispectra, demonstrating that the approximations are $>99.5%$ correlated with the truth with just three terms. By incorporating the neural basis into the <span style="font-variant: small-caps;">PolySpec</span> code, we derive KSW-type CMB estimators, which reproduce local- and equilateral-type non-Gaussianity to within $0.1σ$. As a proof-of-concept, we constrain two inflationary bispectra from the `cosmological collider' scenario; these feature an additional strongly-mixed particle sector and cannot be computed analytically. By combining the numerical predictions from <span style="font-variant: small-caps;">CosmoFlow</span> with our factorizable approach (with just three terms), we place novel constraints on the collider models using <em>Planck</em> PR4 data, finding no detection of non-Gaussianity. Our method facilitates detailed studies of the inflationary paradigm, connecting modern theoretical tools with high-resolution observational data.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19114v1" target="_blank" rel="noopener">Physics-informed Neural Operator Learning for Nonlinear Grad-Shafranov Equation</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Siqi Ding, Zitong Zhang, Guoyang Shi, Xingyu Li, Xiang Gu, Yanan Xu, Huasheng Xie, Hanyue Zhao and 2 others</div>
+                <div class="paper-abstract">As artificial intelligence emerges as a transformative enabler for fusion energy commercialization, fast and accurate solvers become increasingly critical. In magnetic confinement nuclear fusion, rapid and accurate solution of the Grad-Shafranov equation (GSE) is essential for real-time plasma control and analysis. Traditional numerical solvers achieve high precision but are computationally prohibitive, while data-driven surrogates infer quickly but fail to enforce physical laws and generalize poorly beyond training distributions. To address this challenge, we present a Physics-Informed Neural Operator (PINO) that directly learns the GSE solution operator, mapping shape parameters of last closed flux surface to equilibrium solutions for realistic nonlinear current profiles. Comprehensive benchmarking of five neural architectures identifies the novel Transformer-KAN (Kolmogorov-Arnold Network) Neural Operator (TKNO) as achieving highest accuracy (0.25% mean L2 relative error) under supervised training (only data-driven). However, all data-driven models exhibit large physics residuals, indicating poor physical consistency. Our unsupervised training can reduce the residuals by nearly four orders of magnitude through embedding physics-based loss terms without labeled data. Critically, semi-supervised learning--integrating sparse labeled data (100 interior points) with physics constraints--achieves optimal balance: 0.48% interpolation error and the most robust extrapolation performance (4.76% error, 8.9x degradation factor vs 39.8x for supervised models). Accelerated by TensorRT optimization, our models enable millisecond-level inference, establishing PINO as a promising pathway for next-generation fusion control systems.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19073v1" target="_blank" rel="noopener">Black hole binaries in shift-symmetric Einstein-scalar-Gauss-Bonnet gravity experience a slower merger phase</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Maxence Corman, Llibert Aresté Saló, Katy Clough</div>
+                <div class="paper-abstract">In shift-symmetric Einstein-scalar-Gauss-Bonnet gravity, stationary black holes have a non-vanishing scalar charge. During the inspiral, the phase evolution is modified by several effects, primarily an additional scalar dipole radiation, which enters at -1PN order. This effect accelerates the inspiral when compared to general relativity, when including corrections up to 2PN. Using fully non-linear numerical simulations of quasi-circular, comparable mass binaries, we find that in the late stages the orbital dynamics are altered so that the overall effect is instead a decelerated merger phase for the modified gravity case. We attribute this to a change in the conservative dynamics, and show that at the late inspiral stage more energy must be emitted in scalar-Gauss-Bonnet gravity to induce a given change in frequency. In longer signals, this should lead to a distinctive switch between a faster and slower frequency evolution relative to general relativity as the binary approaches merger. This work suggests we should revisit existing constraints on the theory that are obtained assuming PN approximations apply up to merger, or based on order by order approximations that neglect backreaction effects on the metric, and shows the importance of including non-linear effects that modify the gravitational sector in the strong field regime.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">24 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.18998v1" target="_blank" rel="noopener">A Trust-region Funnel Algorithm for Grey Box Optimisation</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Gul Hameed, Tao Chen, Antonio del Rio Chanona, Lorenz T. Biegler, Michael Short</div>
+                <div class="paper-abstract">Grey-box optimisation, where some parts of an optimisation problem are represented by explicit algebraic (glass-box) models while others are treated as black-box models lacking analytic derivatives, remains a challenge in process systems engineering. Trust-region (TR) methods provide a robust framework for grey-box problems by combining accurate glass-box derivatives with local reduced models (RMs) for black-box components. However, existing TR approaches often involve complex multi-layered formulations requiring extensive parameter tuning, or lack open-source implementations. Motivated by the recent advances in funnel-based convergence theory for nonlinear optimisation and the TR filter method, we propose a novel TR funnel algorithm for grey-box optimisation that replaces the filter acceptance criterion with a generalisable uni-dimensional funnel, maintaining a monotonically non-increasing upper bound on approximation error of the local black-box RMs. A global convergence proof to a first-order critical point is established. The algorithm, implemented in an open-source Pyomo framework, supports multiple RM forms and globalisation strategies (filter or funnel). Benchmark tests on seven numerical and engineering problems show that the TR funnel algorithm achieves comparable and often improved performance relative to the classical TR filter method. The TR funnel method thus provides a simpler, and extensible alternative for large-scale grey-box optimisation.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">23 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.18575v1" target="_blank" rel="noopener">Joint Projective Invariants on First Jet Spaces of Point Configurations via Moving Frames</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Leonid Bedratyuk</div>
+                <div class="paper-abstract">We consider the action of the projective group $PGL(3,\mathbb{R})$ on the $n$-fold first-order jet space of point configurations on the plane. Using the method of moving frames, we construct an explicit complete generating set for the field of absolute first-order joint projective differential invariants $\mathcal{I}_{n,0}$ for any $n \ge 3$. This approach provides a unified construction for all $n$, immediately ensuring functional independence of the fundamental invariants and yielding formulas suitable for both symbolic and numerical implementation. Next, we study the field of relative first-order invariants $\mathcal{I}_n$ with Jacobian multiplier. It is shown that the invariantization of the Jacobian under the projective action yields a primitive element of the field extension $\mathcal{I}_n / \mathcal{I}_{n,0}$. Finally, we introduce a multiplicative cochain complex $C^\bullet$ associated with the action of $PGL(3,\mathbb{R})$ on the jet space, and show that the invariantization operator induced by the moving frame generates an explicit contracting homotopy. This provides a constructive proof of the vanishing of higher cohomology and an interpretation of the "defect" of invariantization as an exact cocycle in $C^\bullet$.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">23 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.18564v1" target="_blank" rel="noopener">Physically Informed Bayesian Retrieval of SWE and Snow Depth in Forested Areas from Airborne X And Ku-Band SAR Measurements</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Siddharth Singh, Carrie Vuyovich, Ana P. Barros</div>
+                <div class="paper-abstract">This study presents a coupled physical statistical framework for retrieving snow water equivalent (SWE) in forested areas using dual frequency X and Ku band SAR observations. The method combines a multilayer snow hydrology model (MSHM) with microwave propagation and backscatter models, and includes a canopy parameterization based on a modified Water Cloud Model that accounts for canopy closure. The framework is applied to airborne SnowSAR measurements over Grand Mesa, Colorado, and evaluated against snow pit SWE and LiDAR snow depth from the SnowEx'17 campaign. Prior distributions of snowpack properties are generated with MSHM forced by numerical weather prediction, and vegetation and soil parameters are initialized from Ku HH observations under frozen conditions and interpolated from open to nearby forested areas using kriging. Successful SWE and snow depth retrievals in forested pixels are obtained where relative backscatter residuals are below 30% for incidence angles between 30 and 50 degrees, capturing both the mean and variance of snowpack distributions. For 90 m forested pixels, the snow depth RMSE is 0.033 m (less than 8% of maximum pit SWE), with improved spatial patterns relative to hydrology only simulations. Performance degrades in highly heterogeneous land cover such as mixed forest and wetlands and along canopy and water boundaries due to uncertainty in canopy closure, although absolute snow depth differences remain below 10% and 20% for about 62% and 82% of pixels, respectively. Retrievals at 30 m resolution for one flight further reduce spatial errors and increase the fraction of low error pixels by about 78% at a 10% absolute error threshold, demonstrating the feasibility of dual frequency Bayesian SWE retrievals in forested landscapes by combining physical modeling with SAR observations.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">23 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.18429v1" target="_blank" rel="noopener">Robust Differential Evolution via Nonlinear Population Size Reduction and Adaptive Restart: The ARRDE Algorithm</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Khoirul Faiq Muzakka, Ahsani Hafizhu Shali, Haris Suhendar, Sören Möller, Martin Finsterbusch</div>
+                <div class="paper-abstract">This study is motivated by a robustness issue in numerical optimization of bound-constrained problems: many algorithms that perform well on a particular benchmark suite, such as the IEEE CEC2017 problems, struggle to maintain the same level of performance when applied to other suites that differ in dimensionality, landscape complexity, or the maximum number of function evaluations ($N_{\text{max}}$). To address this, we propose the Adaptive Restart-Refine Differential Evolution (ARRDE) algorithm, a new variant of Differential Evolution (DE). ARRDE builds upon the LSHADE algorithm, incorporates key mechanisms from jSO, and introduces a nonlinear population-size reduction strategy combined with an adaptive restart-refine mechanism. We evaluate ARRDE on five benchmark suites (CEC2011, CEC2017, CEC2019, CEC2020, and CEC2022) which, to the best of our knowledge, constitutes the most extensive experimental study to date in the context of algorithmic comparison, as most prior works consider only one or two suites. This broad evaluation enables a rigorous assessment of generalization across markedly different problem characteristics. To further support fair cross-suite comparisons, we also introduce a bounded accuracy-based scoring metric derived from relative error. Using both rank-based and accuracy-based metrics, and comparing against algorithms that perform strongly on CEC2017 (e.g., jSO and LSHADE-cnEpSin) as well as those that excel on CEC2020 (e.g., j2020 and NLSHADE-RSP), ARRDE consistently demonstrates top-tier performance, ranking first across all benchmark suites considered. These results highlight ARRDE's robustness and its superior generalization capability.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">22 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.18033v1" target="_blank" rel="noopener">The purely leptonic and semileptonic decays of $D^{*}_{s}$ meson</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Xiao-Lin Wang, Rui Sun, Li-Ting Wang</div>
+                <div class="paper-abstract">With the potential prospects of the $D^{*}_{s}$ at high-luminosity heavy-flavor experiments in the future, we investigated the CKM-favored and tree-dominated leptonic $D^{*}_{s}\to\ell\barν_{\ell}$ and semileptonic $D^{*}_{s}\to M\ell\barν_{\ell}$ ($M=φ, η^{(\prime)}$ and $\ell=e, μ$) weak decays in the Standard Model (SM). The theoretical predictions and some discussions for the observable quantities including the total width of $D^{*}_{s}$ mesons, the branching fractions of leptonic $D^{*}_{s}\to\ell\barν_{\ell}$ and semileptonic $D^{*}_{s}\to M\ell\barν_{\ell}$ weak decays, the lepton spin asymmetry and forward-backward asymmetry are presented. Numerically, the weak decays of $D^{*}_{s}\to\ell\barν_{\ell}$ and $D^{*}_{s} \to M\ell\barν_{\ell}$ have relatively large branching fractions of the order $\mathcal{O}(10^{-5})$ and $\mathcal{O}(10^{-7})$ respectively, which are expected to be observed in future experiments.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">22 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.17872v1" target="_blank" rel="noopener">Resonant structures in exozodiacal clouds created by exo-Earths in the habitable zone of late-type stars</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Seung-Yoo Lee, Masateru Ishiguro, Hangbin Jo, Sung-Chul Yoon</div>
+                <div class="paper-abstract">Earth-like exoplanets can create resonant structures in exozodiacal dust through mean motion resonances (MMRs). These structures not only suggest the presence of such planets, but also act as potential noise sources in future mid-infrared (MIR) nulling interferometry observations. We aim to investigate how resonant structures in exozodiacal dust vary across stellar spectral types (F4--M4), and to evaluate how stellar wind drag affects their morphology and brightness in mature planetary systems. We conducted numerical simulations of dust dynamics, extending earlier studies by including spectral type variation in stellar wind drag in addition to Poynting-Robertson (PR) drag. Our models represented systems of a few Gyr hosting an Earth-like exoplanet in the habitable zone (HZ). We produced spatially resolved maps of optical depth and thermal emission for different stellar spectral types. Our simulations showed that resonant ring structures were formed for all stellar spectral types considered. In particular, we found that stellar wind drag played a critical role in shaping dust dynamics around old M-type stars, where it could dominate over PR drag by a factor of approximately 44. This reduced the contrast of resonant rings relative to the background disk, compared to cases without spectral type variation in stellar wind. Across different spectral types, the optical depth contrast of the resonant ring increased for lower-mass stars, assuming a fixed background level. Asymmetric thermal emission distributions were derived across all spectral types, which peaked for K-type stars. Our findings highlight the importance of incorporating both resonant dynamics and stellar wind effects when modeling exozodiacal dust around stars of different spectral types.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-date">21 November 2025</div>
@@ -675,6 +1005,21 @@
             <article class="paper">
                 <div class="paper-date">19 November 2025</div>
                 <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.15247v2" target="_blank" rel="noopener">Addressing the gravitational collapse of a massless scalar field with Physics-Informed Neural Networks</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Antonio Ferrer-Sánchez, Nino Villanueva-Espinosa, Carlos Hernani Morales, Roberto Ruiz de Austri-Bazan, José A. Font, José David Martín-Guerrero, Matthew W. Choptuik</div>
+                <div class="paper-abstract">The gravitational collapse of a massless scalar field remains a demanding benchmark for numerical methods in numerical relativity, as it exhibits critical behavior at the boundary between dispersion and black hole formation. In this work we revisit this problem by relying on Physics-Informed Neural Networks (PINNs) as flexible solvers for partial differential equations, thereby providing a comparative assessment of several recent neural architectures. Building on the Einstein-massless-Klein-Gordon formulation in polar-areal coordinates, we consider four initial-value problems encompassing subcritical, critical, and supercritical regimes and use high-resolution finite-difference simulations as reference solutions. Our study is primarily comparative: we evaluate several state-of-the-art deep learning architectures, including vanilla and high-precision PINNs, sinusoidal-feature and quadratic-residual variants, and Kolmogorov-Arnold Networks, all trained under a common loss design that encodes the field equations, boundary conditions, and causal time-space enforcement, together with a novel adaptive spacetime sampling. Within this framework we also introduce ModPINN, a modest modification of standard PINNs that augments standard multilayer perceptrons with coordinate embeddings, quadratic layers, and other common ingredients in recent literature. This study shows that deep-learning-based methods can reproduce finite-difference solutions for the scalar field and the spacetime metric with competitive accuracy using significantly fewer collocation points than more traditional methodologies. While no single architecture dominates in all regimes, ModPINN achieves particularly stable and accurate solutions near criticality, indicating that suitably designed embeddings and adaptive sampling can enhance the robustness of PINNs for challenging gravitational-collapse scenarios.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">19 November 2025</div>
+                <div class="paper-title">
                     <a href="https://arxiv.org/abs/2511.15176v1" target="_blank" rel="noopener">Mean-Field Game of Relative Performance Portfolio for Two Populations with Poisson Common Noise</a>
                 </div>
                 <div class="abstract-section">
@@ -885,6 +1230,21 @@
             <article class="paper">
                 <div class="paper-date">17 November 2025</div>
                 <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.13642v3" target="_blank" rel="noopener">Coupling between gravitational and electromagnetic perturbations on Kerr Spacetime</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Fawzi Aly, Dejan Stojkovic</div>
+                <div class="paper-abstract">We extend our previous Schwarzschild metric-based studies of gravitational--electromagnetic (GEM) coupling to rotating black holes by working directly in a curvature-based Newman--Penrose/Teukolsky framework on Kerr spacetime. Within a minimally coupled Einstein--Maxwell system, we derive explicit quadratic electromagnetic source terms for the spin-$-2$ Teukolsky equation, providing a foundation for future numerical studies of GEM interactions in the framework of black-hole spectroscopy. Moreover, we give order-of-magnitude arguments showing that GEM quadratic quasinormal modes (QQNMs) can become relevant in a range of charged and magnetized astrophysical scenarios. Finally, we show through a brief dilaton-theory example that the GEM QQNM spectrum is sensitive to how gravity couples to electromagnetism, thereby providing a model-based way to test minimal coupling and to constrain hidden $U(1)$ sectors with gravitational-wave observations.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">17 November 2025</div>
+                <div class="paper-title">
                     <a href="https://arxiv.org/abs/2511.13533v1" target="_blank" rel="noopener">Minimax Multi-Target Conformal Prediction with Applications to Imaging Inverse Problems</a>
                 </div>
                 <div class="abstract-section">
@@ -895,6 +1255,21 @@
                 </div>
                 <div class="paper-authors">Jeffrey Wen, Rizwan Ahmad, Philip Schniter</div>
                 <div class="paper-abstract">In ill-posed imaging inverse problems, uncertainty quantification remains a fundamental challenge, especially in safety-critical applications. Recently, conformal prediction has been used to quantify the uncertainty that the inverse problem contributes to downstream tasks like image classification, image quality assessment, fat mass quantification, etc. While existing works handle only a scalar estimation target, practical applications often involve multiple targets. In response, we propose an asymptotically minimax approach to multi-target conformal prediction that provides tight prediction intervals while ensuring joint marginal coverage. We then outline how our minimax approach can be applied to multi-metric blind image quality assessment, multi-task uncertainty quantification, and multi-round measurement acquisition. Finally, we numerically demonstrate the benefits of our minimax method, relative to existing multi-target conformal prediction methods, using both synthetic and magnetic resonance imaging (MRI) data.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">17 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.13533v2" target="_blank" rel="noopener">Minimax Multi-Target Conformal Prediction with Applications to Imaging Inverse Problems</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Jeffrey Wen, Rizwan Ahmad, Philip Schniter</div>
+                <div class="paper-abstract">In ill-posed imaging inverse problems, uncertainty quantification remains a fundamental challenge, especially in safety-critical applications. Recently, conformal prediction has been used to quantify the uncertainty that the inverse problem contributes to downstream tasks like image classification, image quality assessment, fat mass quantification, etc. While existing works handle only a scalar estimation target, practical applications often involve multiple targets. In response, we propose an asymptotically minimax approach to multi-target conformal prediction that provides tight prediction intervals while ensuring joint marginal coverage. We then outline how our minimax approach can be applied to multi-metric blind image quality assessment, multi-task uncertainty quantification, and multi-round measurement acquisition. Finally, we numerically demonstrate the benefits of our minimax method, relative to existing multi-target conformal prediction methods, using both synthetic and magnetic resonance imaging (MRI) data. Code is available at <a href="https://github.com/jwen307/multi_target_minimax." target="_blank" rel="noopener">https://github.com/jwen307/multi_target_minimax.</a></div>
             </article>
 
             <article class="paper">
@@ -1275,6 +1650,21 @@
             <article class="paper">
                 <div class="paper-date">13 November 2025</div>
                 <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19442v1" target="_blank" rel="noopener">gr-Orbit-Toolkit: A Python-Based Software for Simulating and Visualizing Relativistic Orbits</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Milagros Delgado, Wladimir E. Banda-Barragán</div>
+                <div class="paper-abstract">Creating software dedicated to simulation is essential for teaching and research in Science, Technology, Engineering, and Mathematics (STEM). Physics lecturing can be more effective when digital twins are used to accompany theory classes. Research in physics has greatly benefited from the advent of modern, high-level programming languages, which facilitate the implementation of user-friendly code. Here, we report our own Python-based software, the gr-orbit-toolkit, to simulate orbits in classical and general relativistic scenarios. First, we present the ordinary differential equations (ODEs) for classical and relativistic orbital accelerations. For the latter, we follow a post-Newtonian approach. Second, we describe our algorithm, which numerically integrates these ODEs to simulate the orbits of small-sized objects orbiting around massive bodies by using Euler and Runge-Kutta methods. Then, we study a set of sample two-body models with either the Sun or a black hole in the center. Our simulations confirm that the orbital motions predicted by classical and relativistic ODEs drastically differ for bodies near the Schwarzschild radius of the central massive body. Classical mechanics explains the orbital motion of objects far away from a central massive body, but general relativity is required to study objects moving at close proximity to a massive body, where the gravitational field is strong. Our study on objects with different eccentricities confirms that our code captures relativistic orbital precession. Our convergence analysis shows the toolkit is numerically robust. Our gr-orbit-toolkit aims at facilitating teaching and research in general relativity, so a comprehensive user and developer guide is provided in the public code repository.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">13 November 2025</div>
+                <div class="paper-title">
                     <a href="https://arxiv.org/abs/2511.10295v1" target="_blank" rel="noopener">Analytical Nuclear Gradients for the Multiconfigurational Self-Consistent Field Method Coupled with the Polarizable Fluctuating Charges Model</a>
                 </div>
                 <div class="abstract-section">
@@ -1285,6 +1675,21 @@
                 </div>
                 <div class="paper-authors">Francesco Mazza, Marco Trinari, Chiara Sepali, Chiara Cappelli</div>
                 <div class="paper-abstract">The multiscale model combining the multiconfigurational self-consistent field (MCSCF) method with the fully atomistic polarizable Fluctuating Charges (FQ) force field (J. Chem. Theory Comput. 2024, 20, 9954-9967) is here extended to the calculation of analytical nuclear gradients. The gradients are derived from first principles, implemented in the OpenMolcas package, and validated against numerical references. The resulting MCSCF/FQ nuclear gradients are employed to simulate vibronic absorption spectra of aromatic molecules in aqueous solution, namely benzene and phenol. By integrating this approach with molecular dynamics simulations, both solute conformational flexibility and the dynamical aspects of solvation are properly captured. The computed spectra reproduce experimental profiles and relative band intensities with remarkable accuracy, demonstrating the capability of the MCSCF/FQ model to simultaneously describe the multireference character of the solute and its interaction with the solvent environment.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">13 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.19441v1" target="_blank" rel="noopener">Hodge-Dirac wave systems and structure-preserving discretizations of the linearized Einstein equations</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Marien-Lorenzo Hanot, Kaibo Hu</div>
+                <div class="paper-abstract">We derive a reformulation of the linearized Arnowitt-Deser-Misner (ADM) equations as a Hodge-Dirac wave system with the divdiv complex, addressing challenges in numerical relativity such as gauge fixing, constraint propagation, and tensor symmetries. The differential and algebraic structures of the divdiv complex ensure the well-posedness of the formulation and facilitate structure-preserving discretization via finite element exterior calculus. We establish the well-posedness of this Hodge-Dirac wave equation and develop a discretization scheme applicable to both conforming and non-conforming discrete complexes, deriving error estimates under minimal assumptions.</div>
             </article>
 
             <article class="paper">
@@ -3355,21 +3760,6 @@
                 </div>
                 <div class="paper-authors">Viviana A. Cáceres-Barbosa</div>
                 <div class="paper-abstract">We analyze the spherical harmonic mode amplitudes of quasi-circular, nonprecessing binary black hole mergers using 283 numerical relativity (NR) simulations from the SXS, RIT, and MAYA catalogs. We construct fits using the leading-order post-Newtonian (PN) dependence on intrinsic parameters, replacing the PN velocity with fit coefficients. We compare these to polynomial fits in symmetric mass ratio and spin. We analyze $(\ell, m)$ modes with $\ell \leq 4$ from late inspiral ($t = -500M$ relative to the $(2,2)$ peak) to post-merger ($t = 40M$). For nonspinning systems, the $(2,2)$, $(2,1)$, and $(3,3)$ modes retain the leading-order PN dependence on mass ratio throughout the merger. Higher-order modes deviate from the PN dependence only near and after the merger, where polynomial fits of degree $N \leq 3$ can capture the amplitude behavior up to $40M$. For aligned-spin systems at fixed mass ratio, the $(2,1)$ mode retains its PN spin dependence, while the $(3,2)$ and $(4,3)$ modes exhibit a quadratic spin dependence near merger. The PN-inspired fits lose accuracy with increasing mass ratio, particularly near merger. Results broadly agree across catalogs, though discrepancies appear in the $(3,1)$, $(4,2)$, and $(4,1)$ modes, likely from resolution differences. Our results clarify the extent to which PN structure persists in mode amplitudes and show that simple polynomial models can capture strong-field behavior near merger, enabling efficient and interpretable waveform modeling in this regime.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">28 August 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2508.20418v2" target="_blank" rel="noopener">Spinning Effective-to-Backwards One Body ($\text{SEBOB}$): combining Effective One-Body inspirals and Backwards One-Body merger-ringdowns for aligned spin black hole binaries</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Siddharth Mahesh, Sean T. McWilliams, Zachariah Etienne</div>
-                <div class="paper-abstract">High-fidelity gravitational waveform models are essential for realizing the scientific potential of next-generation gravitational-wave observatories. While highly accurate, state-of-the-art models often rely on extensive phenomenological calibrations to numerical relativity (NR) simulations for the late-inspiral and merger phases, which can limit physical insight and extrapolation to regions where NR data is sparse. To address this, we introduce the Spinning Effective-to-Backwards One Body (SEBOB) formalism, a hybrid approach that combines the well-established Effective-One-Body (EOB) framework with the analytically-driven Backwards-One-Body (BOB) model, which describes the merger-ringdown from first principles as a perturbation of the final remnant black hole. We present two variants building on the state-of-the-art $\text{SEOBNRv5HM}$ model: $\text{seobnrv5_nrnqc_bob}$, which retains standard NR-calibrated non-quasi-circular (NQC) corrections and attaches a BOB-based merger-ringdown; and a more ambitious variant, $\text{seobnrv5_bob}$, which uses BOB to also inform the NQC corrections, thereby reducing reliance on NR fitting and enabling higher-order ($\mathcal{C}^2$) continuity by construction. Implemented in the open-source $\text{NRPy}$ framework for optimized C-code generation, the SEBOB model is transparent, extensible, and computationally efficient. By comparing our waveforms to a large catalog of NR simulations, we demonstrate that SEBOB yields accuracies comparable to the highly-calibrated $\text{SEOBNRv5HM}$ model, providing a viable pathway towards more physically motivated and robust waveform models</div>
             </article>
 
         </main>
