@@ -1,5 +1,100 @@
 [
   {
+    "title": "Fly-by transit: A novel door-to-door shared mobility with minimal stops",
+    "authors": [
+      "Wenbo Fan",
+      "Weihua Gu"
+    ],
+    "abstract": "This paper introduces fly-by transit (FBT), a novel mobility system that employs modular mini-electric vehicles (mini-EVs) to provide door-to-door shared mobility with minimal stops. Unlike existing modular minibus concepts that rely on in-motion coupling and passenger transfers -- technologies unlikely to mature soon -- FBT lowers the technological barriers by building upon near-term feasible solutions. The system comprises two complementary mini-EV modules: low-cost trailers for on-demand feeder trips and high-performance leaders that guide coupled trailers in high-speed platoons along trunk lines. Trailers operate independently for detour-free feeder services, while stationary coupling at designated hubs enables platoons to achieve economies of scale (EoS). In-motion decoupling of the tail trailer allows stop-less operation without delaying the main convoy. As a proof of concept, a stylized corridor model is developed to analyze optimal FBT design. Results indicate that FBT can substantially reduce travel times relative to conventional buses and lower operating costs compared with e-hailing taxis. Numerical analyses further demonstrate that FBT achieves stronger EoS than both buses and taxis, yielding more than 13\\% savings in generalized system costs. By addressing key limitations of existing transit systems, this study establishes FBT as a practical and scalable pathway toward transformative urban mobility and outlines directions for future research.",
+    "arxiv_id": "2511.21295v1",
+    "published": "2025-11-26T11:37:35Z",
+    "updated": "2025-11-26T11:37:35Z",
+    "categories": [
+      "physics.app-ph"
+    ]
+  },
+  {
+    "title": "Curvature-driven pattern formation in biomembranes: A gradient flow approach",
+    "authors": [
+      "Patrik Knopf",
+      "Anastasija Pešić",
+      "Dennis Trautwein"
+    ],
+    "abstract": "In this work, we study a phase-field model for curvature-driven pattern formation in biomembranes. The model is derived as a gradient flow of an energy functional that approximates the two-phase Canham--Helfrich energy. This leads to a Cahn--Hilliard-type equation with cross diffusion for the relative chemical concentration of one lipid phase, coupled to a fourth-order reaction-diffusion equation describing the height profile of the membrane. We first prove the existence of weak solutions for the case of regular double-well potentials, using a minimizing movement scheme to construct approximate solutions. The analysis is then extended to singular potentials, e.g., the Flory--Huggins potential, by approximating them with a Moreau--Yosida regularization. For both cases, we establish higher regularity, continuous dependence on the initial data, and consequently the uniqueness of weak solutions. Finally, we propose a well-posed finite element discretization of the model and present numerical experiments illustrating the effect of different physical parameters on the resulting membrane patterns. Depending on the parameter regime, we observe purely striped, dotted, or snake-like structures.",
+    "arxiv_id": "2511.21230v1",
+    "published": "2025-11-26T09:58:57Z",
+    "updated": "2025-11-26T09:58:57Z",
+    "categories": [
+      "math.AP"
+    ]
+  },
+  {
+    "title": "Observational appearance and photon rings of non-singular black holes from anisotropic fluids",
+    "authors": [
+      "David Díaz-Guerra",
+      "Angel Rincon",
+      "Diego Rubiera-Garcia"
+    ],
+    "abstract": "We consider the optical appearance of a non-singular, spherically symmetric black hole from Eddington-inspired Born-Infeld gravity coupled to anisotropic fluids. Such a black hole has a single (external) horizon located very near the Schwarzschild radius, $r_h=2M$, while its surface of unstable bound geodesics (photon sphere) is located at a moderately shortened radius than its Schwarzschild counterpart. Relying on a geometrically and optically thin accretion disk with a monochromatic emission described by suitable adaptations of Standard Unbound profiles previously employed in the literature, we generate images of this solution, which displays relevant modifications to the typical photon ring and central brightness depression features found in black hole images. In this sense, we fit the width of the two first photon rings in order to reconstruct the Lyapunov exponent of nearly-bound geodesics characterizing the theoretical ratio of successive rings. Such an exponent is tightly attached to observational features of photon rings such as their relative intensities in time-averaged images and the time-scale of hot-spots. Our results point out that non-singular black holes of this type are hard to distinguish from their Schwarzschild counterparts using this method alone, since the theoretical, numerical, disk-modeling, and observational uncertainties are too entangled with one another to allowing a neat distinction of such an exponent. It also points out to the need of incorporating dynamical settings such as hot-spots or quasi-normal modes from gravitational wave ringdowns as a way to circumvent such difficulties.",
+    "arxiv_id": "2511.21183v1",
+    "published": "2025-11-26T08:59:12Z",
+    "updated": "2025-11-26T08:59:12Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Gated KalmaNet: A Fading Memory Layer Through Test-Time Ridge Regression",
+    "authors": [
+      "Liangzu Peng",
+      "Aditya Chattopadhyay",
+      "Luca Zancato",
+      "Elvis Nunez",
+      "Wei Xia",
+      "Stefano Soatto"
+    ],
+    "abstract": "As efficient alternatives to softmax Attention, linear state-space models (SSMs) achieve constant memory and linear compute, but maintain only a lossy, fading summary of the past, often leading to inferior performance in recall oriented tasks. We propose Gated KalmaNet (GKA), a layer that reduces this gap by accounting for the full past when predicting the next token, while maintaining SSM-style efficiency. GKA achieves this by solving an online ridge regression problem at test time, with constant memory and linear compute cost in the sequence length. Drawing inspiration from the Kalman Filter, we iteratively solve the online ridge regression problem. However, a critical insight is that standard Kalman filter equations are numerically unstable in low-precision environments (like bfloat16) and difficult to parallelize in modern hardware. We address both challenges through two key innovations: (1) an adaptive regularization strategy with input-dependent gating that controls the condition number of the ridge regression, ensuring numerical stability while balancing memory retention. And (2) the use of Chebyshev Iteration instead of other conventional iterative solvers, which we demonstrate to be more stable in low-precision settings. To further improve scalability, we develop a hardware-aware chunk-wise implementation of Chebyshev Iteration along with custom kernels for backpropagating through our adaptive regularization and gating mechanisms. Empirically, GKA shows strong language understanding capabilites on short-context tasks outperforming existing SSM layers (like Mamba2, GLA and Gated DeltaNet). On long-context, GKA excels at real-world RAG and LongQA tasks up to 128k tokens, achieving more than $10$% relative improvement over other fading memory baselines.",
+    "arxiv_id": "2511.21016v1",
+    "published": "2025-11-26T03:26:37Z",
+    "updated": "2025-11-26T03:26:37Z",
+    "categories": [
+      "cs.LG",
+      "cs.CL"
+    ]
+  },
+  {
+    "title": "High-order Gravity-mode Period Spacing Patterns of Intermediate-mass ($1.5 \\, M_\\odot < M < 3 \\, M_{\\odot}$) Main-sequence Stars I. Perturbative Analysis",
+    "authors": [
+      "Yoshiki Hatta",
+      "Takashi Sekii"
+    ],
+    "abstract": "Theoretical study of high-order gravity-mode period spacing ($ΔP_g$) pattern is relevant for the better understanding of internal properties of intermediate-mass ($1.5 \\, M_\\odot < M < 8 \\, M_{\\odot}$) main-sequence g-mode pulsators. In this paper, we carry out the first-order perturbative analysis to evaluate effects of a sharp, though not discontinuous, transition in the Brunt-Väisälä (BV) frequency on the $ΔP_g$ pattern. Such a finite-width transition in the BV frequency, whose scale height can be comparable to the local wavelength of gravity waves, is expected to develop in relatively low-mass ($1.5 \\, M_\\odot < M < 3 \\, M_{\\odot}$) main-sequence stars, causing a bump in the second derivative of the BV frequency. Inspired by Unno et al.'s formulation, we treat the bump in the second derivative of the BV frequency as a small perturbation, which allows us to derive an analytical expression of the $ΔP_g$ pattern. The analytical expression shows that the amplitude of the oscillatory $ΔP_g$ pattern is determined by a weighted average of the bump in the second derivative of the BV frequency where the weighting function is given by the g-mode eigenfunction. Tests with low-mass ($\\sim 2 \\, M_\\odot$) main-sequence stellar models show that the analytical expression can reproduce the $ΔP_g$ patterns numerically computed reasonably well. The results of our perturbative analysis will be useful for, e.g., improving semi-analytical expressions of the $ΔP_g$ pattern, which would enable us to investigate $ΔP_g$ patterns of SPB stars and $γ$ Dor stars for inferring chemical composition profile and rotation rates.",
+    "arxiv_id": "2511.20948v1",
+    "published": "2025-11-26T00:58:38Z",
+    "updated": "2025-11-26T00:58:38Z",
+    "categories": [
+      "astro-ph.SR"
+    ]
+  },
+  {
+    "title": "Direct numerical simulation of thermo-diffusively unstable premixed hydrogen-air flames in a fully-developed turbulent channel flow at $Re_τ=530$",
+    "authors": [
+      "Felix Rong",
+      "Max Schneider",
+      "Hendrik Nicolai",
+      "Christian Hasse",
+      "Andrea Gruber"
+    ],
+    "abstract": "Direct Numerical Simulations (DNS) of premixed hydrogen-air flames anchored in a fully-developed turbulent channel flow (TCF) are performed at a friction Reynolds number of $\\mathrm{Re}_τ=530$ and thermochemical conditions susceptible to the emergence of intrinsic thermo-diffusive (TD) phenomena acting on the turbulent flame. Two premixed flames are studied: a slower flame ($\\varphi=0.25$), predominantly propagating within the core flow, and a faster one ($\\varphi=0.35$), reaching closer to the channel walls and intermittently quenching on it. The present DNS database provides new insights into the characteristics of premixed flames susceptible to TD phenomena and propagating in realistic near-wall shear turbulence. The influence of varying turbulence intensity, and of wall-distance dependent time and length scales, on the flame propagation characteristics is evaluated through a detailed analysis of the local stretch factor $I_0$, quantifying reactivity enhancements caused by TD phenomena. At $\\varphi=0.25$, the flame response to the fluid motions is mainly forced by the weaker turbulence present in the core flow. This results in an augmented $I_0$ compared to the laminar reference value, suggesting reactivity enhancement by the strongly non-linear interaction of TD phenomena with (relatively) weak turbulent motions present within the core flow. At $\\varphi=0.35$, as the flame propagates from the core flow towards the channel walls, the flame response is forced by turbulence of increasing intensity, resulting in a corresponding augmentation of the Karlovitz number. Crucially, as the flame propagates into the near-wall region, the peak value of $I_0$ is co-located with the peak Reynolds stresses ($y^+ \\sim 10$). This observation suggests a strong (local) synergistic interaction between TD phenomena and wall turbulence, ultimately resulting in significantly enhanced flame speed.",
+    "arxiv_id": "2511.20930v1",
+    "published": "2025-11-25T23:45:20Z",
+    "updated": "2025-11-25T23:45:20Z",
+    "categories": [
+      "physics.flu-dyn",
+      "physics.comp-ph"
+    ]
+  },
+  {
     "title": "DiFR: Inference Verification Despite Nondeterminism",
     "authors": [
       "Adam Karvonen",
@@ -69,6 +164,21 @@
     "categories": [
       "hep-th",
       "math-ph"
+    ]
+  },
+  {
+    "title": "Denoising gravitational wave with deep learning in the time-frequency domain",
+    "authors": [
+      "Yi-De Lee",
+      "Hwei-Jang Yo"
+    ],
+    "abstract": "Gravitational wave denoising is an ongoing task for revealing the events of compact binary objects in the universe. Recently, with the aid of deep learning, gravitational waves have been efficiently and delicately extracted from the noisy data compared with the traditional match-filtering. While most of the relevant studies adopt the data in the time series only, the time-frequency data processing is also in progress due to its several advantages for the waveform denoising. Here, we target the gravitational waves events emitted by binary black hole (BBH) mergers, with their total mass larger than 30 solar masses. For denoising, we propose a deep learning model utilizing the Griffin-Lim algorithm, an existing numerical approach to restore the phase information from the related amplitude spectrogram. This design allows extra attention on the phase recovery by using a priorly denoised amplitude spectrogram. The denoising results fit well in both the amplitude and the phase alignments of the mock injected waveforms. We also apply our model to the real detected events and discover a nice consistency with the simulated template waveforms, especially the high accuracy around the merger stage. Our work suggests the possibility of a better methodological design for gravitational wave data analysis.",
+    "arxiv_id": "2511.20731v1",
+    "published": "2025-11-25T11:16:52Z",
+    "updated": "2025-11-25T11:16:52Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.IM"
     ]
   },
   {
@@ -3828,19 +3938,6 @@
     "arxiv_id": "2509.05269v1",
     "published": "2025-09-05T17:24:50Z",
     "updated": "2025-09-05T17:24:50Z",
-    "categories": [
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "Persistence of post-Newtonian structure in binary black hole mergers",
-    "authors": [
-      "Viviana A. Cáceres-Barbosa"
-    ],
-    "abstract": "We analyze the spherical harmonic mode amplitudes of quasi-circular, nonprecessing binary black hole mergers using 283 numerical relativity (NR) simulations from the SXS, RIT, and MAYA catalogs. We construct fits using the leading-order post-Newtonian (PN) dependence on intrinsic parameters, replacing the PN velocity with fit coefficients. We compare these to polynomial fits in symmetric mass ratio and spin. We analyze $(\\ell, m)$ modes with $\\ell \\leq 4$ from late inspiral ($t = -500M$ relative to the $(2,2)$ peak) to post-merger ($t = 40M$). For nonspinning systems, the $(2,2)$, $(2,1)$, and $(3,3)$ modes retain the leading-order PN dependence on mass ratio throughout the merger. Higher-order modes deviate from the PN dependence only near and after the merger, where polynomial fits of degree $N \\leq 3$ can capture the amplitude behavior up to $40M$. For aligned-spin systems at fixed mass ratio, the $(2,1)$ mode retains its PN spin dependence, while the $(3,2)$ and $(4,3)$ modes exhibit a quadratic spin dependence near merger. The PN-inspired fits lose accuracy with increasing mass ratio, particularly near merger. Results broadly agree across catalogs, though discrepancies appear in the $(3,1)$, $(4,2)$, and $(4,1)$ modes, likely from resolution differences. Our results clarify the extent to which PN structure persists in mode amplitudes and show that simple polynomial models can capture strong-field behavior near merger, enabling efficient and interpretable waveform modeling in this regime.",
-    "arxiv_id": "2508.21216v1",
-    "published": "2025-08-28T21:11:00Z",
-    "updated": "2025-08-28T21:11:00Z",
     "categories": [
       "gr-qc"
     ]
