@@ -292,10 +292,85 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2025-12-03 06:35:27 UTC</div>
+            <div class="last-updated">Last updated: 2025-12-04 06:35:25 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-date">03 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03679v1" target="_blank" rel="noopener">From Memory Model to CPU Time: Exponential Integrators for Advection-Dominated Problems</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Thi Tam Dang, Trung Hau Hoang</div>
+                <div class="paper-abstract">In this paper, we investigate the application of exponential integrators to advection-dominated problems. We focus on Krylov subspace and Leja interpolation methods to compute the action of exponential and related matrix functions. Complementing our earlier paper, arXiv:2410.12765 (to appear in Advances in Applied Mathematics and Mechanics, 2025) based on a performance model, we extend the numerical investigation to higher-order Krylov approximations and new numerical regime, and assess their CPU-time efficiency relative to explicit Runge--Kutta schemes. We show that, depending on the problem setting, exponential integrators can either outperform or match explicit Runge--Kutta schemes. We also observe that Leja-based methods outperform Krylov iterations for large time steps, whereas for small time steps, Krylov-based methods provide better results than Leja-based methods.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">03 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03632v1" target="_blank" rel="noopener">Three-dimensional modelling of drag anchor penetration using the material point method</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Robert E. Bird, William M. Coombs, Michael J. Brown, Charles E. Augarde, Yaseen U. Sharif, Giuliano Pretti, Catriona Macdonald, Duncan Stevens and 1 others</div>
+                <div class="paper-abstract">Drag embedment anchors are a key threat to buried subsea linear infrastructure, such as power/data cables and pipelines. For cables, selecting a burial depth is a compromise between protecting the cable from anchor strike and the increased cost of deeper installation. This presents an efficient large deformation, elasto-plastic Material Point Method-based soil-structure interaction predictive tool for the estimation of anchor penetration based on Cone Penetration Test (CPT) site investigation data. The tool builds on earlier work by the authors supplemented by three developments: modelling assemblies of rigid bodies (necessary for articulated anchors), a partitioned domain approach to enable accurate and efficient modelling of long anchor pulls and an improved means of modelling rotational inertia. The tool is validated against scaled physical tests conducted in a geotechnical centrifuge on sands with a range of relative densities with good agreement across the tested conditions. Numerical simulations identify key issues with the UK Cable Burial Risk Assessment (CBRA) approach for estimating anchor penetration and reveal the potentially non-conservatism of the CBRA framework for sandy seabeds. The numerical model enables site-specific anchor-penetration assessment along cable routes and can be used to evaluate the performance of different anchor designs and sizes in varied soil conditions.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">03 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03496v1" target="_blank" rel="noopener">Constraint-Preserving High-Order Compact OEDG Method for Spherically Symmetric Einstein-Euler System</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Yuchen Huang, Manting Peng, Kailiang Wu</div>
+                <div class="paper-abstract">Numerical simulation of the spherically symmetric Einstein--Euler (EE) system faces severe challenges due to the stringent physical admissibility constraints of relativistic fluids and the geometric singularities inherent in metric evolution. This paper proposes a high-order Constraint-Preserving (CP) compact Oscillation-Eliminating Discontinuous Galerkin (cOEDG) method specifically tailored to address these difficulties. The method integrates a scale-invariant oscillation-eliminating mechanism [M. Peng, Z. Sun, K. Wu, Math. Comp., 94: 1147--1198, 2025] into a compact Runge--Kutta DG framework. By characterizing the convex invariant region of the hydrodynamic subsystem with general barotropic equations of state, we prove that the proposed scheme preserves physical realizability (specifically, positive density and subluminal velocity) directly in terms of conservative variables, thereby eliminating the need for complex primitive-variable checks. To ensure the geometric validity of the spacetime, we introduce a bijective transformation of the metric potentials. Rather than evolving the constrained metric components directly, the scheme advances unconstrained auxiliary variables whose inverse mapping automatically enforces strict positivity and asymptotic bounds without any limiters. Combined with a compatible high-order boundary treatment, the resulting CPcOEDG method exhibits robust stability and design-order accuracy in capturing strong gravity-fluid interactions, as demonstrated by simulations of black hole accretion and relativistic shock waves.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">03 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03447v1" target="_blank" rel="noopener">Neutrino-dominated relativistic shocked accretion flow around rotating black hole: implications for short gamma-ray bursts</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Amit Kumar, Sayan Chakrabarti, Santabrata Das</div>
+                <div class="paper-abstract">We investigate the physical properties of the central engine powering gamma-ray bursts (GRBs), modelled as a stellar-mass black hole accreting via a neutrino-dominated accretion flow (NDAF). By solving the governing hydrodynamic equations, we obtain global transonic NDAF solutions featuring shock transitions and examine their role in powering GRB energetics. The NDAF solutions are explored over a broad range of black hole parameters, including its mass ($M_{\rm BH}$) and spin ($a_{\rm k}$), and accretion rate ($\dot{M}$). We find that shocked NDAFs can naturally account for the observed diversity in GRB energy output. Incorporating results from numerical simulations of binary neutron star and black hole-neutron star mergers, we estimate the remnant black hole mass and spin parameters for the predicted range of post-merger disk mass ($M_{\rm disk}$). Our analysis reveals that small-mass black holes with relatively low spin values can adequately reproduce the luminosities of short GRBs (SGRBs), whereas identical GRB luminosities can also be achieved for more massive black holes possessing higher spin values. Finally, we uncover a robust correlation between the black hole spin and disk mass such that $M_{\rm disk}$ decreases with increasing $a_{\rm k}$, remaining largely independent of the black hole mass ($M_{\rm BH}$) powering GRBs.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">03 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03320v1" target="_blank" rel="noopener">A relative trace formula identity for non-tempered spherical varieties</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Chen Wan</div>
+                <div class="paper-abstract">In this paper, motivated by some previous works in residue method and the recent theory of the relative Langlands duality, we prove a relative trace formula identity that compares the period integral of non-tempered spherical varieties with the period integral of a tempered spherical varieties associated to a Levi subgroup. This allows us to incorporate numerous relative trace formula comparisons studied during the last four decades under the relative Langlands duality framework. We will also propose a conjectural comparison for general non-tempered Hamiltonian spaces.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-date">02 December 2025</div>
@@ -330,6 +405,21 @@
             <article class="paper">
                 <div class="paper-date">02 December 2025</div>
                 <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03120v1" target="_blank" rel="noopener">Enhanced slow magnetic-Coriolis waves with magnetic field orthogonal to rotation axis</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Raviraj Narayan Shinde, Ghanesh Narasimhan</div>
+                <div class="paper-abstract">We consider an isolated Gaussian velocity vortex perturbation in an otherwise quiescent, electrically conducting, and rotating fluid permeated by a uniform magnetic field $\bf{B}$. Studies suggest a presence of strong azimuthal wave motions on the timescale of centuries within the Earth's liquid outer core at higher latitudes. To understand these long-period oscillations, we focus on magnetostrophic waves, a slow component of magnetic-Coriolis waves with $\bf{B}$ orthogonally aligned with the rotation vector $\bfΩ$, which replicate the field lines in the azimuthal direction. We present an analytical solution to the magnetic-Coriolis wave equation in Cartesian coordinates. Later, with numerical solution, we validate our analytical estimates and show that magnetostrophic waves travel relatively faster along the magnetic field when $\bf{B} \perp \bfΩ$ compared with the case when both are aligned. The study confirms that with a magnetic field $\bf{B}$ orthogonally aligned to the rotation vector $\bfΩ$, wave vectors satisfying the condition $\bfΩḑot\bf{k} \approx 0$, travel with Alfvén velocities along the magnetic field lines as a component of inertial-Alfvén waves. The timescales on which Alfvén waves travel are relatively short, and it is also less likely that inertial-Alfvén waves will be sustained inside the core at higher latitudes i̧tep{Davidson2017}. This study shows that, excluding the inertial-Alfvén waves contribution ($k_z\neq 0$), there exists intensified magnetostrophic wave propagation when $\bf{B} \perp \bfΩ$, which can explain the strong periodic oscillations on the time scales of centuries along the azimuthal field at higher latitudes. Results show persistence of the magnetostrophic waves despite the lower Lehnert number $Le$, suggesting the plausible existence of a low-intensity azimuthal magnetic field in the Earth's core.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">02 December 2025</div>
+                <div class="paper-title">
                     <a href="https://arxiv.org/abs/2512.02462v1" target="_blank" rel="noopener">Bayesian Probability Fusion for Multi-AP Collaborative Sensing in Mobile Networks</a>
                 </div>
                 <div class="abstract-section">
@@ -355,6 +445,21 @@
                 </div>
                 <div class="paper-authors">Marios Kalomenopoulos, Jiaming Zhuge</div>
                 <div class="paper-abstract">Fast Radio Bursts (FRBs) have become an indispensable tool for studying the Universe's ionisation properties, as well as its cosmological parameters. This is achieved by analysing their diffuse dispersion measure (${\rm DM}_{\rm diff}$) as a function of redshift. However, this requires an integration along the line-of-sight, which is time-consuming. In this work, we derive an analytical approximation formula for ${\rm DM}_{\rm diff}$ for flat, $Λ$CDM and $w$CDM universes. We show that our approximation works well for the ranges $0.01 \leq z \leq 2$, $0.2 \leq Ω_m \leq 1.0$ and $-3.0 \leq w \leq -0.5$, with relative fractional error to a numerically evaluated ${\rm DM}_{\rm diff}$ always smaller than $3.5\ %$, in the worst case scenario, and in most cases smaller than $0.5\ %$. Moreover, the approximation is more than $15$ ($2$) times faster than the numerical solution of $Λ$CDM ($w$CDM). Therefore, we hope that it could be a useful tool for the FRB community.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">02 December 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2512.03104v1" target="_blank" rel="noopener">Tau--Function Multilinear Hierarchy of the Tomimatsu--Sato Spacetime: A Gravitational Realization of the YTSF Integrable Structure</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Takeshi Fukuyama</div>
+                <div class="paper-abstract">The Tomimatsu--Sato (TS) family generalizes the Kerr black hole to higher multipole order $δ$ and has long been regarded as algebraically complicated without any clear integrability. We show instead that stationary axisymmetric vacuum Einstein equations, when the Ernst potential is written as a $τ$--ratio $\mathcal{E}=τ_1/τ_0$, admit a universal decomposition of the Ernst numerator into a cubic part containing all second derivatives and a quartic <em>gradient envelope</em>. The cubic sector can be written in terms of $Z_3$--symmetric trilinear Hirota operators, revealing a hidden integrable structure. For $δ=2$, using the explicit Tomimatsu--Sato polynomials, we verify that this trilinear sector coincides with a Yu--Toda--Sasa--Fukuyama (YTSF) equation-type kernel. Thus the TS geometry forms a gravitational realization of a multilinear $τ$--function hierarchy in stationary axisymmetric general relativity.</div>
             </article>
 
             <article class="paper">
@@ -661,6 +766,21 @@
                 <div class="paper-date">27 November 2025</div>
                 <div class="paper-title">
                     <a href="https://arxiv.org/abs/2511.22356v1" target="_blank" rel="noopener">Net Charge Accretion in Magnetized Kerr Black Holes</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Ethan Berreby, Avner Okun, Shahar Hadar, Amos Ori</div>
+                <div class="paper-abstract">We investigate the charging process of a rotating Kerr black hole of mass $M$ and angular momentum $J$ immersed in a stationary, axisymmetric, asymptotically uniform magnetic field of strength $B_{0}$. In Wald's classic analysis (Wald 1974), which was based on the assumption of vanishing injection energy, the black hole was predicted to acquire a universal "saturation charge" $Q_{\mathrm{w}}=2B_{0}J$. However, the physical mechanism that sets the saturation charge must ultimately be governed by the competition between the absorption rates of positively and negatively charged particles. Motivated by this observation, we revisit the problem in the framework of a simple accretion model, where two dilute, equivalent fluxes of charged particles of opposite signs are injected from infinity along the magnetic field lines. The problem then reduces to that of individual particle motion in the electromagnetic field of the magnetized Kerr black hole. Using a combination of numerical and analytical tools, we determine the domains of absorption and establish both lower and upper bounds on the corresponding absorption cross sections. At $Q=Q_\mathrm{w}$ these bounds reveal a systematic difference between the two charge signs. In particular, for sufficiently strong magnetic fields, the lower bound on the absorption cross section for the "attracted" charge exceeds the upper bound for the "repelled" one. This charge accretion imbalance (which we find to become extreme at the limit of large $B_{0}$) indicates a persistent net charge accretion at $Q=Q_{\mathrm{w}}$, implying that the actual saturation charge must differ from Wald's charge $Q_{\mathrm{w}}$.</div>
+            </article>
+
+            <article class="paper">
+                <div class="paper-date">27 November 2025</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2511.22356v2" target="_blank" rel="noopener">Net Charge Accretion in Magnetized Kerr Black Holes</a>
                 </div>
                 <div class="abstract-section">
                     <div class="abstract-toggle">
