@@ -1,5 +1,20 @@
 [
   {
+    "title": "High-overtone ringdown fits: start time, no-hair tests, and correlations",
+    "authors": [
+      "Erin Coleman",
+      "Eliot Finch"
+    ],
+    "abstract": "Overtones are known to improve the performance of fits to the ringdown, both in numerical-relativity simulations and gravitational-wave observations. Although the overtone frequencies are a concrete prediction of general relativity, it remains an open question whether they are excited to the extent that fits would suggest. In this work, we take a pragmatic approach and investigate the practical utility of each additional overtone in extracting information from the ringdown. We look at the dependence of the ringdown start time on the number of overtones, and the feasibility of detecting deviations from general relativity in the ringdown frequencies. We suggest that there is no clear \"maximum\" overtone, but rather the utility of each additional overtone decreases compared to the one before. Finally, we perform Bayesian parameter estimation (as opposed to least-squares fits) to obtain posterior distributions on the overtone amplitudes and phases, allowing us to investigate their correlation structure. Due to strong correlations it becomes increasingly hard to measure individual amplitudes and phases for the highest overtones. However, we find that the joint measurement of overtone amplitudes (i.e., the correlation structure itself) is sensitive to the frequencies and decay times of even the highest overtones, possibly offering an avenue to perform consistency tests with general relativity.",
+    "arxiv_id": "2512.08098v1",
+    "published": "2025-12-08T23:15:37Z",
+    "updated": "2025-12-08T23:15:37Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Differentially rotating neutron stars with dark matter cores",
     "authors": [
       "Lorenzo Cipriani",
@@ -4946,38 +4961,6 @@
       "gr-qc",
       "physics.comp-ph",
       "physics.plasm-ph"
-    ]
-  },
-  {
-    "title": "Probing Direct Waves in Black Hole Ringdowns",
-    "authors": [
-      "Naritaka Oshita",
-      "Sizheng Ma",
-      "Yanbei Chen",
-      "Huan Yang"
-    ],
-    "abstract": "Merger gravitational waves from binary black hole coalescence carry rich information about the underlying spacetime dynamics. We analyze merger waves from comparable-mass and extreme-mass-ratio binaries, obtained from numerical relativity and black-hole perturbation theory, respectively, and argue that they are dominated by the prompt wave emissions as the black holes collide. This signal, which we refer to as the direct wave, is modulated by the plunging motion and selectively screened by the gravitational potential of the remnant black hole. The direct wave typically exhibits a time-dependent frequency and decay rate, but for high-spin remnants $(\\gtrsim0.7)$ the ergosphere renders it mode-like, with a quasi-stable instantaneous oscillation frequency close to the superradiant frequency. We further estimate its detectability in a GW150914-like system and find that the signal-to-noise ratio can exceed $\\sim 10$ with the current ground-based detector network. Our results therefore identify the direct wave as a robust observable for analyzing black hole ringdowns in current and future gravitational wave events.",
-    "arxiv_id": "2509.09165v1",
-    "published": "2025-09-11T05:48:16Z",
-    "updated": "2025-09-11T05:48:16Z",
-    "categories": [
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "Gravitational Recoil and Suppression of Super Massive Black Hole Seeds in the Early Universe",
-    "authors": [
-      "Bisweswar Sen"
-    ],
-    "abstract": "We investigate the impact of gravitational-wave (GW) recoil on the growth of supermassive black holes (SMBHs) in the early Universe. Forming 10^9 Solar Mass SMBHs by z=6 is challenging and may require hierarchical mergers of smaller seed black holes. We extend a semi-analytic seed model by explicitly incorporating GW recoil physics. Our model includes: (1) recoil velocity formulae calibrated to numerical relativity for spinning, unequal-mass BH binaries (Campanelli2007,Lousto2012); (2) assignment of spin magnitudes and orientations based on seed type (Population III remnant, stellar cluster, or direct-collapse); and (3) a retention probability scheme comparing the recoil speed to the host halo escape velocity. We find that including GW recoil reduces final SMBH masses by approximately 20-30% by z=6 and creates a population of off-nuclear (``wandering'') BHs amounting to a few percent of the total. Observable consequences include spatial offsets approximately 0.1'' and line-of-sight velocity shifts approximately 10^2-10^3 km\\s in a few-percent of high-redshift quasars. All code is publicly available at https://github.com/SMALLSCALEDEV/Black-hole-Recoil-Effects",
-    "arxiv_id": "2509.10564v2",
-    "published": "2025-09-10T16:09:24Z",
-    "updated": "2025-10-07T10:55:21Z",
-    "categories": [
-      "astro-ph.CO",
-      "astro-ph.GA",
-      "astro-ph.IM",
-      "astro-ph.SR"
     ]
   }
 ]
