@@ -2748,6 +2748,23 @@
     ]
   },
   {
+    "title": "Black-hole scattering with numerical relativity: Self-force extraction and post-Minkowskian validation",
+    "authors": [
+      "Oliver Long",
+      "Harald P. Pfeiffer",
+      "Lawrence E. Kidder",
+      "Mark A. Scheel"
+    ],
+    "abstract": "The asymptotic nature of unbound binary-black-hole encounters provides a clean method for comparing different approaches for modeling the two-body problem in general relativity. In this work, we use numerical relativity simulations of black-hole scattering, generated using the Spectral Einstein Code, to explore the self-force and post-Minkowskian expansions of the scattering angle. First, we use a set of unequal-mass simulations to extract the self-force contributions to the scattering angle. Our main result is that using information up to second-order in the symmetric mass ratio (2SF) reproduces numerical relativity within the error bars across the full range of mass-ratios, including equal mass. Next, we compare our numerical relativity results to state-of-the-art post-Minkowskian predictions at larger impact parameters than previously explored. We find good agreement in the weak-field regime and discuss the relative importance of higher-order terms.",
+    "arxiv_id": "2511.10196v2",
+    "published": "2025-11-13T11:08:39Z",
+    "updated": "2025-12-10T14:05:30Z",
+    "categories": [
+      "gr-qc",
+      "hep-th"
+    ]
+  },
+  {
     "title": "Addressable fault-tolerant universal quantum gate operations for high-rate lift-connected surface codes",
     "authors": [
       "Josias Old",
