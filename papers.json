@@ -1,5 +1,54 @@
 [
   {
+    "title": "Gravitational synchronization in bosonic dark matter admixed neutron stars",
+    "authors": [
+      "Claudio Lazarte",
+      "Nicolas Sanchis-Gual",
+      "José A. Font"
+    ],
+    "abstract": "While the search for dark matter remains a central focus of modern astrophysics and high-energy physics, neutron stars provide natural laboratories in which the interaction between dark matter and baryonic matter can be studied. In this work we model dark matter as an ultralight bosonic field, which can accrete onto the neutron star and form a composite object bound through gravity. Using long-term, numerical relativity simulations in spherical symmetry, we extract and analyze the frequency spectra of the radial oscillation modes of fermion-boson stars. Our simulations reveal that the fermionic and bosonic components synchronize through gravitational coupling, enriching their oscillation spectrum. This synchronization leads to new multi-state scalar configurations and reshapes the hierarchy of the neutron-star radial modes. We further propose a procedure to compute the values of the new dominant modes as a function of the bosonic mass, and discuss the implications for neutron-star physics and gravitational-wave astronomy.",
+    "arxiv_id": "2512.11044v1",
+    "published": "2025-12-11T19:02:54Z",
+    "updated": "2025-12-11T19:02:54Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "A well-posed BSSN-type formulation for scalar-tensor theories of gravity with second-order field equations",
+    "authors": [
+      "Harry L. H. Shum",
+      "Llibert Aresté Saló",
+      "Farid Thaalba",
+      "Miguel Bezares",
+      "Thomas P. Sotiriou"
+    ],
+    "abstract": "Recent developments in the modified harmonic and modified puncture gauges have opened new possibilities for performing stable numerical evolutions beyond General Relativity. In this work, we utilise techniques developed in the aforementioned formalisms to derive a BSSN-type formalism compatible with certain classes of modified gravity theories. As an intermediate step, we also derived modified versions of the Z4 and Z3 formalisms, thereby completing the connection between these formalisms beyond General Relativity. We then test the robustness of the new modified BSSN formalism by simulating the dynamics of black hole systems and benchmarking the results against the modified CCZ4 formulation. These developments enable the exploration of theories beyond General Relativity in many well-known Numerical Relativity codes that use different versions of the puncture gauge approach.",
+    "arxiv_id": "2512.11034v1",
+    "published": "2025-12-11T19:00:04Z",
+    "updated": "2025-12-11T19:00:04Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Impact of in-situ nuclear networks and atomic opacities on neutron star merger ejecta dynamics, nucleosynthesis, and kilonovae",
+    "authors": [
+      "Fabio Magistrelli",
+      "Sebastiano Bernuzzi",
+      "Albino Perego",
+      "Maximilian Jacobi",
+      "Christopher J. Fontes"
+    ],
+    "abstract": "Modeling binary neutron star merger (BNSM) ejecta evolution requires simulations involving hydrodynamics, nuclear reactions, and radiative processes. The impact of nuclear burning and atomic opacity is poorly understood and often treated with simplified prescriptions. We systematically investigate different treatments of nuclear heating, thermalization, and opacities in radiation-hydrodynamics simulations of BNSM ejecta and kilonova light curves. Ejecta from long-term numerical-relativity simulations are evolved to ~30 days using a 2D ray-by-ray approach. We compare simplified heating-rates, thermalization prescriptions, and gray opacities with in-situ nuclear networks (NN) that track energy deposition, and include a composition-dependent thermalization scheme and frequency-dependent, atomic-physics-based opacities. Coupling NN and hydrodynamics affects nucleosynthesis and kilonova emission. Assuming homologous expansion alters the abundance evolution and produces a narrower second $r$-process peak and a third peak shifted to higher mass numbers. Nuclear heating back-reaction delays and reddens the early emission. A constant thermalization underestimates the early luminosity and overestimates the late emission. Analytical opacities yield dimmer and redder kilonovae at early times ($t\\lesssim$ hour) and a prolonged emission at $t\\gtrsim5$ days. Resolving the first hundreds of milliseconds of hydrodynamics is essential for robust nucleosynthesis calculations, and composition-dependent thermalization and frequency-dependent, atomic opacities are needed to accurately capture the ejecta temperature and kilonova brightness and color evolution. Analytic nuclear-power fits with simplified thermalization and opacities can reproduce the density and temperature evolution of the ejecta. [Abridged].",
+    "arxiv_id": "2512.11032v1",
+    "published": "2025-12-11T19:00:02Z",
+    "updated": "2025-12-11T19:00:02Z",
+    "categories": [
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "High-overtone ringdown fits: start time, no-hair tests, and correlations",
     "authors": [
       "Erin Coleman",
@@ -4940,23 +4989,6 @@
     "updated": "2025-10-01T16:12:09Z",
     "categories": [
       "gr-qc"
-    ]
-  },
-  {
-    "title": "Analytical Perturbative Construction of Initial Data for Binary Black Holes up to Third Order in Spin and Momentum",
-    "authors": [
-      "Leyla Ogurol",
-      "Tore Boybeyi",
-      "Bayram Tekin"
-    ],
-    "abstract": "We analytically solve the constraints in General Relativity for two black holes with arbitrary momenta and spin up to third order in these parameters. We compute the location and geometry of the apparent horizon, which depend on the spins, momenta, relative orientation angles, and the separation between the black holes, and present the result in a coordinate-independent form. We also extract the ADM mass and the irreducible mass and verify their consistency. The final expressions are depicted in a coordinate-independent form. The results can be easily extended to any number of black holes and used to complement numerical relativity simulations.",
-    "arxiv_id": "2509.11144v1",
-    "published": "2025-09-14T07:27:42Z",
-    "updated": "2025-09-14T07:27:42Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE",
-      "hep-th"
     ]
   }
 ]
