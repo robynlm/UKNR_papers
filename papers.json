@@ -1,5 +1,21 @@
 [
   {
+    "title": "A critical value of the inflationary tensor-to-scalar ratio from inhomogeneous inflation",
+    "authors": [
+      "Panagiotis Giannadakis",
+      "Matthew Elley",
+      "Raphael Flauger",
+      "Eugene A. Lim"
+    ],
+    "abstract": "We show that, for a given fixed value of the number of e-folds of the homogeneous solution, inflation succeeds with order unity inhomogeneities in the initial conditions above a characteristic value of the tensor-to-scalar ratio $r$. In practice, we work with an $α$-attractor $T$-model and vary its characteristic scale $μ$, keeping the initial inhomogeneities in both gradient and kinetic fields of order unity of the inflationary energy scale. Under these conditions, and assuming 100 e-folds for the homogeneous solution, the requirement for 60 e-folds of inflation occurs at a critical characteristic scale $μ_{crit} \\approx 0.02m_{P}$, corresponding to an $r_{crit} \\approx 10^{-6}$. Since increasing the amplitude of the inhomogeneities will make inflation less robust and hence require a higher characteristic scale in order for inflation to succeed, for a given number of e-folds achieved by the homogeneous solution $r_{crit}$ is a lower bound.",
+    "arxiv_id": "2512.13673v1",
+    "published": "2025-12-15T18:57:20Z",
+    "updated": "2025-12-15T18:57:20Z",
+    "categories": [
+      "astro-ph.CO"
+    ]
+  },
+  {
     "title": "Gravitational synchronization in bosonic dark matter admixed neutron stars",
     "authors": [
       "Claudio Lazarte",

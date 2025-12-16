@@ -19,7 +19,8 @@ TARGET_AUTHORS = [
     "Katy Clough",
     "Harry L. H. Shum",
     "Miguel Bezares",
-    "Pau Figueras"
+    "Pau Figueras",
+    "Eugene A. Lim"
     # Add/remove authors as needed - use format "Last, First" or partial names
 ]
 
