@@ -1,5 +1,60 @@
 [
   {
+    "title": "Search for Gravitational Wave Memory in PPTA and EPTA Data: A Complete Signal Model",
+    "authors": [
+      "Sharon Mary Tomson",
+      "Boris Goncharov",
+      "Rutger van Haasteren",
+      "Rahul Srinivasan",
+      "Enrico Barausse",
+      "Yirong Wen",
+      "Jingbo Wang",
+      "John Antoniadis",
+      "N. D. Ramesh Bhat",
+      "Zu-Cheng Chen",
+      "Ismael Cognard",
+      "Valentina Di Marco",
+      "Huanchen Hu",
+      "Gemma H. Janssen",
+      "Michael Kramer",
+      "Wenhua Ling",
+      "Kuo Liu",
+      "Saurav Mishra",
+      "Delphine Perrodin",
+      "Andrea Possenti",
+      "Christopher J. Russell",
+      "Ryan M. Shannon",
+      "Gilles Theureau",
+      "Shuangqiang Wang"
+    ],
+    "abstract": "We perform searches for gravitational wave memory in the data of two major Pulsar Timing Array (PTA) experiments located in Europe and Australia. Supermassive black hole binaries (SMBHBs) are the primary sources of gravitational waves in PTA experiments. We develop and carry out the first search for late inspirals and mergers of these sources based on full numerical relativity waveforms with null (nonlinear) gravitational wave memory. Additionally, we search for generic bursts of null gravitational wave memory, exploring possibilities of reducing the computational cost of these searches through kernel density and normalizing flow approximation of the posteriors. We rule out the mergers of SMBHBs with a chirp mass of 10^10 Solar Mass up to 700 Mpc over 18 years of observation at 95% credibility. We rule out the observation of generic displacement memory bursts with strain amplitudes > 10^-14 in brief periods of the observation time but across the sky, or over the whole observation time but for certain preferred sky positions, at 95%$credibility.",
+    "arxiv_id": "2512.14650v1",
+    "published": "2025-12-16T18:11:59Z",
+    "updated": "2025-12-16T18:11:59Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.GA",
+      "astro-ph.HE"
+    ]
+  },
+  {
+    "title": "Stochastic Inflation in Numerical Relativity",
+    "authors": [
+      "Yoann L. Launay",
+      "Gerasimos I. Rigopoulos",
+      "E. Paul S. Shellard"
+    ],
+    "abstract": "A set of 3+1 equations for stochastic inflation incorporating all metric and scalar matter degrees of freedom, first presented in previous work, are re-derived in a gauge invariant manner. We then present numerical implementations of these stochastic equations, cast in the BSSN formulation of Numerical Relativity, demonstrating their efficacy in both a slow-roll and an ultra slow-roll scenario. We find the evolution is correctly reproduced for all the dynamical variables, and the energy and momentum constraints are well-satisfied. This demonstrates that the stochastic equations are theoretically and numerically robust and ready to be applied to a wider inflationary landscape. Our simulations result in real space realizations of the fully non-linear stochastic dynamics with gradient information retained. As a generalisation of standard stochastic inflation, inflationary numerical relativity and lattice cosmology, this work opens up the possibility for reliable predictions of non-perturbative phenomena and provides precise initial conditions for subsequent cosmological eras.",
+    "arxiv_id": "2512.14649v1",
+    "published": "2025-12-16T18:11:34Z",
+    "updated": "2025-12-16T18:11:34Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.CO",
+      "hep-th"
+    ]
+  },
+  {
     "title": "A critical value of the inflationary tensor-to-scalar ratio from inhomogeneous inflation",
     "authors": [
       "Panagiotis Giannadakis",
@@ -4990,21 +5045,6 @@
       "gr-qc",
       "astro-ph.HE",
       "nucl-th"
-    ]
-  },
-  {
-    "title": "Hybrid waveforms for precessing quasi-circular binary systems",
-    "authors": [
-      "Joan Llobera-Querol",
-      "Sascha Husa",
-      "Maria de Lluc Planas"
-    ],
-    "abstract": "The demand for long and accurate gravitational waveforms is increasing as we prepare for the next generation of detectors and seek to improve current waveform models. However, numerical relativity waveforms, while highly accurate, are often too short for these applications due to their high computational cost. Hybrid waveforms, which stitch together gravitational wave signals from different modeling approaches, provide a way to generate complete inspiral-merger-ringdown signals. While hybridization is well-established for aligned-spin systems, precession introduces additional complexities due to gauge ambiguities, frame dependence, or spin dynamics. Here we study the challenges associated with alignment of precessing waveforms and present a systematic approach for constructing hybrid waveforms of precessing quasi-circular systems. Our approach relies on minimal assumptions about the merger waveforms and employs the quadrupole-aligned frame to mitigate mode-mixing. Our method is designed to be robust and broadly applicable, imposing minimal constraints on the input waveforms. This framework expands the applicability of hybridization techniques, facilitating flexible hybrid construction for parameter estimation, model calibration, and gravitational-wave data analysis.",
-    "arxiv_id": "2509.14107v2",
-    "published": "2025-09-17T15:52:05Z",
-    "updated": "2025-10-01T16:12:09Z",
-    "categories": [
-      "gr-qc"
     ]
   }
 ]
