@@ -5026,25 +5026,5 @@
     "categories": [
       "gr-qc"
     ]
-  },
-  {
-    "title": "Neutron star evolution with BDNK viscous hydrodynamics framework",
-    "authors": [
-      "Harry L. H. Shum",
-      "Fernando Abalos",
-      "Yago Bea",
-      "Miguel Bezares",
-      "Pau Figueras",
-      "Carlos Palenzuela"
-    ],
-    "abstract": "The recently proposed first-order viscous relativistic hydrodynamics formulation by Bemfica, Disconzi, Noronha, and Kovtun (commonly known as the BDNK formulation) has been shown to be causal, stable, strongly hyperbolic, and thus locally well-posed. It is now a viable new option for modelling out-of-equilibrium effects in fluids, and has attracted wide attention in its potential applications to astrophysical systems. In this work, we present the first non-linear numerical simulation of spherically symmetric neutron stars using the BDNK formulation under the Cowling approximation. Using a simplified equation of state, we show that stable evolutions can be constructed within a restricted parameter space up to the simulation time we explored. From these simulations, we analyse the frequency content of the quasi-normal modes and the decay rate of the fundamental mode. This analysis serves as a first step towards constructing a fully consistent model of neutron stars using the BDNK formulation.",
-    "arxiv_id": "2509.15303v1",
-    "published": "2025-09-18T18:00:02Z",
-    "updated": "2025-09-22T00:03:12Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE",
-      "nucl-th"
-    ]
   }
 ]
