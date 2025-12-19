@@ -1,5 +1,60 @@
 [
   {
+    "title": "A finite temperature framework for quark matter with color-superconducting phases",
+    "authors": [
+      "Hosein Gholami",
+      "Marco Hofmann",
+      "Débora Mroczek",
+      "Jacquelyn Noronha-Hostler"
+    ],
+    "abstract": "Current observations of neutron stars and measurements of gravitational waves only provide constraints on the zero temperature ($T=0$) equation of state (EoS) of dense matter. The detection of the post-merger gravitational-wave signal from a binary neutron star merger would additionally provide access to finite-temperature properties of the EoS which contain more information about the composition and the interactions of dense matter than the cold EoS alone. In particular deconfined quark matter may be probed by its characteristic finite temperature effects. This is especially the case for color-superconducting phases, in which the quasiparticle contribution to the thermal pressure is exponentially suppressed at low temperatures. Here we develop a new finite $T$ framework to model the thermal EoS for dense quark matter based on the cold quark matter EoS which is useful for numerical relativity simulations. We test the validity of the framework against a three-flavor NJL mean-field calculation, both with and without diquark pairing. We find that even for the complicated phase diagram of the NJL model including multiple different phases the framework is accurate to the few percent level for temperatures up to $T\\sim 50\\,$MeV.",
+    "arxiv_id": "2512.16720v1",
+    "published": "2025-12-18T16:22:18Z",
+    "updated": "2025-12-18T16:22:18Z",
+    "categories": [
+      "astro-ph.HE",
+      "gr-qc",
+      "hep-ph",
+      "nucl-th"
+    ]
+  },
+  {
+    "title": "Modeling the frequency-domain ringdown amplitude of comparable-mass mergers with greybody factors",
+    "authors": [
+      "Romeo Felice Rosato",
+      "Sophia Yi",
+      "Emanuele Berti",
+      "Paolo Pani"
+    ],
+    "abstract": "It was recently shown that, in a binary coalescence, the greybody factor of the remnant black hole modulates the post-merger ringdown signal. In this work, we demonstrate that a simple four-parameter model based on the greybody factor accurately reproduces the frequency-domain amplitude of a large set of comparable-mass, aligned-spin numerical relativity waveforms from the SXS catalog, achieving mismatches of order ${\\cal O}(10^{-5})$ and improving existing models by roughly two orders of magnitude. We also identify the optimal initial frequency for applying the model in the frequency domain and provide analytical fits of the model parameters in terms of the progenitor masses and aligned spins. Our results pave the way for new consistency tests of the ringdown phase, complementary to traditional black hole spectroscopy.",
+    "arxiv_id": "2512.15877v1",
+    "published": "2025-12-17T19:00:11Z",
+    "updated": "2025-12-17T19:00:11Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "hep-ph"
+    ]
+  },
+  {
+    "title": "GRHayL: a modern, infrastructure-agnostic, extensible library for GRMHD simulations",
+    "authors": [
+      "Samuel Cupp",
+      "Leonardo R. Werneck",
+      "Terrence Pierre Jacques",
+      "Samuel Tootle",
+      "Zachariah B. Etienne"
+    ],
+    "abstract": "Interpreting multi-messenger signals from neutron stars and black holes requires reliable general-relativistic magnetohydrodynamics (GRMHD) simulations across rapidly evolving high-performance-computing platforms, yet key algorithms are routinely rewritten within infrastructure-specific numerical-relativity codes, hindering verification and reuse. We present the General Relativistic Hydrodynamics Library (GRHayL), a modular, infrastructure-agnostic GR(M)HD library providing conservative-to-primitive recovery, reconstruction, flux/source and induction operators, equations of state, and neutrino leakage through an intuitive interface. GRHayL refactors and extends the mature IllinoisGRMHD code into reusable pointwise and stencil-wise kernels, enabling rapid development and cross-code validation in diverse frameworks, while easing adoption of new microphysics and future accelerators. We implement the same kernels in the Einstein Toolkit (Carpet and CarpetX) and BlackHoles@Home, demonstrating portability with minimal duplication. Validation combines continuous-integration unit tests with cross-infrastructure comparisons of analytic GRMHD Riemann problems, dynamical Tolman-Oppenheimer-Volkoff evolutions, and binary neutron-star mergers, showing comparable or improved behavior over legacy IllinoisGRMHD and established Einstein Toolkit codes.",
+    "arxiv_id": "2512.15846v1",
+    "published": "2025-12-17T19:00:00Z",
+    "updated": "2025-12-17T19:00:00Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Search for Gravitational Wave Memory in PPTA and EPTA Data: A Complete Signal Model",
     "authors": [
       "Sharon Mary Tomson",
