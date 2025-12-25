@@ -5029,21 +5029,5 @@
     "categories": [
       "gr-qc"
     ]
-  },
-  {
-    "title": "A Python Interface for Numerical Relativity Program AMSS-NCKU",
-    "authors": [
-      "Chen-Kai Qiao",
-      "Yi Zheng",
-      "Zhou-Jian Cao"
-    ],
-    "abstract": "Numerical relativity has produced profound and extensive impacts on modern astrophysics and gravitational-wave astronomy. In this work, we develop a Python interface for the numerical relativity program AMSS-NCKU. This interface enables the automation of initializing and executing the AMSS-NCKU simulations, as well as the automated visualization of the output data. To show the practical utility of this Python interface, we present two representative examples of numerical relativity simulations (the binary and triple black hole merger processes), obtaining well-behaved stable numerical results and the expected physical behaviors for black hole systems. The Python operational interface significantly reduces the operational complexity of the AMSS-NCKU simulation workflow, lowering the technical barriers for freshman users. Keywords: Numerical Relativity, Gravitational Waves, Black Hole Physics, Python",
-    "arxiv_id": "2509.21652v2",
-    "published": "2025-09-25T22:12:52Z",
-    "updated": "2025-10-13T00:57:56Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
   }
 ]
