@@ -1,5 +1,48 @@
 [
   {
+    "title": "AInsteinBench: Benchmarking Coding Agents on Scientific Repositories",
+    "authors": [
+      "Titouan Duston",
+      "Shuo Xin",
+      "Yang Sun",
+      "Daoguang Zan",
+      "Aoyan Li",
+      "Shulin Xin",
+      "Kai Shen",
+      "Yixiao Chen",
+      "Qiming Sun",
+      "Ge Zhang",
+      "Jiashuo Liu",
+      "Huan Zhou",
+      "Jingkai Liu",
+      "Zhichen Pu",
+      "Yuanheng Wang",
+      "Bo-Xuan Ge",
+      "Xin Tong",
+      "Fei Ye",
+      "Zhi-Chao Zhao",
+      "Wen-Biao Han",
+      "Zhoujian Cao",
+      "Yueran Zhao",
+      "Weiluo Ren",
+      "Qingshen Long",
+      "Yuxiao Liu",
+      "Anni Huang",
+      "Yidi Du",
+      "Yuanyuan Rong",
+      "Jiahao Peng"
+    ],
+    "abstract": "We introduce AInsteinBench, a large-scale benchmark for evaluating whether large language model (LLM) agents can operate as scientific computing development agents within real research software ecosystems. Unlike existing scientific reasoning benchmarks which focus on conceptual knowledge, or software engineering benchmarks that emphasize generic feature implementation and issue resolving, AInsteinBench evaluates models in end-to-end scientific development settings grounded in production-grade scientific repositories. The benchmark consists of tasks derived from maintainer-authored pull requests across six widely used scientific codebases, spanning quantum chemistry, quantum computing, molecular dynamics, numerical relativity, fluid dynamics, and cheminformatics. All benchmark tasks are carefully curated through multi-stage filtering and expert review to ensure scientific challenge, adequate test coverage, and well-calibrated difficulty. By leveraging evaluation in executable environments, scientifically meaningful failure modes, and test-driven verification, AInsteinBench measures a model's ability to move beyond surface-level code generation toward the core competencies required for computational scientific research.",
+    "arxiv_id": "2512.21373v1",
+    "published": "2025-12-24T08:11:11Z",
+    "updated": "2025-12-24T08:11:11Z",
+    "categories": [
+      "cs.SE",
+      "cs.AI",
+      "cs.PL"
+    ]
+  },
+  {
     "title": "A finite temperature framework for quark matter with color-superconducting phases",
     "authors": [
       "Hosein Gholami",
@@ -4985,23 +5028,6 @@
     "categories": [
       "gr-qc",
       "astro-ph.CO"
-    ]
-  },
-  {
-    "title": "Community Analysis of Social Virtual Reality Based on Large-Scale Log Data of a Commercial Metaverse Platform",
-    "authors": [
-      "Hiroto Tsutsui",
-      "Takefumi Hiraki",
-      "Yuichi Hiroi",
-      "Shoichi Hasegawa"
-    ],
-    "abstract": "This study quantitatively analyzes the structural characteristics of user communities within Social Virtual Reality (Social VR) platforms supporting head-mounted displays (HMDs), based on large-scale log data. By detecting and evaluating community structures from data on substantial interactions (defined as prolonged co-presence in the same virtual space), we found that Social VR platforms tend to host numerous, relatively small communities characterized by strong internal cohesion and limited inter-community connections. This finding contrasts with the large-scale, broadly connected community structures typically observed in conventional Social Networking Services (SNS). Furthermore, we identified a user segment capable of mediating between communities, despite these users not necessarily having numerous direct connections. We term this user segment `community hoppers' and discuss their characteristics. These findings contribute to a deeper understanding of the community structures that emerge within the unique communication environment of Social VR and the roles users play within them.",
-    "arxiv_id": "2509.23654v1",
-    "published": "2025-09-28T05:40:22Z",
-    "updated": "2025-09-28T05:40:22Z",
-    "categories": [
-      "cs.HC",
-      "cs.SI"
     ]
   }
 ]
