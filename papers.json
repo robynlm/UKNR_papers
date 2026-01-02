@@ -4968,20 +4968,5 @@
       "gr-qc",
       "astro-ph.HE"
     ]
-  },
-  {
-    "title": "3+1 GRHD simulations of NSBH mergers with light black holes using public codes",
-    "authors": [
-      "S. Gomez Lopez",
-      "B. Giacomazzo",
-      "F. Pannarale"
-    ],
-    "abstract": "Recent observations of compact binary systems have provided evidence for black holes with masses below standard expectations. When paired with neutron stars (NSs), such low-mass black holes (BHs) have the potential to be detected by future multimessenger campaigns and could unveil unknown features of the BH population in the universe. Given the importance of accurate models for matched-filtering searches and Bayesian parameter estimation in discoveries of this sort, attention has renewed on the limitations of low-mass NSBH merger models and on the downstream impact of such limitations on gravitational-wave data analysis. Previous numerical relativity (NR) studies have revealed discrepancies in the predicted merger time, as well as more general mismatches and dephasing between phenomenological models and high-resolution simulations. The simulation presented here was motivated by these findings and illustrates how publicly available tools can be applied to this specific science case, towards informing next-generation, more refined gravitational-wave and kilonovae models. Here, we summarize the setup of a high-resolution general relativistic hydrodynamics simulation of an equal-mass NSBH system performed entirely with public codes (Einstein Toolkit and FUKA) and a finite-temperature equation of state. The results we show include the $(\\ell,m)=(2,2)$ strain and 2D snapshots of the system undergoing tidal disruption and early postmerger disk formation. The system evolved for $\\sim 4$ orbits while the $L_2$ norm of the Hamiltonian constraint remained below $6\\times10^{-7}$ throughout the inspiral prior to growing near merger time.",
-    "arxiv_id": "2510.02881v1",
-    "published": "2025-10-03T10:37:08Z",
-    "updated": "2025-10-03T10:37:08Z",
-    "categories": [
-      "gr-qc"
-    ]
   }
 ]
