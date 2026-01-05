@@ -1,5 +1,20 @@
 [
   {
+    "title": "A 3+1 Perturbative Approach to the Cosmic Dynamo Equation",
+    "authors": [
+      "Juan F. Bravo",
+      "Leonardo Castañeda",
+      "Héctor J. Hortúa"
+    ],
+    "abstract": "In this work, we analyze the evolution of PMFs within a perturbed Friedmann-Lemaître-Robertson-Walker (FLRW) spacetime using the formalisms of Numerical Relativity (NR). We apply the 3+1 decomposition to first-order cosmological perturbations to derive the cosmological dynamo equation under the kinematic-dynamo approximation. Our objective is to study the interaction between the seed magnetic field and the growing modes of scalar perturbations, whose associated velocity fields are evolved numerically using the software \\texttt{Einstein Toolkit} and \\texttt{FLRWSolver}. We find that these velocity fields effectively drive the amplification of the PMF, demonstrating that the extent of this growth is dependent on the electrical conductivity of the cosmic medium. Our findings provide a computational description linking primordial magnetogenesis to the evolution of magnetic seeds, ultimately explaining the ubiquity of large-scale magnetic fields in the universe",
+    "arxiv_id": "2601.00774v1",
+    "published": "2026-01-02T18:09:53Z",
+    "updated": "2026-01-02T18:09:53Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "High order numerical discretizations of the Einstein-Euler equations in the Generalized Harmonic formulation",
     "authors": [
       "Stefano Muzzolon",
@@ -4940,30 +4955,6 @@
     "arxiv_id": "2510.06393v1",
     "published": "2025-10-07T19:15:20Z",
     "updated": "2025-10-07T19:15:20Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
-  },
-  {
-    "title": "Biased parameter inference of eccentric, spin-precessing binary black holes",
-    "authors": [
-      " Divyajyoti",
-      "Isobel M. Romero-Shaw",
-      "Vaishak Prasad",
-      "Kaushik Paul",
-      "Chandra Kant Mishra",
-      "Prayush Kumar",
-      "Akash Maurya",
-      "Michael Boyle",
-      "Lawrence E. Kidder",
-      "Harald P. Pfeiffer",
-      "Mark A. Scheel"
-    ],
-    "abstract": "While the majority of gravitational wave (GW) events observed by the LIGO and Virgo detectors are consistent with mergers of binary black holes (BBHs) on quasi-circular orbits, some events are also consistent with non-zero orbital eccentricity, indicating that the binaries could have formed via dynamical interactions. Moreover, there may be GW events which show support for spin-precession, eccentricity, or both. In this work, we study the interplay of spins and eccentricity on the parameter estimation of GW signals from BBH mergers. We inject eccentric signals with no spins, aligned spins, and precessing spins using hybrids, TEOBResumS-DALI, and new Numerical Relativity (NR) simulations, respectively, and study the biases in the posteriors of source parameters when these signals are recovered with a quasi-circular precessing-spin waveform model, as opposed to an aligned-spin eccentric waveform model. We find significant biases in the source parameters, such as chirp mass and spin-precession ($\\chi_p$), when signals from highly-eccentric BBHs are recovered with a quasi-circular waveform model. Moreover, we find that for signals with both eccentricity and spin-precession effects, Bayes factor calculations confirm that an eccentric, aligned-spin model is preferred over a quasi-circular precessing-spin model. Our study highlights the complex nature of GW signals from eccentric, precessing-spin binaries and the need for readily usable inspiral-merger-ringdown eccentric, spin-precessing waveform models for unbiased parameter estimation.",
-    "arxiv_id": "2510.04332v1",
-    "published": "2025-10-05T19:29:41Z",
-    "updated": "2025-10-05T19:29:41Z",
     "categories": [
       "gr-qc",
       "astro-ph.HE"
