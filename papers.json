@@ -1,5 +1,21 @@
 [
   {
+    "title": "Fast frequency-domain phenomenological modeling of eccentric aligned-spin binary black holes",
+    "authors": [
+      "Antoni Ramos-Buades",
+      "Quentin Henry",
+      "Maria Haney"
+    ],
+    "abstract": "We present the IMRPhenomXE frequency-domain phenomenological waveform model for the dominant mode of inspiral-merger-ringdown non-precessing binary black holes in elliptical orbits. IMRPhenomXE extends the quasi-circular IMRPhenomXAS waveform model for the dominant $(\\ell, |m|) =$ (2,2) modes to eccentric binaries. For the inspiral part, orbit-averaged equations of motion within the quasi-Keplerian parametrization up to third post-Newtonian order, including spin effects, are evolved, and the waveform modes are computed using the stationary phase approximation on eccentricity expanded expressions up to $\\mathcal{O}(e^{12})$. The model assumes circularization at merger-ringdown, where it adopts the underlying quasicircular IMRPhenomXAS baseline. We show that IMRPhenomXE reduces to the accurate IMPhenomXAS model in the quasi-circular limit. Compared against 186 public numerical relativity waveforms from the Simulating eXtreme Spacetimes catalog with initial eccentricities up to $~0.8$, IMRPhenomXE provides values of unfaithfulness below $3\\%$ for $72\\%$ of simulations with initial eccentricities below 0.4. For larger eccentricities, the unfaithfulness degrades up to $\\gtrsim 10\\%$ due to the underlying small eccentricity expansions and additional modelling approximations. In terms of speed, IMRPhenomXE outperforms any of the existing inspiral-merger-ringdown eccentric waveform models. We demonstrate the efficiency, robustness, and modularity of IMRPhenomXE through injections into zero noise and parameter-estimation analyses of gravitational-wave events, showing that IMRPhenomXE is a ready-to-use waveform model for gravitational-wave astronomy in the era of rapidly growing event catalogs.",
+    "arxiv_id": "2601.03340v1",
+    "published": "2026-01-06T19:00:01Z",
+    "updated": "2026-01-06T19:00:01Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Binary neutron star mergers with SPHINCS_BSSN: temperature-dependent equations of state and damping of constraint violations",
     "authors": [
       "Bhaskar Biswas",
@@ -4939,23 +4955,6 @@
     "categories": [
       "astro-ph.CO",
       "gr-qc"
-    ]
-  },
-  {
-    "title": "The influence of the mean anomaly on the dynamical quantities of binary black hole mergers in eccentric orbits",
-    "authors": [
-      "Hao Wang",
-      "Bin Liu",
-      "Yuan-Chuan Zou",
-      "Qing-Wen Wu"
-    ],
-    "abstract": "In studies of binary black hole (BBH) mergers in eccentric orbits, the mean anomaly, traditionally regarded as less significant than eccentricity, has been thought to encode only the orbital phase, leading to the assumption that it exerts minimal influence on the dynamics of eccentric mergers. In a previous investigation, we identified consistent oscillations in dynamical quantities peak luminosity $L_{\\text{peak}}$, remnant mass $M_{\\text{rem}}$, spin $\\alpha_{\\text{rem}}$, and recoil velocity $V_{\\text{rem}}$ in relation to the initial eccentricity $e_0$. These oscillations are associated with integer orbital cycles within a phenomenological framework. In this paper, we aim to explore the underlying physical nature of these oscillations through gravitational waveforms. Our examination of remnant mass and spin reveals that while the initial ADM mass $M_{\\mathrm{ADM}}$ and orbital angular momentum $L_0$ exhibit gradual variations with $e_0$, the radiated energy $E_{\\text{rad}}$ and angular momentum $L_{\\text{rad}}$ display oscillatory patterns akin to those observed in $M_{\\text{rem}}$ and $\\alpha_{\\text{rem}}$. By decomposing the waveforms into three distinct phases inspiral, late inspiral to merger, and ringdown, we demonstrate that these oscillations persist across all phases, suggesting a common origin. Through a comparative analysis of $E_{\\text{rad}}$ and $L_{\\text{rad}}$ derived from numerical relativity (NR), post-Newtonian (PN) waveforms, and orbital-averaged PN fluxes during the inspiral phase, we identify the initial mean anomaly $l_0$ as the source of the observed oscillations. ...",
-    "arxiv_id": "2510.08105v1",
-    "published": "2025-10-09T11:41:49Z",
-    "updated": "2025-10-09T11:41:49Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
     ]
   }
 ]
