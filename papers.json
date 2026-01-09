@@ -1,5 +1,25 @@
 [
   {
+    "title": "Probing millisecond magnetar formation in binary neutron star mergers through X-ray follow-up of gravitational wave alerts",
+    "authors": [
+      "Clara Plasse",
+      "Alexis Reboul-Salze",
+      "Jérome Guilet",
+      "Diego Götz",
+      "Nicolas Leroy",
+      "Raphaël. Raynaud",
+      "Matteo Bugli",
+      "Tito Dal Canton"
+    ],
+    "abstract": "The nature of the remnant of a binary neutron star (BNS) merger is uncertain. Though certainly a black hole (BH) in the cases of the most massive BNSs, X-ray lightcurves from gamma-ray burst (GRB) afterglows suggest a neutron star (NS) as a viable candidate for both the merger remnant as well as the central engine of these transients. When jointly observed with gravitational waves (GWs), X-ray lightcurves from BNS merger events could provide critical constraints on the remnant's nature. We aim to assess the current and future capabilities to detect a NS remnant through X-ray observations following GW detections. To this end, we simulate GW signals from BNS mergers and the subsequent X-ray emission from newborn millisecond magnetars. The GW detectability is modeled for both current and next-generation interferometers, while the X-ray emission is reproduced using a dedicated numerical code that models magnetar spin-down and ejecta dynamics informed by numerical-relativity simulations. In our simulations, 2% - 16% of BNS mergers form millisecond magnetars. Among these, up to 70% could be detectable, amounting to up to 1 millisecond magnetar detection per year with SVOM/MXT-like instruments during the LIGO Virgo KAGRA LIGO India (LVKI) O5 run, with optimal detectability occurring about 2 hours post-merger. For next-generation GW interferometers, this rate could increase by up to three orders of magnitude, with peak detectability 3 to 4 hours post-merger. We also explore how the magnetar's magnetic field strength and observer viewing angle affect detectability and discuss optimized observational strategies. Although more likely with upcoming GW interferometers, detecting the spin-down emission of a millisecond magnetar may already be within reach, warranting sustained theoretical and observational efforts given the profound implications for mergers, GRBs, and NS physics of a single detection.",
+    "arxiv_id": "2601.04990v1",
+    "published": "2026-01-08T14:48:12Z",
+    "updated": "2026-01-08T14:48:12Z",
+    "categories": [
+      "astro-ph.HE"
+    ]
+  },
+  {
     "title": "Fast frequency-domain phenomenological modeling of eccentric aligned-spin binary black holes",
     "authors": [
       "Antoni Ramos-Buades",
