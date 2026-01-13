@@ -1,5 +1,20 @@
 [
   {
+    "title": "Merger Dynamics of N+N Co-planar Particles in Newton Gravitation",
+    "authors": [
+      "Qi Su",
+      "Baicheng Zhang",
+      "Ding-Fang Zeng"
+    ],
+    "abstract": "We model the inspiral and merger dynamics of two co-planar rings in Newtonian mechanics with GR motivated corrections and illustrate their similarity with those of black hole binary systems on the orbital plane. Our simulation reveals a banana-shape deformation of the ``black holes'' involved, and a typhoon-like spiral structure in the merger product. Using an eXact One-Body approach, we compute the full gravitational waveform of this process and qualitatively reproduce results consistent with those of numerical relativity. Our simulation offers a transparent link between the feature of gravitational waveforms and the internal structure of black holes, thus a complementary interpretation of physics behind numerical relativity.",
+    "arxiv_id": "2601.07500v1",
+    "published": "2026-01-12T13:00:58Z",
+    "updated": "2026-01-12T13:00:58Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "A nonlinear voice from GW250114 ringdown",
     "authors": [
       "Yi-Fan Wang",
