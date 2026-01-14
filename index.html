@@ -292,7 +292,7 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2026-01-13 06:37:51 UTC</div>
+            <div class="last-updated">Last updated: 2026-01-14 06:37:47 UTC</div>
         </div>
         
         <main>
@@ -4705,81 +4705,6 @@
                 </div>
                 <div class="paper-authors">Anna Neuweiler, Henrique Gieg, Henrik Rose, Hauke Koehn, Ivan Markin, Federico Schianchi, Liam Brodie, Alexander Haber and 3 others</div>
                 <div class="paper-abstract">The rich phenomenology of binary neutron star mergers offers a unique opportunity to test general relativity, investigate matter at supranuclear densities, and learn more about the origin of heavy elements. As multi-messenger sources, they emit both gravitational waves and electromagnetic radiation across several frequency bands. The interpretation of these signals relies heavily on accurate numerical-relativity simulations that incorporate the relevant microphysical processes. Using the latest updates of the BAM code, we perform general-relativistic radiation magnetohydrodynamic simulations of binary neutron star mergers with two different spin configurations. We adopt a state-of-the-art equation of state based on relativistic mean-field theory developed for dense matter in neutron star mergers. To capture both dynamical ejecta and secular outflows from magnetic and neutrino-driven winds, we evolve the systems up to $\sim 100\ \rm ms$ after the merger at considerably high resolution with a grid spacing of $Δ x \approx 93\ \rm m$ across the neutron stars. Our results show that the non-spinning configuration undergoes a more violent merger, producing more ejecta with lower electron fraction and higher velocities, while the spinning configuration forms a larger disk due to its higher angular momentum. Although the initial magnetic field amplification within $\lesssim 10\ \rm ms$ after merger is similar in both systems, the non-spinning system reaches stronger magnetic fields and higher energies at later times. For a detailed view of the multi-messenger observables, we extract the gravitational-wave signal and compute nucleosynthesis yields, the expected kilonova and afterglow light curves from our ejecta profiles.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">15 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.14127v1" target="_blank" rel="noopener">Axisymmetric hydrodynamics in numerical relativity: treating coordinate singularity, artificial heating and modeling MHD instabilities</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Pavan Chawhan, Matthew D. Duez, Francois Foucart, Patrick Chi-Kit Cheong, Nishad Muhammed</div>
-                <div class="paper-abstract">Two-dimensional axisymmetric simulations of binary neutron star (BNS) merger remnant are a cheap alternative to 3D simulations. To maintain realism for secular timescales, simulations must avoid accumulated errors from drifts in conserved quantities and artificial heating, and they must model turbulent transport in a way that remains plausible throughout the evolution. It is also crucial to avoid numerical artifacts due to the polar coordinate axis singularity. Methods that behave well near the axis often break flux-conservative form of the hydrodynamic equations, resulting in significant drifts in conserved quantities. We present a flux-conservative scheme that maintains smoothness near the axis without sacrificing conservative formulation of the equations or incurring drifts in conserved global quantities. We compare the numerical performance of different treatments of the hydrodynamic equations when evolving a hypermassive neutron star resembling the remnant of a BNS merger. These simulations demonstrate that the new scheme combines the axis smoothness of non-conservative methods with the mass and angular momentum conservation of other conservative methods on $\sim$ $10^2$ ms timescales of viscous and neutrino-driven evolution. Because fluid profiles remain smooth in the remnant interior, it is possible to remove artificial heating by evolving the entropy density. We show how physical heating and cooling terms can be easily calculated from source terms of the conservative evolution variables and demonstrate our implementation. Finally, we discuss and implement improvements to the effective viscosity scheme to better model the effect of magnetohydrodynamic instabilities as the remnant evolves.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">15 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.13988v1" target="_blank" rel="noopener">Boson Stars in $D \ge 4$ Dimensions: Stability, Oscillation Frequencies, and Dynamical Evolutions</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Gareth Arturo Marks, Abdullah Al Zaif</div>
-                <div class="paper-abstract">We construct spherically symmetric boson star solutions in $D \in \{4,5,6\}$ spacetime dimensions, considering the effects of both a quartic self-interaction term and a solitonic potential. We then perform a perturbative analysis, generalizing the pulsation equations to arbitrary dimension and potential and hence demonstrating the existence of radially stable higher-dimensional boson star solutions. We supplement these linear results with perturbed and unperturbed nonlinear dynamical evolutions in spherical symmetry, obtained using a dimensional reduction that allows us to evolve spacetimes with any number of background dimensions using the same numerical framework, while preserving the full gauge freedom of standard approaches to numerical relativity. The results of these evolutions indicate that the solutions we identify as perturbatively stable are indeed generally stable to nonlinear spherical dynamics.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">15 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.13965v1" target="_blank" rel="noopener">MHDuet : a high-order General Relativistic Radiation MHD code for CPU and GPU architectures</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Carlos Palenzuela, Miguel Bezares, Steven Liebling, Federico Schianchi, Julio Fernando Abalos, Ricard Aguilera-Miret, Carles Bona, Juan Antonio Carretero and 7 others</div>
-                <div class="paper-abstract">We present MHDuet, an open source evolution code for general relativistic magnetohydrodynamics with neutrino transport. The code solves the full set of Einstein equations coupled to a relativistic, magnetized fluid with an M1 neutrino radiation scheme using advanced techniques, including adaptive mesh and large eddy simulation techniques, to achieve high accuracy. The Simflowny platform generates the code from a high-level specification of the computational system, producing code that runs with either the SAMRAI or AMReX infrastructure. The choice of AMReX enables compilation and execution on GPUs, running an order of magnitude faster than on CPUs at the node level. We validate the code against benchmark tests, reproducing previous results obtained with the SAMRAI infrastructure, and demonstrate its capabilities with simulations of neutron stars employing realistic tabulated equations of state. Resolution studies clearly demonstrate convergence faster than second order in the grid spacing. Scaling tests reveal excellent strong and weak scaling performance when running on GPUs. The goal of the code is to provide a powerful tool for studying the dynamics of compact objects within multi-messenger astrophysics.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">15 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.13965v2" target="_blank" rel="noopener">MHDuet : a high-order General Relativistic Radiation MHD code for CPU and GPU architectures</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Carlos Palenzuela, Miguel Bezares, Steven Liebling, Federico Schianchi, Julio Fernando Abalos, Ricard Aguilera-Miret, Carles Bona, Juan Antonio Carretero and 7 others</div>
-                <div class="paper-abstract">We present MHDuet, an open source evolution code for general relativistic magnetohydrodynamics with neutrino transport. The code solves the full set of Einstein equations coupled to a relativistic, magnetized fluid with an M1 neutrino radiation scheme using advanced techniques, including adaptive mesh and large eddy simulation techniques, to achieve high accuracy. The Simflowny platform generates the code from a high-level specification of the computational system, producing code that runs with either the SAMRAI or AMReX infrastructure. The choice of AMReX enables compilation and execution on GPUs, running an order of magnitude faster than on CPUs at the node level. We validate the code against benchmark tests, reproducing previous results obtained with the SAMRAI infrastructure, and demonstrate its capabilities with simulations of neutron stars employing realistic tabulated equations of state. Resolution studies clearly demonstrate convergence faster than second order in the grid spacing. Scaling tests reveal excellent strong and weak scaling performance when running on GPUs. The goal of the code is to provide a powerful tool for studying the dynamics of compact objects within multi-messenger astrophysics.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">15 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.13958v1" target="_blank" rel="noopener">Transition-to-plunge self-force waveforms with a spinning primary</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Loïc Honet, Lorenzo Küchler, Adam Pound, Geoffrey Compère</div>
-                <div class="paper-abstract">With the upcoming third-generation gravitational-wave detectors comes the need to build complete, faithful, and fast waveform models for asymmetric-mass-ratio compact binaries. Most efforts within the self-force community have focused on modeling these binaries' inspiral regime, but for ground-based detectors the systems' final merger can represent the dominant part of the signal. Recent work by three of us has extended the multiscale self-force framework through the transition-to-plunge and merger-ringdown regimes for nonspinning binaries. In this paper, we generalize the next-to-next-to-leading-order transition-to-plunge waveform model to include the spin of the primary black hole. We also improve the construction of composite inspiral-transition waveform models by performing a change of variables on the binary's mechanical phase space during the transition to plunge. We provide detailed discussions of our numerical implementation and comparisons with numerical relativity simulations.</div>
             </article>
 
         </main>
