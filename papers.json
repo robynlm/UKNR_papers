@@ -4813,38 +4813,5 @@
       "gr-qc",
       "astro-ph.HE"
     ]
-  },
-  {
-    "title": "Hybrid waveform model for asymmetric spinning binaries: Self-force meets post-Newtonian theory",
-    "authors": [
-      "Loïc Honet",
-      "Adam Pound",
-      "Geoffrey Compère"
-    ],
-    "abstract": "We develop and implement a new hybrid waveform model for quasicircular inspirals with a spinning primary and nonspinning secondary, excluding the merger and ringdown. This model, which is a core component of the more extensive WaSABI-C model, consistently assembles all available first-order self-force and post-Newtonian results through a hybridization procedure without any tuning to numerical relativity, making it particularly suited for intermediate to extreme mass ratios. For almost all masses and primary spins, the resulting hybrid model significantly improves the faithfulness of both post-Newtonian and adiabatic self-force waveforms considered separately. We provide detailed comparisons with 50 simulations from the SXS catalog with mass ratios ranging from 1 to 15 and primary spins ranging from -0.8 to 0.8. The hybrid model improves the median mismatch against numerical relativity waveforms by a factor of 2000 with respect to adiabatic waveforms and 40 with respect to post-Newtonian waveforms. The mismatches are comparable to those obtained from the SEOBNRv5EHM model in the quasicircular limit over most of the parameter space covered by NR simulations.",
-    "arxiv_id": "2510.16114v1",
-    "published": "2025-10-17T18:00:41Z",
-    "updated": "2025-10-17T18:00:41Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
-  },
-  {
-    "title": "Post-adiabatic self-force waveforms: slowly spinning primary and precessing secondary",
-    "authors": [
-      "Josh Mathews",
-      "Barry Wardell",
-      "Adam Pound",
-      "Niels Warburton"
-    ],
-    "abstract": "Recent progress in gravitational self-force theory has led to the development of a first post-adiabatic (1PA) waveform model for nonspinning, quasicircular compact binaries [Phys. Rev. Lett. 130, 241402 (2023)]. In this paper, we extend that model to allow for a slowly spinning primary black hole and a generic, precessing spin on the secondary object, restricting to the case of small misalignment between the primary spin and the orbital angular momentum. We demonstrate excellent agreement between our waveforms and fully nonlinear numerical relativity simulations for mass ratios $q\\gtrsim 5$ and primary spins $|\\chi_1|\\lesssim 0.1$ and arbitrary secondary spin $\\chi_2 \\lesssim 1$. In particular we present the re-summed 1PAT1R waveform model, which significantly improves the accuracy of the original 1PAT1 waveforms for comparable masses and increasing primary spin. Our models are publicly available in the WaSABI package.",
-    "arxiv_id": "2510.16113v1",
-    "published": "2025-10-17T18:00:38Z",
-    "updated": "2025-10-17T18:00:38Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
   }
 ]
