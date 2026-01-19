@@ -4777,41 +4777,5 @@
     "categories": [
       "gr-qc"
     ]
-  },
-  {
-    "title": "Scalar fields around black hole binaries in LIGO-Virgo-KAGRA",
-    "authors": [
-      "Soumen Roy",
-      "Rodrigo Vicente",
-      "Josu C. Aurrekoetxea",
-      "Katy Clough",
-      "Pedro G. Ferreira"
-    ],
-    "abstract": "Light scalar particles arise naturally in many extensions of the Standard Model and are well-motivated dark matter candidates. Gravitational interactions near black holes can trigger the growth of dense scalar configurations that, if sustained during inspiral, alter binary dynamics and imprint signatures on gravitational-wave signals. Detecting such effects would provide a novel probe of fundamental physics and dark matter. Here we develop a semi-analytic waveform model for binaries in scalar environments, validated against numerical relativity simulations, and apply it in a Bayesian analysis of the LIGO-Virgo-KAGRA catalog. Our results set physically meaningful upper bounds on scalar environments around compact binaries. When superradiance priors are included, we find tentative evidence for such an environment in GW190728 with $\\ln B_{\\mathrm{vac}}^{\\mathrm{env}} \\approx 3.5$, which would correspond to the existence of a light scalar field with mass $\\sim 10^{-12}\\,\\mathrm{eV}$.",
-    "arxiv_id": "2510.17967v1",
-    "published": "2025-10-20T18:00:02Z",
-    "updated": "2025-10-23T00:29:09Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.CO",
-      "astro-ph.HE",
-      "hep-ph"
-    ]
-  },
-  {
-    "title": "Contribution from Nonlinear Quasi-normal Modes in GW250114",
-    "authors": [
-      "Yuxin Yang",
-      "Changfu Shi",
-      "Yi-Ming Hu"
-    ],
-    "abstract": "We report evidence for nonlinear gravitational effects in the ringdown signal of gravitational wave event GW250114. Using Bayesian inference, we find that the inclusion of a nonlinear quasi-normal mode (220Q), a second-order harmonic predicted by general relativity, is statistically favored over the standard linear model (440 mode) when analyzing the post-merger oscillations. Specifically, models incorporating the 220Q mode yield higher Bayes factors than those including only the linear 440 mode, and produce remnant black hole parameters (mass and spin) more consistent with full numerical relativity simulations. This suggests that nonlinear mode coupling contributes significantly to the ringdown phase, opening a new avenue to probe strong-field gravity beyond linear approximations.",
-    "arxiv_id": "2510.16903v1",
-    "published": "2025-10-19T15:58:24Z",
-    "updated": "2025-10-19T15:58:24Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
   }
 ]
