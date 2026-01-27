@@ -1,5 +1,19 @@
 [
   {
+    "title": "Euler-Poincaré Formulation of Barotropic Fluids Coupled with ADM Gravity",
+    "authors": [
+      "Allan Louie"
+    ],
+    "abstract": "This paper develops a geometric mechanics framework for the reduction of general relativistic hydrodynamic variational principles, from the variation of worldlines approach in 4D spacetime to 3-dimensional Eulerian descriptions. We consider a self-gravitating, barotropic fluid and obtain the Euler-Poincaré equations of the system by Lagrangian reduction. Using the decomposition of general relativity into 3 + 1 dimensions, with a direction of time defined, the gauge invariance of the action over spacetime diffeomorphisms permits a 3-dimensional description of the fluid diffeomorphism by gauge fixing. The configuration space thus mirrors the Newtonian case, and by employing the Euler-Poincaré theorem, we derive the Eulerian equations of motion, in the same form as the PDEs from Newtonian fluid dynamics. The equations of motion are then derived, where the fluid variables are measured in a separate frame of reference from the variables involving gravity. Furthermore, the general relativistic barotropic fluid exhibits a Kelvin-Noether circulation conservation, which we derive in both the inertial and moving frames of reference. Finally, potential applications to Numerical Relativity are discussed.",
+    "arxiv_id": "2601.17104v1",
+    "published": "2026-01-23T17:02:45Z",
+    "updated": "2026-01-23T17:02:45Z",
+    "categories": [
+      "math-ph",
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Cosmological Budget of Entropy from Merging Black Holes",
     "authors": [
       "Siyuan Chen",
@@ -4731,20 +4745,6 @@
     "updated": "2025-10-29T07:06:01Z",
     "categories": [
       "cs.CV"
-    ]
-  },
-  {
-    "title": "BOB the (Waveform) Builder: Optimizing Analytical Black-Hole Binary Merger Waveforms",
-    "authors": [
-      "Anuj Kankani",
-      "Sean T. McWilliams"
-    ],
-    "abstract": "The Backwards-One-Body (BOB) model provides a fully analytical and physically motivated description of the merger-ringdown gravitational radiation emanating from a black hole binary merger. We perform a comprehensive validation of BOB for the dominant $(2,2)$ mode of quasi-circular and non-precessing systems, assessing its accuracy against numerical relativity (NR) simulations, state-of-the-art waveform models, and a sum of quasinormal modes. We demonstrate that BOB most accurately describes the gravitational wave news, achieving accuracy comparable to highly-calibrated Effective-One-Body and NR surrogate models. Because BOB is minimally tuned to NR catalogs, it retains a high level of accuracy in regions of the parameter space sparsely covered by current NR catalogs. BOB yields an analytic link between the amplitude of the fundamental quasinormal mode and the peak amplitude of the News, which we verify to within the errors of a surrogate ringdown model. We identify a flavor of BOB that requires only the remnant mass and spin, yet matches the accuracy of models that fit a sum of many overtones. Lastly, we show that BOB accurately models both the mass and current quadrupole waves for superkick configurations, contrary to a claim in the literature, and explain why that study was not actually implementing BOB as it has been defined. Our findings establish BOB as a powerful tool for gravitational wave analysis, for providing independent tests of NR-calibrated models, and for better understanding the underlying physics of the merger. We provide a companion python package, gwBOB, allowing for the easy construction of various flavors of BOB and comparison to NR waveforms.",
-    "arxiv_id": "2510.25012v1",
-    "published": "2025-10-28T22:21:34Z",
-    "updated": "2025-10-28T22:21:34Z",
-    "categories": [
-      "gr-qc"
     ]
   }
 ]

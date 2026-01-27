@@ -292,10 +292,25 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2026-01-26 06:40:52 UTC</div>
+            <div class="last-updated">Last updated: 2026-01-27 06:39:19 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-date">23 January 2026</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2601.17104v1" target="_blank" rel="noopener">Euler-Poincaré Formulation of Barotropic Fluids Coupled with ADM Gravity</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Allan Louie</div>
+                <div class="paper-abstract">This paper develops a geometric mechanics framework for the reduction of general relativistic hydrodynamic variational principles, from the variation of worldlines approach in 4D spacetime to 3-dimensional Eulerian descriptions. We consider a self-gravitating, barotropic fluid and obtain the Euler-Poincaré equations of the system by Lagrangian reduction. Using the decomposition of general relativity into 3 + 1 dimensions, with a direction of time defined, the gauge invariance of the action over spacetime diffeomorphisms permits a 3-dimensional description of the fluid diffeomorphism by gauge fixing. The configuration space thus mirrors the Newtonian case, and by employing the Euler-Poincaré theorem, we derive the Eulerian equations of motion, in the same form as the PDEs from Newtonian fluid dynamics. The equations of motion are then derived, where the fluid variables are measured in a separate frame of reference from the variables involving gravity. Furthermore, the general relativistic barotropic fluid exhibits a Kelvin-Noether circulation conservation, which we derive in both the inertial and moving frames of reference. Finally, potential applications to Numerical Relativity are discussed.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-date">20 January 2026</div>
@@ -4600,21 +4615,6 @@
                 </div>
                 <div class="paper-authors">Kim Shin Seong, Mingi Kwon, Jaeseok Jeong, Youngjung Uh</div>
                 <div class="paper-abstract">Rectified flow is a generative model that learns smooth transport mappings between two distributions through an ordinary differential equation (ODE). Unlike diffusion-based generative models, which require costly numerical integration of a generative ODE to sample images with state-of-the-art quality, rectified flow uses an iterative process called reflow to learn smooth and straight ODE paths. This allows for relatively simple and efficient generation of high-quality images. However, rectified flow still faces several challenges. 1) The reflow process requires a large number of generative pairs to preserve the target distribution, leading to significant computational costs. 2) Since the model is typically trained using only generated image pairs, its performance heavily depends on the 1-rectified flow model, causing it to become biased towards the generated data. In this work, we experimentally expose the limitations of the original rectified flow and propose a novel approach that incorporates real images into the training process. By preserving the ODE paths for real images, our method effectively reduces reliance on large amounts of generated data. Instead, we demonstrate that the reflow process can be conducted efficiently using a much smaller set of generated and real images. In CIFAR-10, we achieved significantly better FID scores, not only in one-step generation but also in full-step simulations, while using only of the generative pairs compared to the original method. Furthermore, our approach induces straighter paths and avoids saturation on generated images during reflow, leading to more robust ODE learning while preserving the distribution of real images.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">28 October 2025</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2510.25012v1" target="_blank" rel="noopener">BOB the (Waveform) Builder: Optimizing Analytical Black-Hole Binary Merger Waveforms</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Anuj Kankani, Sean T. McWilliams</div>
-                <div class="paper-abstract">The Backwards-One-Body (BOB) model provides a fully analytical and physically motivated description of the merger-ringdown gravitational radiation emanating from a black hole binary merger. We perform a comprehensive validation of BOB for the dominant $(2,2)$ mode of quasi-circular and non-precessing systems, assessing its accuracy against numerical relativity (NR) simulations, state-of-the-art waveform models, and a sum of quasinormal modes. We demonstrate that BOB most accurately describes the gravitational wave news, achieving accuracy comparable to highly-calibrated Effective-One-Body and NR surrogate models. Because BOB is minimally tuned to NR catalogs, it retains a high level of accuracy in regions of the parameter space sparsely covered by current NR catalogs. BOB yields an analytic link between the amplitude of the fundamental quasinormal mode and the peak amplitude of the News, which we verify to within the errors of a surrogate ringdown model. We identify a flavor of BOB that requires only the remnant mass and spin, yet matches the accuracy of models that fit a sum of many overtones. Lastly, we show that BOB accurately models both the mass and current quadrupole waves for superkick configurations, contrary to a claim in the literature, and explain why that study was not actually implementing BOB as it has been defined. Our findings establish BOB as a powerful tool for gravitational wave analysis, for providing independent tests of NR-calibrated models, and for better understanding the underlying physics of the merger. We provide a companion python package, gwBOB, allowing for the easy construction of various flavors of BOB and comparison to NR waveforms.</div>
             </article>
 
         </main>
