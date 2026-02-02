@@ -1,5 +1,25 @@
 [
   {
+    "title": "A Maximum Entropy Conjecture for Black Hole Mergers",
+    "authors": [
+      "Monica Rincon-Ramirez",
+      "Nathan K. Johnson-McDaniel",
+      "Eugenio Bianchi",
+      "Ish Gupta",
+      "Vaishak Prasad",
+      "B. S. Sathyaprakash"
+    ],
+    "abstract": "The final state of a binary black hole merger is predicted with high precision by numerical relativity, but could there be a simple thermodynamic principle within general relativity that governs the selection of the remnant? Using post-Newtonian relations between the mass M (including the binding energy) and angular momentum J of quasi-circular, nonspinning binaries, we uncover a puzzling result: When the binary's instantaneous M and J are mapped to those of a hypothetical Kerr black hole, the corresponding entropy exhibits a maximum during the evolution. This maximum occurs at values of M and J strikingly close to those of the final remnant predicted by numerical relativity. Consistent behavior is observed when using the relation between M and J obtained from numerical relativity evolution. Although this procedure is somewhat ad hoc, the agreement between the masses and spins of the final state obtained from numerical relativity and the results of this maximum entropy procedure is remarkable, with agreement to within a few percent when using either post-Newtonian or numerical relativity results for M and J. These findings allow us to propose an entropy maximization conjecture for binary black hole mergers, hinting that thermodynamic principles may govern the selection of the final black hole state.",
+    "arxiv_id": "2601.22388v1",
+    "published": "2026-01-29T22:55:26Z",
+    "updated": "2026-01-29T22:55:26Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "hep-th"
+    ]
+  },
+  {
     "title": "Numerical simulations of black hole-neutron star mergers with equal and near-equal mass ratios",
     "authors": [
       "Ivan Markin",
@@ -4210,188 +4230,6 @@
     "categories": [
       "quant-ph",
       "cond-mat.quant-gas"
-    ]
-  },
-  {
-    "title": "A Joint Variational Framework for Multimodal X-ray Ptychography and Fluorescence Reconstruction",
-    "authors": [
-      "Eric Zou",
-      "Elle Buser",
-      "Zichao Wendy Di",
-      "Yuanzhe Xi"
-    ],
-    "abstract": "Recovering high-resolution structural and compositional information from coherent X-ray measurements involves solving coupled, nonlinear, and ill-posed inverse problems. Ptychography reconstructs a complex transmission function from overlapping diffraction patterns, while X-ray fluorescence provides quantitative, element-specific contrast at lower spatial resolution. We formulate a joint variational framework that integrates these two modalities into a single nonlinear least-squares problem with shared spatial variables. This formulation enforces cross-modal consistency between structural and compositional estimates, improving conditioning and promoting stable convergence. The resulting optimization couples complementary contrast mechanisms (i.e., phase and absorption from ptychography, elemental composition from fluorescence) within a unified inverse model. Numerical experiments on simulated data demonstrate that the joint reconstruction achieves faster convergence, sharper and more quantitative reconstructions, and lower relative error compared with separate inversions. The proposed approach illustrates how multimodal variational formulations can enhance stability, resolution, and interpretability in computational X-ray imaging.",
-    "arxiv_id": "2511.02153v1",
-    "published": "2025-11-04T00:44:46Z",
-    "updated": "2025-11-04T00:44:46Z",
-    "categories": [
-      "math.NA",
-      "math.OC"
-    ]
-  },
-  {
-    "title": "Bayesian spatio-temporal weighted regression for integrating missing and misaligned environmental data",
-    "authors": [
-      "Yovna Junglee",
-      "Vianey Leos Barajas",
-      "Meredith Franklin"
-    ],
-    "abstract": "Estimating environmental exposures from multi-source data is central to public health research and policy. Integrating data from satellite products and ground monitors are increasingly used to produce exposure surfaces. However, spatio-temporal misalignment often induced from missing data introduces substantial uncertainty and reduces predictive accuracy. We propose a Bayesian weighted predictor regression framework that models spatio-temporal relationships when predictors are observed on irregular supports or have substantial missing data, and are not concurrent with the outcome. The key feature of our model is a spatio-temporal kernel that aggregates the predictor over local space-time neighborhoods, built directly into the likelihood, eliminating any separate gap-filling or forced data alignment stage. We introduce a numerical approximation using a Voronoi-based spatial quadrature combined with irregular temporal increments for estimation under data missingness and misalignment. We showed that misspecification of the spatial and temporal lags induced bias in the mean and parameter estimates, indicating the need for principled parameter selection. Simulation studies confirmed these theoretical findings, where careful tuning was critical to control bias and achieve accurate prediction, while the proposed quadrature performed well under severe missingness. As an illustrative application, we estimated fine particulate matter (PM$_{2.5}$) in northern California using satellite-derived aerosol optical depth (AOD) and wildfire smoke plume indicators. Relative to a traditional collocated linear model, our approach improved out-of-sample predictive performance (over 50\\% increase in R$^2$), reduced uncertainty, and yielded robust temporal predictions and spatial surface estimation. Our framework is extensible to additional spatio-temporally varying covariates and other kernel families.",
-    "arxiv_id": "2511.02149v1",
-    "published": "2025-11-04T00:40:32Z",
-    "updated": "2025-11-04T00:40:32Z",
-    "categories": [
-      "stat.ME",
-      "stat.AP"
-    ]
-  },
-  {
-    "title": "Explicit invariant-preserving integration of differential equations using homogeneous projection",
-    "authors": [
-      "Benjamin Kwanen Tapley"
-    ],
-    "abstract": "We develop a general framework for numerically solving differential equations while preserving invariants. As in standard projection methods, we project an arbitrary base integrator onto an invariant-preserving manifold, however, our method exploits homogeneous symmetries to evaluate the projection exactly and in closed form. This yields explicit invariant-preserving integrators for a broad class of nonlinear systems, as well as pseudo-invariant-preserving schemes capable of preserving multiple invariants to arbitrarily high precision. The resulting methods are high-order and introduce negligible computational overhead relative to the base solver. When incorporated into adaptive solvers such as Dormand-Prince 8(5,3), they provide error-controlled, invariant-preserving, high-order time-stepping schemes. Numerical experiments on double-pendulum and Kepler ODEs as well as semidiscretised KdV and Camassa-Holm PDEs demonstrate substantial improvements in both accuracy and efficiency over standard approaches.",
-    "arxiv_id": "2511.02131v1",
-    "published": "2025-11-03T23:48:13Z",
-    "updated": "2025-11-03T23:48:13Z",
-    "categories": [
-      "math.NA",
-      "physics.comp-ph"
-    ]
-  },
-  {
-    "title": "Euler-Heisenberg action for fermions coupled to gauge and axial vectors: Hessian diagonalization, sector classification, and applications",
-    "authors": [
-      "Lucas Pereira de Souza"
-    ],
-    "abstract": "We derive the closed-form one-loop Euler--Heisenberg effective actions for Dirac fermions coupled simultaneously to classical electromagnetic vector and massive pseudo-vector backgrounds within a controlled quasi-static approximation. Through complete diagonalization of the functional Hessian, we systematically delineate the parameter space into distinct sectors characterized by stability properties and spectral structure. We identify subspaces that encompass and extend results from previous studies into a broader class, admitting propagating axial fields as physically viable regimes; strikingly, we note a sector presenting chirality-asymmetric instability. This addresses long-standing questions regarding the well-defined nature, diagonalizability, and stability of the model. From the effective action, we derive novel nonperturbative pair-production rates for simultaneously propagating electromagnetic and axial vector backgrounds; remarkably, we find pronounced vacuum stabilization compared to previous results. Furthermore, we demonstrate that this framework allows for a unified derivation of the chiral anomaly structures in the general case and show that the electromagnetic coupling induces instanton-like configurations for the axial field, even when it is not a fundamental gauge field. As a proof-of-concept, we analyze a cosmological toy model of baryogenesis driven by an axial vector, providing numerical estimates that support the viability of this hypothesis. Additionally, we outline qualitative predictions for Weyl/Dirac semi-metals and briefly discuss potential applications in related phenomena, such as the Strong-CP problem.",
-    "arxiv_id": "2511.02118v2",
-    "published": "2025-11-03T23:18:20Z",
-    "updated": "2025-11-14T06:55:03Z",
-    "categories": [
-      "hep-th",
-      "astro-ph.CO",
-      "cond-mat.other",
-      "gr-qc",
-      "hep-ph"
-    ]
-  },
-  {
-    "title": "Towards Multi-Fidelity Scaling Laws of Neural Surrogates in CFD",
-    "authors": [
-      "Paul Setinek",
-      "Gianluca Galletti",
-      "Johannes Brandstetter"
-    ],
-    "abstract": "Scaling laws describe how model performance grows with data, parameters and compute. While large datasets can usually be collected at relatively low cost in domains such as language or vision, scientific machine learning is often limited by the high expense of generating training data through numerical simulations. However, by adjusting modeling assumptions and approximations, simulation fidelity can be traded for computational cost, an aspect absent in other domains. We investigate this trade-off between data fidelity and cost in neural surrogates using low- and high-fidelity Reynolds-Averaged Navier-Stokes (RANS) simulations. Reformulating classical scaling laws, we decompose the dataset axis into compute budget and dataset composition. Our experiments reveal compute-performance scaling behavior and exhibit budget-dependent optimal fidelity mixes for the given dataset configuration. These findings provide the first study of empirical scaling laws for multi-fidelity neural surrogate datasets and offer practical considerations for compute-efficient dataset generation in scientific machine learning.",
-    "arxiv_id": "2511.01830v1",
-    "published": "2025-11-03T18:37:38Z",
-    "updated": "2025-11-03T18:37:38Z",
-    "categories": [
-      "cs.LG",
-      "physics.flu-dyn"
-    ]
-  },
-  {
-    "title": "Measurement Strategies and Estimation Precision in Quantum Network Tomography",
-    "authors": [
-      "Athira Kalavampara Raghunadhan",
-      "Matheus Guedes De Andrade",
-      "Don Towsley",
-      "Indrakshi Dey",
-      "Daniel Kilper",
-      "Nicola Marchetti"
-    ],
-    "abstract": "This work investigates measurement strategies for link parameter estimation in Quantum Network Tomography (QNT), where network links are modeled as depolarizing quantum channels distributing Werner states. Three distinct measurement schemes are analyzed: local Z-basis measurements (LZM), joint Bell-state measurements (JBM), and pre-shared entanglement-assisted measurements (PEM). For each scheme, we derive the probability distributions of measurement outcomes and examine how noise in the distributed states influences estimation precision. Closed-form expressions for the Quantum Fisher Information Matrix (QFIM) are obtained, and the estimation precision is evaluated through the Quantum Cramer-Rao Bound (QCRB). Numerical analysis reveals that the PEM scheme achieves the lowest QCRB, offering the highest estimation accuracy, while JBM provides a favorable balance between precision and implementation complexity. The LZM method, although experimentally simpler, exhibits higher estimation error relative to the other schemes; however, it outperforms JBM in high-noise regimes for single-link estimation. We further evaluate the estimation performance on a four-node star network by comparing a JBM-only configuration with a hybrid configuration that combines JBM and LZM. When two monitors are used, the JBM-only strategy outperforms the hybrid approach across all noise regimes. However, with three monitors, it achieves a lower QCRB only in low-noise regimes with heterogeneous links. The results establish a practical basis for selecting measurement strategies in experimental quantum networks, enabling more accurate and scalable link parameter estimation under realistic noise conditions.",
-    "arxiv_id": "2511.01657v1",
-    "published": "2025-11-03T15:19:48Z",
-    "updated": "2025-11-03T15:19:48Z",
-    "categories": [
-      "quant-ph"
-    ]
-  },
-  {
-    "title": "On the phase of the de Sitter density of states",
-    "authors": [
-      "Yiming Chen",
-      "Douglas Stanford",
-      "Haifeng Tang",
-      "Zhenbin Yang"
-    ],
-    "abstract": "The one-loop gravitational path integral around Euclidean de Sitter space $S^D$ has a complex phase that casts doubt on a state counting interpretation. Recently, it was proposed to cancel this phase by including an observer. We explore this proposal in the case where the observer is a charged black hole in equilibrium with the de Sitter horizon. We compute the phase of the one-loop determinant within a two-dimensional dilaton gravity reduction, using both numerical and analytical methods. Our results interpolate between previous studies of a probe geodesic observer and the Nariai solution. We also revisit the prescription for going from the Euclidean path integral to the state-counting partition function, finding a positive sign in the final density of states.",
-    "arxiv_id": "2511.01400v1",
-    "published": "2025-11-03T09:49:22Z",
-    "updated": "2025-11-03T09:49:22Z",
-    "categories": [
-      "hep-th",
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "Universal Barrier Functions for Safety and Stability of Constrained Nonlinear Systems",
-    "authors": [
-      "Vrushabh Zinage",
-      "Efstathios Bakolas"
-    ],
-    "abstract": "In this paper, we address the problem of synthesizing safe and stabilizing controllers for nonlinear systems subject to complex safety specifications and input constraints. We introduce the Universal Barrier Function (UBF), a single continuously differentiable scalar-valued function that encodes both stability and safety criteria while accounting for input constraints. Using the UBF, we formulate a Quadratic Program (UBF-QP) to generate control inputs that are both safe and stabilizing under input constraints. We demonstrate that the UBF-QP is feasible if a UBF exists. Furthermore, under mild conditions, we prove that a UBF always exists. The proposed framework is then extended to systems with higher relative degrees. Finally, numerical simulations illustrate the effectiveness of our proposed approach.",
-    "arxiv_id": "2511.01067v1",
-    "published": "2025-11-02T20:23:12Z",
-    "updated": "2025-11-02T20:23:12Z",
-    "categories": [
-      "eess.SY"
-    ]
-  },
-  {
-    "title": "HEATNETs: Explainable Random Feature Neural Networks for High-Dimensional Parabolic PDEs",
-    "authors": [
-      "Kyriakos Georgiou",
-      "Gianluca Fabiani",
-      "Constantinos Siettos",
-      "Athanasios N. Yannacopoulos"
-    ],
-    "abstract": "We deal with the solution of the forward problem for high-dimensional parabolic PDEs with random feature (projection) neural networks (RFNNs). We first prove that there exists a single-hidden layer neural network with randomized heat-kernels arising from the fundamental solution (Green's functions) of the heat operator, that we call HEATNET, that provides an unbiased universal approximator to the solution of parabolic PDEs in arbitrary (high) dimensions, with the rate of convergence being analogous to the ${O}(N^{-1/2})$, where $N$ is the size of HEATNET. Thus, HEATNETs are explainable schemes, based on the analytical framework of parabolic PDEs, exploiting insights from physics-informed neural networks aided by numerical and functional analysis, and the structure of the corresponding solution operators. Importantly, we show how HEATNETs can be scaled up for the efficient numerical solution of arbitrary high-dimensional parabolic PDEs using suitable transformations and importance Monte Carlo sampling of the integral representation of the solution, in order to deal with the singularities of the heat kernel around the collocation points. We evaluate the performance of HEATNETs through benchmark linear parabolic problems up to 2,000 dimensions. We show that HEATNETs result in remarkable accuracy with the order of the approximation error ranging from $1.0E-05$ to $1.0E-07$ for problems up to 500 dimensions, and of the order of $1.0E-04$ to $1.0E-03$ for 1,000 to 2,000 dimensions, with a relatively low number (up to 15,000) of features.",
-    "arxiv_id": "2511.00886v1",
-    "published": "2025-11-02T10:50:11Z",
-    "updated": "2025-11-02T10:50:11Z",
-    "categories": [
-      "math.NA",
-      "cs.LG"
-    ]
-  },
-  {
-    "title": "Electromagnetic deflection effects in the integrated luminosity measurement at the CEPC",
-    "authors": [
-      "Ivan Smiljanić",
-      "Ivanka Božović",
-      "Ivana Vidaković",
-      "Nataša Vukašinović",
-      "Goran Kačarević"
-    ],
-    "abstract": "In order to ensure measurement of the integrated luminosity with a relative precision of $\\mathrm{10^{-4}}$ at the $\\mathrm{Z^{0}}$ pole at CEPC, numerous systematic effects have to be quantified and, if possible, corrected for. Here we discuss the impact of electromagnetic fields of incoming bunches on the initial state electrons and positrons (EMD1) as well as on the Bhabha scattering final states (EMD2). Both effects change four-momenta of the final state particles, leading to a modification of the Bhabha count in the luminometer. These effects are quantified in simulation, together with their stability with respect to the beam parameters variations. Possible correction methods based on experimental measurements with the CEPC detector are discussed on a conceptual level.",
-    "arxiv_id": "2511.00687v1",
-    "published": "2025-11-01T19:58:44Z",
-    "updated": "2025-11-01T19:58:44Z",
-    "categories": [
-      "hep-ex"
-    ]
-  },
-  {
-    "title": "Polariton-induced superconductivity in two-dimensional metals",
-    "authors": [
-      "Riccardo Riolo",
-      "Frank H. L. Koppens",
-      "Pablo Jarillo-Herrero",
-      "Giacomo Mazza",
-      "Allan H. MacDonald",
-      "Marco Polini"
-    ],
-    "abstract": "The electronic properties of two-dimensional (2D) metals are altered by changes in their three-dimensional dielectric environment. In this Letter we propose that superconductivity can be induced in a 2D metal by resonant coupling between its plasmonic collective modes and optical phonons in a nearby polar dielectric. Specifically, we predict that relatively high-temperature superconductivity can be induced in bilayer graphene twisted to an angle somewhat larger than the magic value by surrounding it with a THz polar dielectric. Our conclusions are based on numerical solutions of Eliashberg equations for massless Dirac fermions with tunable Fermi velocities and Fermi energies, and can be understood qualitatively in terms of a generalized McMillan formula.",
-    "arxiv_id": "2511.00608v1",
-    "published": "2025-11-01T16:18:42Z",
-    "updated": "2025-11-01T16:18:42Z",
-    "categories": [
-      "cond-mat.str-el",
-      "cond-mat.supr-con"
     ]
   }
 ]
