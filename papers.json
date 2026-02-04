@@ -1,5 +1,22 @@
 [
   {
+    "title": "Dynamical hair growth in black hole binaries in Einstein-scalar-Gauss-Bonnet gravity",
+    "authors": [
+      "Lodovico Capuano",
+      "Llibert Aresté Saló",
+      "Daniela D. Doneva",
+      "Stoytcho S. Yazadjiev",
+      "Enrico Barausse"
+    ],
+    "abstract": "Within the framework of scalar-tensor theories of gravity, certain models can evade classical black hole no-hair theorems. A well-known example is Einstein-scalar-Gauss-Bonnet gravity, where black holes carrying a scalar charge can exist. We find that, within this theory, binary black holes initially described by General Relativity can acquire scalar charges once they reach a critical orbital separation (\"dynamical scalarization\"). We develop a simple semi-analytic model, based on the adiabatic conservation of the total Wald entropy, to estimate the scalar charge evolution during the binary inspiral. We also run fully nonlinear numerical-relativity simulations for different configurations, finding consistent results. The gravitational-wave phase difference between Einstein-scalar-Gauss-Bonnet and General Relativity waveforms, which we use to assess detectability, is also computed. We find that dynamical scalarization might be observable in nearly equal-mass binary black hole mergers with third-generation ground-based gravitational-wave detectors, in a narrow range of the dimensional coupling of the theory.",
+    "arxiv_id": "2602.02650v1",
+    "published": "2026-02-02T19:00:01Z",
+    "updated": "2026-02-02T19:00:01Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Hyperbolicity analysis of the linearised 3+1 formulation in the Teleparallel Equivalent of General Relativity",
     "authors": [
       "Cheng Cheng",
@@ -4147,87 +4164,6 @@
     "updated": "2025-11-06T10:51:07Z",
     "categories": [
       "cond-mat.soft"
-    ]
-  },
-  {
-    "title": "Relative entropy estimate and geometric ergodicity for implicit Langevin Monte Carlo",
-    "authors": [
-      "Lei Li",
-      "Jian-Guo Liu",
-      "Yuliang Wang"
-    ],
-    "abstract": "We study the implicit Langevin Monte Carlo (iLMC) method, which simulates the overdamped Langevin equation via an implicit iteration rule. In many applications, iLMC is favored over other explicit schemes such as the (explicit) Langevin Monte Carlo (LMC). LMC may blow up when the drift field $\\nabla U$ is not globally Lipschitz, while iLMC has convergence guarantee when the drift is only one-sided Lipschitz. Starting from an adapted continuous-time interpolation, we prove a time-discretization error bound under the relative entropy (or the Kullback-Leibler divergence), where a crucial gradient estimate for the logarithm numerical density is obtained via a sequence of PDE techniques, including Bernstein method. Based on a reflection-type continuous-discrete coupling method, we prove the geometric ergodicity of iLMC under the Wasserstein-1 distance. Moreover, we extend the error bound to a uniform-in-time one by combining the relative entropy error bound and the ergodicity. Our proof technique is universal and can be applied to other implicit or splitting schemes for simulating stochastic differential equations with non-Lipschitz drifts.",
-    "arxiv_id": "2511.04041v1",
-    "published": "2025-11-06T04:21:31Z",
-    "updated": "2025-11-06T04:21:31Z",
-    "categories": [
-      "math.NA",
-      "math.PR"
-    ]
-  },
-  {
-    "title": "Boson Stars Hosting Black Holes",
-    "authors": [
-      "Amitayus Banik",
-      "Jeong Han Kim",
-      "Xing-Yu Yang"
-    ],
-    "abstract": "We study a system of a self-gravitating condensate, a boson star, formed from scalar ultra-light dark matter (ULDM), with a black hole hosted at its center. We numerically solve the equations of hydrostatic equilibrium in the non-relativistic limit, consistently incorporating the gravitational potential of the black hole, to obtain all possible configurations of this BS-BH system for different boson star masses, interaction types, and black hole masses. We also propose an analytic expression for the density profile and compare it with the numerical results, finding good agreement for attractive interactions and for a finite range of mass ratios between the black hole and boson star. Finally, considering the inspiral of this BS-BH system with a second, smaller black hole, we study the dephasing of gravitational waves due to the presence of the ULDM environment. A Fisher matrix analysis reveals the regions of parameter space of the ULDM mass and self-coupling that future gravitational-wave observatories such as LISA can probe.",
-    "arxiv_id": "2511.03788v1",
-    "published": "2025-11-05T19:00:04Z",
-    "updated": "2025-11-05T19:00:04Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.CO",
-      "hep-ph"
-    ]
-  },
-  {
-    "title": "Extreme-Mass-Ratio Inspirals Embedded in Dark Matter Halo I:Existence of Homoclinic Orbit and Near-Horizon Chaos",
-    "authors": [
-      "Surajit Das",
-      "Surojit Dalui",
-      "Bum-Hoon Lee",
-      "Yi-Fu Cai"
-    ],
-    "abstract": "We study the existence of homoclinic orbit and the onset of chaotic motion for a massive particle moving around a Schwarzschild-like black hole embedded in a Dehnen-(1,4,5/2) type dark matter halo, within the extreme-mass-ratio limit q = m/M << 1, where m and M are the masses of the particle and the central black hole, respectively. The presence of the halo modifies the spacetime curvature and consequently deforms the effective potential governing the particle's motion. Using the Hamiltonian formulation, we derive the conditions under which unstable circular orbit and the associated homoclinic trajectory arise, marking the separatrix between bound and plunging motion. By analyzing the effective potential and the corresponding phase-space structure, we identify the transition from regular to chaotic dynamics in the near-horizon region. Numerical analyses through Poincare sections and Lyapunov exponents calculations demonstrate that increasing the halo density, scale radius along with energy amplifies nonlinear effects which leads to chaos eventually. We demonstrate that within a dark matter halo environment, the dynamical stability of particle motion can be significantly altered without violating the universal surface gravity bound on chaos. This work provides a deeper understanding of horizon-induced chaos in astrophysically realistic environments and serves as a theoretical basis for exploring its possible imprints on gravitational wave signals in extreme-mass-ratio inspirals system.",
-    "arxiv_id": "2511.03657v1",
-    "published": "2025-11-05T17:13:23Z",
-    "updated": "2025-11-05T17:13:23Z",
-    "categories": [
-      "gr-qc",
-      "hep-th",
-      "nlin.CD"
-    ]
-  },
-  {
-    "title": "Ringdown modulation of acceleration radiation in the Schwarzschild background",
-    "authors": [
-      "Reggie C. Pantig"
-    ],
-    "abstract": "We present an analytic, first-order description of how black hole ringdown imprints on the operational signature of near-horizon thermality. Building on a static Schwarzschild baseline in which a freely falling two-level system coupled to a single outgoing mode exhibits geometric photon statistics and a detailed-balance ratio set by the surface gravity, we introduce an even-parity, axisymmetric quadrupolar perturbation and work in an ingoing Eddington-Finkelstein, horizon-regular framework. The perturbation corrects the outgoing eikonal through a gauge-invariant double-null contraction of the metric, yielding a compact redshift map that, when pulled back to the detector worldline, produces a universal, decaying-oscillatory modulation of the Boltzmann exponent at the quasinormal frequency. We derive a closed boundary formula for the response coefficient at the sampling radius, identify the precise adiabatic window in which the result holds, and prove that the modulation vanishes in all stationary limits. Detector specifics (gap, switching wavepacket width) enter only through a smooth prefactor, while the geometric content is captured by the quasinormal pair and the response coefficient. The analysis clarifies that near-horizon \"thermality\" is robust but not rigid: detailed balance persists as the organizing structure and is gently driven by ringdown dynamics. The framework is minimal yet extensible to other multipoles, parities, and slow rotation, and it suggests direct numerical and experimental cross-checks in controlled analog settings.",
-    "arxiv_id": "2511.03766v1",
-    "published": "2025-11-05T14:57:44Z",
-    "updated": "2025-11-05T14:57:44Z",
-    "categories": [
-      "gr-qc",
-      "hep-th"
-    ]
-  },
-  {
-    "title": "Oscillon decay via parametric resonance: the case of three-point scalar interactions",
-    "authors": [
-      "Siyao Li"
-    ],
-    "abstract": "We investigate the decay dynamics of oscillons through interactions with an external scalar field. To examine how robust the decay dynamics of oscillons via parametric resonance we previously found in Li et al. 2025 are to the specific form of the coupling, we extend the analysis to include a three-point interaction $g_3φχ^2$. We compute the Floquet exponents of the external field $χ$ under an oscillating oscillon background and analyze how the instability bands depend on the coupling constants and the oscillon shapes. Numerical simulations of the two-field system show that, similar to the four-point case, the parametric resonance may cease before the oscillon is destroyed, leaving a smaller oscillon that decays only perturbatively. This indicates that the partial decay of oscillons through parametric resonance is a generic phenomenon of oscillon-scalar couplings, qualitatively insensitive to the specific interaction form, while the shape of instability bands, parameter dependence, and the precise critical oscillon energies depend on the specific coupling. Our findings provide further insights into the decay dynamics of oscillons and their potential role in the post-inflationary reheating process.",
-    "arxiv_id": "2511.03501v1",
-    "published": "2025-11-05T14:33:04Z",
-    "updated": "2025-11-05T14:33:04Z",
-    "categories": [
-      "hep-ph",
-      "astro-ph.CO",
-      "gr-qc",
-      "hep-th"
     ]
   }
 ]
