@@ -1,5 +1,19 @@
 [
   {
+    "title": "Effects of nonlinear interactions on the superradiant instability of charged black holes",
+    "authors": [
+      "Bo-Wen Qin",
+      "Yu-Peng Zhang"
+    ],
+    "abstract": "A Reissner-Nordström black hole (RNBH) enclosed in a cavity is known to be superradiantly unstable to charged scalar perturbations below a critical frequency. Inspired by the emergence of the QCD axion as a prominent dark matter candidate, we construct a model featuring an axion field coupled to an electromagnetic field that undergoes superradiant growth around an RNBH. Utilizing numerical relativity, we achieve stable, long-term evolution of this system and perform a comparative analysis across various parameter spaces. Our comprehensive investigation reveals the formation of a hairy black hole, whose final state is governed by a diverse set of physical parameters. Notably, the decay constant in the axion potential, representing nonlinear interactions, bifurcates the superradiant instability into two distinct behavioral regimes, leading to more significant dynamical shifts than previously reported. Furthermore, we examine the influence of the scalar field's charge and mass, as well as the mirror's position. We investigate the axionic bosenova process and observe a long-term beating pattern of the axion field induced by nonlinear interactions. By fine-tuning these parameter combinations, we demonstrate that the system can evolve toward a variety of distinct physical endpoints.",
+    "arxiv_id": "2602.05268v1",
+    "published": "2026-02-05T03:47:11Z",
+    "updated": "2026-02-05T03:47:11Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Dynamical hair growth in black hole binaries in Einstein-scalar-Gauss-Bonnet gravity",
     "authors": [
       "Lodovico Capuano",
@@ -3876,179 +3890,6 @@
     "updated": "2025-11-08T14:09:16Z",
     "categories": [
       "gr-qc"
-    ]
-  },
-  {
-    "title": "Factorization method for the biharmonic scattering problem for an absorbing penetrable scatterer",
-    "authors": [
-      "Rafael Ceja Ayala",
-      "Isaac Harris",
-      "General Ozochiawaeze"
-    ],
-    "abstract": "This work extends the factorization method to the inverse scattering problem of reconstructing the shape and location of an absorbing penetrable scatterer embedded in a thin infinite elastic (Kirchhoff--Love) plate. With the assumption that the plate thickness is small compared to the wavelength of the incident wave, the propagation of flexural perturbations is modeled by the two--dimensional biharmonic wave equation in the frequency domain. Within this setting, we provide a rigorous justification of the factorization method and demonstrate that it yields a binary criterion for distinguishing whether a sampling point lies inside or outside the scatterer, using only the spectral data of the far--field operator. In addition, we numerically analyze the Born approximation for weak scatterers in this biharmonic scattering context and compute the relative error against exact far--field data for sample weak scatterers, thereby quantifying its validity as a limited but useful approximation.",
-    "arxiv_id": "2511.05711v2",
-    "published": "2025-11-07T21:03:39Z",
-    "updated": "2025-11-12T17:55:05Z",
-    "categories": [
-      "math.AP"
-    ]
-  },
-  {
-    "title": "Cluster-robust inference with a single treated cluster using the t-test",
-    "authors": [
-      "Chun Pong Lau",
-      "Xinran Li"
-    ],
-    "abstract": "This paper considers inference when there is a single treated cluster and a fixed number of control clusters, a setting that is common in empirical work, especially in difference-in-differences designs. We use the t-statistic and develop suitable critical values to conduct valid inference under weak assumptions allowing for unknown dependence within clusters. In particular, our inference procedure does not involve variance estimation. It only requires specifying the relative heterogeneity between the variances from the treated cluster and some, but not necessarily all, control clusters. Our proposed test works for any significance level when there are at least two control clusters. When the variance of the treated cluster is bounded by those of all control clusters up to some prespecified scaling factor, the critical values for our t-statistic can be easily computed without any optimization for many conventional significance levels and numbers of clusters. In other cases, one-dimensional numerical optimization is needed and is often computationally efficient. We have also tabulated common critical values in the paper so researchers can use our test readily. We illustrate our method in simulations and empirical applications.",
-    "arxiv_id": "2511.05710v1",
-    "published": "2025-11-07T21:01:02Z",
-    "updated": "2025-11-07T21:01:02Z",
-    "categories": [
-      "econ.EM"
-    ]
-  },
-  {
-    "title": "Analytic One-loop Scattering Waveform in General Relativity",
-    "authors": [
-      "Giacomo Brunello",
-      "Stefano De Angelis",
-      "David A. Kosower"
-    ],
-    "abstract": "Leveraging the computational framework presented in reference [JHEP 07, 062 (2024)], we evaluate the analytic scattering waveform in General Relativity to second order, $G^3 M^3 /r b^2$ and to all orders in velocity. This new representation of the next-to-leading order waveform is well-suited for numerical evaluation. Integrating the [modulus square of the] waveform over the angles on the celestial sphere, we also compute the power spectrum of the radiation to order $G^4$ numerically.",
-    "arxiv_id": "2511.05412v1",
-    "published": "2025-11-07T16:38:03Z",
-    "updated": "2025-11-07T16:38:03Z",
-    "categories": [
-      "hep-th",
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "Modeling Solar Atmosphere Dynamics with MAGEC",
-    "authors": [
-      "Anamaría Navarro",
-      "E. Khomenko",
-      "N. Vitas",
-      "T. Felipe"
-    ],
-    "abstract": "Modeling the solar atmosphere is challenging due to its layered structure and multi-scale dynamics. We aim to validate the new radiative MHD code MAGEC, which combines the MANCHA and MAGNUS codes into a finite-volume, shock-capturing framework, and to test its performance through 2D simulations of magneto-convection. MAGEC is MPI-parallelized and includes improvements for coronal modeling, such as LTE radiative losses and a hyperbolic treatment of thermal conduction that mitigates restrictive time steps. We also estimated its numerical viscosity and resistivity. To assess robustness, we performed 2D simulations covering a domain from 2 Mm below the surface to 18.16 Mm into the corona, using both open and closed magnetic-field configurations. For each case, we analyzed steady-state temperature profiles and the contributions to the internal-energy balance at different heights. A separate experiment examined the role of perpendicular thermal conduction. MAGEC reproduced the expected temperature stratification set by boundary conditions and magnetic geometry, and all simulations reached thermal equilibrium. Open-field cases produced higher coronal temperatures than closed, arcade-like fields. Analysis of the explicit and implicit energy terms clarified their relative effects on heating and cooling. Perpendicular thermal conduction, often neglected in coronal models, was found to influence plasma dynamics near reconnection; although local effects are small, they can cumulatively modify the average coronal temperature. These results show that MAGEC is a reliable and efficient tool for radiative MHD simulations, well suited to capturing the shocks and dynamic processes of the solar atmosphere.",
-    "arxiv_id": "2511.05380v1",
-    "published": "2025-11-07T16:01:57Z",
-    "updated": "2025-11-07T16:01:57Z",
-    "categories": [
-      "astro-ph.SR"
-    ]
-  },
-  {
-    "title": "Momentum accelerated power iterations and the restarted Lanczos method",
-    "authors": [
-      "Alessandro Barletta",
-      "Nicholas Marshall",
-      "Sara Pollock"
-    ],
-    "abstract": "In this paper we compare two methods for finding extremal eigenvalues and eigenvectors: the restarted Lanczos method and momentum accelerated power iterations. The convergence of both methods is based on ratios of Chebyshev polynomials evaluated at subdominant and dominant eigenvalues; however, the convergence is not the same. Here we compare the theoretical convergence properties of both methods, and determine the relative regimes where each is more efficient. We further introduce a preconditioning technique for the restarted Lanczos method using momentum accelerated power iterations, and demonstrate its effectiveness. The theoretical results are backed up by numerical tests on benchmark problems.",
-    "arxiv_id": "2511.05364v1",
-    "published": "2025-11-07T15:52:17Z",
-    "updated": "2025-11-07T15:52:17Z",
-    "categories": [
-      "math.NA"
-    ]
-  },
-  {
-    "title": "The $\\boldsymbol{r^{-3}}$ Curvature Decay and the Infrared Structure of Linearized Gravity",
-    "authors": [
-      "Michael Wilson"
-    ],
-    "abstract": "We identify curvature decay $|\\mathrm{Riem}| \\sim r^{-3}$ as a sharp spectral threshold in linearized gravity on asymptotically flat manifolds. For faster decay, the spatial Lichnerowicz operator possesses a purely continuous spectrum $σ_{\\mathrm{ess}}(L) = [0,\\infty)$, corresponding to freely radiating tensor modes. At the inverse-cube rate, compactness fails and zero energy enters $σ_{\\mathrm{ess}}(L)$, yielding marginally bound, finite-energy configurations that remain spatially extended. These static modes constitute the linear precursors of gravitational memory and soft-graviton phenomena, delineating the geometric boundary between dispersive and infrared behavior. A complementary numerical study of the radial model \\[ L_p = -\\frac{d^2}{dr^2} + \\frac{\\ell(\\ell+1)}{r^2} + \\frac{C}{r^p} \\] confirms the analytic scaling law, locating the same transition at $p = 3$. The eigenvalue trends approach the flat-space limit continuously for $p > 3$ and strengthen progressively for $p < 3$, demonstrating a smooth yet sharp spectral transition rather than a discrete confinement regime. The result parallels the critical threshold of the non-Abelian covariant Laplacian~[18], indicating a common $r^{-3}$ scaling that governs the infrared structure of gauge and gravitational fields.",
-    "arxiv_id": "2511.05345v1",
-    "published": "2025-11-07T15:39:24Z",
-    "updated": "2025-11-07T15:39:24Z",
-    "categories": [
-      "gr-qc",
-      "hep-th"
-    ]
-  },
-  {
-    "title": "Extreme internal waves: gravity currents and overturning fronts",
-    "authors": [
-      "Robin Ming Chen",
-      "Samuel Walsh",
-      "Miles H. Wheeler"
-    ],
-    "abstract": "Hydrodynamic bores are front-type traveling wave solutions to the two-layer free boundary Euler equations in two dimensions. The velocity field in each layer is assumed to be incompressible and irrotational, and it limits to distinct laminar flows upstream and downstream. Rigid horizontal boundaries confine the fluids from above and below. A constant gravitational force acts on the waves, but surface tension is neglected. It was recently shown by the authors that there exist two large-amplitude families of hydrodynamic bores: a curve of depression bores and a curve of elevation bores. We now prove that in the limit along the elevation bore family, the solutions must overturn: the interface separating the layers develops a vertical tangent. This type of behavior was first observed over 45 years ago in numerical computations of internal gravity waves and gravity water waves with vorticity. Despite considerable progress over the past decade in constructing families of water waves that potentially overturn, a proof that overturning definitively occurs has been stubbornly elusive. We further show that in the limit along the depression bore family, either overturning occurs or the solutions converge to a gravity current: the free boundary contacts the upper wall and the relative velocity in the upper fluid is stagnant. We also determine the contact angle between the interface and the rigid barrier for the limiting gravity current, giving the first rigorous confirmation of a conjecture of von Kármán. The resolutions of these questions in the specific case of hydrodynamic bores is accomplished through the use of novel geometric analysis techniques, including bounds on the decay of the velocity field near a hypothetical double stagnation point. These ideas may have broader applications to bifurcation theoretic studies of large-amplitude waves.",
-    "arxiv_id": "2511.05329v1",
-    "published": "2025-11-07T15:28:00Z",
-    "updated": "2025-11-07T15:28:00Z",
-    "categories": [
-      "math.AP"
-    ]
-  },
-  {
-    "title": "Optimizing broadband microwave absorbers for applications in the 70-200 GHz range",
-    "authors": [
-      "Gaganpreet Singh",
-      "Rustam Balafendiev",
-      "Mahesh Singh Bist",
-      "Thomas J. L. J. Gascard",
-      "Gagandeep Kaur",
-      "Vid Primožič",
-      "Jon E. Gudmundsson"
-    ],
-    "abstract": "We present results of an extensive suite of numerical simulations that probe square-tiled microwave absorber performance as a function of material properties, frequency, geometry, and unit cell size. The work, which probes both specular reflection and total absorption, highlights the critical importance of the absorber scale size relative to the incidence wavelength while suggesting that material properties have a comparatively weaker impact on overall performance. We show that some absorber designs can achieve 99.5-99.9% frequency-averaged absorption across the 70 to 200 GHz range for normal incidence and that low specular reflectance does not necessarily guarantee optimal absorption performance. Our results indicate that exponential, Klopfenstein, and linear impedance tapers provide comparable performance as long as a unit cell size of 1 to 4 mm is chosen. Simulation results are validated against measurements of specular reflectance.",
-    "arxiv_id": "2511.05309v1",
-    "published": "2025-11-07T15:11:24Z",
-    "updated": "2025-11-07T15:11:24Z",
-    "categories": [
-      "astro-ph.IM",
-      "physics.optics"
-    ]
-  },
-  {
-    "title": "A multiple-scales framework for branched channel filters",
-    "authors": [
-      "T. Fastnedge",
-      "C. J. W. Breward",
-      "I. M. Griffiths"
-    ],
-    "abstract": "Fibres shed from our clothes during a washing machine cycle constitute around 35% of the primary microplastics in our oceans. Current conventional dead-end washing machine filters clog relatively quickly and require frequent cleaning. We consider a new concept, ricochet separation, inspired by the feeding process of manta rays, to reduce the cleaning frequency. In such a device, some fluid is diverted through branched channels whilst particles ricochet off the wall structure, forcing them back into the main flow and then into the dead-end filter. In this paper, we consider a simple branched-channel filter structure beneath a high-Reynolds-number laminar flow, in the case where the branch separation is much larger than the thickness of the viscous boundary layer. We use multiple-scales techniques to derive an effective leakage boundary condition, which smooths out localised effects in the flow velocity and pressure that arise due to the discrete branched channels, and then use this boundary condition to explicitly determine the flow away from the boundary. We find that our explicit solution compares well with an analogous numerical solution containing a discrete set of branched channels. We further consider the behaviour of individual spherical particles in the device, with their trajectories determined via a simple force balance model with a wall-bounce condition. We explore the dependence of the fraction of particles that flow into the branched channels on the particle's Stokes number. The resulting combined model is able to predict the relationship between the efficiency of a ricochet filter device and the design and operating parameters, avoiding the need to conduct extensive numerically challenging simulations.",
-    "arxiv_id": "2511.05157v1",
-    "published": "2025-11-07T11:22:33Z",
-    "updated": "2025-11-07T11:22:33Z",
-    "categories": [
-      "physics.flu-dyn"
-    ]
-  },
-  {
-    "title": "The tidal response of a relativistic star",
-    "authors": [
-      "Nils Andersson",
-      "Rhys Counsell",
-      "Fabian Gittins",
-      "Suprovo Ghosh"
-    ],
-    "abstract": "We develop a fully relativistic approach for determining the frequency-dependent tidal response of a compact star. The strategy involves matching the solution for the linearised fluid dynamics in the star's interior to the spacetime perturbations in the near-zone surrounding the body, along with an identification of the tidal driving and the star's response. Notably, this identification is exact in Newtonian gravity and we provide strong evidence that it remains robust also in the relativistic case. The argument does not involve a sum over the star's quasinormal modes and hence circumvents one of the obstacles that have held up the development of models for relativistic tides. Numerical results are provided, at the proof-of-principle level, for a realistic matter equation of state from the BSk family, including composition stratification leading to the presence of low-frequency gravity modes. We also sketch the connection with the field-theory inspired approach to the problem, in which the tidal response is expressed in terms of asymptotic scattering amplitudes.",
-    "arxiv_id": "2511.05139v1",
-    "published": "2025-11-07T10:36:09Z",
-    "updated": "2025-11-07T10:36:09Z",
-    "categories": [
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "Annular Channel Eigenmodes: A Physical-Layer Approach to Suppressing OAM Modal Crosstalk",
-    "authors": [
-      "Chenghao Li",
-      "Pengyang An",
-      "Ziao Huang",
-      "Qiwen Zhan",
-      "Guanghui Yuan"
-    ],
-    "abstract": "Modal crosstalk is a fundamental limitation for orbital angular momentum (OAM)-based spatial-division multiplexing. Here, we introduce Annular Channel Eigenmodes (ACEs) - rigorously derived as the optimal band-limited solution for maximizing energy concentration within distinct annular channels. This approach reformulates the design as a Hermitian eigenvalue problem, efficiently yielding optimal beams that are physically isolated in space. Numerical simulations demonstrate that under identical conditions, conventional Gaussian-enveloped perfect optical vortices (POVs) exhibit an average modal crosstalk of -16 dB, whereas ACEs suppress crosstalk to nearly -30 dB. Moreover, the crosstalk suppression of ACEs continues to improve exponentially with increasing channel width, while that of POVs saturates at a fundamental limit. We experimentally generated ACEs and confirmed a 36% enhancement in energy confinement relative to POVs. ACEs thus provide a physically robust basis for high-fidelity, high-density OAM communications.",
-    "arxiv_id": "2511.05070v1",
-    "published": "2025-11-07T08:33:52Z",
-    "updated": "2025-11-07T08:33:52Z",
-    "categories": [
-      "physics.optics"
     ]
   }
 ]
