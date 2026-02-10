@@ -6,7 +6,7 @@ This project creates a webpage containing recent numerical relativity papers fro
 GitHub Actions activates the arxiv_scraper.py script Monday through Friday to:
 - collect recent arXiv papers matching the query `numerical relativity` and a configurable list of target authors,
 - update collected results in `papers.json` database (robust under arXiv downtime),
-- generate the [HTML](https://robynlm.github.io/UKNR_papers) which is embedded in the UKNR website.
+- generate the [HTML](https://uknumericalrelativity.github.io/UKNR_papers/) which is embedded in the UKNR website.
 
 ## Usage
 
