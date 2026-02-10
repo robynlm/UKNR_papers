@@ -309,7 +309,7 @@ def generate_html(papers: list):
         }}
     }};
     </script>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <link rel="icon" href="data:,">
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         :root {{
@@ -666,7 +666,7 @@ def generate_html(papers: list):
             }});
             
             // Initial MathJax processing for titles that are already visible
-            if (window.MathJax) {{
+            if (window.MathJax && MathJax.startup && MathJax.startup.promise) {{
                 MathJax.typesetPromise().catch(function (err) {{
                     console.log('Initial MathJax typeset failed: ' + err.message);
                 }});
