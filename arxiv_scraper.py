@@ -637,7 +637,7 @@ def generate_html(papers: list):
         <footer class="footer">
             <p>
                 Generated automatically from arXiv.org • 
-                <a href="https://github.com/robynlm/UKNR_papers" class="github-link" target="_blank" rel="noopener">
+                <a href="https://github.com/UKNumericalRelativity/UKNR_papers" class="github-link" target="_blank" rel="noopener">
                     View on GitHub
                 </a>
             </p>
