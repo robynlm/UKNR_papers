@@ -1,5 +1,21 @@
 [
   {
+    "title": "From mergers to collapse: scalarisation dynamics in neutron star binaries",
+    "authors": [
+      "Llibert Aresté Saló",
+      "Ricard Aguilera-Miret",
+      "Miguel Bezares",
+      "Thomas P. Sotiriou"
+    ],
+    "abstract": "We present the first fully non-linear evolutions of binary neutron star mergers in a moving-punctures approach in Einstein-scalar-Gauss-Bonnet gravity. We study both linear and quadratic-type couplings between the scalar and the Gauss-Bonnet invariant, and uncover new post-merger phenomena. These include an enhancement of the prompt collapse of a long-lived hyper-massive neutron star remnant and cases where the remnant develops a scalar configuration due to different scalarisation instabilities. This study initiates the exploration of beyond-General-Relativistic effects enhanced by the non-linear dynamics of the neutron star's fluid.",
+    "arxiv_id": "2602.10755v1",
+    "published": "2026-02-11T11:37:29Z",
+    "updated": "2026-02-11T11:37:29Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "Effects of nonlinear interactions on the superradiant instability of charged black holes",
     "authors": [
       "Bo-Wen Qin",
