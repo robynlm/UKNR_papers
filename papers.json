@@ -1,5 +1,20 @@
 [
   {
+    "title": "Tarnished by Tools: Cost of Systematics in Golden Dark Siren Cosmology",
+    "authors": [
+      "Giovanni Benetti",
+      "Koustav Chandra",
+      "Bangalore S. Sathyaprakash"
+    ],
+    "abstract": "Golden dark sirens - exceptionally well-localized gravitational-wave (GW) sources without electromagnetic counterparts - offer a powerful route to precision measurements of the Hubble constant, $H_0$, with next-generation (XG) detectors. The statistical promise of this method, however, places stringent demands on waveform accuracy and detector calibration, as even small systematic errors can dominate over statistical uncertainties at high signal-to-noise ratios. We investigate the impact of waveform-modeling systematics on golden dark siren cosmology using a synthetic population of binary black holes consistent with current GW observations and analyzed in the XG-detector era. By comparing state-of-the-art waveform models against numerical-relativity-based reference signals, we quantify modeling inaccuracies from both modeling and data-analysis perspectives and assess how they propagate into biases in luminosity distance, host-galaxy association, and single-event $H_0$ inference. We find that while current waveform models often allow recovery of statistically consistent $H_0$ posteriors, small waveform-induced biases can significantly affect three-dimensional localization and host galaxy ranking, occasionally leading to incorrect redshift assignments. We further derive order-of-magnitude requirements on detector calibration accuracy needed to ensure that calibration systematics remain subdominant for golden dark sirens observed with XG networks. To realize sub-percent $H_0$ measurements with golden dark sirens will require waveform and calibration accuracies that scale as $\\mathcal{O}(ρ^{-2})$ with signal-to-noise ratio, motivating sustained advances in waveform modeling, numerical relativity, and detector calibration for the XG era.",
+    "arxiv_id": "2602.14898v1",
+    "published": "2026-02-16T16:34:30Z",
+    "updated": "2026-02-16T16:34:30Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
     "title": "From mergers to collapse: scalarisation dynamics in neutron star binaries",
     "authors": [
       "Llibert Aresté Saló",
