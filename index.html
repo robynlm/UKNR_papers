@@ -292,10 +292,25 @@
     <div class="container">
         <div class="header">
             <h1>Numerical Relativity Papers</h1>
-            <div class="last-updated">Last updated: 2026-09-04 10:50:14 UTC</div>
+            <div class="last-updated">Last updated: 2026-09-07 11:52:05 UTC</div>
         </div>
         
         <main>
+
+            <article class="paper">
+                <div class="paper-date">03 September 2026</div>
+                <div class="paper-title">
+                    <a href="https://arxiv.org/abs/2609.04340v1" target="_blank" rel="noopener">Waveform models for the gravitational-wave memory effect: III. Phenomenological frequency-domain model for nonspinning binaries</a>
+                </div>
+                <div class="abstract-section">
+                    <div class="abstract-toggle">
+                        <span class="arrow">▶</span>
+                        <span>Abstract</span>
+                    </div>
+                </div>
+                <div class="paper-authors">Arwa Elhashash, David A. Nichols</div>
+                <div class="paper-abstract">We present a phenomenological frequency-domain model for the gravitational-wave (GW) memory signal from nonspinning binary-black-hole mergers on quasicircular orbits. We develop separate amplitude and phase models for the dominant $(l,m)=(2,0)$ spherical-harmonic mode of the GW memory signal. The amplitude and phase models are built from superpositions of elementary and transcendental functions, which can be evaluated efficiently. Both portions of the model are calibrated against a numerical-relativity surrogate model over mass ratios from one to eight. Their accuracy is assessed by computing their mismatch with the numerical-relativity models using the Advanced LIGO sensitivity curve from the fourth observing run. The mismatches are of the order $10^{-4}n̆icode{x2013}10^{-3}$ over the parameter space of total mass covered by LIGO. The resulting frequency-domain model is a more computationally efficient waveform model for the GW memory signal than a related time-domain model earlier produced by the authors. An open-access implementation of both the time-domain and frequency-domain models is provided in the Python package GWMemoryModel, which can be used for relevant analyses of nonspinning binary black holes.</div>
+            </article>
 
             <article class="paper">
                 <div class="paper-date">03 September 2026</div>
@@ -805,66 +820,6 @@
                 </div>
                 <div class="paper-authors">Ming-Zhe Han, Kenta Kiuchi, Masaru Shibata</div>
                 <div class="paper-abstract">We present SACRA-K (SimulAtor for Compact objects in Relativistic Astrophysics with Kokkos), a performance-portable numerical relativity code ported from the Fortran code SACRA-MPI to C++ with the Kokkos library. SACRA-K retains the physics and numerical methods of SACRA-MPI, namely a Baumgarte-Shapiro-Shibata-Nakamura (BSSN) spacetime evolution with Z4c constraint propagation and a box-in-box Berger-Oliger adaptive mesh refinement, together with the high resolution shock capturing scheme for the general relativistic hydrodynamics from NANASI, while gaining cross vendor portability. We validate the port against SACRA-MPI across binary black hole, black hole neutron star, and binary neutron star configurations. Across these tests, the waveform discrepancies are well below both the scatter among independent numerical relativity codes and the resolution dependent variation within a given code, and remain at or below the distinguishability threshold of current gravitational-wave detectors; the $π$ symmetry is preserved exactly at the bitwise level; and the gravitational wave phase of the binary neutron star merger exhibits second order convergence. In the smallest test configuration, SACRA-K runs about an order of magnitude faster on the NVIDIA A100 GPU cluster or the AMD MI300A APU cluster than the Fortran SACRA-MPI on the CPU cluster, and we measure its scaling up to 256 accelerator devices.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">08 July 2026</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2607.07668v1" target="_blank" rel="noopener">Subsolar-mass binary mergers of strange stars and neutron stars: gravitational waves and ejecta</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Yong Gao, Ming-Zhe Han, Kenta Kiuchi, Masaru Shibata, Enping Zhou, Kenta Hotokezaka</div>
-                <div class="paper-abstract">We present the first numerical-relativity simulations of subsolar-mass binary strange star (SS) mergers and compare with binary neutron star (NS) mergers across equations of state, masses, and mass ratios. The self-bound nature of SSs makes them less deformed during the inspiral and keeps a sharp surface up to contact, driving strong shock heating and a large radial bounce that are far weaker in the NS. The more compact SS thus reaches a higher gravitational-wave cutoff frequency $f_\mathrm{cut}$ before contact but a lower post-merger peak frequency $f_2$. Within each class these frequencies follow quasi-universal relations with the tidal deformability, and their ratio $f_2/f_\mathrm{cut}$ cleanly separates the two classes. Both classes can eject $\sim10^{-2}\,M_\odot$ of material, neutron-rich for the NS and decompressed quark matter for the SS, a potential source of an electromagnetic counterpart whose observation could test the SS and NS hypotheses for subsolar-mass events.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">07 July 2026</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2607.06728v1" target="_blank" rel="noopener">The Era of Precision in Computational Models of Gravitational Waves</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Ulrich Sperhake</div>
-                <div class="paper-abstract">Einstein's equations of general relativity are one of the most complicated set of equations in all of physics and, for all but idealized physical settings, can only be solved by numerical methods on high-performance computing systems. Generating such solutions is a veritable Odyssey in its own right with adventures across the fields of mathematical theory, physical interpretation and computing challenges. These endeavors came to fruition in the mid 2000s when the two-body problem of general relativity was finally solved. And not too soon, as these results and their follow-up investigations came to play a key role in the Nobel-Prize winning discovery of gravitational waves by LIGO in 2015.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">07 July 2026</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2607.06441v1" target="_blank" rel="noopener">Starting inflation in asymptotically flat spacetimes</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Sam E. Brady, Thomas W. Baumgarte, Katy Clough</div>
-                <div class="paper-abstract">A key question in early universe cosmology is whether inflation can be successfully seeded by a generic, localised fluctuation in the inflaton field that probes the inflationary part of the potential. Past simulations have mainly considered periodic spacetimes representing either a closed universe of a specific size or a typical patch of a larger one, and as a result have needed to impose restrictive conditions on the extrinsic and intrinsic curvatures, which are arguably not generic. In this work we consider initial fluctuations in asymptotically flat spacetimes, allowing more general profiles of the intrinsic and extrinsic curvature. Our findings confirm and generalise the result of Goldwirth and Piran that a fluctuation with proper size several times the inflationary scale $(Gρ_{\rm infl})^{-1/2}$ is required for successful inflation. We also discuss inherent restrictions on the initial data, and how imposing a periodic length close to the inflationary scale may bias results.</div>
-            </article>
-
-            <article class="paper">
-                <div class="paper-date">07 July 2026</div>
-                <div class="paper-title">
-                    <a href="https://arxiv.org/abs/2607.06002v1" target="_blank" rel="noopener">Solving Hamiltonian Constraint Equation with Physics-Informed Neural Networks</a>
-                </div>
-                <div class="abstract-section">
-                    <div class="abstract-toggle">
-                        <span class="arrow">▶</span>
-                        <span>Abstract</span>
-                    </div>
-                </div>
-                <div class="paper-authors">Yu-Chen Zhou, Hao Ma, Zhoujian Cao, Tailin Wu, Hong-Bo Jin, Xuefeng Feng, Shuanglin Huang and 2 others</div>
-                <div class="paper-abstract">Numerical relativity (NR), solving Einstein equation numerically, plays an important role in source modelling for gravitational wave astronomy. Traditional methods for NR including finite difference method, spectral method and finite element method have been well developed. But newly developed neural network methods for partial differential equations (PDE) have not been well studied yet for NR. We present a Physics-Informed Neural Network (PINN) method to solve the Hamiltonian constraint equation for binary black hole (BBH) initial data in NR. This equation is a highly non-linear elliptic PDE, posing significant challenges for conventional PINN approaches. To overcome these difficulties, we introduce a set of new techniques. We show that our PINN together with these techniques can successfully solve the Hamiltonian constraint equation for generic BBH systems. Validation against the traditional results demonstrates the high accuracy and robustness of our method, revealing the immense potential of constructing a PINN-based initial data solution to all BBH systems for NR.</div>
             </article>
 
         </main>
