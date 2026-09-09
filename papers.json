@@ -1,5 +1,57 @@
 [
   {
+    "title": "NRHJSur3dq8: a spectral numerical-relativity surrogate family for non-eccentric aligned-spin binary-black-hole waveforms",
+    "authors": [
+      "Vaishak Prasad"
+    ],
+    "abstract": "We present NRHJSur3dq8, a family of numerical-relativity (NR) surrogates for non-eccentric aligned-spin binary-black-hole waveforms inspired by an action-angle parameterization. The model provides both the dynamics: the Hamiltonian values, azimuthal action $J_φ(Φ)$, the orbital clock $τ(Φ)$ as functions of its phasing, and the radiative pieces: the waveforms, their near-analytic derivatives, and modeling errors associated with each. The surrogated variables are conditioned into pieces that vary slowly on the radiation-reaction timescale, represented on shared $hp$-adaptive Chebyshev elements, and regressed across the intrinsic parameters with a Gaussian-process model. A time-parameterized merger-ringdown set of elements is attached where the adiabatic description breaks down. Leave-one-out validation of the central NRHJSur3dq8_AA flavor against NR reaches a $(2,2)$ unweighted mismatch of $1.3^{+32}_{-1.2}\\times10^{-6}$ and an all-mode mismatch of $2.3^{+59}_{-2.2}\\times10^{-6}$ over the full inspiral-merger-ringdown span. Sky-averaged and SNR-weighted over $32$ orientations per simulation, the released model's full-IMR in-sample mismatch against the NR simulations used for training is $8.9\\times10^{-7}$ to $2.8\\times10^{-5}$ across total masses $40$-$120\\,M_\\odot$. Waveforms are hybridized using post-Newtonian waveforms. Beyond accuracy, NRHJSur3dq8 provides two capabilities uncommon in NR surrogates: nearly analytic derivatives of the strain with respect to the physical parameters, and a calibrated Gaussian-process predictive uncertainty of the model. A full non-hybridized inspiral-merger-ringdown waveform evaluates in $12$ ms on a single CPU call. Batched evaluation amortizes this to $0.39$ ms per waveform at a batch of $4096$, measured at a starting frequency of $20$ Hz.",
+    "arxiv_id": "2609.09088v1",
+    "published": "2026-09-08T17:34:19Z",
+    "updated": "2026-09-08T17:34:19Z",
+    "categories": [
+      "gr-qc",
+      "astro-ph.HE",
+      "astro-ph.IM"
+    ]
+  },
+  {
+    "title": "NRSur7dq4v2: A multi-domain precessing surrogate model with improved accuracy",
+    "authors": [
+      "Abhishek Ravishankar",
+      "Vijay Varma",
+      "Scott E. Field",
+      "Keefe Mitman",
+      "Nils Deppe",
+      "Leo C. Stein",
+      "Michael Boyle",
+      "Mark A. Scheel"
+    ],
+    "abstract": "Numerical relativity simulations provide the most accurate waveforms for binary black hole coalescences, but are prohibitively expensive for direct use in gravitational-wave data analysis. Surrogate models overcome this cost, and NRSur7dq4 is commonly used in parameter estimation for this reason. However, there is evidence in the literature that NRSur7dq4's accuracy could be improved in the merger-ringdown portion of the waveform, which is particularly important for the analysis of high-mass binary black hole events. Motivated by these observations, we construct NRSur7dq4v2, a multi-domain extension of NRSur7dq4 in which overlapping temporal subdomains allow tighter, independent error control over the inspiral and merger-ringdown portions of the waveform before they are smoothly combined. To assess the new model's performance in the merger-ringdown regime, we infer the mass and spin of the remnant black hole from quasi-normal fits to the ringdown portion of the surrogate waveform. We find that NRSur7dq4v2 produces significantly improved remnant mass and spin estimates, with gains of roughly factors of $3$ to $10$ over NRSur7dq4. Compared to NRSur7dq4, NRSur7dq4v2 also includes modes up to $\\ell=5$, includes more accurate modeling of certain subdominant modes, and introduces a runtime model-complexity feature that gives users direct control over the tradeoff between evaluation cost and accuracy. Finally, alongside the model development, we have optimized the gwsurrogate package to achieve a fourfold speedup for precessing surrogates. The resulting precessing surrogates called through gwsurrogate are now slightly faster than their LALSimulation counterparts.",
+    "arxiv_id": "2609.07873v1",
+    "published": "2026-09-07T18:34:35Z",
+    "updated": "2026-09-07T18:34:35Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "Primordial Black Hole Abundances and Scalar Induced Gravitational Waves from Finite-Width Power Spectra in a Stiff Thermal History",
+    "authors": [
+      "Abolhassan Mohammadi",
+      " Yogesh",
+      "Cristian Joana",
+      "Hongwei Tan",
+      "Ying-li Zhang"
+    ],
+    "abstract": "We study the formation of primordial black holes (PBHs) from large primordial perturbations that re-enter the horizon during an epoch with equation of state ${\\rm w}\\geq1/3$. We consider a log-normal curvature power spectrum of finite width $Δ$ and determine the collapse amplitude by numerical-relativity simulations of a self-gravitating perfect fluid. Threshold scans are performed for five values of $\\rm w$ and five spectral widths, and the resulting numerical thresholds are used in the PBH abundance and scalar-induced gravitational-wave (SIGW) calculations. For comparison, we also evaluate the semi-analytical $q$-function prescription. It reproduces the numerical trend close to radiation domination and for nearly monochromatic profiles, but it is not a reliable threshold estimator for generic finite-width profiles in stiffer backgrounds. We show how collapse thresholds increase with both $Δ$ and $\\rm w$, changing the curvature amplitude required for PBHs to constitute all of the dark matter and, consequently, the normalization of the accompanying SIGW signal.",
+    "arxiv_id": "2609.07043v1",
+    "published": "2026-09-07T04:56:55Z",
+    "updated": "2026-09-07T04:56:55Z",
+    "categories": [
+      "astro-ph.CO"
+    ]
+  },
+  {
     "title": "Waveform models for the gravitational-wave memory effect: III. Phenomenological frequency-domain model for nonspinning binaries",
     "authors": [
       "Arwa Elhashash",
@@ -24,6 +76,20 @@
     "arxiv_id": "2609.03935v1",
     "published": "2026-09-03T14:43:19Z",
     "updated": "2026-09-03T14:43:19Z",
+    "categories": [
+      "gr-qc"
+    ]
+  },
+  {
+    "title": "On the interplay between waveform systematics and lensing signatures in gravitational-wave signals",
+    "authors": [
+      "Disha Hegde",
+      "Justin Janquart"
+    ],
+    "abstract": "The exceptional gravitational-wave event GW231123 exhibited unusually high total mass and near-extremal spins, while revealing strong waveform-dependent variations in its inferred source properties. Several follow-up studies favored a lensed interpretation, with reduced waveform systematics, raising the question of whether apparent lensing evidence could arise from waveform modeling systematics. Using GW231123-like numerical-relativity injections, we find that lensing degrees of freedom can reduce waveform discrepancies and yield non-negligible lensing support. However, this behavior is not systematic across injections, and cases where all waveform and lens models favor lensing while reducing waveform discrepancies are not found.",
+    "arxiv_id": "2609.03935v2",
+    "published": "2026-09-03T14:43:19Z",
+    "updated": "2026-09-08T09:10:07Z",
     "categories": [
       "gr-qc"
     ]
@@ -532,42 +598,6 @@
     "updated": "2026-07-13T15:12:18Z",
     "categories": [
       "astro-ph.HE",
-      "gr-qc"
-    ]
-  },
-  {
-    "title": "GRACE: An Open-Source Framework for GPU-Accelerated Numerical Relativity",
-    "authors": [
-      "Carlo Musolino",
-      "Christian Ecker",
-      "Konrad Topolski",
-      "Marie Cassing",
-      "Keneth Miler",
-      "Harry Ho-Yin Ng",
-      "Khalil Pierre",
-      "Elias R. Most",
-      "Luciano Rezzolla"
-    ],
-    "abstract": "We present GRACE, a new GPU-accelerated numerical-relativity framework designed to run efficiently on heterogeneous high-performance computing platforms. Developed from scratch and built exclusively on open-source libraries, GRACE employs Kokkos for performance portability across CPU and GPU architectures and p4est for adaptive mesh refinement. The code evolves the equations of ideal GRMHD -- with divergence-free magnetic fields maintained by constrained transport -- self-consistently coupled to the Einstein equations in the Z4c formulation, on fixed or adaptively refined grids. We validate the implementation against a suite of standard tests, ranging from magnetized shock tubes and the magnetic rotor in flat spacetime, through (magnetized) Bondi accretion onto a Schwarzschild black hole and the ringdown of a perturbed spinning puncture, to neutron-star oscillation spectra in fixed and dynamical spacetimes and the merger of binary black holes. As more demanding applications, we evolve two binary neutron-star mergers -- an equal-mass, unmagnetized system with an ideal-gas equation of state and an unequal-mass, magnetized system with a finite-temperature tabulated equation of state -- finding the inspiral dynamics to agree well with the FIL code. We also report single-device throughput together with strong- and weak-scaling results on multiple GPU and CPU architectures. GRACE is publicly released together with GRACEpy, a basic post-processing and data-analysis environment.",
-    "arxiv_id": "2607.09854v1",
-    "published": "2026-07-10T18:00:01Z",
-    "updated": "2026-07-10T18:00:01Z",
-    "categories": [
-      "gr-qc",
-      "astro-ph.HE"
-    ]
-  },
-  {
-    "title": "Head-on Collisions of Boson Stars with Bowen-York Type Initial Data",
-    "authors": [
-      "Jake Doherty",
-      "Pablo Laguna"
-    ],
-    "abstract": "We present a numerical relativity study of head-on collisions involving boson stars using initial data inspired by the Bowen-York initial data used to model black hole binaries with punctures. The initial data method preserves the simplicity of the Bowen-York approach, thus allowing incorporating information from the early, post-Newtonian inspiral phase in binary coalescences. We test the method on a single boson star with linear momentum. We present results from head-on collisions of boson stars as well as encounters of boson stars with black holes. In general, the results are consistent with previous studies, demonstrating the effectiveness of the initial data method. In particular, we show that boson star head-on collisions emit more energy in gravitational waves than the equivalent black hole binaries. On the other hand, head-on collisions of a boson star with a black hole radiate less than their black hole binary counterparts.",
-    "arxiv_id": "2607.09494v1",
-    "published": "2026-07-10T15:08:30Z",
-    "updated": "2026-07-10T15:08:30Z",
-    "categories": [
       "gr-qc"
     ]
   }
